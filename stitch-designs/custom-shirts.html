@@ -1,0 +1,277 @@
+<!DOCTYPE html>
+
+<html class="dark" lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>The Architecture of the Shirt - ATELIER</title>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com" rel="preconnect"/>
+<link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/>
+<link href="https://fonts.googleapis.com/css2?family=Bodoni+Moda:ital,opsz,wght@0,6..96,400..900;1,6..96,400..900&amp;family=Space+Grotesk:wght@300..700&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<script id="tailwind-config">
+        tailwind.config = {
+            darkMode: "class",
+            theme: {
+                extend: {
+                    "colors": {
+                        "error": "#ffb4ab",
+                        "primary-fixed": "#e5e2e1",
+                        "on-primary-container": "#848282",
+                        "primary": "#c8c6c5",
+                        "outline-variant": "#444748",
+                        "surface-container-low": "#1c1b1b",
+                        "on-secondary-fixed": "#261900",
+                        "background": "#131313",
+                        "error-container": "#93000a",
+                        "surface-container-highest": "#353534",
+                        "on-primary-fixed-variant": "#474746",
+                        "tertiary-fixed-dim": "#dcc497",
+                        "tertiary-fixed": "#f9dfb1",
+                        "surface-bright": "#3a3939",
+                        "surface-container": "#201f1f",
+                        "on-surface": "#e5e2e1",
+                        "surface-variant": "#353534",
+                        "on-error-container": "#ffdad6",
+                        "on-surface-variant": "#c4c7c7",
+                        "inverse-surface": "#e5e2e1",
+                        "on-tertiary": "#3d2e0e",
+                        "on-secondary-container": "#dab36a",
+                        "surface-dim": "#131313",
+                        "primary-container": "#1a1a1a",
+                        "on-tertiary-fixed-variant": "#554422",
+                        "on-secondary": "#412d00",
+                        "tertiary": "#dcc497",
+                        "on-tertiary-container": "#958058",
+                        "tertiary-container": "#241800",
+                        "surface-tint": "#c8c6c5",
+                        "on-tertiary-fixed": "#261a00",
+                        "on-primary": "#313030",
+                        "on-error": "#690005",
+                        "surface-container-high": "#2a2a2a",
+                        "secondary-fixed-dim": "#e9c176",
+                        "on-secondary-fixed-variant": "#5d4201",
+                        "secondary-container": "#604403",
+                        "on-primary-fixed": "#1c1b1b",
+                        "inverse-primary": "#5f5e5e",
+                        "inverse-on-surface": "#313030",
+                        "surface": "#131313",
+                        "primary-fixed-dim": "#c8c6c5",
+                        "surface-container-lowest": "#0e0e0e",
+                        "outline": "#8e9192",
+                        "secondary-fixed": "#ffdea5",
+                        "on-background": "#e5e2e1",
+                        "secondary": "#e9c176"
+                    },
+                    "borderRadius": {
+                        "DEFAULT": "0.25rem",
+                        "lg": "0.5rem",
+                        "xl": "0.75rem",
+                        "full": "9999px"
+                    },
+                    "spacing": {
+                        "margin-mobile": "20px",
+                        "margin-desktop": "64px",
+                        "unit": "4px",
+                        "gutter": "24px",
+                        "block-gap": "120px"
+                    },
+                    "fontFamily": {
+                        "label-caps": ["Space Grotesk"],
+                        "display-lg": ["Bodoni Moda"],
+                        "body-md": ["Space Grotesk"],
+                        "headline-lg-mobile": ["Bodoni Moda"],
+                        "headline-md": ["Bodoni Moda"],
+                        "body-lg": ["Space Grotesk"],
+                        "ui-button": ["Space Grotesk"],
+                        "headline-lg": ["Bodoni Moda"]
+                    },
+                    "fontSize": {
+                        "label-caps": ["12px", { "lineHeight": "16px", "letterSpacing": "0.15em", "fontWeight": "600" }],
+                        "display-lg": ["84px", { "lineHeight": "90px", "letterSpacing": "-0.02em", "fontWeight": "700" }],
+                        "body-md": ["16px", { "lineHeight": "24px", "fontWeight": "400" }],
+                        "headline-lg-mobile": ["32px", { "lineHeight": "38px", "fontWeight": "600" }],
+                        "headline-md": ["32px", { "lineHeight": "40px", "fontWeight": "500" }],
+                        "body-lg": ["18px", { "lineHeight": "28px", "letterSpacing": "0.01em", "fontWeight": "400" }],
+                        "ui-button": ["14px", { "lineHeight": "20px", "letterSpacing": "0.05em", "fontWeight": "500" }],
+                        "headline-lg": ["48px", { "lineHeight": "56px", "letterSpacing": "-0.01em", "fontWeight": "600" }]
+                    }
+                },
+            },
+        }
+    </script>
+<style>
+        .material-symbols-outlined {
+            font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24;
+        }
+        .fill-icon {
+            font-variation-settings: 'FILL' 1;
+        }
+    </style>
+</head>
+<body class="bg-background text-on-surface font-body-md antialiased min-h-screen selection:bg-secondary selection:text-on-secondary">
+<!-- TopNavBar -->
+<nav class="fixed top-0 w-full z-50 bg-background/80 backdrop-blur-3xl border-b border-outline-variant dark:border-outline-variant transition-all duration-300">
+<div class="flex justify-between items-center w-full px-margin-mobile md:px-margin-desktop py-gutter mx-auto max-w-full">
+<a class="text-headline-md font-headline-md font-bold tracking-tighter text-on-surface dark:text-on-surface uppercase" href="#">
+                ATELIER
+            </a>
+<div class="hidden md:flex space-x-8 items-center">
+<a class="text-label-caps font-label-caps text-primary dark:text-primary font-bold border-b border-primary pb-1" href="#">Bespoke</a>
+<a class="text-label-caps font-label-caps text-on-surface-variant dark:text-on-surface-variant hover:text-primary dark:hover:text-tertiary-fixed transition-colors duration-300" href="#">Archive</a>
+<a class="text-label-caps font-label-caps text-on-surface-variant dark:text-on-surface-variant hover:text-primary dark:hover:text-tertiary-fixed transition-colors duration-300" href="#">Philosophy</a>
+<a class="text-label-caps font-label-caps text-on-surface-variant dark:text-on-surface-variant hover:text-primary dark:hover:text-tertiary-fixed transition-colors duration-300" href="#">Appointments</a>
+</div>
+<div class="flex items-center space-x-4">
+<button class="text-on-surface-variant dark:text-on-surface-variant hover:text-primary dark:hover:text-tertiary-fixed transition-colors duration-300 cursor-pointer active:opacity-70">
+<span class="material-symbols-outlined" data-icon="shopping_bag">shopping_bag</span>
+</button>
+</div>
+</div>
+</nav>
+<main class="pt-[100px] md:pt-[140px] px-margin-mobile md:px-margin-desktop max-w-[1920px] mx-auto">
+<!-- Hero Section -->
+<section class="grid grid-cols-1 lg:grid-cols-12 gap-gutter mb-block-gap">
+<div class="lg:col-span-5 flex flex-col justify-center border-b lg:border-b-0 lg:border-r border-outline-variant pb-8 lg:pb-0 lg:pr-8">
+<p class="text-label-caps font-label-caps text-secondary mb-8">Needle &amp; Loom</p>
+<h1 class="text-headline-lg-mobile font-headline-lg-mobile md:text-display-lg md:font-display-lg text-on-surface mb-6 leading-tight">The Architecture of the Shirt</h1>
+<p class="text-body-lg font-body-lg text-on-surface-variant max-w-md">A study in precision. Every collar point and cuff line is engineered to maintain structural integrity throughout the evening.</p>
+</div>
+<div class="lg:col-span-7 h-[614px] lg:h-[819px] relative border border-[#4A3F35]">
+<img alt="Bespoke custom shirt" class="w-full h-full object-cover grayscale opacity-90" data-alt="A cinematic, high-contrast black and white photograph of a bespoke custom shirt on a minimalist dress form in a nocturnal atelier setting. The lighting is severe, casting deep, structural shadows that emphasize the geometry of the collar and the crisp lines of the fabric. The overall mood is mysterious, luxurious, and architectural. The deep blacks and muted tones align perfectly with a premium, avant-garde design system." src="https://lh3.googleusercontent.com/aida-public/AB6AXuCSRrhHXGeLYEa2e4fjI9TxLwNM951SJ8ZlC2t3kyoTTnCxOgkrw9gV1H9s4Y1-RdObHcj9zxC0vsDCkhMQ98LKZGf0w5tsRexMsM_FXfe_QWaAPFuFkGnE5-K4QCkwooFqzVjPqF3-ErJIoyb4suSXD4KYGWb_yeTRD6jjFEoEr2ZPYt0_auiVEU89vTK3XiSP47NP4SnvTqGmFcqtxl1H8eGs5_bOJ0lTZrGJE80ZYCc4tiy5xgCpUz4jqe1ydhTvOBEiqjwtFhtY"/>
+</div>
+</section>
+<!-- Material Science -->
+<section class="mb-block-gap">
+<div class="flex items-center justify-between border-b border-outline-variant pb-4 mb-12">
+<h2 class="text-headline-md font-headline-md text-on-surface">Material Science</h2>
+<span class="text-label-caps font-label-caps text-secondary">01</span>
+</div>
+<div class="grid grid-cols-1 md:grid-cols-3 gap-gutter">
+<!-- Material Card 1 -->
+<div class="border border-[#4A3F35] bg-surface-container-low group cursor-pointer relative overflow-hidden transition-all duration-500 hover:border-secondary">
+<div class="h-64 overflow-hidden relative border-b border-[#4A3F35]">
+<img alt="Obsidian Oxford Fabric" class="w-full h-full object-cover opacity-70 group-hover:opacity-100 transition-opacity duration-500 grayscale group-hover:grayscale-0" data-alt="A close-up, macro shot of luxurious, dark obsidian oxford fabric. The texture is prominent, catching subtle, low-key lighting that highlights the intricate weave. The deep charcoal and black tones dominate the frame, creating a moody, premium nocturnal atelier aesthetic. The image feels tactile and heavy, evoking architectural precision in textile form." src="https://lh3.googleusercontent.com/aida-public/AB6AXuDEYpgXbw29O_qwpPzeZr_gqbgMzhLs2bFhV1wI0b3dmPGN8qrEYrs-xjCUi5OriBnqGhhl7J3VNGK13tHSDY3-za5Xjby17c7BE-7dtEaWtIhS4EVrTcvOlwvzZupMlcqdzNYJdHqnZvNAf9oCDPFeVky2E3wtHGa0L0fKUGf407JRaUVaHQVSmiQAFpHwdDpkAZVK70Vezfnn7Dtb_Q-Kmg8CMNxAfLFLsySzGItVP23mLDl0iNXubS1PfxxenwuHgJtGuuin51E_"/>
+<div class="absolute inset-0 bg-gradient-to-t from-background/80 to-transparent"></div>
+</div>
+<div class="p-6">
+<h3 class="text-headline-md font-headline-md text-on-surface mb-2">Obsidian Oxford</h3>
+<p class="text-body-md font-body-md text-on-surface-variant">A dense, architectural weave providing rigid structure and absolute opacity. Engineered for formal severity.</p>
+</div>
+</div>
+<!-- Material Card 2 -->
+<div class="border border-[#4A3F35] bg-surface-container-low group cursor-pointer relative overflow-hidden transition-all duration-500 hover:border-secondary">
+<div class="h-64 overflow-hidden relative border-b border-[#4A3F35]">
+<img alt="Midnight Silk Poplin Fabric" class="w-full h-full object-cover opacity-70 group-hover:opacity-100 transition-opacity duration-500 grayscale group-hover:grayscale-0" data-alt="A detailed macro photograph of midnight silk poplin fabric in a dark, moody environment. The smooth, slightly reflective surface of the silk catches a single, dramatic ray of soft gold light, emphasizing its premium quality. The surrounding area falls into deep shadows, adhering to the nocturnal atelier style of minimal opulence and high contrast." src="https://lh3.googleusercontent.com/aida-public/AB6AXuCPtVaFyWnmvSiypEZJDWNInicMga3SCBBjaJijnYdNcDUVMtosqHm5ns0ey3Q4RXSrcZPlHmN9LRUSOmaASd4SMaL_JHLva9C7DcgKRNVhN75-GKdkr-dYQ97QganzqqSVe532DafIc-vWTNFUsxXAypWTPDO6y4wEZ-nDvEmULdnYJoQsPmXli7P_wH9mZDJm54phi2EHB5mObD_RRRdR_K51aI4itZsBT5JTT-I1399F92yleMsVsID4CUw9Gmjb0A8fyA7rXdp9"/>
+<div class="absolute inset-0 bg-gradient-to-t from-background/80 to-transparent"></div>
+</div>
+<div class="p-6">
+<h3 class="text-headline-md font-headline-md text-on-surface mb-2">Midnight Silk Poplin</h3>
+<p class="text-body-md font-body-md text-on-surface-variant">Lustrous and severe. A high-density poplin that reflects minimal light, creating a deep, uniform darkness.</p>
+</div>
+</div>
+<!-- Material Card 3 -->
+<div class="border border-[#4A3F35] bg-surface-container-low group cursor-pointer relative overflow-hidden transition-all duration-500 hover:border-secondary">
+<div class="h-64 overflow-hidden relative border-b border-[#4A3F35]">
+<img alt="Shadow-Weave Cotton" class="w-full h-full object-cover opacity-70 group-hover:opacity-100 transition-opacity duration-500 grayscale group-hover:grayscale-0" data-alt="A textured close-up of dark shadow-weave cotton fabric. The geometric pattern of the weave is subtly illuminated against a pure black background. The lighting is cinematic, accentuating the brutalist structure of the textile. The muted, deep tones perfectly match the severe, nocturnal atelier aesthetic, highlighting craftsmanship and precision." src="https://lh3.googleusercontent.com/aida-public/AB6AXuBcMouRNhk1w33yCyGa3KKCEhaxKXGOLU5sn1fnvC3YWsjUaPhLm3mtcRmXu3cF-2GkxNZ5Zzt7HCgk9-Iz3jiGFdaQUeq6NF9quVcj8sLTa5IwaOKWpiEEimCKWf1YmvFQBk8F0fsy1e6DmmoCN7MYmRv6aOaUYznrxHb-8CD1-D_Ar4ImaO2WYCUgJe_ibdaFCc1eAhrugdDJI9X6mfRRBR1y8qzRL-C3LQNlBpUxzRfcquXQf2k-c3_Uzja4Ht78-q7ivsxDcYBC"/>
+<div class="absolute inset-0 bg-gradient-to-t from-background/80 to-transparent"></div>
+</div>
+<div class="p-6">
+<h3 class="text-headline-md font-headline-md text-on-surface mb-2">Shadow-Weave Cotton</h3>
+<p class="text-body-md font-body-md text-on-surface-variant">A complex geometric weave that absorbs light. Tactile, heavy, and undeniably structural in its drape.</p>
+</div>
+</div>
+</div>
+</section>
+<!-- Structural Details -->
+<section class="mb-block-gap">
+<div class="flex items-center justify-between border-b border-outline-variant pb-4 mb-12">
+<h2 class="text-headline-md font-headline-md text-on-surface">Structural Details</h2>
+<span class="text-label-caps font-label-caps text-secondary">02</span>
+</div>
+<div class="grid grid-cols-1 lg:grid-cols-2 gap-gutter">
+<div class="border border-[#4A3F35] p-8 lg:p-12 bg-primary-container flex flex-col justify-center">
+<div class="space-y-8">
+<div class="flex items-start space-x-6">
+<span class="text-display-lg font-display-lg text-outline-variant opacity-20">01</span>
+<div>
+<h4 class="text-headline-md font-headline-md text-on-surface mb-2">The Monolith Spread</h4>
+<p class="text-body-md font-body-md text-on-surface-variant">An aggressively wide, heavily fused collar designed to stand sharply independent of a tie. Unyielding geometry.</p>
+</div>
+</div>
+<div class="flex items-start space-x-6 border-t border-outline-variant pt-8">
+<span class="text-display-lg font-display-lg text-outline-variant opacity-20">02</span>
+<div>
+<h4 class="text-headline-md font-headline-md text-on-surface mb-2">Hidden Placket</h4>
+<p class="text-body-md font-body-md text-on-surface-variant">A seamless, monolithic front plane. All buttons are concealed behind a rigid fabric fold for absolute minimalism.</p>
+</div>
+</div>
+<div class="flex items-start space-x-6 border-t border-outline-variant pt-8">
+<span class="text-display-lg font-display-lg text-outline-variant opacity-20">03</span>
+<div>
+<h4 class="text-headline-md font-headline-md text-on-surface mb-2">French Cuffs</h4>
+<p class="text-body-md font-body-md text-on-surface-variant">Extended, structured cuffs demanding the use of austere hardware. A definitive conclusion to the sleeve.</p>
+</div>
+</div>
+</div>
+</div>
+<div class="h-[600px] border border-[#4A3F35]">
+<img alt="Shirt structural details" class="w-full h-full object-cover grayscale opacity-80" data-alt="A moody, high-fashion detail shot of a sharp shirt collar and hidden placket. The image focuses on the architectural precision of the tailoring, with heavy shadows emphasizing the stiff, monolithic structure of the collar. The dark aesthetic, minimal background, and muted tones convey a severe, nocturnal luxury style." src="https://lh3.googleusercontent.com/aida-public/AB6AXuCKuwDL-OjVntuNEj7qQlqqIbIG0sH18PDCOuy7RgfWDIhEFzbICnT3wX4yOFfw0m2DN57nIbOHdRjvDHKA_a68_SfVVyZkVheyOrwrKVl5UZVWRgZMkpzfdC3ZgyE3YX2Pc3oecbB1yRjcu_wbh_hnbdTBTdPuEoyH9pZLSD0ZfvR7GaNOxTA3SELzOuCDY1O7oQEwSgiMxtn4vZ9xm-tFUpU0Cy2WagU_qsnXE8Wkim5EH62CdYhC60pkANuFfGEvdQ87dK4M-peG"/>
+</div>
+</div>
+</section>
+<!-- Geometry of Fit -->
+<section class="mb-block-gap">
+<div class="flex items-center justify-between border-b border-outline-variant pb-4 mb-12">
+<h2 class="text-headline-md font-headline-md text-on-surface">Geometry of Fit</h2>
+<span class="text-label-caps font-label-caps text-secondary">03</span>
+</div>
+<div class="grid grid-cols-1 md:grid-cols-3 gap-x-gutter gap-y-12">
+<div class="border-t border-[#4A3F35] pt-6 relative group">
+<div class="absolute top-0 right-0 w-3 h-3 bg-secondary opacity-0 group-hover:opacity-100 transition-opacity mt-6"></div>
+<h3 class="text-headline-lg-mobile font-headline-lg-mobile text-on-surface mb-4">Anatomical Slim</h3>
+<p class="text-body-md font-body-md text-on-surface-variant mb-6">Engineered to map the torso closely. Darts and precise armholes create a sculpted, restrictive silhouette.</p>
+<button class="text-label-caps font-label-caps text-secondary border-b border-secondary pb-1 hover:text-tertiary-fixed hover:border-tertiary-fixed transition-colors">SELECT FIT</button>
+</div>
+<div class="border-t border-[#4A3F35] pt-6 relative group">
+<div class="absolute top-0 right-0 w-3 h-3 bg-secondary opacity-0 group-hover:opacity-100 transition-opacity mt-6"></div>
+<h3 class="text-headline-lg-mobile font-headline-lg-mobile text-on-surface mb-4">Structured Regular</h3>
+<p class="text-body-md font-body-md text-on-surface-variant mb-6">A balanced, architectural drape. Allows for movement while maintaining sharp, defined lines across the shoulders.</p>
+<button class="text-label-caps font-label-caps text-secondary border-b border-secondary pb-1 hover:text-tertiary-fixed hover:border-tertiary-fixed transition-colors">SELECT FIT</button>
+</div>
+<div class="border-t border-[#4A3F35] pt-6 relative group">
+<div class="absolute top-0 right-0 w-3 h-3 bg-secondary opacity-0 group-hover:opacity-100 transition-opacity mt-6"></div>
+<h3 class="text-headline-lg-mobile font-headline-lg-mobile text-on-surface mb-4">Severe Relaxed</h3>
+<p class="text-body-md font-body-md text-on-surface-variant mb-6">A study in controlled volume. Oversized but rigidly tailored, creating an imposing, monolithic presence.</p>
+<button class="text-label-caps font-label-caps text-secondary border-b border-secondary pb-1 hover:text-tertiary-fixed hover:border-tertiary-fixed transition-colors">SELECT FIT</button>
+</div>
+</div>
+</section>
+<!-- CTA -->
+<section class="border border-[#4A3F35] bg-surface-container-low p-12 md:p-24 flex flex-col items-center text-center mb-block-gap">
+<h2 class="text-headline-lg font-headline-lg text-on-surface mb-6">Commission a Piece</h2>
+<p class="text-body-lg font-body-lg text-on-surface-variant max-w-2xl mb-12">Begin the architectural process. Select your materials and define your geometry.</p>
+<button class="bg-secondary text-on-secondary px-8 py-4 text-ui-button font-ui-button uppercase tracking-widest hover:bg-tertiary-fixed transition-colors duration-300 shadow-[inset_0_0_0_1px_rgba(255,255,255,0.1)]">
+                Initialize Order
+            </button>
+</section>
+</main>
+<!-- Footer -->
+<footer class="relative w-full mt-block-gap bg-surface-container-lowest dark:bg-surface-container-lowest border-t border-outline-variant dark:border-outline-variant">
+<div class="flex flex-col md:flex-row justify-between items-start w-full px-margin-mobile md:px-margin-desktop py-block-gap mx-auto max-w-[1920px]">
+<div class="mb-12 md:mb-0">
+<h2 class="text-headline-lg font-headline-lg text-on-surface mb-4">ATELIER</h2>
+<p class="text-body-lg font-body-lg text-secondary dark:text-secondary-fixed opacity-70">
+                    © 2024 ATELIER. ARCHITECTURAL PRECISION IN TEXTILE.
+                </p>
+</div>
+<div class="flex flex-col space-y-4 md:items-end">
+<a class="text-label-caps font-label-caps text-on-surface-variant dark:text-on-surface-variant hover:text-secondary dark:hover:text-secondary-fixed transition-all duration-500" href="#">Terms</a>
+<a class="text-label-caps font-label-caps text-on-surface-variant dark:text-on-surface-variant hover:text-secondary dark:hover:text-secondary-fixed transition-all duration-500" href="#">Sustainability</a>
+<a class="text-label-caps font-label-caps text-on-surface-variant dark:text-on-surface-variant hover:text-secondary dark:hover:text-secondary-fixed transition-all duration-500" href="#">Press</a>
+<a class="text-label-caps font-label-caps text-on-surface-variant dark:text-on-surface-variant hover:text-secondary dark:hover:text-secondary-fixed transition-all duration-500" href="#">Contact</a>
+</div>
+</div>
+</footer>
+</body></html>

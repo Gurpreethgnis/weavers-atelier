@@ -1,0 +1,76 @@
+---
+alwaysApply: true
+---
+
+# Weavers Design System Rule
+
+Follow the approved Stitch design as the visual source of truth.
+
+Visual mood:
+- Premium
+- Editorial
+- Spacious
+- Modern
+- Masculine but refined
+- Muted luxury
+- Minimal but not boring
+- Loud only through imagery, scale, and controlled accents
+
+The site should feel like:
+- Premium menswear studio
+- Modern atelier
+- Fashion editorial
+- Custom design experience
+- Tailoring house with edge
+
+The site should NOT feel like:
+- Marketplace
+- Cheap tailor
+- Discount catalog
+- Wedding-only store
+- Generic ethnicwear shop
+- Dropshipping brand
+- Template website
+
+Color tokens:
+- Warm Ivory: #F6F1E8
+- Soft Bone: #E8DFD2
+- Sand Taupe: #C8B8A2
+- Stone Grey: #8D8A84
+- Deep Charcoal: #171717
+- Coffee Brown: #4A3628
+- Ink Navy: #0D1726
+- Royal Blue: #1F4FFF
+- Deep Royal Blue: #1638B8
+- Washed Indigo: #2F4F6F
+- Burgundy Ink: #4A1F2B
+- Antique Gold: #BFA46A
+
+Royal blue standard:
+- Use royal blue sparingly.
+- Use it for selected states, hover states, active filters, form focus, denim accents, small labels, and signature details.
+- Do not make the site feel blue overall.
+- Royal blue should feel like a sharp signature, not a theme color sprayed everywhere.
+
+Layout standards:
+- Use generous whitespace.
+- Use large editorial imagery.
+- Avoid dense grids on brand pages.
+- Use strong hierarchy.
+- Use clear CTA areas.
+- Use mobile-first layouts.
+- Use sticky mobile CTA where appropriate.
+- Keep forms clean, premium, and step-based.
+
+Typography standards:
+- Large confident headlines.
+- Clean readable body text.
+- Strong section hierarchy.
+- Avoid tiny luxury text that becomes unreadable.
+- Avoid too many font styles.
+
+Motion standards:
+- Subtle fade/reveal/hover only.
+- Avoid flashy animations.
+- Respect reduced-motion preferences.
+- Never allow motion to slow the shopping/inquiry flow.

@@ -1,0 +1,256 @@
+<!DOCTYPE html>
+
+<html class="dark" lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<link href="https://fonts.googleapis.com/css2?family=Bodoni+Moda:ital,wght@0,400..900;1,400..900&amp;family=Space+Grotesk:wght@300..700&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<script id="tailwind-config">
+      tailwind.config = {
+        darkMode: "class",
+        theme: {
+          extend: {
+            "colors": {
+                    "surface": "#131313",
+                    "primary-container": "#1a1a1a",
+                    "secondary-fixed": "#ffdea5",
+                    "surface-variant": "#353534",
+                    "surface-container-lowest": "#0e0e0e",
+                    "surface-tint": "#c8c6c5",
+                    "secondary": "#e9c176",
+                    "secondary-fixed-dim": "#e9c176",
+                    "on-secondary": "#412d00",
+                    "on-error": "#690005",
+                    "on-secondary-fixed": "#261900",
+                    "tertiary-fixed": "#f9dfb1",
+                    "primary-fixed": "#e5e2e1",
+                    "tertiary-fixed-dim": "#dcc497",
+                    "on-secondary-fixed-variant": "#5d4201",
+                    "surface-container": "#201f1f",
+                    "inverse-surface": "#e5e2e1",
+                    "surface-container-low": "#1c1b1b",
+                    "surface-container-highest": "#353534",
+                    "outline-variant": "#444748",
+                    "on-error-container": "#ffdad6",
+                    "on-primary": "#313030",
+                    "tertiary-container": "#241800",
+                    "on-tertiary-fixed": "#261a00",
+                    "on-tertiary-container": "#958058",
+                    "error": "#ffb4ab",
+                    "on-primary-fixed": "#1c1b1b",
+                    "surface-bright": "#3a3939",
+                    "surface-dim": "#131313",
+                    "inverse-primary": "#5f5e5e",
+                    "primary": "#c8c6c5",
+                    "tertiary": "#dcc497",
+                    "on-surface-variant": "#c4c7c7",
+                    "on-surface": "#e5e2e1",
+                    "on-background": "#e5e2e1",
+                    "on-primary-container": "#848282",
+                    "background": "#131313",
+                    "secondary-container": "#604403",
+                    "on-secondary-container": "#dab36a",
+                    "on-tertiary-fixed-variant": "#554422",
+                    "on-tertiary": "#3d2e0e",
+                    "inverse-on-surface": "#313030",
+                    "on-primary-fixed-variant": "#474746",
+                    "surface-container-high": "#2a2a2a",
+                    "primary-fixed-dim": "#c8c6c5",
+                    "outline": "#8e9192",
+                    "error-container": "#93000a"
+            },
+            "borderRadius": {
+                    "DEFAULT": "0.25rem",
+                    "lg": "0.5rem",
+                    "xl": "0.75rem",
+                    "full": "9999px"
+            },
+            "spacing": {
+                    "unit": "4px",
+                    "margin-desktop": "64px",
+                    "block-gap": "120px",
+                    "margin-mobile": "20px",
+                    "gutter": "24px"
+            },
+            "fontFamily": {
+                    "headline-md": ["Bodoni Moda"],
+                    "body-lg": ["Space Grotesk"],
+                    "headline-lg-mobile": ["Bodoni Moda"],
+                    "body-md": ["Space Grotesk"],
+                    "ui-button": ["Space Grotesk"],
+                    "headline-lg": ["Bodoni Moda"],
+                    "display-lg": ["Bodoni Moda"],
+                    "label-caps": ["Space Grotesk"],
+                    "label-technical": ["Space Grotesk"]
+            },
+            "fontSize": {
+                    "headline-md": ["32px", {"lineHeight": "40px", "fontWeight": "500"}],
+                    "body-lg": ["18px", {"lineHeight": "28px", "letterSpacing": "0.01em", "fontWeight": "400"}],
+                    "headline-lg-mobile": ["32px", {"lineHeight": "38px", "fontWeight": "600"}],
+                    "body-md": ["16px", {"lineHeight": "24px", "fontWeight": "400"}],
+                    "ui-button": ["14px", {"lineHeight": "20px", "letterSpacing": "0.05em", "fontWeight": "500"}],
+                    "headline-lg": ["48px", {"lineHeight": "56px", "letterSpacing": "-0.01em", "fontWeight": "600"}],
+                    "display-lg": ["84px", {"lineHeight": "90px", "letterSpacing": "-0.02em", "fontWeight": "700"}],
+                    "label-caps": ["12px", {"lineHeight": "16px", "letterSpacing": "0.15em", "fontWeight": "600"}],
+                    "label-technical": ["11px", {"lineHeight": "14px", "letterSpacing": "0.1em", "fontWeight": "500"}]
+            }
+          },
+        },
+      }
+    </script>
+<style>
+        .material-symbols-outlined {
+            font-variation-settings: 'FILL' 0, 'wght' 300, 'GRAD' 0, 'opsz' 24;
+            font-size: 20px;
+        }
+        body {
+            background-color: #080808;
+            color: #e5e2e1;
+            cursor: crosshair;
+        }
+        .cinematic-shadow {
+            background: linear-gradient(to bottom, rgba(8,8,8,0) 0%, rgba(8,8,8,0.9) 100%);
+        }
+        .bronze-border {
+            border: 1px solid #4A3F35;
+        }
+    </style>
+</head>
+<body class="bg-surface selection:bg-secondary selection:text-on-secondary">
+<!-- TopNavBar -->
+<header class="fixed top-0 left-0 w-full h-20 bg-surface/90 backdrop-blur-3xl z-[100] border-b border-outline-variant">
+<nav class="flex justify-between items-center max-w-[1440px] mx-auto px-margin-desktop w-full h-full">
+<div class="font-display-lg text-[32px] lg:text-display-lg text-on-surface tracking-tighter uppercase">WEAVERS</div>
+<div class="hidden md:flex gap-8 items-center h-full">
+<a class="font-label-technical text-label-technical text-on-surface-variant hover:text-primary transition-colors uppercase" href="#">Bespoke</a>
+<a class="font-label-technical text-label-technical text-on-tertiary-fixed-variant border-b-2 border-on-tertiary-fixed-variant pb-2 uppercase" href="#">Studio</a>
+<a class="font-label-technical text-label-technical text-on-surface-variant hover:text-primary transition-colors uppercase" href="#">Archive</a>
+<a class="font-label-technical text-label-technical text-on-surface-variant hover:text-primary transition-colors uppercase" href="#">Logistics</a>
+</div>
+<div class="flex items-center gap-6">
+<button class="font-label-technical text-label-technical border border-outline px-4 py-2 hover:bg-on-tertiary-fixed-variant hover:text-on-tertiary transition-none uppercase">FINAL PROTOCOL</button>
+<span class="material-symbols-outlined cursor-pointer" data-icon="menu">menu</span>
+</div>
+</nav>
+</header>
+<main class="pt-20">
+<!-- Hero Section -->
+<section class="relative h-[921px] flex items-end px-margin-desktop pb-20 overflow-hidden">
+<div class="absolute inset-0 z-0">
+<img alt="Editorial Hero" class="w-full h-full object-cover grayscale opacity-60" data-alt="A high-fashion editorial shot of a model wearing an intricately embroidered avant-garde jacket with heavy golden thread work. The scene is set in a dark, moody atelier with deep obsidian shadows and dramatic cinematic lighting. The aesthetic is nocturnal and premium, capturing the intersection of heritage craftsmanship and architectural minimalism. High-contrast photography where the textures of the fabric emerge from the deep darkness of the room." src="https://lh3.googleusercontent.com/aida-public/AB6AXuBGncubVxMokJQK9WMCYEBDwb5DDwZcg57l2nNarV9duTxSLadzxZJf1yPf6-gupm8LIXDHgvvIgSog_gUzIJ2ksN78rOGkTseBbEkDcinuxvrhq-G0AowgsNqI3arjlrTLPmuXH8S78BdaUaLagyTVFBqNOT4b2rgTwaknWk6OCogOfDhQWkcF8FlBPAB0PlAHBoRmJFULA3VD6WQiIRlXQauCmlTBZ4MPpkzFfIE-j4tiWsZDBtaMvOT8KJCDKVerH0Ghcub4v1Nv"/>
+<div class="absolute inset-0 cinematic-shadow"></div>
+</div>
+<div class="relative z-10 max-w-4xl">
+<span class="font-label-caps text-label-caps text-secondary mb-4 block uppercase tracking-[0.3em]">Nocturnal Collection</span>
+<h1 class="font-display-lg text-headline-lg lg:text-display-lg leading-tight mb-8">THE STATEMENT<br/>PROTOCOLS</h1>
+<p class="font-body-lg text-body-lg text-on-surface-variant max-w-xl mb-10">An architectural study in heavy silks, hand-wrought embroidery, and the geometry of the silhouette. Every piece is a singular artifact.</p>
+<button class="bg-secondary text-on-secondary px-10 py-5 font-ui-button text-ui-button uppercase tracking-widest hover:brightness-110 transition-all">Commission a Piece</button>
+</div>
+</section>
+<!-- Editorial Grid -->
+<section class="py-block-gap px-margin-desktop max-w-[1440px] mx-auto">
+<div class="grid grid-cols-1 md:grid-cols-12 gap-gutter">
+<!-- Piece 01 -->
+<div class="md:col-span-7 flex flex-col gap-8 mb-20">
+<div class="bronze-border overflow-hidden">
+<img alt="Piece 01" class="w-full h-[700px] object-cover hover:scale-105 transition-transform duration-1000" data-alt="Detailed close-up of a bespoke tailored jacket with sharp geometric lines and metallic bronze accents. The photography is moody and high-contrast, set against a deep charcoal background that mimics a private high-fashion gallery at midnight. Every stitch and texture is visible under a single harsh spotlight, creating an atmosphere of mysterious, unapologetic premium quality." src="https://lh3.googleusercontent.com/aida-public/AB6AXuDJPIXmG59NSH_o7CNVjvGiJyvCtQBSQbG_Bd180Y9aKXIw0Klij7SG2kGiYBkAQOM_uy-CsnLf3xWom9QkLckHNMsBuycYSbMq8DmNt7mBMLl4chR5QpWan9VLnKSjqne-_As15Z40tjqeeMRMhl0dJQGCxFHQ9DuoaKtGMIVggTxTkvcHiWRd_NlmwCBZJtS_61AqQGxTZZeKQMgt7MYLw1yE6TKR8ktblFirILlHbLSZY3b2MI-mkHvMdzeQLqIsbeEW3UojrF_Y"/>
+</div>
+<div class="flex items-start gap-12">
+<span class="font-headline-md text-headline-md opacity-20 italic">01</span>
+<div>
+<h3 class="font-headline-md text-headline-md text-secondary mb-2">The Monolith Wrap</h3>
+<p class="font-label-technical text-label-technical text-on-surface-variant uppercase tracking-widest">Heavy Silk / Raw Obsidian Wool</p>
+</div>
+</div>
+</div>
+<!-- Piece 02 -->
+<div class="md:col-span-5 md:pt-40 flex flex-col gap-8 mb-20">
+<div class="bronze-border overflow-hidden">
+<img alt="Piece 02" class="w-full h-[500px] object-cover hover:scale-105 transition-transform duration-1000" data-alt="Full body fashion shot of a model in an asymmetric embroidered set featuring brutalist geometry patterns. The lighting is low-key, with the subject emerging from deep shadows into a sliver of warm gold light. The setting is a minimalist architectural space with rigid modularity. The overall mood is serene yet technologically advanced, showcasing the quiet opulence of the garment." src="https://lh3.googleusercontent.com/aida-public/AB6AXuBCPaNzx-v0IN20bRXgxhO9hEoV9R6FundMHButf2VnbklyHqGL8PrkIOA7jcjdmc-_g0XYE_ke7CmAS4-1moNigtyA7edGbAht3soIVViavuoEXwJinHHc-Oah9xjZHoeqAB32Xjr3X3DKEP9wSPK6QEhZH_ALte3YlIJXZ--rBy0Jd_xRpLhRaXiRJmSVDnAC1RR_8PQe71VJGuGNokea_sYBNBXnT2fTqT0mBv60MrJv98BTY0b-MVH7vAPZ15lLUsnaHCrdfLaN"/>
+</div>
+<div class="flex items-start gap-12">
+<span class="font-headline-md text-headline-md opacity-20 italic">02</span>
+<div>
+<h3 class="font-headline-md text-headline-md text-secondary mb-2">Atelier Set V.1</h3>
+<p class="font-label-technical text-label-technical text-on-surface-variant uppercase tracking-widest">Hand-Embroidered / Sculptural Fit</p>
+</div>
+</div>
+</div>
+<!-- Callout Quote -->
+<div class="md:col-span-12 py-32 border-y border-outline-variant flex flex-col items-center text-center">
+<h2 class="font-headline-lg text-headline-lg max-w-4xl italic mb-8">"Craftsmanship is the ultimate form of architecture. We do not dress the body; we frame the soul."</h2>
+<span class="font-label-technical text-label-technical tracking-[0.4em] uppercase">The Atelier Ethos</span>
+</div>
+<!-- Piece 03 -->
+<div class="md:col-span-4 md:pt-20 flex flex-col gap-8 mb-20">
+<div class="bronze-border overflow-hidden">
+<img alt="Piece 03" class="w-full h-[600px] object-cover" data-alt="A cinematic display of high-fashion fabrics being manipulated by hand in a dark workshop. The lighting captures the sheen of muted gold and deep bronze threads against a black velvet backdrop. The mood is mysterious and highly curated, emphasizing the slow, intentional nature of bespoke archive creation. The scene is unapologetically premium and evocative of a midnight sanctuary." src="https://lh3.googleusercontent.com/aida-public/AB6AXuC26UJD0LV1KRtCaZ6KiGN6yKgIqa6Ye2oHLAquwAWJyK-OLXbISmCVHj-RYBldbXC87tmuBljiwM8v8fQ1eu4bIldAQoonfYWkeLx74yKklGcnOYR4EaD2qndOzncpitYpWeh9GE4Lktk6yK8EpP_m7Dskf112iD-MZGPjqpXqOyYqw1xBS-FNlmIz3-Qj6fec-9kyYYxlm4uSvyLuRrEHUVVOjAdcft90iCTEzuvq-GB4g4Cn2ukgJE8IYxFsTYewf4BSSxH6aPqi"/>
+</div>
+<div class="flex items-start gap-12">
+<span class="font-headline-md text-headline-md opacity-20 italic">03</span>
+<div>
+<h3 class="font-headline-md text-headline-md text-secondary mb-2">Gilded Architecture</h3>
+<p class="font-label-technical text-label-technical text-on-surface-variant uppercase tracking-widest">Limited Edition / Gold Inlay</p>
+</div>
+</div>
+</div>
+<!-- Piece 04 -->
+<div class="md:col-span-8 flex flex-col gap-8 mb-20">
+<div class="bronze-border overflow-hidden">
+<img alt="Piece 04" class="w-full h-[800px] object-cover grayscale" data-alt="Wide-angle editorial shot of a custom floor-length occasion piece with dramatic structured shoulders. The model is positioned within a geometric light installation in a brutalist concrete hall. The lighting is high-contrast black and white, creating sharp edges and deep shadows. The visual style is avant-garde and authoritative, representing the intersection of fashion and architecture in the Nocturnal Atelier." src="https://lh3.googleusercontent.com/aida-public/AB6AXuD32IaqJpr6yQoyirdr8_Wqajl2gt2TDaEcDtiNwt9CPPfzbUhADXHf0sM5kA-qklJ4P0e2rSYn1XJ_m9uzItsHne_l894tMdEjf5uY1xnd65ZWV1Glkhi1Us9_8PZ_9qYgT5-5MMQzgvsUgYkSz7UvO1dbKzyQFo_obg4Id5k_0wvE07YNdeacfzYCidXL_2jYfxpR-r4ZrnxOVx7UR7sD0v5YBz9WwISa1UDsw1FTzr3b0OGFusL8d1vtBARP7bLYhRciw3oNpRQO"/>
+</div>
+<div class="flex items-start gap-12">
+<span class="font-headline-md text-headline-md opacity-20 italic">04</span>
+<div>
+<h3 class="font-headline-md text-headline-md text-secondary mb-2">The Sovereign Overcoat</h3>
+<p class="font-label-technical text-label-technical text-on-surface-variant uppercase tracking-widest">Architectural Shell / Midnight Tones</p>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- CTA Section -->
+<section class="bg-surface-container py-32 border-t border-outline-variant">
+<div class="max-w-[1440px] mx-auto px-margin-desktop grid grid-cols-1 lg:grid-cols-2 gap-20 items-center">
+<div>
+<h2 class="font-display-lg text-headline-lg lg:text-display-lg uppercase mb-8 leading-none">Your Private<br/>Archive</h2>
+<p class="font-body-lg text-body-lg text-on-surface-variant mb-12 max-w-lg">Enter a consultative process where your physical identity is translated into architectural form. Limited commission slots available for the current solar cycle.</p>
+<div class="flex flex-col gap-6">
+<div class="border-b border-outline-variant pb-4 group cursor-pointer flex justify-between items-center">
+<span class="font-label-caps text-label-caps uppercase tracking-widest">Initiate Brief</span>
+<span class="material-symbols-outlined group-hover:translate-x-2 transition-transform">arrow_forward</span>
+</div>
+<div class="border-b border-outline-variant pb-4 group cursor-pointer flex justify-between items-center">
+<span class="font-label-caps text-label-caps uppercase tracking-widest">View Fit Protocols</span>
+<span class="material-symbols-outlined group-hover:translate-x-2 transition-transform">arrow_forward</span>
+</div>
+</div>
+</div>
+<div class="bronze-border p-1">
+<img alt="Atelier Detail" class="w-full h-[600px] object-cover grayscale" data-alt="Close-up detail of a tailor's hand drafting a pattern on heavy dark parchment with a bronze pencil. The environment is lit by a single warm desk lamp, casting long dramatic shadows across the workspace. The aesthetic is industrial yet refined, capturing the meticulous precision of the geometry of fit. The atmosphere is that of a secret, nocturnal atelier where masterpieces are conceived." src="https://lh3.googleusercontent.com/aida-public/AB6AXuD-m1t59Q0-TdqJL293XCaciCw9IJSqNmVYxQZgGibe0RovLKPiJQGqLS8aTvlWQYOl-2dkfN9AdPaKSTyg4TFkgihmJWubsNN-PeE0ypHogsGL5EbGyPSNLmbVVCViLroSN2O-NVc4FOcpU1qWDV-KaypjXvcCQHIJ3SnUiWbFNCv0d-_eFO7NZTPhY6ki50T6TsFXdIXo7Wsc05cpK91DH9eLFgpNos4w9gMTOY_3ngO9fwkqrVKDuZcYn_-LgwWkaQ5IapISyj6i"/>
+</div>
+</div>
+</section>
+</main>
+<!-- Footer -->
+<footer class="bg-surface-container-lowest border-t border-outline-variant mt-40">
+<div class="max-w-[1440px] mx-auto px-margin-desktop py-16 flex flex-col md:flex-row justify-between items-end gap-12">
+<div class="w-full md:w-auto">
+<div class="font-display-lg text-[64px] lg:text-display-lg text-primary uppercase opacity-20 leading-none mb-8">WEAVERS</div>
+<p class="font-label-technical text-label-technical text-on-surface-variant uppercase tracking-widest">© 2024 WEAVERS ATELIER. ALL RIGHTS RESERVED. ARCHITECTURAL TAILORING DIVISION.</p>
+</div>
+<div class="flex flex-col gap-4 items-end">
+<div class="flex gap-8">
+<a class="font-label-technical text-label-technical text-on-surface-variant hover:text-on-tertiary-fixed-variant transition-colors uppercase" href="#">Privacy Protocol</a>
+<a class="font-label-technical text-label-technical text-on-surface-variant hover:text-on-tertiary-fixed-variant transition-colors uppercase" href="#">Terms of Service</a>
+</div>
+<div class="flex gap-8">
+<a class="font-label-technical text-label-technical text-on-surface-variant hover:text-on-tertiary-fixed-variant transition-colors uppercase" href="#">Atelier Intelligence</a>
+<a class="font-label-technical text-label-technical text-on-surface-variant hover:text-on-tertiary-fixed-variant transition-colors uppercase" href="#">Global Logistics</a>
+</div>
+</div>
+</div>
+</footer>
+</body></html>

@@ -1,0 +1,36 @@
+---
+alwaysApply: true
+---
+
+# Agent Workflow Standards
+
+For small tasks:
+- Inspect relevant files.
+- Make the change.
+- Run available checks.
+- Summarize.
+
+For medium/large tasks:
+1. Research codebase.
+2. Identify relevant files.
+3. Make a short plan.
+4. Ask if requirements are unclear.
+5. Implement in focused steps.
+6. Run checks.
+7. Review mobile, accessibility, and design fidelity.
+8. Summarize changes and next steps.
+
+Use Plan Mode for larger features or unclear tasks.
+
+Do not:
+- Start rewriting unrelated files.
+- Change design direction without reason.
+- Add dependencies casually.
+- Remove existing functionality unless requested.
+- Continue if requirements conflict; ask or state assumption.
+
+When stuck:
+- Stop.
+- Explain blocker.
+- Propose two options.
+- Do not hallucinate missing APIs or files.

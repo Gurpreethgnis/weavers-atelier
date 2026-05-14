@@ -1,0 +1,290 @@
+{
+  "screenshot": {
+    "name": "projects/11635743968681332715/files/2956bfa9d1fe4693bd079d621b6cd48b",
+    "downloadUrl": "https://lh3.googleusercontent.com/aida/ADBb0ujuBC-u7P16RASzkMvSbg8Hc1DtbMCRpDM67kjlUgV1hXXEhK6xTg7kcd8tsQobPtuLfxwKSB0kGrwiGLaD1urne-p1j2EifxbYjqu5s-_RRoZHvZx2dmPc8NhD5i49xywszSwkHrVFfBZlOLQN2wnda3WATkYN0y2kwcrHUwAkvFbQKHLCI2MDL5wdWcltEWhh0MrgyfLJS6Ud2gPcbsDJe6VLzligbtZn8wvI54C-7D-aKWv35ktO4H8"
+  },
+  "htmlCode": {
+    "name": "projects/11635743968681332715/files/e36beb477c804b9f9a4446dee709d199",
+    "downloadUrl": "https://contribution.usercontent.google.com/download?c=CgthaWRhX2NvZGVmeBJ8Eh1hcHBfY29tcGFuaW9uX2dlbmVyYXRlZF9maWxlcxpbCiVodG1sX2U5NTRjNDFjYjMxYTQ3OTA5ODdmZmJjOTI1MjlhY2NiEgsSBxCgwIKb9BYYAZIBJAoKcHJvamVjdF9pZBIWQhQxMTYzNTc0Mzk2ODY4MTMzMjcxNQ&filename=&opi=89354086",
+    "mimeType": "text/html"
+  },
+  "id": "6dbdf1c33689476699f2f692db1085ad",
+  "generatedBy": "HatterAgent",
+  "width": "2560",
+  "height": "8930",
+  "title": "Weavers Atelier - Instagram Lookbook | Nocturnal Atelier",
+  "prompt": "Replace the brand logo placeholder in the header and footer with the new logo asset {{DATA:IMAGE:IMAGE_118}}. Size it to approximately 32px height. Ensure the logo is colored ivory/gold to match the theme's secondary color and aligned next to the \"WEAVERS ATELIER\" text.",
+  "name": "projects/11635743968681332715/screens/6dbdf1c33689476699f2f692db1085ad",
+  "theme": {
+    "colorMode": "DARK",
+    "font": "BODONI_MODA",
+    "customColor": "#1a1a1a",
+    "headlineFont": "BODONI_MODA",
+    "bodyFont": "SPACE_GROTESK",
+    "labelFont": "SPACE_GROTESK",
+    "namedColors": {
+      "background": "#131313",
+      "on_error_container": "#ffdad6",
+      "on_secondary_fixed_variant": "#5d4201",
+      "on_tertiary_fixed_variant": "#554422",
+      "on_tertiary_container": "#958058",
+      "surface_dim": "#131313",
+      "primary_container": "#1a1a1a",
+      "on_tertiary_fixed": "#261a00",
+      "secondary_fixed_dim": "#e9c176",
+      "surface_variant": "#353534",
+      "primary_fixed_dim": "#c8c6c5",
+      "surface_container_low": "#1c1b1b",
+      "on_surface_variant": "#c4c7c7",
+      "surface_container_high": "#2a2a2a",
+      "secondary_fixed": "#ffdea5",
+      "on_error": "#690005",
+      "surface_tint": "#c8c6c5",
+      "secondary": "#e9c176",
+      "primary_fixed": "#e5e2e1",
+      "on_tertiary": "#3d2e0e",
+      "on_primary_fixed": "#1c1b1b",
+      "outline": "#8e9192",
+      "on_secondary": "#412d00",
+      "tertiary": "#dcc497",
+      "on_primary": "#313030",
+      "on_background": "#e5e2e1",
+      "tertiary_container": "#241800",
+      "surface_container": "#201f1f",
+      "tertiary_fixed_dim": "#dcc497",
+      "inverse_surface": "#e5e2e1",
+      "surface_container_lowest": "#0e0e0e",
+      "error": "#ffb4ab",
+      "on_primary_fixed_variant": "#474746",
+      "on_secondary_fixed": "#261900",
+      "outline_variant": "#444748",
+      "secondary_container": "#604403",
+      "inverse_on_surface": "#313030",
+      "on_primary_container": "#848282",
+      "error_container": "#93000a",
+      "inverse_primary": "#5f5e5e",
+      "tertiary_fixed": "#f9dfb1",
+      "primary": "#c8c6c5",
+      "on_secondary_container": "#dab36a",
+      "on_surface": "#e5e2e1",
+      "surface_bright": "#3a3939",
+      "surface_container_highest": "#353534",
+      "surface": "#131313"
+    },
+    "designMd": "---\nname: Nocturnal Atelier\ncolors:\n  surface: '#131313'\n  surface-dim: '#131313'\n  surface-bright: '#3a3939'\n  surface-container-lowest: '#0e0e0e'\n  surface-container-low: '#1c1b1b'\n  surface-container: '#201f1f'\n  surface-container-high: '#2a2a2a'\n  surface-container-highest: '#353534'\n  on-surface: '#e5e2e1'\n  on-surface-variant: '#c4c7c7'\n  inverse-surface: '#e5e2e1'\n  inverse-on-surface: '#313030'\n  outline: '#8e9192'\n  outline-variant: '#444748'\n  surface-tint: '#c8c6c5'\n  primary: '#c8c6c5'\n  on-primary: '#313030'\n  primary-container: '#1a1a1a'\n  on-primary-container: '#848282'\n  inverse-primary: '#5f5e5e'\n  secondary: '#e9c176'\n  on-secondary: '#412d00'\n  secondary-container: '#604403'\n  on-secondary-container: '#dab36a'\n  tertiary: '#dcc497'\n  on-tertiary: '#3d2e0e'\n  tertiary-container: '#241800'\n  on-tertiary-container: '#958058'\n  error: '#ffb4ab'\n  on-error: '#690005'\n  error-container: '#93000a'\n  on-error-container: '#ffdad6'\n  primary-fixed: '#e5e2e1'\n  primary-fixed-dim: '#c8c6c5'\n  on-primary-fixed: '#1c1b1b'\n  on-primary-fixed-variant: '#474746'\n  secondary-fixed: '#ffdea5'\n  secondary-fixed-dim: '#e9c176'\n  on-secondary-fixed: '#261900'\n  on-secondary-fixed-variant: '#5d4201'\n  tertiary-fixed: '#f9dfb1'\n  tertiary-fixed-dim: '#dcc497'\n  on-tertiary-fixed: '#261a00'\n  on-tertiary-fixed-variant: '#554422'\n  background: '#131313'\n  on-background: '#e5e2e1'\n  surface-variant: '#353534'\ntypography:\n  display-lg:\n    fontFamily: Bodoni Moda\n    fontSize: 84px\n    fontWeight: '700'\n    lineHeight: 90px\n    letterSpacing: -0.02em\n  headline-lg:\n    fontFamily: Bodoni Moda\n    fontSize: 48px\n    fontWeight: '600'\n    lineHeight: 56px\n    letterSpacing: -0.01em\n  headline-lg-mobile:\n    fontFamily: Bodoni Moda\n    fontSize: 32px\n    fontWeight: '600'\n    lineHeight: 38px\n  headline-md:\n    fontFamily: Bodoni Moda\n    fontSize: 32px\n    fontWeight: '500'\n    lineHeight: 40px\n  body-lg:\n    fontFamily: Space Grotesk\n    fontSize: 18px\n    fontWeight: '400'\n    lineHeight: 28px\n    letterSpacing: 0.01em\n  body-md:\n    fontFamily: Space Grotesk\n    fontSize: 16px\n    fontWeight: '400'\n    lineHeight: 24px\n  label-caps:\n    fontFamily: Space Grotesk\n    fontSize: 12px\n    fontWeight: '600'\n    lineHeight: 16px\n    letterSpacing: 0.15em\n  ui-button:\n    fontFamily: Space Grotesk\n    fontSize: 14px\n    fontWeight: '500'\n    lineHeight: 20px\n    letterSpacing: 0.05em\nspacing:\n  unit: 4px\n  gutter: 24px\n  margin-desktop: 64px\n  margin-mobile: 20px\n  block-gap: 120px\n---\n\n## Brand & Style\n\nThis design system embodies the intersection of heritage craftsmanship and avant-garde architectural minimalism. Inspired by the tactile opulence of Sabyasachi and the geometric precision of Jacquemus, the aesthetic serves as a \"Nocturnal Atelier\"—a digital sanctuary that feels like a private, high-fashion gallery at midnight.\n\nThe personality is authoritative, mysterious, and unapologetically premium. The user experience should evoke the feeling of browsing a bespoke archive; it is slow, intentional, and visually arresting. The style utilizes **Brutalist Geometry**—defined by heavy, structural lines and rigid modularity—tempered by **Minimalist Opulence**, where every pixel feels curated. \n\nVisuals are cinematic, relying on high-contrast photography where subjects emerge from deep shadows. A strict rule of **zero text-image overlap** ensures that both the typography and the imagery retain their individual integrity and structural power.\n\n## Colors\n\nThe palette is rooted in the \"Nocturnal\" theme, utilizing varying depths of darkness to create structure without traditional borders.\n\n- **Obsidian (#080808):** The foundational base color for all primary backgrounds, providing an infinite depth that allows imagery to pop.\n- **Deep Charcoal (#1A1A1A):** Used for structural containers, modular blocks, and surface elevations.\n- **Muted Gold (#C5A059):** The primary interactive color. It is used sparingly for call-to-actions, active states, and critical highlights to maintain an air of exclusivity.\n- **Aged Bronze (#8C7851):** A secondary accent used for subtle iconography and borders, providing a sense of weathered luxury.\n- **Near-Black Textures:** Subtle gradients are permitted only if they mimic physical light fall-off on a matte surface.\n\n## Typography\n\nTypography in this design system functions as a structural element. \n\n**Bodoni Moda** is the voice of the atelier—high-contrast, vertical, and elegant. It is reserved for large display moments and section headers. It should never be used for long-form reading or utility text.\n\n**Space Grotesk** provides the technical counterpoint. Its clean, geometric, and slightly \"engineered\" look balances the romanticism of the serif. Use wide letter spacing for labels to enhance the sense of luxury.\n\nAll text must be presented on solid backgrounds. Avoid placing any text directly over photography to maintain the system's \"Strict Modular\" layout requirements.\n\n## Layout & Spacing\n\nThe layout philosophy is **Strictly Modular** and based on a fixed 12-column grid for desktop and a 4-column grid for mobile. \n\n- **The \"Frame\" Concept:** Every page is treated like a framed gallery. Large outer margins (64px+) are mandatory to create a sense of breathing room and exclusivity.\n- **Modular Blocks:** Content is organized into distinct rectangular blocks. Borders between blocks are either 1px solid Bronze (#4A3F35) or created through the juxtaposition of Obsidian and Deep Charcoal surfaces.\n- **Rhythm:** Vertical spacing between major sections is aggressive (120px+), emphasizing the \"slow\" nature of the experience.\n- **Zero Overlap:** Images and text must exist in separate grid cells. No absolute positioning of text over image containers is permitted.\n\n## Elevation & Depth\n\nDepth in this design system is achieved through **Tonal Layering** and **Cinematic Lighting**, rather than shadows.\n\n- **Surface Tiers:** The base is Obsidian (#080808). Interactive cards or floating modules use Deep Charcoal (#1A1A1A).\n- **Physicality:** Instead of ambient shadows, use subtle 1px inner borders in Muted Bronze to define the \"edges\" of elements, mimicking the way light catches the corner of a physical object.\n- **Atmospheric Dimming:** Inactive elements or background modules should have a slight \"dimmed\" opacity (60-80%) to push them back into the shadows, while active or focused elements are rendered at 100% opacity with sharp gold accents.\n- **Glass Effects:** Use sparingly. Only a very heavy, dark backdrop blur (30px+) is permitted for navigation bars to simulate thick, smoked glass.\n\n## Shapes\n\nThe shape language is **Purely Brutalist**. All corners are sharp (0px radius). This reinforces the architectural inspiration and the feeling of a structured atelier.\n\n- **Containers:** Perfect squares and rectangles only. \n- **Buttons:** Sharp-edged boxes.\n- **Dividers:** Hairline strokes (1px) that run edge-to-edge within their grid containers.\n- **Exceptions:** No exceptions. Even circular avatars are discouraged; use square crops for all profile or user-related imagery to maintain the rigid geometric integrity of the system.\n\n## Components\n\n- **Buttons:** High-contrast blocks. Primary buttons are solid Muted Gold with Obsidian text. Secondary buttons are outlined in Bronze with Gold text. All hover states involve a slight \"glow\" effect or a color inversion—no rounded corners.\n- **Cards:** Modular rectangular containers with a 1px Bronze border. The image occupies the top half, and the text (Bodoni Moda for titles, Space Grotesk for meta) occupies a separate bottom section with a Deep Charcoal background.\n- **Inputs:** Underlined only (1px Bronze), rather than boxed. Labels are always `label-caps` positioned above the line.\n- **Navigation:** A minimalist top-bar or a full-screen \"Curated Menu.\" The full-screen menu uses large Bodoni Moda links that change to Gold on hover.\n- **Checkboxes/Radios:** Custom-styled as small, sharp squares. When active, they fill with a solid Gold diamond shape.\n- **The \"Atelier\" List:** A specialized list component for items where the index number (01, 02, etc.) is displayed in large, faint Bodoni Moda to the left of the content.",
+    "colorVariant": "FIDELITY",
+    "overridePrimaryColor": "#1a1a1a",
+    "overrideSecondaryColor": "#c5a059",
+    "overrideTertiaryColor": "#8c7851",
+    "overrideNeutralColor": "#080808",
+    "spacingScale": 2,
+    "typography": {
+      "body-lg": {
+        "fontFamily": "Space Grotesk",
+        "fontSize": "18px",
+        "fontWeight": "400",
+        "lineHeight": "28px",
+        "letterSpacing": "0.01em"
+      },
+      "body-md": {
+        "fontFamily": "Space Grotesk",
+        "fontSize": "16px",
+        "fontWeight": "400",
+        "lineHeight": "24px"
+      },
+      "headline-lg": {
+        "fontFamily": "Bodoni Moda",
+        "fontSize": "48px",
+        "fontWeight": "600",
+        "lineHeight": "56px",
+        "letterSpacing": "-0.01em"
+      },
+      "label-caps": {
+        "fontFamily": "Space Grotesk",
+        "fontSize": "12px",
+        "fontWeight": "600",
+        "lineHeight": "16px",
+        "letterSpacing": "0.15em"
+      },
+      "ui-button": {
+        "fontFamily": "Space Grotesk",
+        "fontSize": "14px",
+        "fontWeight": "500",
+        "lineHeight": "20px",
+        "letterSpacing": "0.05em"
+      },
+      "headline-lg-mobile": {
+        "fontFamily": "Bodoni Moda",
+        "fontSize": "32px",
+        "fontWeight": "600",
+        "lineHeight": "38px"
+      },
+      "headline-md": {
+        "fontFamily": "Bodoni Moda",
+        "fontSize": "32px",
+        "fontWeight": "500",
+        "lineHeight": "40px"
+      },
+      "display-lg": {
+        "fontFamily": "Bodoni Moda",
+        "fontSize": "84px",
+        "fontWeight": "700",
+        "lineHeight": "90px",
+        "letterSpacing": "-0.02em"
+      }
+    },
+    "spacing": {
+      "gutter": "24px",
+      "block-gap": "120px",
+      "margin-desktop": "64px",
+      "margin-mobile": "20px",
+      "unit": "4px"
+    },
+    "headlineFontFamily": "Bodoni Moda",
+    "bodyFontFamily": "Space Grotesk",
+    "labelFontFamily": "Space Grotesk"
+  },
+  "deviceType": "DESKTOP",
+  "screenType": "DESIGN",
+  "screenMetadata": {
+    "agentType": "PRO_AGENT",
+    "status": "COMPLETE"
+  },
+  "designSystem": {
+    "name": "assets/d088b029386b47a290157bd54c299449",
+    "designSystem": {
+      "displayName": "Nocturnal Atelier",
+      "styleGuidelines": "## Brand & Style\n\nThis design system embodies the intersection of heritage craftsmanship and avant-garde architectural minimalism. Inspired by the tactile opulence of Sabyasachi and the geometric precision of Jacquemus, the aesthetic serves as a \"Nocturnal Atelier\"—a digital sanctuary that feels like a private, high-fashion gallery at midnight.\n\nThe personality is authoritative, mysterious, and unapologetically premium. The user experience should evoke the feeling of browsing a bespoke archive; it is slow, intentional, and visually arresting. The style utilizes **Brutalist Geometry**—defined by heavy, structural lines and rigid modularity—tempered by **Minimalist Opulence**, where every pixel feels curated. \n\nVisuals are cinematic, relying on high-contrast photography where subjects emerge from deep shadows. A strict rule of **zero text-image overlap** ensures that both the typography and the imagery retain their individual integrity and structural power.\n\n## Layout & Spacing\n\nThe layout philosophy is **Strictly Modular** and based on a fixed 12-column grid for desktop and a 4-column grid for mobile. \n\n- **The \"Frame\" Concept:** Every page is treated like a framed gallery. Large outer margins (64px+) are mandatory to create a sense of breathing room and exclusivity.\n- **Modular Blocks:** Content is organized into distinct rectangular blocks. Borders between blocks are either 1px solid Bronze (#4A3F35) or created through the juxtaposition of Obsidian and Deep Charcoal surfaces.\n- **Rhythm:** Vertical spacing between major sections is aggressive (120px+), emphasizing the \"slow\" nature of the experience.\n- **Zero Overlap:** Images and text must exist in separate grid cells. No absolute positioning of text over image containers is permitted.\n\n## Elevation & Depth\n\nDepth in this design system is achieved through **Tonal Layering** and **Cinematic Lighting**, rather than shadows.\n\n- **Surface Tiers:** The base is Obsidian (#080808). Interactive cards or floating modules use Deep Charcoal (#1A1A1A).\n- **Physicality:** Instead of ambient shadows, use subtle 1px inner borders in Muted Bronze to define the \"edges\" of elements, mimicking the way light catches the corner of a physical object.\n- **Atmospheric Dimming:** Inactive elements or background modules should have a slight \"dimmed\" opacity (60-80%) to push them back into the shadows, while active or focused elements are rendered at 100% opacity with sharp gold accents.\n- **Glass Effects:** Use sparingly. Only a very heavy, dark backdrop blur (30px+) is permitted for navigation bars to simulate thick, smoked glass.\n\n## Components\n\n- **Buttons:** High-contrast blocks. Primary buttons are solid Muted Gold with Obsidian text. Secondary buttons are outlined in Bronze with Gold text. All hover states involve a slight \"glow\" effect or a color inversion—no rounded corners.\n- **Cards:** Modular rectangular containers with a 1px Bronze border. The image occupies the top half, and the text (Bodoni Moda for titles, Space Grotesk for meta) occupies a separate bottom section with a Deep Charcoal background.\n- **Inputs:** Underlined only (1px Bronze), rather than boxed. Labels are always `label-caps` positioned above the line.\n- **Navigation:** A minimalist top-bar or a full-screen \"Curated Menu.\" The full-screen menu uses large Bodoni Moda links that change to Gold on hover.\n- **Checkboxes/Radios:** Custom-styled as small, sharp squares. When active, they fill with a solid Gold diamond shape.\n- **The \"Atelier\" List:** A specialized list component for items where the index number (01, 02, etc.) is displayed in large, faint Bodoni Moda to the left of the content.",
+      "theme": {
+        "colorMode": "DARK",
+        "font": "BODONI_MODA",
+        "customColor": "#1a1a1a",
+        "headlineFont": "BODONI_MODA",
+        "bodyFont": "SPACE_GROTESK",
+        "labelFont": "SPACE_GROTESK",
+        "namedColors": {
+          "surface_bright": "#3a3939",
+          "surface_container_highest": "#353534",
+          "surface": "#131313",
+          "error_container": "#93000a",
+          "inverse_primary": "#5f5e5e",
+          "primary": "#c8c6c5",
+          "on_secondary_container": "#dab36a",
+          "on_surface": "#e5e2e1",
+          "tertiary_fixed": "#f9dfb1",
+          "error": "#ffb4ab",
+          "on_primary_fixed_variant": "#474746",
+          "on_secondary_fixed": "#261900",
+          "outline_variant": "#444748",
+          "surface_container_lowest": "#0e0e0e",
+          "secondary_container": "#604403",
+          "inverse_on_surface": "#313030",
+          "on_primary_container": "#848282",
+          "on_background": "#e5e2e1",
+          "tertiary_container": "#241800",
+          "on_primary": "#313030",
+          "inverse_surface": "#e5e2e1",
+          "surface_container": "#201f1f",
+          "tertiary_fixed_dim": "#dcc497",
+          "outline": "#8e9192",
+          "on_secondary": "#412d00",
+          "surface_tint": "#c8c6c5",
+          "secondary": "#e9c176",
+          "primary_fixed": "#e5e2e1",
+          "on_tertiary": "#3d2e0e",
+          "on_primary_fixed": "#1c1b1b",
+          "tertiary": "#dcc497",
+          "surface_container_low": "#1c1b1b",
+          "on_surface_variant": "#c4c7c7",
+          "surface_container_high": "#2a2a2a",
+          "secondary_fixed": "#ffdea5",
+          "on_error": "#690005",
+          "primary_fixed_dim": "#c8c6c5",
+          "on_tertiary_fixed": "#261a00",
+          "secondary_fixed_dim": "#e9c176",
+          "surface_variant": "#353534",
+          "on_tertiary_fixed_variant": "#554422",
+          "on_tertiary_container": "#958058",
+          "background": "#131313",
+          "on_error_container": "#ffdad6",
+          "on_secondary_fixed_variant": "#5d4201",
+          "primary_container": "#1a1a1a",
+          "surface_dim": "#131313"
+        },
+        "designMd": "---\nname: Nocturnal Atelier\ncolors:\n  surface: '#131313'\n  surface-dim: '#131313'\n  surface-bright: '#3a3939'\n  surface-container-lowest: '#0e0e0e'\n  surface-container-low: '#1c1b1b'\n  surface-container: '#201f1f'\n  surface-container-high: '#2a2a2a'\n  surface-container-highest: '#353534'\n  on-surface: '#e5e2e1'\n  on-surface-variant: '#c4c7c7'\n  inverse-surface: '#e5e2e1'\n  inverse-on-surface: '#313030'\n  outline: '#8e9192'\n  outline-variant: '#444748'\n  surface-tint: '#c8c6c5'\n  primary: '#c8c6c5'\n  on-primary: '#313030'\n  primary-container: '#1a1a1a'\n  on-primary-container: '#848282'\n  inverse-primary: '#5f5e5e'\n  secondary: '#e9c176'\n  on-secondary: '#412d00'\n  secondary-container: '#604403'\n  on-secondary-container: '#dab36a'\n  tertiary: '#dcc497'\n  on-tertiary: '#3d2e0e'\n  tertiary-container: '#241800'\n  on-tertiary-container: '#958058'\n  error: '#ffb4ab'\n  on-error: '#690005'\n  error-container: '#93000a'\n  on-error-container: '#ffdad6'\n  primary-fixed: '#e5e2e1'\n  primary-fixed-dim: '#c8c6c5'\n  on-primary-fixed: '#1c1b1b'\n  on-primary-fixed-variant: '#474746'\n  secondary-fixed: '#ffdea5'\n  secondary-fixed-dim: '#e9c176'\n  on-secondary-fixed: '#261900'\n  on-secondary-fixed-variant: '#5d4201'\n  tertiary-fixed: '#f9dfb1'\n  tertiary-fixed-dim: '#dcc497'\n  on-tertiary-fixed: '#261a00'\n  on-tertiary-fixed-variant: '#554422'\n  background: '#131313'\n  on-background: '#e5e2e1'\n  surface-variant: '#353534'\ntypography:\n  display-lg:\n    fontFamily: Bodoni Moda\n    fontSize: 84px\n    fontWeight: '700'\n    lineHeight: 90px\n    letterSpacing: -0.02em\n  headline-lg:\n    fontFamily: Bodoni Moda\n    fontSize: 48px\n    fontWeight: '600'\n    lineHeight: 56px\n    letterSpacing: -0.01em\n  headline-lg-mobile:\n    fontFamily: Bodoni Moda\n    fontSize: 32px\n    fontWeight: '600'\n    lineHeight: 38px\n  headline-md:\n    fontFamily: Bodoni Moda\n    fontSize: 32px\n    fontWeight: '500'\n    lineHeight: 40px\n  body-lg:\n    fontFamily: Space Grotesk\n    fontSize: 18px\n    fontWeight: '400'\n    lineHeight: 28px\n    letterSpacing: 0.01em\n  body-md:\n    fontFamily: Space Grotesk\n    fontSize: 16px\n    fontWeight: '400'\n    lineHeight: 24px\n  label-caps:\n    fontFamily: Space Grotesk\n    fontSize: 12px\n    fontWeight: '600'\n    lineHeight: 16px\n    letterSpacing: 0.15em\n  ui-button:\n    fontFamily: Space Grotesk\n    fontSize: 14px\n    fontWeight: '500'\n    lineHeight: 20px\n    letterSpacing: 0.05em\nspacing:\n  unit: 4px\n  gutter: 24px\n  margin-desktop: 64px\n  margin-mobile: 20px\n  block-gap: 120px\n---\n\n## Brand & Style\n\nThis design system embodies the intersection of heritage craftsmanship and avant-garde architectural minimalism. Inspired by the tactile opulence of Sabyasachi and the geometric precision of Jacquemus, the aesthetic serves as a \"Nocturnal Atelier\"—a digital sanctuary that feels like a private, high-fashion gallery at midnight.\n\nThe personality is authoritative, mysterious, and unapologetically premium. The user experience should evoke the feeling of browsing a bespoke archive; it is slow, intentional, and visually arresting. The style utilizes **Brutalist Geometry**—defined by heavy, structural lines and rigid modularity—tempered by **Minimalist Opulence**, where every pixel feels curated. \n\nVisuals are cinematic, relying on high-contrast photography where subjects emerge from deep shadows. A strict rule of **zero text-image overlap** ensures that both the typography and the imagery retain their individual integrity and structural power.\n\n## Colors\n\nThe palette is rooted in the \"Nocturnal\" theme, utilizing varying depths of darkness to create structure without traditional borders.\n\n- **Obsidian (#080808):** The foundational base color for all primary backgrounds, providing an infinite depth that allows imagery to pop.\n- **Deep Charcoal (#1A1A1A):** Used for structural containers, modular blocks, and surface elevations.\n- **Muted Gold (#C5A059):** The primary interactive color. It is used sparingly for call-to-actions, active states, and critical highlights to maintain an air of exclusivity.\n- **Aged Bronze (#8C7851):** A secondary accent used for subtle iconography and borders, providing a sense of weathered luxury.\n- **Near-Black Textures:** Subtle gradients are permitted only if they mimic physical light fall-off on a matte surface.\n\n## Typography\n\nTypography in this design system functions as a structural element. \n\n**Bodoni Moda** is the voice of the atelier—high-contrast, vertical, and elegant. It is reserved for large display moments and section headers. It should never be used for long-form reading or utility text.\n\n**Space Grotesk** provides the technical counterpoint. Its clean, geometric, and slightly \"engineered\" look balances the romanticism of the serif. Use wide letter spacing for labels to enhance the sense of luxury.\n\nAll text must be presented on solid backgrounds. Avoid placing any text directly over photography to maintain the system's \"Strict Modular\" layout requirements.\n\n## Layout & Spacing\n\nThe layout philosophy is **Strictly Modular** and based on a fixed 12-column grid for desktop and a 4-column grid for mobile. \n\n- **The \"Frame\" Concept:** Every page is treated like a framed gallery. Large outer margins (64px+) are mandatory to create a sense of breathing room and exclusivity.\n- **Modular Blocks:** Content is organized into distinct rectangular blocks. Borders between blocks are either 1px solid Bronze (#4A3F35) or created through the juxtaposition of Obsidian and Deep Charcoal surfaces.\n- **Rhythm:** Vertical spacing between major sections is aggressive (120px+), emphasizing the \"slow\" nature of the experience.\n- **Zero Overlap:** Images and text must exist in separate grid cells. No absolute positioning of text over image containers is permitted.\n\n## Elevation & Depth\n\nDepth in this design system is achieved through **Tonal Layering** and **Cinematic Lighting**, rather than shadows.\n\n- **Surface Tiers:** The base is Obsidian (#080808). Interactive cards or floating modules use Deep Charcoal (#1A1A1A).\n- **Physicality:** Instead of ambient shadows, use subtle 1px inner borders in Muted Bronze to define the \"edges\" of elements, mimicking the way light catches the corner of a physical object.\n- **Atmospheric Dimming:** Inactive elements or background modules should have a slight \"dimmed\" opacity (60-80%) to push them back into the shadows, while active or focused elements are rendered at 100% opacity with sharp gold accents.\n- **Glass Effects:** Use sparingly. Only a very heavy, dark backdrop blur (30px+) is permitted for navigation bars to simulate thick, smoked glass.\n\n## Shapes\n\nThe shape language is **Purely Brutalist**. All corners are sharp (0px radius). This reinforces the architectural inspiration and the feeling of a structured atelier.\n\n- **Containers:** Perfect squares and rectangles only. \n- **Buttons:** Sharp-edged boxes.\n- **Dividers:** Hairline strokes (1px) that run edge-to-edge within their grid containers.\n- **Exceptions:** No exceptions. Even circular avatars are discouraged; use square crops for all profile or user-related imagery to maintain the rigid geometric integrity of the system.\n\n## Components\n\n- **Buttons:** High-contrast blocks. Primary buttons are solid Muted Gold with Obsidian text. Secondary buttons are outlined in Bronze with Gold text. All hover states involve a slight \"glow\" effect or a color inversion—no rounded corners.\n- **Cards:** Modular rectangular containers with a 1px Bronze border. The image occupies the top half, and the text (Bodoni Moda for titles, Space Grotesk for meta) occupies a separate bottom section with a Deep Charcoal background.\n- **Inputs:** Underlined only (1px Bronze), rather than boxed. Labels are always `label-caps` positioned above the line.\n- **Navigation:** A minimalist top-bar or a full-screen \"Curated Menu.\" The full-screen menu uses large Bodoni Moda links that change to Gold on hover.\n- **Checkboxes/Radios:** Custom-styled as small, sharp squares. When active, they fill with a solid Gold diamond shape.\n- **The \"Atelier\" List:** A specialized list component for items where the index number (01, 02, etc.) is displayed in large, faint Bodoni Moda to the left of the content.",
+        "colorVariant": "FIDELITY",
+        "overridePrimaryColor": "#1a1a1a",
+        "overrideSecondaryColor": "#c5a059",
+        "overrideTertiaryColor": "#8c7851",
+        "overrideNeutralColor": "#080808",
+        "spacingScale": 2,
+        "typography": {
+          "display-lg": {
+            "fontFamily": "Bodoni Moda",
+            "fontSize": "84px",
+            "fontWeight": "700",
+            "lineHeight": "90px",
+            "letterSpacing": "-0.02em"
+          },
+          "headline-md": {
+            "fontFamily": "Bodoni Moda",
+            "fontSize": "32px",
+            "fontWeight": "500",
+            "lineHeight": "40px"
+          },
+          "headline-lg-mobile": {
+            "fontFamily": "Bodoni Moda",
+            "fontSize": "32px",
+            "fontWeight": "600",
+            "lineHeight": "38px"
+          },
+          "body-lg": {
+            "fontFamily": "Space Grotesk",
+            "fontSize": "18px",
+            "fontWeight": "400",
+            "lineHeight": "28px",
+            "letterSpacing": "0.01em"
+          },
+          "body-md": {
+            "fontFamily": "Space Grotesk",
+            "fontSize": "16px",
+            "fontWeight": "400",
+            "lineHeight": "24px"
+          },
+          "headline-lg": {
+            "fontFamily": "Bodoni Moda",
+            "fontSize": "48px",
+            "fontWeight": "600",
+            "lineHeight": "56px",
+            "letterSpacing": "-0.01em"
+          },
+          "label-caps": {
+            "fontFamily": "Space Grotesk",
+            "fontSize": "12px",
+            "fontWeight": "600",
+            "lineHeight": "16px",
+            "letterSpacing": "0.15em"
+          },
+          "ui-button": {
+            "fontFamily": "Space Grotesk",
+            "fontSize": "14px",
+            "fontWeight": "500",
+            "lineHeight": "20px",
+            "letterSpacing": "0.05em"
+          }
+        },
+        "spacing": {
+          "margin-mobile": "20px",
+          "unit": "4px",
+          "margin-desktop": "64px",
+          "gutter": "24px",
+          "block-gap": "120px"
+        },
+        "headlineFontFamily": "Bodoni Moda",
+        "bodyFontFamily": "Space Grotesk",
+        "labelFontFamily": "Space Grotesk"
+      }
+    },
+    "version": "1"
+  }
+}

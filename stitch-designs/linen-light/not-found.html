@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+
+<html class="light" lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com/css2?family=Bodoni+Moda:ital,wght@0,400..900;1,400..900&amp;family=Space+Grotesk:wght@300..700&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<script id="tailwind-config">
+      tailwind.config = {
+        darkMode: "class",
+        theme: {
+          extend: {
+            "colors": {
+                    "surface-dim": "#dfd9d5",
+                    "primary": "#725a39",
+                    "surface-container": "#f3ece9",
+                    "surface": "#fff8f5",
+                    "on-tertiary-fixed-variant": "#474744",
+                    "on-background": "#1e1b19",
+                    "on-surface-variant": "#4d453c",
+                    "inverse-primary": "#e1c299",
+                    "tertiary-container": "#bab9b4",
+                    "on-secondary": "#ffffff",
+                    "surface-container-lowest": "#ffffff",
+                    "outline-variant": "#d1c5b8",
+                    "on-tertiary-container": "#494a46",
+                    "on-primary-fixed-variant": "#584324",
+                    "secondary-fixed-dim": "#c2caaa",
+                    "on-error": "#ffffff",
+                    "inverse-surface": "#33302e",
+                    "inverse-on-surface": "#f6efec",
+                    "primary-container": "#d2b48c",
+                    "tertiary": "#5e5e5b",
+                    "secondary": "#5a6147",
+                    "surface-container-low": "#f9f2ef",
+                    "on-tertiary": "#ffffff",
+                    "secondary-container": "#dbe3c2",
+                    "secondary-fixed": "#dee6c5",
+                    "on-secondary-fixed": "#171e09",
+                    "surface-container-highest": "#e8e1de",
+                    "on-error-container": "#93000a",
+                    "outline": "#7f766a",
+                    "surface-variant": "#e8e1de",
+                    "on-tertiary-fixed": "#1b1c19",
+                    "on-primary-fixed": "#281801",
+                    "error-container": "#ffdad6",
+                    "surface-tint": "#725a39",
+                    "tertiary-fixed-dim": "#c8c6c2",
+                    "on-surface": "#1e1b19",
+                    "on-primary-container": "#5b4526",
+                    "background": "#fff8f5",
+                    "tertiary-fixed": "#e4e2dd",
+                    "primary-fixed-dim": "#e1c299",
+                    "on-secondary-fixed-variant": "#424a31",
+                    "surface-bright": "#fff8f5",
+                    "surface-container-high": "#eee7e3",
+                    "error": "#ba1a1a",
+                    "on-primary": "#ffffff",
+                    "primary-fixed": "#feddb3",
+                    "on-secondary-container": "#5e664b"
+            },
+            "borderRadius": {
+                    "DEFAULT": "0.25rem",
+                    "lg": "0.5rem",
+                    "xl": "0.75rem",
+                    "full": "9999px"
+            },
+            "spacing": {
+                    "unit": "8px",
+                    "section-gap": "160px",
+                    "margin-desktop": "80px",
+                    "margin-mobile": "24px",
+                    "gutter": "32px",
+                    "container-max": "1440px"
+            },
+            "fontFamily": {
+                    "body-lg": ["Space Grotesk"],
+                    "display-lg": ["Bodoni Moda"],
+                    "headline-sm": ["Bodoni Moda"],
+                    "label-caps": ["Space Grotesk"],
+                    "headline-md": ["Bodoni Moda"],
+                    "display-lg-mobile": ["Bodoni Moda"],
+                    "body-md": ["Space Grotesk"]
+            },
+            "fontSize": {
+                    "body-lg": ["18px", {"lineHeight": "28px", "fontWeight": "400"}],
+                    "display-lg": ["84px", {"lineHeight": "92px", "letterSpacing": "-0.02em", "fontWeight": "600"}],
+                    "headline-sm": ["24px", {"lineHeight": "32px", "fontWeight": "500"}],
+                    "label-caps": ["12px", {"lineHeight": "16px", "letterSpacing": "0.1em", "fontWeight": "600"}],
+                    "headline-md": ["40px", {"lineHeight": "48px", "fontWeight": "500"}],
+                    "display-lg-mobile": ["48px", {"lineHeight": "52px", "letterSpacing": "-0.01em", "fontWeight": "600"}],
+                    "body-md": ["16px", {"lineHeight": "24px", "fontWeight": "400"}]
+            }
+          },
+        },
+      }
+    </script>
+<style>
+        .material-symbols-outlined {
+            font-variation-settings: 'FILL' 0, 'wght' 300, 'GRAD' 0, 'opsz' 24;
+        }
+        body {
+            background-color: #fff8f5;
+        }
+    </style>
+</head>
+<body class="font-body-md text-on-surface selection:bg-primary-container">
+<!-- TopNavBar -->
+<header class="fixed top-0 z-50 w-full bg-surface/80 backdrop-blur-md border-b border-outline-variant/30">
+<nav class="flex justify-between items-center w-full px-margin-mobile md:px-margin-desktop py-6 max-w-container-max mx-auto">
+<div class="flex-1 hidden md:flex gap-gutter items-center">
+<a class="font-label-caps text-label-caps text-on-surface-variant hover:text-primary transition-colors duration-500" href="#">Bespoke</a>
+<a class="font-label-caps text-label-caps text-on-surface-variant hover:text-primary transition-colors duration-500" href="#">Collections</a>
+<a class="font-label-caps text-label-caps text-on-surface-variant hover:text-primary transition-colors duration-500" href="#">Atelier</a>
+<a class="font-label-caps text-label-caps text-on-surface-variant hover:text-primary transition-colors duration-500" href="#">Stories</a>
+</div>
+<div class="flex-none">
+<h1 class="font-display-lg text-headline-sm uppercase tracking-[0.2em] text-on-surface">WEAVERS ATELIER</h1>
+</div>
+<div class="flex-1 flex justify-end items-center gap-6">
+<button class="material-symbols-outlined text-on-surface-variant hover:text-primary transition-colors duration-500" data-icon="shopping_bag">shopping_bag</button>
+<button class="material-symbols-outlined text-on-surface-variant hover:text-primary transition-colors duration-500" data-icon="person">person</button>
+</div>
+</nav>
+</header>
+<main class="min-h-screen pt-[100px] flex flex-col items-center justify-center relative overflow-hidden">
+<div class="max-w-container-max mx-auto px-margin-mobile md:px-margin-desktop w-full grid grid-cols-1 md:grid-cols-12 gap-gutter items-center">
+<!-- Hero Content -->
+<div class="md:col-span-5 flex flex-col order-2 md:order-1 mt-12 md:mt-0">
+<span class="font-label-caps text-label-caps text-primary uppercase mb-4">Error 404</span>
+<h2 class="font-display-lg text-display-lg-mobile md:text-display-lg text-on-surface mb-8 leading-tight">Out of Pattern</h2>
+<p class="font-body-lg text-body-lg text-on-surface-variant mb-12 max-w-md">
+                    The thread you are following has diverged from the weave. This path does not exist in our current collection.
+                </p>
+<div class="flex flex-col gap-4 items-start">
+<a class="group flex items-center gap-4 bg-on-background text-surface px-8 py-4 font-label-caps text-label-caps transition-all duration-300 hover:bg-primary" href="#">
+                        Return to Homepage
+                        <span class="material-symbols-outlined text-[18px] transition-transform group-hover:translate-x-1" data-icon="arrow_forward">arrow_forward</span>
+</a>
+<div class="flex gap-8 mt-4">
+<a class="font-label-caps text-label-caps text-on-surface-variant border-b border-transparent hover:border-primary hover:text-primary transition-all duration-300" href="#">Collections</a>
+<a class="font-label-caps text-label-caps text-on-surface-variant border-b border-transparent hover:border-primary hover:text-primary transition-all duration-300" href="#">Atelier</a>
+</div>
+</div>
+</div>
+<!-- Asymmetrical Image Composition -->
+<div class="md:col-span-7 relative order-1 md:order-2">
+<div class="relative w-full aspect-[4/5] bg-surface-container overflow-hidden">
+<img alt="Lone linen garment" class="w-full h-full object-cover" data-alt="A high-fashion editorial photograph of a single, raw ivory linen garment draped elegantly over a minimalist, sun-drenched wooden chair. The background is a vast, empty gallery space with warm sand-toned walls and sharp, architectural shadows cast by a high Mediterranean sun. The lighting is bright and high-key, emphasizing the coarse texture of the linen fabric and the weightless, serene atmosphere of the minimalist composition." src="https://lh3.googleusercontent.com/aida-public/AB6AXuBrRJ6IfN6BHuEVqe99OJnDVhTiWHxD8IM8bnohpDLsqEpO0D3cgujo2prajQvUzKkBU92BDnTyzH-KaXGVuDY87-nK7bwHHYxzm_Pxf-BJra5cSFSPVnzk7juoZuJbtc7SNSOHDA3gp0crGiVsM73iWIKk1xE8j0f22zBTSmvUn2mD54giT6DoO-3vaCeF-ydK6v_o8Mw2YShpQBFaFnsrAK-B4zmIr2a31hvji1rFqD562Ym5Q4WptQ8H76rgaQsyIoe2ocmFK0DH"/>
+</div>
+<!-- Decorative Elements for "Void" and "Asymmetry" -->
+<div class="absolute -bottom-10 -left-10 hidden md:block w-40 h-40 border border-outline-variant/40 pointer-events-none"></div>
+<div class="absolute top-20 -right-4 hidden md:block w-px h-64 bg-primary/20 pointer-events-none"></div>
+</div>
+</div>
+<!-- Abstract Sun Shadow Element -->
+<div class="absolute top-0 right-0 w-1/3 h-full bg-gradient-to-l from-surface-container-low/30 to-transparent -z-10 pointer-events-none"></div>
+</main>
+<!-- Footer -->
+<footer class="bg-surface-container-highest mt-section-gap">
+<div class="flex flex-col md:flex-row justify-between items-start gap-gutter w-full px-margin-mobile md:px-margin-desktop py-section-gap max-w-container-max mx-auto">
+<div class="flex flex-col gap-8">
+<h3 class="font-display-lg text-headline-md text-on-surface">WEAVERS ATELIER</h3>
+<p class="font-body-md text-body-md text-on-surface-variant max-w-xs uppercase tracking-wider">Handcrafted excellence. Mediterranean soul.</p>
+</div>
+<div class="grid grid-cols-2 md:flex gap-12 md:gap-24">
+<div class="flex flex-col gap-4">
+<span class="font-label-caps text-label-caps text-primary">Discover</span>
+<a class="font-body-md text-body-md text-on-surface-variant hover:text-on-surface transition-opacity opacity-90 hover:opacity-100 duration-300" href="#">Sustainability</a>
+<a class="font-body-md text-body-md text-on-surface-variant hover:text-on-surface transition-opacity opacity-90 hover:opacity-100 duration-300" href="#">Journal</a>
+</div>
+<div class="flex flex-col gap-4">
+<span class="font-label-caps text-label-caps text-primary">Support</span>
+<a class="font-body-md text-body-md text-on-surface-variant hover:text-on-surface transition-opacity opacity-90 hover:opacity-100 duration-300" href="#">Shipping &amp; Returns</a>
+<a class="font-body-md text-body-md text-on-surface-variant hover:text-on-surface transition-opacity opacity-90 hover:opacity-100 duration-300" href="#">Legal</a>
+</div>
+</div>
+</div>
+<div class="w-full px-margin-mobile md:px-margin-desktop py-8 border-t border-outline-variant/20 max-w-container-max mx-auto flex flex-col md:flex-row justify-between items-center gap-4">
+<p class="font-label-caps text-label-caps text-on-surface-variant">© 2024 WEAVERS ATELIER. HANDCRAFTED EXCELLENCE.</p>
+<div class="flex gap-6">
+<a class="material-symbols-outlined text-on-surface-variant hover:text-primary transition-colors duration-500" data-icon="public" href="#">public</a>
+<a class="material-symbols-outlined text-on-surface-variant hover:text-primary transition-colors duration-500" data-icon="mail" href="#">mail</a>
+</div>
+</div>
+</footer>
+</body></html>

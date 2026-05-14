@@ -1,0 +1,53 @@
+---
+alwaysApply: true
+---
+
+# Page Implementation Standards
+
+Every public page must have:
+- Clear page purpose
+- Premium hero/header
+- Primary CTA
+- Secondary CTA where useful
+- Mobile-first responsive layout
+- SEO metadata
+- Semantic headings
+- Relevant trust elements
+- Clear next action
+- Footer navigation
+
+Required primary pages:
+- Home
+- Custom Shirts
+- Trousers
+- Denim
+- Weddingwear
+- Statement Pieces
+- Instagram Looks
+- Fit Guide / Weavers Fit Studio
+- How It Works
+- Book Consultation
+- Delivery
+- Returns & Alterations
+- Contact
+- Track Order
+
+CTA mapping:
+- Home: Start a Custom Order / Book a Styling Consultation
+- Custom Shirts: Customize a Shirt
+- Trousers: Customize Trousers
+- Denim: Design Your Denim
+- Weddingwear: Book Wedding Consultation
+- Statement Pieces: Create a Statement Piece
+- Instagram Looks: Recreate This Look
+- Fit Guide: Start Fit Guide
+- Contact: WhatsApp / Send Inquiry
+
+Page acceptance criteria:
+- Page looks premium on desktop.
+- Page looks polished on mobile.
+- CTAs route somewhere meaningful.
+- No dead links unless intentionally marked.
+- Copy matches Weavers positioning.
+- Page does not over-position the brand as Indian clothing only.
+- Page is not just static decoration; it supports a user action.

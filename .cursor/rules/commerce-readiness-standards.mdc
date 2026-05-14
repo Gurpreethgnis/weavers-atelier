@@ -1,0 +1,40 @@
+---
+alwaysApply: true
+---
+
+# Commerce Readiness Standards
+
+Current flow:
+- Inquiry-first for complex custom work.
+- Consultation-first for weddingwear.
+- Quote/payment-link flow later.
+- Full checkout can come later for simpler custom shirts/trousers.
+
+Do not implement fake checkout unless explicitly requested.
+
+The system should be ready for:
+- Quote creation
+- Payment links
+- Deposits
+- Order status tracking
+- Customer measurement profiles
+- Uploaded references
+- Manual review before production
+- Delivery/tracking updates
+- Alteration support
+
+Need-by date standard:
+- Every custom form should capture needByDate where relevant.
+- Weddingwear must capture eventDate and needByDate.
+- Urgent/event orders should not be automatically promised.
+
+Policy page standard:
+The site must include or be ready for:
+- Terms and Conditions
+- Privacy Policy
+- Delivery Policy
+- Returns and Alterations Policy
+- Contact page
+
+Operational note:
+Even if marketing avoids origin-heavy language, future international commerce may require backend product origin, HS codes, duties/taxes, and shipment metadata.

@@ -1,0 +1,272 @@
+<!DOCTYPE html>
+
+<html class="dark" lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Instagram Lookbook - Recreate a Look</title>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;600&amp;family=Bodoni+Moda:ital,opsz,wght@0,6..96,400;0,6..96,500;0,6..96,600;1,6..96,400;1,6..96,700&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<style>
+        .material-symbols-outlined {
+          font-family: 'Material Symbols Outlined';
+          font-weight: normal;
+          font-style: normal;
+          font-size: 24px;
+          line-height: 1;
+          letter-spacing: normal;
+          text-transform: none;
+          display: inline-block;
+          white-space: nowrap;
+          word-wrap: normal;
+          direction: ltr;
+          -webkit-font-feature-settings: 'liga';
+          -webkit-font-smoothing: antialiased;
+        }
+    </style>
+<script id="tailwind-config">
+  tailwind.config = {
+    darkMode: "class",
+    theme: {
+      extend: {
+        "colors": {
+                "outline-variant": "#444748",
+                "outline": "#8e9192",
+                "on-secondary": "#412d00",
+                "on-primary-fixed-variant": "#474746",
+                "on-error": "#690005",
+                "primary-fixed-dim": "#c8c6c5",
+                "primary": "#c8c6c5",
+                "secondary-fixed": "#ffdea5",
+                "surface-container-highest": "#353534",
+                "inverse-primary": "#5f5e5e",
+                "background": "#131313",
+                "surface-container-low": "#1c1b1b",
+                "error-container": "#93000a",
+                "on-tertiary": "#3d2e0e",
+                "on-primary": "#313030",
+                "surface-container-lowest": "#0e0e0e",
+                "error": "#ffb4ab",
+                "tertiary-container": "#241800",
+                "on-error-container": "#ffdad6",
+                "primary-fixed": "#e5e2e1",
+                "tertiary": "#dcc497",
+                "tertiary-fixed": "#f9dfb1",
+                "surface-container-high": "#2a2a2a",
+                "on-secondary-container": "#dab36a",
+                "tertiary-fixed-dim": "#dcc497",
+                "surface-tint": "#c8c6c5",
+                "on-secondary-fixed-variant": "#5d4201",
+                "secondary-container": "#604403",
+                "on-tertiary-fixed-variant": "#554422",
+                "on-tertiary-container": "#958058",
+                "on-primary-fixed": "#1c1b1b",
+                "on-surface-variant": "#c4c7c7",
+                "on-tertiary-fixed": "#261a00",
+                "surface-variant": "#353534",
+                "inverse-surface": "#e5e2e1",
+                "surface-dim": "#131313",
+                "on-surface": "#e5e2e1",
+                "primary-container": "#1a1a1a",
+                "surface-bright": "#3a3939",
+                "on-secondary-fixed": "#261900",
+                "on-primary-container": "#848282",
+                "surface-container": "#201f1f",
+                "on-background": "#e5e2e1",
+                "surface": "#131313",
+                "secondary-fixed-dim": "#e9c176",
+                "secondary": "#e9c176",
+                "inverse-on-surface": "#313030"
+        },
+        "borderRadius": {
+                "DEFAULT": "0.25rem",
+                "lg": "0.5rem",
+                "xl": "0.75rem",
+                "full": "9999px"
+        },
+        "spacing": {
+                "gutter": "24px",
+                "margin-mobile": "20px",
+                "margin-desktop": "64px",
+                "unit": "4px",
+                "block-gap": "120px"
+        },
+        "fontFamily": {
+                "ui-button": [
+                        "Space Grotesk"
+                ],
+                "label-caps": [
+                        "Space Grotesk"
+                ],
+                "body-md": [
+                        "Space Grotesk"
+                ],
+                "body-lg": [
+                        "Space Grotesk"
+                ],
+                "headline-lg-mobile": [
+                        "Bodoni Moda"
+                ],
+                "headline-md": [
+                        "Bodoni Moda"
+                ],
+                "headline-lg": [
+                        "Bodoni Moda"
+                ],
+                "display-lg": [
+                        "Bodoni Moda"
+                ]
+        },
+        "fontSize": {
+                "ui-button": [
+                        "14px",
+                        {
+                                "lineHeight": "20px",
+                                "letterSpacing": "0.05em",
+                                "fontWeight": "500"
+                        }
+                ],
+                "label-caps": [
+                        "12px",
+                        {
+                                "lineHeight": "16px",
+                                "letterSpacing": "0.15em",
+                                "fontWeight": "600"
+                        }
+                ],
+                "body-md": [
+                        "16px",
+                        {
+                                "lineHeight": "24px",
+                                "fontWeight": "400"
+                        }
+                ],
+                "body-lg": [
+                        "18px",
+                        {
+                                "lineHeight": "28px",
+                                "letterSpacing": "0.01em",
+                                "fontWeight": "400"
+                        }
+                ],
+                "headline-lg-mobile": [
+                        "32px",
+                        {
+                                "lineHeight": "38px",
+                                "fontWeight": "600"
+                        }
+                ],
+                "headline-md": [
+                        "32px",
+                        {
+                                "lineHeight": "40px",
+                                "fontWeight": "500"
+                        }
+                ],
+                "headline-lg": [
+                        "48px",
+                        {
+                                "lineHeight": "56px",
+                                "letterSpacing": "-0.01em",
+                                "fontWeight": "600"
+                        }
+                ],
+                "display-lg": [
+                        "84px",
+                        {
+                                "lineHeight": "90px",
+                                "letterSpacing": "-0.02em",
+                                "fontWeight": "700"
+                        }
+                ]
+        }
+},
+    },
+  }
+</script>
+</head>
+<body class="bg-background text-on-background font-body-md antialiased selection:bg-primary selection:text-on-primary min-h-screen flex flex-col">
+<!-- TopNavBar -->
+<header class="w-full top-0 sticky bg-surface dark:bg-surface border-b border-outline-variant/10 z-50">
+<div class="flex justify-between items-center px-margin-mobile md:px-margin-desktop py-unit max-w-container-max mx-auto relative h-16">
+<a class="font-headline-md text-headline-md tracking-tighter text-on-surface dark:text-inverse-on-surface" href="#"><div class="flex items-center gap-2"><img alt="Weavers Atelier Logo" class="h-8 w-auto text-secondary" src="https://lh3.googleusercontent.com/aida/ADBb0ujqAbXGQege7T4cyEK_hbeRHtKw44RDHqIEhsyCeEPA8BKKo4Tf-Uu_DmdwNvRkINrobsSDw4cFCTlT0zqdxvB548rNVHhBVMCpCpcE_lZzwKwSW0Ns-z1LInPRQDEZBaiDKmOMjKxbZKZKR4AO8W4KXYNd5SRXgYYiTK94AsDYPyJHZmYrjqTd_N8zjbHXEXCrV4-p9mJUZQPeJDLqWMAv-OAXF7EE2bh4uGNb0YNFZpTQdiyxGiVF1A" style="filter: brightness(0) saturate(100%) invert(88%) sepia(21%) font-weight: 32px; saturate(786%) hue-rotate(338deg) brightness(96%) contrast(87%);"/><span>WEAVERS ATELIER</span></div></a>
+<nav class="hidden md:flex gap-8 items-center">
+<a class="text-on-surface-variant dark:text-on-surface-variant hover:text-primary transition-colors duration-300 font-label-caps text-label-caps cursor-pointer" href="#">Shirts</a>
+<a class="text-on-surface-variant dark:text-on-surface-variant hover:text-primary transition-colors duration-300 font-label-caps text-label-caps cursor-pointer" href="#">Trousers</a>
+<a class="text-on-surface-variant dark:text-on-surface-variant hover:text-primary transition-colors duration-300 font-label-caps text-label-caps cursor-pointer" href="#">Denim</a>
+<a class="text-on-surface-variant dark:text-on-surface-variant hover:text-primary transition-colors duration-300 font-label-caps text-label-caps cursor-pointer" href="#">Weddingwear</a>
+<a class="text-on-surface dark:text-inverse-on-surface border-b border-primary pb-1 font-label-caps text-label-caps cursor-pointer hover:text-primary transition-colors duration-300" href="#">Custom Looks</a>
+</nav>
+<div class="flex items-center gap-4">
+<button class="text-primary dark:text-primary-fixed-dim cursor-pointer transition-opacity active:opacity-70 hover:text-primary transition-colors duration-300">
+<span class="material-symbols-outlined" data-icon="shopping_bag">shopping_bag</span>
+</button>
+</div>
+</div>
+</header>
+<main class="flex-grow">
+<!-- Hero Section -->
+<section class="max-w-container-max mx-auto px-margin-mobile md:px-margin-desktop pt-24 pb-16">
+<div class="max-w-3xl">
+<h1 class="font-display-lg-mobile md:font-display-lg text-display-lg-mobile md:text-display-lg text-on-background mb-6">Recreate a Look</h1>
+<p class="font-body-lg text-body-lg text-on-surface-variant">Curated ensembles inspired by the Mediterranean coast. Effortless tailoring, raw linen textures, and architectural silhouettes sourced directly from @itsweavers.</p>
+</div>
+</section>
+<!-- Lookbook Grid - Asymmetrical Layout -->
+<section class="max-w-container-max mx-auto px-margin-mobile md:px-margin-desktop pb-section-gap">
+<div class="grid grid-cols-1 md:grid-cols-12 gap-gutter">
+<!-- Look 1: Large Asymmetric Left -->
+<article class="md:col-span-7 group cursor-pointer mb-16 md:mb-0">
+<div class="relative overflow-hidden mb-6 bg-surface-container-high aspect-[4/5]">
+<img alt="Model wearing linen shirt" class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105" data-alt="A sophisticated male model wearing an unbuttoned, raw white linen shirt, capturing a sun-drenched Mediterranean aesthetic. The lighting is high-key and natural, creating sharp, architectural shadows against a pale, warm sand-colored background. The mood is effortlessly luxurious, calm, and airy, perfectly aligning with a minimalist, high-fashion light-mode design system." src="https://lh3.googleusercontent.com/aida-public/AB6AXuDcA-2CVJIHBqlfrP7hgooYJgTIrIwx7WCfWnrVemGq2rcSUWETtTuXoWTBTPVHm5VxQto-H2HCOYoP_zXj_Wb2XXO7OU0KcaRnsU5ly6cHffvibzhYGdV-Jb2_Bg_yVBXDOaQzk347e_Lfn82WlAgzomQ8RLlQo5u3tBnNypFSbBu0OWEgVUk09qZX4F7RtDC1E-Y8VgmCGFikGNRv5BJdjhq4WkAGtAN1K9PE_O2zXxY8155trfIKPjk--pRy4FhT0tNT7VwGXOtv"/>
+</div>
+<div class="flex flex-col gap-4 pl-4 border-l border-outline-variant/30">
+<div class="flex gap-2">
+<span class="font-label-caps text-label-caps text-on-surface-variant tracking-wider">Shirts</span>
+<span class="font-label-caps text-label-caps text-on-surface-variant tracking-wider">·</span>
+<span class="font-label-caps text-label-caps text-on-surface-variant tracking-wider">Trousers</span>
+</div>
+<h2 class="font-headline-sm text-headline-sm text-on-surface">The Amalfi Coast Linen Edit</h2>
+<p class="font-body-md text-body-md text-on-surface-variant max-w-md">Breathable, unstructured layers designed for peak summer heat while maintaining sharp sartorial lines.</p>
+<button class="self-start mt-2 px-6 py-3 bg-inverse-surface text-inverse-on-surface font-label-caps text-label-caps tracking-widest hover:bg-primary transition-colors duration-300">RECREATE THIS LOOK</button>
+</div>
+</article>
+<!-- Look 2: Offset Right -->
+<article class="md:col-span-4 md:col-start-9 group cursor-pointer mt-0 md:mt-32">
+<div class="relative overflow-hidden mb-6 bg-surface-container-high aspect-[3/4]">
+<img alt="Model in tailored denim" class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105" data-alt="A close-up fashion editorial shot of premium, dark wash denim trousers paired with a minimal ivory knit polo. The composition is slightly asymmetrical, focusing on the texture of the fabric. Soft, diffused warm sunlight highlights the clean lines of the outfit against a minimalist, pale neutral architectural setting. The overall vibe is understated luxury and relaxed elegance." src="https://lh3.googleusercontent.com/aida-public/AB6AXuC_o_mAzW_nVn3CgAvIro5w6Q464Eyky5Ym0cv1D5O18EqAsiqTJWdzXsqxno_IQFjwGltyvJogGWMqGv7R5JS9EhZkp9eyu83cQMzBkgHsztw-pjb7bNCIl6uDEGY8NMaATMHL9AoaA9Ok7rZAEZgnzQZ1sezLxvRgfXzPS82Mk9Uyxwy2IobiMGSJJoLVVn1u4PLEAscAUTkkir9hAB_4L50Jm0bktqTyxj-jk4IAAb4PAqq7AmjVqsETfC3oGucwzb9K-9aX833R"/>
+</div>
+<div class="flex flex-col gap-4 pl-4 border-l border-outline-variant/30">
+<div class="flex gap-2">
+<span class="font-label-caps text-label-caps text-on-surface-variant tracking-wider">Denim</span>
+<span class="font-label-caps text-label-caps text-on-surface-variant tracking-wider">·</span>
+<span class="font-label-caps text-label-caps text-on-surface-variant tracking-wider">Knitwear</span>
+</div>
+<h2 class="font-headline-sm text-headline-sm text-on-surface">Elevated Indigo</h2>
+<button class="self-start mt-2 px-6 py-3 bg-transparent border border-inverse-surface text-inverse-surface font-label-caps text-label-caps tracking-widest hover:bg-surface-variant transition-colors duration-300">RECREATE THIS LOOK</button>
+</div>
+</article>
+</div>
+</section>
+</main>
+<!-- Footer -->
+<footer class="w-full bg-surface-container-low dark:bg-surface-container-lowest mt-section-gap">
+<div class="grid grid-cols-1 md:grid-cols-2 gap-gutter px-margin-mobile md:px-margin-desktop py-20 max-w-container-max mx-auto">
+<div class="flex flex-col justify-between h-full min-h-[200px]">
+<div class="font-headline-sm text-headline-sm text-on-surface dark:text-inverse-on-surface"><div class="flex items-center gap-2"><img alt="Weavers Atelier Logo" class="h-8 w-auto text-secondary" src="https://lh3.googleusercontent.com/aida/ADBb0ujqAbXGQege7T4cyEK_hbeRHtKw44RDHqIEhsyCeEPA8BKKo4Tf-Uu_DmdwNvRkINrobsSDw4cFCTlT0zqdxvB548rNVHhBVMCpCpcE_lZzwKwSW0Ns-z1LInPRQDEZBaiDKmOMjKxbZKZKR4AO8W4KXYNd5SRXgYYiTK94AsDYPyJHZmYrjqTd_N8zjbHXEXCrV4-p9mJUZQPeJDLqWMAv-OAXF7EE2bh4uGNb0YNFZpTQdiyxGiVF1A" style="filter: brightness(0) saturate(100%) invert(88%) sepia(21%) saturate(786%) hue-rotate(338deg) brightness(96%) contrast(87%);"/><span>WEAVERS ATELIER</span></div></div>
+<div class="font-body-md text-body-md text-secondary dark:text-secondary-fixed mt-auto pt-8">© 2024 WEAVERS ATELIER. ARCHITECTURAL SIMPLICITY.</div>
+</div>
+<div class="grid grid-cols-2 gap-8 md:justify-items-end">
+<nav class="flex flex-col gap-4">
+<a class="font-label-caps text-label-caps text-on-surface-variant hover:text-primary transition-colors duration-200" href="#">Brand Philosophy</a>
+<a class="font-label-caps text-label-caps text-on-surface-variant hover:text-primary transition-colors duration-200" href="#">Sustainability</a>
+<a class="font-label-caps text-label-caps text-on-surface-variant hover:text-primary transition-colors duration-200" href="#">Shipping &amp; Returns</a>
+</nav>
+<nav class="flex flex-col gap-4">
+<a class="font-label-caps text-label-caps text-on-surface-variant hover:text-primary transition-colors duration-200" href="#">Contact</a>
+<a class="font-label-caps text-label-caps text-on-surface-variant hover:text-primary transition-colors duration-200" href="#">Privacy Policy</a>
+</nav>
+</div>
+</div>
+</footer>
+</body></html>

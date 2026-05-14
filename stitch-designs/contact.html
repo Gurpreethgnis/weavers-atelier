@@ -1,0 +1,291 @@
+<!DOCTYPE html>
+
+<html class="dark" lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com/css2?family=Bodoni+Moda:ital,wght@0,400..900;1,400..900&amp;family=Space+Grotesk:wght@300..700&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<script id="tailwind-config">
+        tailwind.config = {
+          darkMode: "class",
+          theme: {
+            extend: {
+              "colors": {
+                      "surface": "#131313",
+                      "primary-container": "#1a1a1a",
+                      "secondary-fixed": "#ffdea5",
+                      "surface-variant": "#353534",
+                      "surface-container-lowest": "#0e0e0e",
+                      "surface-tint": "#c8c6c5",
+                      "secondary": "#e9c176",
+                      "secondary-fixed-dim": "#e9c176",
+                      "on-secondary": "#412d00",
+                      "on-error": "#690005",
+                      "on-secondary-fixed": "#261900",
+                      "tertiary-fixed": "#f9dfb1",
+                      "primary-fixed": "#e5e2e1",
+                      "tertiary-fixed-dim": "#dcc497",
+                      "on-secondary-fixed-variant": "#5d4201",
+                      "surface-container": "#201f1f",
+                      "inverse-surface": "#e5e2e1",
+                      "surface-container-low": "#1c1b1b",
+                      "surface-container-highest": "#353534",
+                      "outline-variant": "#444748",
+                      "on-error-container": "#ffdad6",
+                      "on-primary": "#313030",
+                      "tertiary-container": "#241800",
+                      "on-tertiary-fixed": "#261a00",
+                      "on-tertiary-container": "#958058",
+                      "error": "#ffb4ab",
+                      "on-primary-fixed": "#1c1b1b",
+                      "surface-bright": "#3a3939",
+                      "surface-dim": "#131313",
+                      "inverse-primary": "#5f5e5e",
+                      "primary": "#c8c6c5",
+                      "tertiary": "#dcc497",
+                      "on-surface-variant": "#c4c7c7",
+                      "on-surface": "#e5e2e1",
+                      "on-background": "#e5e2e1",
+                      "background": "#131313",
+                      "secondary-container": "#604403",
+                      "on-secondary-container": "#dab36a",
+                      "on-tertiary-fixed-variant": "#554422",
+                      "on-tertiary": "#3d2e0e",
+                      "inverse-on-surface": "#313030",
+                      "on-primary-fixed-variant": "#474746",
+                      "surface-container-high": "#2a2a2a",
+                      "primary-fixed-dim": "#c8c6c5",
+                      "outline": "#8e9192",
+                      "error-container": "#93000a"
+              },
+              "borderRadius": {
+                      "DEFAULT": "0.25rem",
+                      "lg": "0.5rem",
+                      "xl": "0.75rem",
+                      "full": "9999px"
+              },
+              "spacing": {
+                      "unit": "4px",
+                      "margin-desktop": "64px",
+                      "block-gap": "120px",
+                      "margin-mobile": "20px",
+                      "gutter": "24px"
+              },
+              "fontFamily": {
+                      "headline-md": ["Bodoni Moda"],
+                      "body-lg": ["Space Grotesk"],
+                      "headline-lg-mobile": ["Bodoni Moda"],
+                      "body-md": ["Space Grotesk"],
+                      "ui-button": ["Space Grotesk"],
+                      "headline-lg": ["Bodoni Moda"],
+                      "display-lg": ["Bodoni Moda"],
+                      "label-caps": ["Space Grotesk"],
+                      "label-technical": ["Space Grotesk"]
+              },
+              "fontSize": {
+                      "headline-md": ["32px", {"lineHeight": "40px", "fontWeight": "500"}],
+                      "body-lg": ["18px", {"lineHeight": "28px", "letterSpacing": "0.01em", "fontWeight": "400"}],
+                      "headline-lg-mobile": ["32px", {"lineHeight": "38px", "fontWeight": "600"}],
+                      "body-md": ["16px", {"lineHeight": "24px", "fontWeight": "400"}],
+                      "ui-button": ["14px", {"lineHeight": "20px", "letterSpacing": "0.05em", "fontWeight": "500"}],
+                      "headline-lg": ["48px", {"lineHeight": "56px", "letterSpacing": "-0.01em", "fontWeight": "600"}],
+                      "display-lg": ["84px", {"lineHeight": "90px", "letterSpacing": "-0.02em", "fontWeight": "700"}],
+                      "label-caps": ["12px", {"lineHeight": "16px", "letterSpacing": "0.15em", "fontWeight": "600"}],
+                      "label-technical": ["11px", {"lineHeight": "16px", "letterSpacing": "0.1em", "fontWeight": "500"}]
+              }
+            },
+          },
+        }
+    </script>
+<style>
+        body {
+            background-color: #131313;
+            color: #e5e2e1;
+            font-family: 'Space Grotesk', sans-serif;
+            cursor: crosshair;
+        }
+        .material-symbols-outlined {
+            font-variation-settings: 'FILL' 0, 'wght' 300, 'GRAD' 0, 'opsz' 24;
+        }
+        .bronze-border {
+            border-color: #4A3F35;
+        }
+        .glass-nav {
+            backdrop-filter: blur(30px);
+            background: rgba(19, 19, 19, 0.8);
+        }
+    </style>
+</head>
+<body class="bg-surface selection:bg-secondary selection:text-on-secondary">
+<nav class="fixed top-0 left-0 w-full h-20 z-50 glass-nav border-b border-outline-variant">
+<div class="flex justify-between items-center max-w-[1440px] mx-auto px-margin-desktop w-full h-full">
+<div class="font-display-lg text-[24px] lg:text-display-lg text-on-surface tracking-tighter uppercase leading-none">
+                WEAVERS
+            </div>
+<div class="hidden md:flex gap-8 items-center h-full">
+<a class="font-label-technical text-label-technical text-on-surface-variant hover:text-primary transition-colors uppercase" href="#">Bespoke</a>
+<a class="font-label-technical text-label-technical text-on-surface-variant hover:text-primary transition-colors uppercase" href="#">Studio</a>
+<a class="font-label-technical text-label-technical text-on-surface-variant hover:text-primary transition-colors uppercase" href="#">Archive</a>
+<a class="font-label-technical text-label-technical text-on-surface-variant hover:text-primary transition-colors uppercase" href="#">Logistics</a>
+</div>
+<div class="flex items-center gap-6">
+<button class="font-label-technical text-label-technical text-on-tertiary-fixed-variant border-b-2 border-on-tertiary-fixed-variant pb-2 uppercase cursor-crosshair">FINAL PROTOCOL</button>
+<span class="material-symbols-outlined text-on-surface cursor-pointer" data-icon="menu">menu</span>
+</div>
+</div>
+</nav>
+<main class="pt-40 pb-block-gap">
+<section class="max-w-[1440px] mx-auto px-margin-desktop">
+<div class="grid grid-cols-12 gap-gutter">
+<div class="col-span-12 lg:col-span-7 mb-20 lg:mb-0">
+<header class="mb-24">
+<span class="font-label-caps text-label-caps text-secondary mb-4 block">COMMUNICATION CHANNELS</span>
+<h1 class="font-display-lg text-display-lg leading-tight uppercase mb-8">Establish <br/> Connection</h1>
+<p class="font-body-lg text-body-lg text-on-surface-variant max-w-xl">
+                            Our atelier operates with the precision of architectural tailoring. Every inquiry is handled with intentionality and discretion.
+                        </p>
+</header>
+<div class="grid grid-cols-1 md:grid-cols-2 gap-8 mb-24">
+<div class="border bronze-border p-8 bg-surface-container-low flex flex-col justify-between aspect-square group">
+<div>
+<span class="material-symbols-outlined text-secondary text-4xl mb-6" data-icon="forum">forum</span>
+<h3 class="font-headline-md text-headline-md mb-2">Live Consultation</h3>
+<p class="font-body-md text-body-md text-on-surface-variant mb-4">Direct secure link for real-time fabric selection and bespoke inquiries.</p>
+</div>
+<a class="inline-flex items-center gap-3 bg-secondary text-on-secondary py-4 px-6 font-ui-button text-ui-button uppercase font-bold tracking-widest hover:brightness-110 transition-all" href="https://wa.me/weavers">
+                                Launch WhatsApp
+                                <span class="material-symbols-outlined" data-icon="arrow_outward">arrow_outward</span>
+</a>
+</div>
+<div class="border bronze-border p-8 bg-surface-container-low flex flex-col justify-between aspect-square">
+<div>
+<span class="material-symbols-outlined text-secondary text-4xl mb-6" data-icon="schedule">schedule</span>
+<h3 class="font-headline-md text-headline-md mb-2">Response Protocol</h3>
+<p class="font-body-md text-body-md text-on-surface-variant">Immediate response for active clients. New inquiries processed within <span class="text-secondary">24-48 solar hours</span>.</p>
+</div>
+<div class="flex items-center gap-4">
+<span class="w-2 h-2 rounded-full bg-secondary"></span>
+<span class="font-label-caps text-label-caps text-on-surface-variant">ATELIER ACTIVE NOW</span>
+</div>
+</div>
+</div>
+<div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+<div>
+<span class="font-label-caps text-label-caps text-secondary mb-4 block">PHYSICAL BASE</span>
+<div class="font-headline-md text-headline-md mb-2">Aix-en-Provence</div>
+<address class="not-italic font-body-md text-body-md text-on-surface-variant leading-relaxed">
+                                42 Cours Mirabeau<br/>
+                                13100 Aix-en-Provence, France<br/>
+                                By Appointment Only
+                            </address>
+</div>
+<div>
+<span class="font-label-caps text-label-caps text-secondary mb-4 block">DIRECT LINES</span>
+<div class="space-y-2">
+<a class="block font-headline-md text-headline-md hover:text-secondary transition-colors" href="tel:+33400000000">+33 4 00 00 00 00</a>
+<a class="block font-body-lg text-body-lg text-on-surface-variant hover:text-secondary transition-colors" href="mailto:ops@weavers.atelier">ops@weavers.atelier</a>
+</div>
+</div>
+</div>
+</div>
+<div class="col-span-12 lg:col-span-5 border bronze-border bg-surface-container-highest p-12">
+<span class="font-label-caps text-label-caps text-secondary mb-8 block">FORMAL INQUIRY</span>
+<form class="space-y-12">
+<div class="space-y-1">
+<label class="font-label-caps text-label-caps text-on-surface-variant uppercase">Full Identity</label>
+<input class="w-full bg-transparent border-0 border-b border-outline-variant py-4 px-0 font-body-lg text-body-lg focus:ring-0 focus:border-secondary transition-colors placeholder:opacity-20" placeholder="GABRIEL VINCENNES" type="text"/>
+</div>
+<div class="space-y-1">
+<label class="font-label-caps text-label-caps text-on-surface-variant uppercase">Digital Address</label>
+<input class="w-full bg-transparent border-0 border-b border-outline-variant py-4 px-0 font-body-lg text-body-lg focus:ring-0 focus:border-secondary transition-colors placeholder:opacity-20" placeholder="ARCHIVE@PROTOCOL.COM" type="email"/>
+</div>
+<div class="space-y-1">
+<label class="font-label-caps text-label-caps text-on-surface-variant uppercase">Objective</label>
+<select class="w-full bg-transparent border-0 border-b border-outline-variant py-4 px-0 font-body-lg text-body-lg focus:ring-0 focus:border-secondary transition-colors appearance-none">
+<option class="bg-surface">BESPOKE TAILORING</option>
+<option class="bg-surface">STUDIO COLLABORATION</option>
+<option class="bg-surface">ARCHIVE ACCESS</option>
+<option class="bg-surface">LOGISTICS INQUIRY</option>
+</select>
+</div>
+<div class="space-y-1">
+<label class="font-label-caps text-label-caps text-on-surface-variant uppercase">Project Brief</label>
+<textarea class="w-full bg-transparent border-0 border-b border-outline-variant py-4 px-0 font-body-lg text-body-lg focus:ring-0 focus:border-secondary transition-colors placeholder:opacity-20 resize-none" placeholder="DESCRIBE THE GEOMETRY OF YOUR REQUIREMENTS..." rows="4"></textarea>
+</div>
+<div class="flex items-center gap-4 py-4">
+<label class="flex items-center gap-3 cursor-pointer group">
+<div class="w-5 h-5 border bronze-border flex items-center justify-center bg-surface">
+<div class="w-2.5 h-2.5 bg-secondary rotate-45 opacity-0 group-hover:opacity-10 transition-opacity"></div>
+</div>
+<span class="font-label-caps text-label-caps text-on-surface-variant">I CONSENT TO THE PRIVACY PROTOCOL</span>
+</label>
+</div>
+<button class="w-full border bronze-border py-6 px-8 font-ui-button text-ui-button uppercase font-bold tracking-[0.2em] text-secondary hover:bg-secondary hover:text-on-secondary transition-all flex justify-between items-center group" type="submit">
+                            TRANSMIT INQUIRY
+                            <span class="material-symbols-outlined group-hover:translate-x-1 transition-transform" data-icon="chevron_right">chevron_right</span>
+</button>
+</form>
+</div>
+</div>
+</section>
+<section class="max-w-[1440px] mx-auto px-margin-desktop mt-block-gap">
+<div class="grid grid-cols-12 border bronze-border overflow-hidden">
+<div class="col-span-12 lg:col-span-8 h-[600px] bg-surface-container relative">
+<img alt="Atelier View" class="w-full h-full object-cover grayscale opacity-40 mix-blend-luminosity" data-alt="A moody, cinematic wide shot of a high-end architectural tailoring atelier in Aix-en-Provence at dusk. The interior features deep obsidian surfaces and warm muted bronze accents, with shafts of sharp moonlight illuminating a single bespoke mannequin. The environment is minimalist and opulent, reflecting a nocturnal atelier aesthetic with rich textures and dramatic chiaroscuro lighting." src="https://lh3.googleusercontent.com/aida-public/AB6AXuA0cQOejH1jN2kcfhTl43NgIjG2hmRhTDfhd1KgIMb0AEswYUzvf6V86vimEjQvOmi1cfHOB7eFDMMUcJJGS68SmSlQ13KQyfotTpqJuWyBvaigeOFu7jQ886K748HmqOgIWKvoMipj88NNAtPM8xKz2nCg9t5S-TVZZ-xiq1BcMLD0dJLcNOfDgb59J-YTfZIDX6QTPRDizzlceon3KFGegIBpZeJyDXOEc-3Q1P5L_qnRbmv6QxYmBblnCqZIKzXZmx9sO09F1F_b"/>
+<div class="absolute inset-0 flex items-center justify-center">
+<div class="bg-surface/80 backdrop-blur-xl border bronze-border p-10 max-w-sm text-center">
+<span class="material-symbols-outlined text-secondary text-5xl mb-4" data-icon="location_on">location_on</span>
+<h4 class="font-headline-md text-headline-md mb-2">L'Atelier Sud</h4>
+<p class="font-body-md text-body-md text-on-surface-variant">Experience the tactile reality of our textiles. Access is strictly granted via prior digital clearance.</p>
+</div>
+</div>
+</div>
+<div class="col-span-12 lg:col-span-4 bg-surface-container-highest p-12 flex flex-col justify-center">
+<div class="space-y-12">
+<div class="flex gap-6 items-start">
+<span class="font-headline-md text-headline-md text-secondary/30 italic">01</span>
+<div>
+<h5 class="font-label-caps text-label-caps text-on-surface mb-2">INITIAL CONTACT</h5>
+<p class="font-body-md text-body-md text-on-surface-variant">Transmission of digital inquiry or WhatsApp direct connect.</p>
+</div>
+</div>
+<div class="flex gap-6 items-start">
+<span class="font-headline-md text-headline-md text-secondary/30 italic">02</span>
+<div>
+<h5 class="font-label-caps text-label-caps text-on-surface mb-2">GEOMETRIC ANALYSIS</h5>
+<p class="font-body-md text-body-md text-on-surface-variant">Technical review of requirements by our lead artisans.</p>
+</div>
+</div>
+<div class="flex gap-6 items-start">
+<span class="font-headline-md text-headline-md text-secondary/30 italic">03</span>
+<div>
+<h5 class="font-label-caps text-label-caps text-on-surface mb-2">ATELIER CLEARANCE</h5>
+<p class="font-body-md text-body-md text-on-surface-variant">Scheduled physical appointment at our Aix-en-Provence studio.</p>
+</div>
+</div>
+</div>
+</div>
+</div>
+</section>
+</main>
+<footer class="border-t border-outline-variant mt-40">
+<div class="max-w-[1440px] mx-auto px-margin-desktop py-16 flex flex-col md:flex-row justify-between items-end gap-12">
+<div class="w-full md:w-auto text-left">
+<div class="font-display-lg text-primary uppercase opacity-20 text-[60px] lg:text-display-lg leading-none mb-8">
+                    WEAVERS
+                </div>
+<p class="font-label-technical text-label-technical text-on-surface-variant max-w-xs">
+                    © 2024 WEAVERS ATELIER. ALL RIGHTS RESERVED. ARCHITECTURAL TAILORING DIVISION.
+                </p>
+</div>
+<div class="flex flex-wrap gap-8 justify-end">
+<a class="font-label-technical text-label-technical text-on-surface-variant hover:text-primary transition-colors" href="#">Privacy Protocol</a>
+<a class="font-label-technical text-label-technical text-on-surface-variant hover:text-primary transition-colors" href="#">Terms of Service</a>
+<a class="font-label-technical text-label-technical text-on-surface-variant hover:text-primary transition-colors" href="#">Atelier Intelligence</a>
+<a class="font-label-technical text-label-technical text-on-surface-variant hover:text-primary transition-colors" href="#">Global Logistics</a>
+</div>
+</div>
+</footer>
+</body></html>

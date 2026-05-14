@@ -1,0 +1,287 @@
+<!DOCTYPE html>
+
+<html class="dark" lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Weddingwear - Weavers Atelier</title>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com/css2?family=Bodoni+Moda:opsz,wght@6..96,400..900&amp;family=Space+Grotesk:wght@300..700&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<script id="tailwind-config">
+      tailwind.config = {
+        darkMode: "class",
+        theme: {
+          extend: {
+            "colors": {
+                    "surface-container-low": "#1c1b1b",
+                    "on-primary-fixed": "#1c1b1b",
+                    "on-secondary-fixed-variant": "#5d4201",
+                    "surface-container-lowest": "#0e0e0e",
+                    "on-primary": "#313030",
+                    "primary-container": "#1a1a1a",
+                    "secondary-fixed-dim": "#e9c176",
+                    "on-primary-container": "#848282",
+                    "primary-fixed-dim": "#c8c6c5",
+                    "on-surface": "#e5e2e1",
+                    "on-tertiary-fixed": "#261a00",
+                    "on-tertiary-fixed-variant": "#554422",
+                    "inverse-surface": "#e5e2e1",
+                    "secondary-container": "#604403",
+                    "background": "#131313",
+                    "primary": "#c8c6c5",
+                    "surface-container-high": "#2a2a2a",
+                    "surface-variant": "#353534",
+                    "error": "#ffb4ab",
+                    "on-secondary-fixed": "#261900",
+                    "inverse-on-surface": "#313030",
+                    "tertiary-container": "#241800",
+                    "surface": "#131313",
+                    "surface-dim": "#131313",
+                    "inverse-primary": "#5f5e5e",
+                    "surface-tint": "#c8c6c5",
+                    "primary-fixed": "#e5e2e1",
+                    "on-error-container": "#ffdad6",
+                    "outline-variant": "#444748",
+                    "tertiary": "#dcc497",
+                    "on-surface-variant": "#c4c7c7",
+                    "on-secondary": "#412d00",
+                    "tertiary-fixed": "#f9dfb1",
+                    "surface-container-highest": "#353534",
+                    "error-container": "#93000a",
+                    "tertiary-fixed-dim": "#dcc497",
+                    "secondary-fixed": "#ffdea5",
+                    "on-tertiary": "#3d2e0e",
+                    "on-error": "#690005",
+                    "on-primary-fixed-variant": "#474746",
+                    "secondary": "#e9c176",
+                    "on-background": "#e5e2e1",
+                    "surface-bright": "#3a3939",
+                    "on-secondary-container": "#dab36a",
+                    "outline": "#8e9192",
+                    "on-tertiary-container": "#958058",
+                    "surface-container": "#201f1f"
+            },
+            "borderRadius": {
+                    "DEFAULT": "0.25rem",
+                    "lg": "0.5rem",
+                    "xl": "0.75rem",
+                    "full": "9999px"
+            },
+            "spacing": {
+                    "margin-desktop": "64px",
+                    "gutter": "24px",
+                    "unit": "4px",
+                    "margin-mobile": "20px",
+                    "block-gap": "120px"
+            },
+            "fontFamily": {
+                    "display-lg": ["Bodoni Moda"],
+                    "ui-button": ["Space Grotesk"],
+                    "label-caps": ["Space Grotesk"],
+                    "headline-md": ["Bodoni Moda"],
+                    "body-lg": ["Space Grotesk"],
+                    "body-md": ["Space Grotesk"],
+                    "headline-lg-mobile": ["Bodoni Moda"],
+                    "headline-lg": ["Bodoni Moda"]
+            },
+            "fontSize": {
+                    "display-lg": ["84px", {"lineHeight": "90px", "letterSpacing": "-0.02em", "fontWeight": "700"}],
+                    "ui-button": ["14px", {"lineHeight": "20px", "letterSpacing": "0.05em", "fontWeight": "500"}],
+                    "label-caps": ["12px", {"lineHeight": "16px", "letterSpacing": "0.15em", "fontWeight": "600"}],
+                    "headline-md": ["32px", {"lineHeight": "40px", "fontWeight": "500"}],
+                    "body-lg": ["18px", {"lineHeight": "28px", "letterSpacing": "0.01em", "fontWeight": "400"}],
+                    "body-md": ["16px", {"lineHeight": "24px", "fontWeight": "400"}],
+                    "headline-lg-mobile": ["32px", {"lineHeight": "38px", "fontWeight": "600"}],
+                    "headline-lg": ["48px", {"lineHeight": "56px", "letterSpacing": "-0.01em", "fontWeight": "600"}]
+            }
+          }
+        }
+      }
+    </script>
+<style>
+        body {
+            -webkit-font-smoothing: antialiased;
+            -moz-osx-font-smoothing: grayscale;
+        }
+        .material-symbols-outlined {
+            font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24;
+        }
+    </style>
+</head>
+<body class="bg-background text-on-background min-h-screen flex flex-col font-body-md">
+<!-- TopNavBar -->
+<header class="bg-surface-container-low dark:bg-surface-container-low docked w-full sticky top-0 z-50 border-b border-secondary-container dark:border-secondary-container">
+<div class="flex justify-between md:grid md:grid-cols-3 items-center w-full px-margin-desktop py-6 max-w-[1440px] mx-auto">
+<!-- Brand Logo -->
+<a class="font-display-lg text-headline-md tracking-tighter text-on-surface dark:text-on-surface justify-self-start flex items-center" href="#"><div class="flex items-center gap-3">
+<img alt="Weavers Atelier Logo" class="h-[32px] w-auto text-secondary" src="https://lh3.googleusercontent.com/aida/ADBb0ujqAbXGQege7T4cyEK_hbeRHtKw44RDHqIEhsyCeEPA8BKKo4Tf-Uu_DmdwNvRkINrobsSDw4cFCTlT0zqdxvB548rNVHhBVMCpCpcE_lZzwKwSW0Ns-z1LInPRQDEZBaiDKmOMjKxbZKZKR4AO8W4KXYNd5SRXgYYiTK94AsDYPyJHZmYrjqTd_N8zjbHXEXCrV4-p9mJUZQPeJDLqWMAv-OAXF7EE2bh4uGNb0YNFZpTQdiyxGiVF1A" style="filter: invert(80%) sepia(35%) saturate(700%) hue-rotate(350deg) brightness(100%) contrast(100%);"/>
+<span>WEAVERS ATELIER</span>
+</div></a>
+<!-- Navigation Links (Web) -->
+<nav class="hidden md:flex gap-8 items-center justify-self-center">
+<a class="text-on-surface-variant font-medium hover:text-secondary transition-colors duration-300" href="#">Shirts</a>
+<a class="text-on-surface-variant font-medium hover:text-secondary transition-colors duration-300" href="#">Trousers</a>
+<a class="text-on-surface-variant font-medium hover:text-secondary transition-colors duration-300" href="#">Denim</a>
+<!-- Active Link -->
+<a class="text-secondary font-bold border-b-2 border-secondary pb-1 opacity-80 transition-opacity" href="#">Weddingwear</a>
+<a class="text-on-surface-variant font-medium hover:text-secondary transition-colors duration-300" href="#">Custom</a>
+</nav>
+<!-- Trailing Icons -->
+<div class="flex items-center gap-6 text-secondary dark:text-secondary justify-self-end">
+<button aria-label="shopping_bag" class="hover:text-on-surface transition-colors duration-300">
+<span class="material-symbols-outlined text-[24px]">shopping_bag</span>
+</button>
+<button aria-label="person" class="hover:text-on-surface transition-colors duration-300">
+<span class="material-symbols-outlined text-[24px]">person</span>
+</button>
+</div>
+</div>
+</header>
+<main class="flex-grow flex flex-col w-full">
+<!-- Hero Section (Consultation Focus) -->
+<section class="w-full max-w-[1440px] mx-auto px-margin-mobile md:px-margin-desktop py-block-gap">
+<div class="grid grid-cols-1 md:grid-cols-12 gap-gutter items-center">
+<!-- Text Frame (No overlap) -->
+<div class="md:col-span-5 flex flex-col gap-12 pr-8">
+<h1 class="font-display-lg text-display-lg text-on-surface leading-tight">
+                        Weddingwear Made for the Moment
+                    </h1>
+<p class="font-body-lg text-body-lg text-on-surface-variant max-w-md">
+                        Meticulously crafted ceremonial garments. Experience the intersection of heritage techniques and brutalist modernism in our private, midnight atelier setting.
+                    </p>
+<div class="pt-4">
+<button class="bg-secondary text-on-secondary font-ui-button text-ui-button px-8 py-4 uppercase tracking-[0.05em] hover:bg-on-surface hover:text-background transition-colors duration-300 inline-flex items-center gap-2">
+                            Book Consultation
+                            <span class="material-symbols-outlined text-[18px]">arrow_right_alt</span>
+</button>
+</div>
+</div>
+<!-- Image Frame (No overlap) -->
+<div class="md:col-span-7 h-[819px] border border-secondary-container">
+<div class="w-full h-full bg-surface-container-high bg-cover bg-center" data-alt="A cinematic, high-contrast fashion portrait of a man wearing an opulent, dark embroidered sherwani. The setting is a moody, dimly lit architectural space reminiscent of a private midnight gallery, with heavy brutalist concrete pillars. Deep charcoal shadows dominate the background, while dramatic, soft spotlighting highlights the intricate metallic bronze and gold embroidery on the garment. The overall aesthetic is mysterious, premium, and deeply textured, embodying a Nocturnal Atelier style with subtle Sabyasachi influences." style="background-image: url('https://lh3.googleusercontent.com/aida-public/AB6AXuBapnFn9D6o4fvY1a0GB2FeeHVFs2iJSWy5OpFeqOQEMeL9MMiwXXqP_HrGLOkCJ4bCWvg2QyberZc9DG8XVzHSVhhdJF3DIEXKQq3FM14RzCX8uvaFUnhczXD22OBwdrQ8mb7Qow1OP5t2-lxlAXFdJfnduFKOabD_bPnvlxGOADRh2azw0Rt8YJ2u_-aqXUkJ9Rr5J7wFT8fhT5oaTwbN28r5SbBI958_6JrTtganGZFP6__2Sqx7l6Q-fa0lknT4l1T0AqnHK2jn');">
+</div>
+</div>
+</div>
+</section>
+<!-- Sherwanis Modular Grid -->
+<section class="w-full max-w-[1440px] mx-auto px-margin-mobile md:px-margin-desktop py-block-gap border-t border-secondary-container">
+<div class="mb-16 flex justify-between items-end">
+<div>
+<span class="font-label-caps text-label-caps text-secondary block mb-4 uppercase">Archive 01</span>
+<h2 class="font-headline-lg text-headline-lg text-on-surface">Sherwanis</h2>
+</div>
+<a class="font-ui-button text-ui-button text-secondary border-b border-secondary hover:text-on-surface hover:border-on-surface pb-1 transition-colors" href="#">View All Archive</a>
+</div>
+<div class="grid grid-cols-1 md:grid-cols-12 gap-gutter">
+<!-- Feature Card -->
+<div class="md:col-span-8 flex flex-col border border-secondary-container group">
+<div class="h-[600px] w-full bg-cover bg-center" data-alt="Close-up detail shot of a heavy, structurally tailored sherwani in deep obsidian black. The fabric features dense, tonal geometric embroidery that catches a faint bronze light. The image avoids a full human face, focusing entirely on the neckline, shoulder structure, and the tactile opulence of the craftsmanship against a pure black background. Cinematic, moody lighting accentuates the minimalist yet intricate brutalist geometry of the garment." style="background-image: url('https://lh3.googleusercontent.com/aida-public/AB6AXuCiNrYF7AUxVNlfmKGHFnHybM3tZ7R2UVUH67V3h7i6jlMqtqQeHll7YiKo8a0Aw8G3bGzFTp4l_yE3wHqj0X95JxzjXbEf5J73abfhkftrh0EV66wmyDyuesQYE0FU20jXHjZU0rNkc13LCo_Z_Sta_LPY2s8UOdbFDAIGldCxRYWNCgL6hAIlW8tdvmIm-DZWuYSQAfwyAGWB9gQHQDWsdQPbBPICjzIPW-7b9FfYTnoUSsxP1ZBgVwPAaypQU_yC_O--axiTBRp3');">
+</div>
+<div class="bg-surface-container-high p-8 flex justify-between items-center transition-colors group-hover:bg-primary-container">
+<div>
+<h3 class="font-headline-md text-headline-md text-on-surface mb-2">The Obsidian Cut</h3>
+<p class="font-label-caps text-label-caps text-on-surface-variant">Raw Silk / Hand-Embroidered Geometric Motif</p>
+</div>
+<button class="border border-secondary-container text-secondary font-ui-button text-ui-button px-6 py-3 uppercase hover:bg-secondary hover:text-on-secondary transition-colors">
+                            Inquire
+                        </button>
+</div>
+</div>
+<!-- Secondary Stack -->
+<div class="md:col-span-4 flex flex-col gap-gutter">
+<!-- Card 2 -->
+<div class="flex flex-col border border-secondary-container flex-grow group">
+<div class="h-[235px] w-full bg-cover bg-center" data-alt="A tailored velvet men's ceremonial jacket in muted, deep bronze. The garment hangs structurally in an empty, dark concrete room. Light filters in sharply from a narrow slit, illuminating the texture of the rich velvet and the sharp, minimalist lines of the lapel. The overall tone is heavy, authoritative, and strictly modular, with no extraneous props." style="background-image: url('https://lh3.googleusercontent.com/aida-public/AB6AXuCxMpuwmRv-ho3CI-IjZjAaX_9OmKgvD81nDYMs4XRr9HFzBfGqBY-V4j__kALpF2I-8q6kqp-YTneQHSj7QN2VpBfCHjX5BbCMNLpFt1oMbkPZhRb_FnsCdCq7FlOP9J3iF0Fd57XHB3OyFy-9P3UgLTPbfvYpvivXSVbjhf-xRSTLfM0N-G9FuSb8NmzOlStDHLvZpJYHzvpPx1m01XXoAl5H-EfDNRw63FW4abjw9PN3H9OXzZpcDpGWBAVR5XEd1cQfWId6ysBw');">
+</div>
+<div class="bg-surface-container-low p-6 transition-colors group-hover:bg-surface-container-high">
+<h4 class="font-headline-md text-[24px] leading-[32px] font-medium text-on-surface mb-1">Bronze Velvet</h4>
+<p class="font-label-caps text-label-caps text-secondary">Structured Fit</p>
+</div>
+</div>
+<!-- Card 3 -->
+<div class="flex flex-col border border-secondary-container flex-grow group">
+<div class="h-[235px] w-full bg-cover bg-center grayscale contrast-125" data-alt="A monochrome, high-contrast black and white image of intricately patterned fabric folded in rigid, structural lines. The deep black shadows push the material back into a void, while the raised threads of the embroidery catch stark white light. The composition is highly geometric and abstract, emphasizing the raw architectural nature of the textile." style="background-image: url('https://lh3.googleusercontent.com/aida-public/AB6AXuCmDhW9DivYkui-AgEgTyBjif0Mpn2NW93vw3ewo4RkQf_rp6yLU1etazaEKT0qBV8mKYh_sZOj_yehQtpnfM63FIJagukVrxJIgzQZXuwO3N15Q45Kptu9mw6cvR8dzVPZt17gmLL9xuIUWTSA_z_k7pryxcKDey6VRIdnqo_pXsY1-L2EBLu2uPiHcSKFKtKhPpEtKCbmfNJKCg70kkohD5F3JGnZ3T4R-WDC7PFm9qwcjryw07FbOVRXQPPRzXUFCShJq2zhZNVW');">
+</div>
+<div class="bg-surface-container-low p-6 transition-colors group-hover:bg-surface-container-high">
+<h4 class="font-headline-md text-[24px] leading-[32px] font-medium text-on-surface mb-1">Monolith Weave</h4>
+<p class="font-label-caps text-label-caps text-secondary">Heritage Textile</p>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- Indo-Western Sets (Atelier List Pattern) -->
+<section class="w-full max-w-[1440px] mx-auto px-margin-mobile md:px-margin-desktop py-block-gap border-t border-secondary-container">
+<div class="mb-24">
+<span class="font-label-caps text-label-caps text-secondary block mb-4 uppercase">Archive 02</span>
+<h2 class="font-headline-lg text-headline-lg text-on-surface">Indo-Western Sets</h2>
+</div>
+<div class="flex flex-col gap-24">
+<!-- List Item 01 -->
+<div class="grid grid-cols-1 md:grid-cols-12 gap-gutter items-center border-b border-surface-container-highest pb-24">
+<!-- Large Faint Index -->
+<div class="hidden md:block md:col-span-2">
+<span class="font-display-lg text-[120px] leading-none text-surface-container-high opacity-50 block">01</span>
+</div>
+<!-- Content -->
+<div class="md:col-span-4 pr-8">
+<h3 class="font-headline-md text-headline-md text-on-surface mb-6">The Nocturnal Suit</h3>
+<p class="font-body-lg text-body-lg text-on-surface-variant mb-8">
+                            A severe, tailored silhouette that bridges classic shirting with the elongated lines of eastern formalwear. Constructed in heavy crepe with muted gold hardware.
+                        </p>
+<button class="text-secondary font-ui-button text-ui-button flex items-center gap-2 hover:text-on-surface transition-colors">
+                            Explore Set <span class="material-symbols-outlined text-[16px]">chevron_right</span>
+</button>
+</div>
+<!-- Image -->
+<div class="md:col-span-6 h-[500px] border border-secondary-container">
+<div class="w-full h-full bg-cover bg-center" data-alt="A model wearing a sharp, avant-garde fusion suit in pitch black, standing against a completely dark, cavernous background. The suit features a high mandarin collar and elongated hemline, blending traditional eastern cuts with brutalist western tailoring. A single, focused beam of warm light hits the subject's torso, highlighting subtle muted gold buttons and the crisp, rigid lines of the lapel. Zero text overlays the image." style="background-image: url('https://lh3.googleusercontent.com/aida-public/AB6AXuDWHTP2kxSSoY84ihN2a8YpEVbaNNPpv-oSXhrJlKjLK0Dykwq-a6xAqfRuga_7mULw_oGq5kClUVqHuJknpLBvfMPNBkPBZpoyt7K9BpSeqO7AuiAKmNvxD9FRPOYrAbhMUZDDF2sovOjZPZYsIKZNhChzrZ8aBpNFsivputXZ1NPZE9E7mT6StdnidR08yqIf-EQhGjMDsWIhZ0sq9Wia_Vu8jaCSQWH_t_ZKTOYaL0Z10sgFN-9avnhSia2BJVJX1VcDEPACoshB');">
+</div>
+</div>
+</div>
+<!-- List Item 02 -->
+<div class="grid grid-cols-1 md:grid-cols-12 gap-gutter items-center">
+<!-- Large Faint Index -->
+<div class="hidden md:block md:col-span-2">
+<span class="font-display-lg text-[120px] leading-none text-surface-container-high opacity-50 block">02</span>
+</div>
+<!-- Content -->
+<div class="md:col-span-4 pr-8">
+<h3 class="font-headline-md text-headline-md text-on-surface mb-6">Charcoal Drape</h3>
+<p class="font-body-lg text-body-lg text-on-surface-variant mb-8">
+                            Asymmetric layers of deep charcoal linen blend. Structural lines juxtaposed with a controlled, fluid drape across the shoulder.
+                        </p>
+<button class="text-secondary font-ui-button text-ui-button flex items-center gap-2 hover:text-on-surface transition-colors">
+                            Explore Set <span class="material-symbols-outlined text-[16px]">chevron_right</span>
+</button>
+</div>
+<!-- Image -->
+<div class="md:col-span-6 h-[500px] border border-secondary-container opacity-80 hover:opacity-100 transition-opacity duration-500">
+<div class="w-full h-full bg-cover bg-center" data-alt="An abstract, moody fashion shot focusing on the torso of a man wearing a complex, layered garment in varying shades of deep charcoal and dark grey. The garment combines strict, rigid geometric tailoring on the left side with a soft, flowing draped fabric element across the right shoulder. The lighting is cinematic and low-key, creating deep shadows that emphasize the tonal layering and the textured, heavy fabric." style="background-image: url('https://lh3.googleusercontent.com/aida-public/AB6AXuDOv3d4bHunOfitdQZrVL7fkCsEBdMcli-Hd8_WIuKrCgDEfb82R1qznD_qfGCRPAwh-X5U_yihAcvJ_krX0iu339rT9vR5wVZ3-0_bAAf1DdulqLWv_qgU1q87hJ1glRAuTAyYca4n5Xp0wvdk--LKvzKHHcsK-kGSesx1Y3SMSKhcn9p6qCmYnvArxQw2ohf3dtRqhmlYzIFF3c4GZaODE8qmtMMdUoa6Dcy2D5NGFjn_jUjCIe1RPJj3AzXN9KzLSCma7dU975LZ');">
+</div>
+</div>
+</div>
+</div>
+</section>
+</main>
+<!-- Footer -->
+<footer class="bg-surface-container-lowest dark:bg-surface-container-lowest border-t border-secondary-container w-full">
+<div class="flex flex-col md:flex-row justify-between items-center w-full px-margin-desktop py-block-gap max-w-[1440px] mx-auto">
+<div class="mb-8 md:mb-0">
+<span class="font-display-lg text-headline-lg text-on-surface block tracking-tighter"><div class="flex items-center gap-3">
+<img alt="Weavers Atelier Logo" class="h-[32px] w-auto text-secondary" src="https://lh3.googleusercontent.com/aida/ADBb0ujqAbXGQege7T4cyEK_hbeRHtKw44RDHqIEhsyCeEPA8BKKo4Tf-Uu_DmdwNvRkINrobsSDw4cFCTlT0zqdxvB548rNVHhBVMCpCpcE_lZzwKwSW0Ns-z1LInPRQDEZBaiDKmOMjKxbZKZKR4AO8W4KXYNd5SRXgYYiTK94AsDYPyJHZmYrjqTd_N8zjbHXEXCrV4-p9mJUZQPeJDLqWMAv-OAXF7EE2bh4uGNb0YNFZpTQdiyxGiVF1A" style="filter: invert(80%) sepia(35%) saturate(700%) hue-rotate(350deg) brightness(100%) contrast(100%);"/>
+<span>WEAVERS ATELIER</span>
+</div></span>
+<p class="font-label-caps text-label-caps text-secondary mt-4">
+                    © 2024 WEAVERS ATELIER. ALL RIGHTS RESERVED.
+                </p>
+</div>
+<nav class="flex gap-8">
+<a class="font-label-caps text-label-caps text-on-surface-variant hover:text-on-surface transition-colors focus:outline-none transition-all" href="#">Archives</a>
+<a class="font-label-caps text-label-caps text-on-surface-variant hover:text-on-surface transition-colors focus:outline-none transition-all" href="#">Terms</a>
+<a class="font-label-caps text-label-caps text-on-surface-variant hover:text-on-surface transition-colors focus:outline-none transition-all" href="#">Atelier Locality</a>
+</nav>
+</div>
+</footer>
+</body></html>

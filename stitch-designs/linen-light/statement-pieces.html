@@ -1,0 +1,213 @@
+<!DOCTYPE html>
+
+<html class="light" lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com/css2?family=Bodoni+Moda:ital,wght@0,400..900;1,400..900&amp;family=Space+Grotesk:wght@300..700&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<style>
+        .material-symbols-outlined {
+            font-variation-settings: 'FILL' 0, 'wght' 300, 'GRAD' 0, 'opsz' 24;
+        }
+        body {
+            background-color: #fff8f5;
+        }
+    </style>
+<script id="tailwind-config">
+        tailwind.config = {
+            darkMode: "class",
+            theme: {
+                extend: {
+                    "colors": {
+                        "on-primary": "#ffffff",
+                        "tertiary-container": "#bab9b4",
+                        "on-tertiary-fixed": "#1b1c19",
+                        "on-tertiary-container": "#494a46",
+                        "error": "#ba1a1a",
+                        "on-primary-fixed": "#281801",
+                        "on-error-container": "#93000a",
+                        "inverse-primary": "#e1c299",
+                        "surface-bright": "#fff8f5",
+                        "surface-dim": "#dfd9d5",
+                        "on-surface-variant": "#4d453c",
+                        "on-surface": "#1e1b19",
+                        "on-background": "#1e1b19",
+                        "primary": "#725a39",
+                        "tertiary": "#5e5e5b",
+                        "on-tertiary-fixed-variant": "#474744",
+                        "on-tertiary": "#ffffff",
+                        "inverse-on-surface": "#f6efec",
+                        "on-primary-fixed-variant": "#584324",
+                        "surface-container-high": "#eee7e3",
+                        "primary-fixed-dim": "#e1c299",
+                        "outline": "#7f766a",
+                        "error-container": "#ffdad6",
+                        "on-primary-container": "#5b4526",
+                        "background": "#fff8f5",
+                        "secondary-container": "#dbe3c2",
+                        "on-secondary-container": "#5e664b",
+                        "primary-container": "#d2b48c",
+                        "secondary-fixed": "#dee6c5",
+                        "surface": "#fff8f5",
+                        "surface-tint": "#725a39",
+                        "secondary": "#5a6147",
+                        "secondary-fixed-dim": "#c2caaa",
+                        "on-secondary": "#ffffff",
+                        "on-error": "#ffffff",
+                        "surface-variant": "#e8e1de",
+                        "surface-container-lowest": "#ffffff",
+                        "on-secondary-fixed": "#171e09",
+                        "tertiary-fixed": "#e4e2dd",
+                        "primary-fixed": "#feddb3",
+                        "surface-container-low": "#f9f2ef",
+                        "surface-container-highest": "#e8e1de",
+                        "outline-variant": "#d1c5b8",
+                        "tertiary-fixed-dim": "#c8c6c2",
+                        "on-secondary-fixed-variant": "#424a31",
+                        "surface-container": "#f3ece9",
+                        "inverse-surface": "#33302e"
+                    },
+                    "spacing": {
+                        "unit": "8px",
+                        "margin-desktop": "80px",
+                        "section-gap": "160px",
+                        "container-max": "1440px",
+                        "margin-mobile": "24px",
+                        "gutter": "32px"
+                    },
+                    "fontFamily": {
+                        "body-md": ["Space Grotesk"],
+                        "headline-md": ["Bodoni Moda"],
+                        "body-lg": ["Space Grotesk"],
+                        "display-lg-mobile": ["Bodoni Moda"],
+                        "label-caps": ["Space Grotesk"],
+                        "headline-sm": ["Bodoni Moda"],
+                        "display-lg": ["Bodoni Moda"]
+                    },
+                    "fontSize": {
+                        "body-md": ["16px", {"lineHeight": "24px", "fontWeight": "400"}],
+                        "headline-md": ["40px", {"lineHeight": "48px", "fontWeight": "500"}],
+                        "body-lg": ["18px", {"lineHeight": "28px", "fontWeight": "400"}],
+                        "display-lg-mobile": ["48px", {"lineHeight": "52px", "letterSpacing": "-0.01em", "fontWeight": "600"}],
+                        "label-caps": ["12px", {"lineHeight": "16px", "letterSpacing": "0.1em", "fontWeight": "600"}],
+                        "headline-sm": ["24px", {"lineHeight": "32px", "fontWeight": "500"}],
+                        "display-lg": ["84px", {"lineHeight": "92px", "letterSpacing": "-0.02em", "fontWeight": "600"}]
+                    }
+                }
+            }
+        }
+    </script>
+</head>
+<body class="bg-background text-on-background selection:bg-primary-container selection:text-on-primary-container">
+<!-- TopNavBar Navigation Shell -->
+<nav class="flex justify-between items-center w-full px-margin-desktop py-6 h-24 docked full-width top-0 border-b border-outline-variant bg-background z-40 fixed">
+<div class="font-headline-md text-headline-md tracking-tighter text-on-background uppercase">WEAVERS ATELIER</div>
+<div class="hidden md:flex items-center gap-10">
+<a class="font-label-caps text-label-caps text-secondary border-b-2 border-secondary pb-1" href="#">Lookbook</a>
+<a class="font-label-caps text-label-caps text-on-surface-variant hover:text-secondary transition-colors" href="#">Customizer</a>
+<a class="font-label-caps text-label-caps text-on-surface-variant hover:text-secondary transition-colors" href="#">Fit Studio</a>
+<a class="font-label-caps text-label-caps text-on-surface-variant hover:text-secondary transition-colors" href="#">Process</a>
+</div>
+<div class="flex items-center gap-6">
+<span class="material-symbols-outlined text-secondary cursor-pointer hover:opacity-80 transition-all duration-500">shopping_bag</span>
+<span class="material-symbols-outlined text-secondary cursor-pointer hover:opacity-80 transition-all duration-500 md:hidden">menu</span>
+</div>
+</nav>
+<!-- Hero Section: Editorial Intro -->
+<header class="pt-[160px] pb-block-gap px-margin-desktop max-w-container-max mx-auto">
+<div class="grid grid-cols-12 gap-gutter items-end">
+<div class="col-span-12 md:col-span-7">
+<h1 class="font-display-lg text-display-lg mb-8 leading-[1]">The Statement <br/>Series</h1>
+<p class="font-body-lg text-body-lg text-on-surface-variant max-w-md">Architectural silhouettes and artisanal hand-embroidery. A collection of one-of-a-kind pieces crafted for moments that demand presence.</p>
+</div>
+<div class="col-span-12 md:col-span-4 md:col-start-9">
+<button class="w-full bg-on-background text-background px-10 py-6 font-label-caps text-label-caps uppercase transition-all duration-300 hover:bg-primary">
+                    Commission a Piece
+                </button>
+</div>
+</div>
+</header>
+<!-- Main Editorial Gallery: Asymmetrical Modular Grid -->
+<main class="px-margin-desktop py-section-gap max-w-container-max mx-auto overflow-hidden">
+<!-- Feature 1: The Sculpted Jacket -->
+<section class="grid grid-cols-12 gap-gutter mb-[160px] items-center">
+<div class="col-span-12 md:col-span-7 relative group">
+<div class="aspect-[4/5] bg-surface-variant overflow-hidden">
+<img class="w-full h-full object-cover grayscale-[20%] transition-transform duration-[1.5s] group-hover:scale-105" data-alt="A high-fashion photograph of a structured, ivory linen jacket with sharp architectural shoulders. The subject is posed against a warm, sun-drenched sandstone wall in a Mediterranean setting. The lighting creates sharp, dramatic shadows, emphasizing the garment's texture and tailored lines. The aesthetic is clean, minimalist, and editorial, utilizing a palette of cream, sand, and soft charcoal." src="https://lh3.googleusercontent.com/aida-public/AB6AXuBVyH4JIVFkq3JJFiaxBm2_82MmNvBu4GSHsxJ2FQi8rb3pUjo9fTUSacD8SnSzoFKbf0xDFH4x1pRYheg5X-Ps2xH4p6qXB6i44ZUEkKY6Z66YNB0Ra8Bn1RoaeHDRORit9PWb_2RNSbiJGDh9jyCcygGujhRRi6QYZG27ny0fpagbuxrXSk8gJQI5XD-kaHb7k1pW7D5iFazUaUHyv15wmgu3tOFD0COW-3dPNUSiuywePer-SCvntPrwdBNdfGC2eINrI6yAtbXT"/>
+</div>
+<div class="absolute -bottom-8 -right-8 md:right-12 bg-background p-12 max-w-xs border border-outline-variant">
+<h3 class="font-headline-sm text-headline-sm mb-2">The Sculpted Peak</h3>
+<p class="font-label-caps text-label-caps uppercase text-primary">Hand-Cut Linen / Silk Lining</p>
+</div>
+</div>
+<div class="hidden md:block md:col-span-4 md:col-start-9 space-y-8">
+<span class="font-label-caps text-label-caps text-on-surface-variant block border-l border-outline-variant pl-4">EDITION 01/05</span>
+<p class="font-body-md text-body-md text-on-surface-variant italic">"A study in geometry and gravity. The Sculpted Peak jacket utilizes heavy-weight Mediterranean linen to maintain its structural integrity while breathing with the wearer."</p>
+</div>
+</section>
+<!-- Feature 2: Embroidered Sets (Asymmetric Placement) -->
+<section class="grid grid-cols-12 gap-gutter mb-[160px]">
+<div class="col-span-12 md:col-span-4 md:col-start-2 order-2 md:order-1 pt-12">
+<div class="aspect-[3/4] bg-surface-variant overflow-hidden">
+<img class="w-full h-full object-cover" data-alt="Close-up architectural detail of hand-embroidered floral motifs on a raw silk garment. The embroidery is executed in a subtle tone-on-tone thread, creating a tactile, relief-like surface. The lighting is soft and diffused, highlighting the delicate craftsmanship and the natural slubs of the silk fabric. The color palette is dominated by warm whites and ivory tones, evoking a sense of quiet luxury." src="https://lh3.googleusercontent.com/aida-public/AB6AXuCwTumrjYWj5GsURMaThFIpSqe5DwCtixhK6jb8cCcJQbFImCKzzSl7-CxFzAydckEJ5aGiBV15BB9Kn1jtTLRjsivdWz_Xo11ihPh08HXBvDB_sihUzD075s-8yOmjN2zmUCbIznnVYOgCn56LRAEclepViFY2EA7R79-nQQWmb9R3XTuCbRz7GxR3p4Y0Wbqyk0d8_TD96N6bS2aTomod9Knf3D9DADVID6zfD_C2Dez1qmMtyaP8iptcnvhi-9UATHS8F5PSqWBr"/>
+</div>
+<p class="mt-8 font-label-caps text-label-caps tracking-[0.2em] uppercase text-secondary">Artisanal Details</p>
+</div>
+<div class="col-span-12 md:col-span-6 md:col-start-7 order-1 md:order-2">
+<div class="aspect-[16/9] bg-surface-variant overflow-hidden mb-8 group">
+<img class="w-full h-full object-cover transition-transform duration-[1.5s] group-hover:scale-105" data-alt="A cinematic wide shot of a full embroidered set being worn in a minimalist, brutalist architectural space. The set features flowing trousers and a matching tunic with intricate vine-like embroidery. The environment is a play of light and shadow on raw concrete surfaces. The mood is avant-garde and serene, emphasizing the movement of the fabric within a rigid structural space." src="https://lh3.googleusercontent.com/aida-public/AB6AXuDEuz4Tot6VG0Pi-1vkZUWzkYvEr3sOv6UeQGLWwFP1hDFSJvWy8LZnFDWTT_mGxcUUAHVuxjk8UbdQk9cLgTwXhbEBk68G534H9m8Dy36q_HcmwQX1JELGx0r93OsNRo2-CWrtTIYYszSIzRzMYAwwxk4tgaHszMP9mwsYJKsQU3Mg40qPeSJZEDmTdk6qUrJjWowU2sGJxjQe7PAvvx1MpSH1pVWpMAlnvKf_HLnnHXE-UEweB28qic5LEhBeq6734Yf5VK4LJv7J"/>
+</div>
+<h3 class="font-headline-md text-headline-md">The Flora Enclosure</h3>
+<p class="font-body-md text-body-md text-on-surface-variant mt-4 max-w-sm">Signature embroidered sets that blur the line between evening wear and contemporary art.</p>
+</div>
+</section>
+<!-- Feature 3: Limited Edition Occasion Piece -->
+<section class="grid grid-cols-12 gap-gutter mb-[160px]">
+<div class="col-span-12 md:col-span-10 md:col-start-2 bg-surface-container-low p-margin-mobile md:p-20 relative border border-outline-variant">
+<div class="grid grid-cols-1 md:grid-cols-2 gap-12 items-center">
+<div class="aspect-[4/5] overflow-hidden">
+<img class="w-full h-full object-cover" data-alt="Full-length portrait of a male model wearing a dramatic charcoal linen overcoat with an oversized collar. The garment features asymmetrical buttoning and floor-length drapes. He is standing in a brightly lit, empty whitewashed room where the midday sun casts a sharp, diagonal shadow across the floor. The aesthetic is extremely minimalist and high-fashion, with a focus on silhouette and volume." src="https://lh3.googleusercontent.com/aida-public/AB6AXuALaE9e4MV0w_FjaJMeJMtQ9oL--ftT9ADGp-RIEwIvNYUQd9gP0CaxHAcrk3soBMY77rdUWWcNuvq0oD6MZldBI_fptjp7B_9StMBjEw-BDaxxyroe7E9gOsUkW-Y9W4q0CIrOuee8jpYcTlwLYJ7wFtT71tUXQhm-WXsHpDTkk8x5PEgSigvFLU6zauNyyHEwfY-vXPrnDfbFOeasef8AgB2m1f8bRayH1raaJgeJFuMYKCENZBpXCX8bkx-z5Ph7u-buKH5LxMcn"/>
+</div>
+<div class="flex flex-col justify-center gap-8">
+<span class="font-label-caps text-label-caps text-primary tracking-widest">PRIVATE ARCHIVE</span>
+<h2 class="font-display-lg text-headline-md md:text-display-lg leading-tight">The Midnight <br/>Monolith</h2>
+<p class="font-body-lg text-body-lg text-on-surface-variant">A floor-length sculptural overcoat in triple-washed charcoal linen. Designed for the architectural minimalist.</p>
+<div class="pt-8">
+<a class="inline-block border-b border-on-background pb-2 font-label-caps text-label-caps hover:text-primary hover:border-primary transition-all uppercase" href="#">Enquire for details</a>
+</div>
+</div>
+</div>
+</div>
+</section>
+</main>
+<!-- Commission CTA Section -->
+<section class="bg-surface-container-lowest py-24 border-t border-b border-outline-variant">
+<div class="px-margin-desktop max-w-container-max mx-auto text-center">
+<h2 class="font-headline-md text-headline-md mb-8">Create Your Heritage Piece</h2>
+<p class="font-body-lg text-body-lg text-on-surface-variant max-w-2xl mx-auto mb-12">Our master tailors collaborate with you to design a garment that reflects your narrative. From initial sketch to the final hand-stitched hem.</p>
+<div class="flex flex-col md:flex-row justify-center gap-6">
+<button class="bg-on-background text-background px-12 py-5 font-label-caps text-label-caps uppercase hover:bg-primary transition-colors">Book a Consultation</button>
+<button class="border border-on-background px-12 py-5 font-label-caps text-label-caps uppercase hover:bg-surface-variant transition-colors">View the Process</button>
+</div>
+</div>
+</section>
+<!-- Footer Shell -->
+<footer class="w-full px-margin-desktop py-24 flex flex-col items-center gap-12 bg-background">
+<div class="font-headline-md text-headline-md text-on-background uppercase tracking-tighter">WEAVERS ATELIER</div>
+<div class="flex flex-wrap justify-center gap-8 md:gap-16">
+<a class="font-label-caps text-label-caps tracking-widest text-on-surface-variant hover:text-on-surface transition-colors" href="#">Worldwide Delivery</a>
+<a class="font-label-caps text-label-caps tracking-widest text-on-surface-variant hover:text-on-surface transition-colors" href="#">Terms of Service</a>
+<a class="font-label-caps text-label-caps tracking-widest text-on-surface-variant hover:text-on-surface transition-colors" href="#">Privacy Policy</a>
+<a class="font-label-caps text-label-caps tracking-widest text-on-surface-variant hover:text-on-surface transition-colors" href="#">Contact Atelier</a>
+</div>
+<div class="flex gap-8">
+<span class="material-symbols-outlined text-secondary cursor-pointer hover:text-on-surface transition-colors">photo_camera</span>
+<span class="material-symbols-outlined text-secondary cursor-pointer hover:text-on-surface transition-colors">location_on</span>
+</div>
+<div class="font-label-caps text-label-caps tracking-widest text-on-surface-variant opacity-60 text-center">
+            © 2024 WEAVERS ATELIER. ARCHITECTURAL MINIMALISM IN MENSWEAR.
+        </div>
+</footer>
+</body></html>

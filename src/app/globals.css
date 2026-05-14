@@ -1,26 +1,532 @@
 @import "tailwindcss";
+@import "tw-animate-css";
+@import "shadcn/tailwind.css";
 
+@custom-variant dark (&:is(.dark *));
+
+/* ============================================
+   WEAVERS ATELIER - DUAL THEME DESIGN SYSTEM
+   Nocturnal Atelier (Dark) + Linen & Light (Light)
+   Design tokens from Stitch project
+   ============================================ */
+
+/* Dark Theme (Nocturnal Atelier) - Default */
 :root {
-  --background: #ffffff;
-  --foreground: #171717;
+  /* Stitch Nocturnal Atelier Palette */
+  --surface: #131313;
+  --surface-dim: #131313;
+  --surface-bright: #3a3939;
+  --surface-container-lowest: #0e0e0e;
+  --surface-container-low: #1c1b1b;
+  --surface-container: #201f1f;
+  --surface-container-high: #2a2a2a;
+  --surface-container-highest: #353534;
+  
+  --on-surface: #e5e2e1;
+  --on-surface-variant: #c4c7c7;
+  --inverse-surface: #e5e2e1;
+  --inverse-on-surface: #313030;
+  
+  --outline: #8e9192;
+  --outline-variant: #444748;
+  --surface-tint: #c8c6c5;
+  
+  --primary: #c8c6c5;
+  --on-primary: #313030;
+  --primary-container: #1a1a1a;
+  --on-primary-container: #848282;
+  --inverse-primary: #5f5e5e;
+  
+  --secondary: #e9c176;
+  --on-secondary: #412d00;
+  --secondary-container: #604403;
+  --on-secondary-container: #dab36a;
+  
+  --tertiary: #dcc497;
+  --on-tertiary: #3d2e0e;
+  --tertiary-container: #241800;
+  --on-tertiary-container: #958058;
+  
+  --error: #ffb4ab;
+  --on-error: #690005;
+  --error-container: #93000a;
+  --on-error-container: #ffdad6;
+
+  /* Semantic mappings for shadcn/ui */
+  --background: var(--surface);
+  --foreground: var(--on-surface);
+  --card: var(--surface-container);
+  --card-foreground: var(--on-surface);
+  --popover: var(--surface-container-high);
+  --popover-foreground: var(--on-surface);
+  --muted: var(--surface-container-high);
+  --muted-foreground: var(--on-surface-variant);
+  --accent: var(--secondary);
+  --accent-foreground: var(--on-secondary);
+  --destructive: var(--error);
+  --border: var(--outline-variant);
+  --input: var(--surface-container);
+  --ring: var(--secondary);
+
+  /* Chart colors */
+  --chart-1: var(--secondary);
+  --chart-2: var(--tertiary);
+  --chart-3: var(--primary);
+  --chart-4: var(--surface-bright);
+  --chart-5: var(--tertiary-container);
+
+  /* Brutalist corners per design system */
+  --radius: 0px;
+
+  /* Sidebar */
+  --sidebar: var(--surface-container-low);
+  --sidebar-foreground: var(--on-surface);
+  --sidebar-primary: var(--secondary);
+  --sidebar-primary-foreground: var(--on-secondary);
+  --sidebar-accent: var(--surface-container-high);
+  --sidebar-accent-foreground: var(--on-surface);
+  --sidebar-border: var(--outline-variant);
+  --sidebar-ring: var(--secondary);
+
+  /* Weavers Design System - Semantic Color Mappings */
+  --warm-ivory: #e5e2e1;
+  --soft-bone: #353534;
+  --sand-taupe: #c4c7c7;
+  --stone-grey: #8e9192;
+  --deep-charcoal: var(--inverse-surface);
+  --coffee-brown: #4A3628;
+  --ink-navy: #0D1726;
+  --royal-blue: #1F4FFF;
+  --deep-royal-blue: #1638B8;
+  --washed-indigo: #2F4F6F;
+  --burgundy-ink: #4A1F2B;
+  --antique-gold: var(--secondary);
+}
+
+/* Light Theme (Linen & Light) */
+:root.light {
+  /* Stitch Linen & Light Palette */
+  --surface: #fff8f5;
+  --surface-dim: #dfd9d5;
+  --surface-bright: #fff8f5;
+  --surface-container-lowest: #ffffff;
+  --surface-container-low: #f9f2ef;
+  --surface-container: #f3ece9;
+  --surface-container-high: #eee7e3;
+  --surface-container-highest: #e8e1de;
+  
+  --on-surface: #1e1b19;
+  --on-surface-variant: #4d453c;
+  --inverse-surface: #33302e;
+  --inverse-on-surface: #f6efec;
+  
+  --outline: #7f766a;
+  --outline-variant: #d1c5b8;
+  --surface-tint: #725a39;
+  
+  --primary: #725a39;
+  --on-primary: #ffffff;
+  --primary-container: #d2b48c;
+  --on-primary-container: #5b4526;
+  --inverse-primary: #e1c299;
+  
+  --secondary: #5a6147;
+  --on-secondary: #ffffff;
+  --secondary-container: #dbe3c2;
+  --on-secondary-container: #5e664b;
+  
+  --tertiary: #5e5e5b;
+  --on-tertiary: #ffffff;
+  --tertiary-container: #bab9b4;
+  --on-tertiary-container: #494a46;
+  
+  --error: #ba1a1a;
+  --on-error: #ffffff;
+  --error-container: #ffdad6;
+  --on-error-container: #93000a;
+
+  /* Semantic mappings for shadcn/ui - Light theme */
+  --background: var(--surface);
+  --foreground: var(--on-surface);
+  --card: var(--surface-container);
+  --card-foreground: var(--on-surface);
+  --popover: var(--surface-container-lowest);
+  --popover-foreground: var(--on-surface);
+  --muted: var(--surface-container-high);
+  --muted-foreground: var(--on-surface-variant);
+  --accent: var(--primary-container);
+  --accent-foreground: var(--on-primary-container);
+  --destructive: var(--error);
+  --border: var(--outline-variant);
+  --input: var(--surface-container-lowest);
+  --ring: var(--primary);
+
+  /* Chart colors - Light theme */
+  --chart-1: var(--primary);
+  --chart-2: var(--secondary);
+  --chart-3: var(--tertiary);
+  --chart-4: var(--primary-container);
+  --chart-5: var(--secondary-container);
+
+  /* Sidebar - Light theme */
+  --sidebar: var(--surface-container-low);
+  --sidebar-foreground: var(--on-surface);
+  --sidebar-primary: var(--primary);
+  --sidebar-primary-foreground: var(--on-primary);
+  --sidebar-accent: var(--surface-container-high);
+  --sidebar-accent-foreground: var(--on-surface);
+  --sidebar-border: var(--outline-variant);
+  --sidebar-ring: var(--primary);
+
+  /* Weavers Design System - Semantic Color Mappings (Light) */
+  --warm-ivory: #fff8f5;
+  --soft-bone: #f9f2ef;
+  --sand-taupe: #d2b48c;
+  --stone-grey: #7f766a;
+  --deep-charcoal: #1e1b19;
+  --coffee-brown: #725a39;
+  --ink-navy: #33302e;
+  --royal-blue: #725a39;
+  --deep-royal-blue: #5b4526;
+  --washed-indigo: #4d453c;
+  --burgundy-ink: #5e5e5b;
+  --antique-gold: var(--primary-container);
 }
 
 @theme inline {
+  /* Map CSS variables to Tailwind theme */
   --color-background: var(--background);
   --color-foreground: var(--foreground);
-  --font-sans: var(--font-geist-sans);
-  --font-mono: var(--font-geist-mono);
+  --font-sans: var(--font-sans);
+  --font-mono: ui-monospace, monospace;
+  --font-heading: var(--font-heading);
+
+  /* Semantic colors */
+  --color-card: var(--card);
+  --color-card-foreground: var(--card-foreground);
+  --color-popover: var(--popover);
+  --color-popover-foreground: var(--popover-foreground);
+  --color-primary: var(--primary);
+  --color-primary-foreground: var(--on-primary);
+  --color-secondary: var(--secondary);
+  --color-secondary-foreground: var(--on-secondary);
+  --color-muted: var(--muted);
+  --color-muted-foreground: var(--muted-foreground);
+  --color-accent: var(--accent);
+  --color-accent-foreground: var(--accent-foreground);
+  --color-destructive: var(--destructive);
+  --color-border: var(--border);
+  --color-input: var(--input);
+  --color-ring: var(--ring);
+
+  /* Stitch Nocturnal colors - direct access */
+  --color-surface: var(--surface);
+  --color-surface-dim: var(--surface-dim);
+  --color-surface-bright: var(--surface-bright);
+  --color-surface-container-lowest: var(--surface-container-lowest);
+  --color-surface-container-low: var(--surface-container-low);
+  --color-surface-container: var(--surface-container);
+  --color-surface-container-high: var(--surface-container-high);
+  --color-surface-container-highest: var(--surface-container-highest);
+  --color-on-surface: var(--on-surface);
+  --color-on-surface-variant: var(--on-surface-variant);
+  --color-inverse-surface: var(--inverse-surface);
+  --color-inverse-on-surface: var(--inverse-on-surface);
+  --color-outline: var(--outline);
+  --color-outline-variant: var(--outline-variant);
+  --color-gold: var(--secondary);
+  --color-gold-dim: var(--on-secondary-container);
+
+  /* Weavers Design System Colors */
+  --color-warm-ivory: var(--warm-ivory);
+  --color-soft-bone: var(--soft-bone);
+  --color-sand-taupe: var(--sand-taupe);
+  --color-stone-grey: var(--stone-grey);
+  --color-deep-charcoal: var(--deep-charcoal);
+  --color-coffee-brown: var(--coffee-brown);
+  --color-ink-navy: var(--ink-navy);
+  --color-royal-blue: var(--royal-blue);
+  --color-deep-royal-blue: var(--deep-royal-blue);
+  --color-washed-indigo: var(--washed-indigo);
+  --color-burgundy-ink: var(--burgundy-ink);
+  --color-antique-gold: var(--antique-gold);
+
+  /* Charts */
+  --color-chart-1: var(--chart-1);
+  --color-chart-2: var(--chart-2);
+  --color-chart-3: var(--chart-3);
+  --color-chart-4: var(--chart-4);
+  --color-chart-5: var(--chart-5);
+
+  /* Sidebar */
+  --color-sidebar: var(--sidebar);
+  --color-sidebar-foreground: var(--sidebar-foreground);
+  --color-sidebar-primary: var(--sidebar-primary);
+  --color-sidebar-primary-foreground: var(--sidebar-primary-foreground);
+  --color-sidebar-accent: var(--sidebar-accent);
+  --color-sidebar-accent-foreground: var(--sidebar-accent-foreground);
+  --color-sidebar-border: var(--sidebar-border);
+  --color-sidebar-ring: var(--sidebar-ring);
+
+  /* Radius - all 0 for brutalist aesthetic */
+  --radius-sm: 0px;
+  --radius-md: 0px;
+  --radius-lg: 0px;
+  --radius-xl: 0px;
+  --radius-2xl: 0px;
+  --radius-3xl: 0px;
+  --radius-4xl: 0px;
 }
 
-@media (prefers-color-scheme: dark) {
-  :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
+@layer base {
+  * {
+    @apply border-border outline-ring/50;
+  }
+  body {
+    @apply bg-background text-foreground antialiased;
+    transition: background-color 0.2s ease-in-out, color 0.2s ease-in-out;
+  }
+  html {
+    @apply font-sans scroll-smooth;
+  }
+  h1, h2, h3, h4, h5, h6 {
+    @apply font-heading tracking-tight;
   }
 }
 
-body {
-  background: var(--background);
-  color: var(--foreground);
-  font-family: Arial, Helvetica, sans-serif;
+/* Stitch typography classes */
+@layer utilities {
+  .text-balance {
+    text-wrap: balance;
+  }
+
+  /* Font family utilities from Stitch */
+  .font-display-lg {
+    font-family: var(--font-heading);
+  }
+  .font-headline-lg {
+    font-family: var(--font-heading);
+  }
+  .font-headline-md {
+    font-family: var(--font-heading);
+  }
+  .font-body-lg {
+    font-family: var(--font-sans);
+  }
+  .font-body-md {
+    font-family: var(--font-sans);
+  }
+  .font-label-md {
+    font-family: var(--font-sans);
+  }
+  
+  /* Display Large - 64px/72px Bodoni Moda (from Stitch config) */
+  .text-display-lg {
+    font-family: var(--font-heading);
+    font-size: 64px;
+    font-weight: 400;
+    line-height: 72px;
+    letter-spacing: -0.02em;
+  }
+  @media (max-width: 768px) {
+    .text-display-lg {
+      font-size: 32px;
+      line-height: 40px;
+    }
+  }
+  
+  /* Headline Large - 40px/48px Bodoni Moda (from Stitch config) */
+  .text-headline-lg {
+    font-family: var(--font-heading);
+    font-size: 40px;
+    font-weight: 400;
+    line-height: 48px;
+  }
+  
+  /* Headline Large Mobile - 32px/40px Bodoni Moda (from Stitch config) */
+  .text-headline-lg-mobile {
+    font-family: var(--font-heading);
+    font-size: 32px;
+    font-weight: 400;
+    line-height: 40px;
+  }
+  
+  /* Headline Medium - 28px/36px Bodoni Moda (from Stitch config) */
+  .text-headline-md {
+    font-family: var(--font-heading);
+    font-size: 28px;
+    font-weight: 400;
+    line-height: 36px;
+  }
+  
+  /* Body Large - 18px/28px Space Grotesk */
+  .text-body-lg {
+    font-family: var(--font-sans);
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 28px;
+    letter-spacing: 0.01em;
+  }
+  
+  /* Body Medium - 16px/24px Space Grotesk */
+  .text-body-md {
+    font-family: var(--font-sans);
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 24px;
+  }
+  
+  /* Label Caps - 12px/16px Space Grotesk SemiBold */
+  .text-label-caps {
+    font-family: var(--font-sans);
+    font-size: 12px;
+    font-weight: 600;
+    line-height: 16px;
+    letter-spacing: 0.15em;
+    text-transform: uppercase;
+  }
+  
+  /* Label Medium - 14px/20px Space Grotesk Medium */
+  .text-label-md {
+    font-family: var(--font-sans);
+    font-size: 14px;
+    font-weight: 500;
+    line-height: 20px;
+    letter-spacing: 0.1em;
+  }
+  
+  /* UI Button - 14px/20px Space Grotesk Medium */
+  .text-ui-button {
+    font-family: var(--font-sans);
+    font-size: 14px;
+    font-weight: 500;
+    line-height: 20px;
+    letter-spacing: 0.05em;
+  }
+
+  /* Font UI Button - uppercase tracked-wide CTA style */
+  .font-ui-button {
+    font-family: var(--font-sans);
+    font-size: 14px;
+    font-weight: 500;
+    line-height: 20px;
+    letter-spacing: 0.15em;
+    text-transform: uppercase;
+  }
+
+  /* Font Label Technical - mono-feel small caption */
+  .font-label-technical {
+    font-family: var(--font-mono);
+    font-size: 11px;
+    font-weight: 500;
+    line-height: 16px;
+    letter-spacing: 0.08em;
+    text-transform: uppercase;
+  }
+
+  /* Display Large Mobile - 32px/40px responsive variant */
+  .font-display-lg-mobile {
+    font-family: var(--font-heading);
+    font-size: 32px;
+    font-weight: 400;
+    line-height: 40px;
+    letter-spacing: -0.02em;
+  }
+  @media (min-width: 768px) {
+    .font-display-lg-mobile {
+      font-size: 64px;
+      line-height: 72px;
+    }
+  }
+
+  /* Headline Small - 24px/32px for process steps */
+  .text-headline-sm {
+    font-family: var(--font-heading);
+    font-size: 24px;
+    font-weight: 400;
+    line-height: 32px;
+  }
+
+  /* Stitch border utilities */
+  .bronze-border {
+    border: 1px solid var(--secondary);
+  }
+
+  .atelier-border {
+    border: 1px solid rgba(var(--outline-variant), 0.4);
+    border-color: color-mix(in srgb, var(--outline-variant) 40%, transparent);
+  }
+
+  /* Glass nav - transparent with blur */
+  .glass-nav {
+    background-color: color-mix(in srgb, var(--surface) 80%, transparent);
+    backdrop-filter: blur(24px);
+    -webkit-backdrop-filter: blur(24px);
+  }
+
+  /* Cinematic shadow overlay for statement pieces hero */
+  .cinematic-shadow {
+    position: relative;
+  }
+  .cinematic-shadow::after {
+    content: '';
+    position: absolute;
+    inset: 0;
+    background: radial-gradient(
+      ellipse 80% 60% at 50% 100%,
+      rgba(0, 0, 0, 0.7) 0%,
+      rgba(0, 0, 0, 0.3) 50%,
+      transparent 100%
+    );
+    pointer-events: none;
+  }
+
+  /* Stitch spacing utilities */
+  .px-margin-mobile {
+    padding-left: 20px;
+    padding-right: 20px;
+  }
+  .px-margin-desktop {
+    padding-left: 64px;
+    padding-right: 64px;
+  }
+  .gap-gutter {
+    gap: 24px;
+  }
+  .mb-block-gap {
+    margin-bottom: 120px;
+  }
+  .mt-block-gap {
+    margin-top: 120px;
+  }
+  .py-block-gap {
+    padding-top: 120px;
+    padding-bottom: 120px;
+  }
+  
+  /* Container utility */
+  .container-atelier {
+    max-width: 1440px;
+    margin-left: auto;
+    margin-right: auto;
+    padding-left: 20px;
+    padding-right: 20px;
+  }
+  @media (min-width: 768px) {
+    .container-atelier {
+      padding-left: 64px;
+      padding-right: 64px;
+    }
+  }
+}
+
+/* Material Symbols font settings */
+.material-symbols-outlined {
+  font-variation-settings: 'FILL' 0, 'wght' 300, 'GRAD' 0, 'opsz' 24;
+}
+
+/* Selection styling */
+::selection {
+  background-color: var(--primary-container);
+  color: var(--on-primary-container);
 }

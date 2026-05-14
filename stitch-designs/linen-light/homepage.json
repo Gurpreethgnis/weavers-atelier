@@ -1,0 +1,276 @@
+{
+  "screenshot": {
+    "name": "projects/11635743968681332715/files/1468aea4bb924f0a915b069b67333f4c",
+    "downloadUrl": "https://lh3.googleusercontent.com/aida/ADBb0ui_2F10pN9zX1htszpBF-7EAiji5nqG8SD9mY4O7yXPEF33yfemcF99dsKYvMOR5LiHmEyhJOWy5RiJBzh0CsjSHfuXKJl30OYmr_acLnEkyldTNOQ1Z1LqTUCDz-Wp1dsKMGJXY307T-UglwWUXdCUULuDM2sYPx8h5XP0TtpSjN9h7FHpSDB76c7VYwS6VFt1xYahZd7juTuLmzhVNpxSaScgj8Xenl4_4rMyTBpnvJUAMJvP5aZDrkc"
+  },
+  "htmlCode": {
+    "name": "projects/11635743968681332715/files/6c337b81a04f4abebc6b8809c2fed4bb",
+    "downloadUrl": "https://contribution.usercontent.google.com/download?c=CgthaWRhX2NvZGVmeBJ8Eh1hcHBfY29tcGFuaW9uX2dlbmVyYXRlZF9maWxlcxpbCiVodG1sXzM3ZjVhZGI1NDYxNTQ4ZGFiMjUzZjhlMzAzOGNjZWY0EgsSBxCgwIKb9BYYAZIBJAoKcHJvamVjdF9pZBIWQhQxMTYzNTc0Mzk2ODY4MTMzMjcxNQ&filename=&opi=89354086",
+    "mimeType": "text/html"
+  },
+  "id": "2f2299c534e541df9803b6e9c54b0d43",
+  "generatedBy": "HatterAgent",
+  "width": "2560",
+  "height": "6566",
+  "title": "Weavers Atelier - Homepage | Nocturnal Atelier",
+  "prompt": "Replace the current brand logo placeholder in the header and footer with the new logo asset {{DATA:IMAGE:IMAGE_118}}. Size it to approximately 32px height to match the refined, minimalist aesthetic. Keep the \"WEAVERS ATELIER\" text next to it.",
+  "name": "projects/11635743968681332715/screens/2f2299c534e541df9803b6e9c54b0d43",
+  "theme": {
+    "colorMode": "LIGHT",
+    "font": "BODONI_MODA",
+    "customColor": "#d2b48c",
+    "headlineFont": "BODONI_MODA",
+    "bodyFont": "SPACE_GROTESK",
+    "labelFont": "SPACE_GROTESK",
+    "namedColors": {
+      "surface_container": "#f3ece9",
+      "primary_fixed": "#feddb3",
+      "on_tertiary_fixed_variant": "#474744",
+      "primary": "#725a39",
+      "surface_container_low": "#f9f2ef",
+      "on_surface_variant": "#4d453c",
+      "error": "#ba1a1a",
+      "on_background": "#1e1b19",
+      "surface_bright": "#fff8f5",
+      "on_tertiary": "#ffffff",
+      "on_secondary": "#ffffff",
+      "on_secondary_fixed": "#171e09",
+      "surface": "#fff8f5",
+      "on_primary_fixed_variant": "#584324",
+      "secondary": "#5a6147",
+      "outline_variant": "#d1c5b8",
+      "on_primary": "#ffffff",
+      "error_container": "#ffdad6",
+      "background": "#fff8f5",
+      "secondary_fixed_dim": "#c2caaa",
+      "inverse_on_surface": "#f6efec",
+      "inverse_surface": "#33302e",
+      "primary_fixed_dim": "#e1c299",
+      "tertiary": "#5e5e5b",
+      "tertiary_container": "#bab9b4",
+      "secondary_fixed": "#dee6c5",
+      "on_error_container": "#93000a",
+      "surface_container_highest": "#e8e1de",
+      "surface_dim": "#dfd9d5",
+      "secondary_container": "#dbe3c2",
+      "primary_container": "#d2b48c",
+      "on_tertiary_fixed": "#1b1c19",
+      "on_tertiary_container": "#494a46",
+      "tertiary_fixed_dim": "#c8c6c2",
+      "on_primary_container": "#5b4526",
+      "on_secondary_container": "#5e664b",
+      "surface_container_lowest": "#ffffff",
+      "surface_variant": "#e8e1de",
+      "on_error": "#ffffff",
+      "on_primary_fixed": "#281801",
+      "on_surface": "#1e1b19",
+      "tertiary_fixed": "#e4e2dd",
+      "surface_container_high": "#eee7e3",
+      "inverse_primary": "#e1c299",
+      "surface_tint": "#725a39",
+      "on_secondary_fixed_variant": "#424a31",
+      "outline": "#7f766a"
+    },
+    "designMd": "---\nname: Linen & Light\ncolors:\n  surface: '#fff8f5'\n  surface-dim: '#dfd9d5'\n  surface-bright: '#fff8f5'\n  surface-container-lowest: '#ffffff'\n  surface-container-low: '#f9f2ef'\n  surface-container: '#f3ece9'\n  surface-container-high: '#eee7e3'\n  surface-container-highest: '#e8e1de'\n  on-surface: '#1e1b19'\n  on-surface-variant: '#4d453c'\n  inverse-surface: '#33302e'\n  inverse-on-surface: '#f6efec'\n  outline: '#7f766a'\n  outline-variant: '#d1c5b8'\n  surface-tint: '#725a39'\n  primary: '#725a39'\n  on-primary: '#ffffff'\n  primary-container: '#d2b48c'\n  on-primary-container: '#5b4526'\n  inverse-primary: '#e1c299'\n  secondary: '#5a6147'\n  on-secondary: '#ffffff'\n  secondary-container: '#dbe3c2'\n  on-secondary-container: '#5e664b'\n  tertiary: '#5e5e5b'\n  on-tertiary: '#ffffff'\n  tertiary-container: '#bab9b4'\n  on-tertiary-container: '#494a46'\n  error: '#ba1a1a'\n  on-error: '#ffffff'\n  error-container: '#ffdad6'\n  on-error-container: '#93000a'\n  primary-fixed: '#feddb3'\n  primary-fixed-dim: '#e1c299'\n  on-primary-fixed: '#281801'\n  on-primary-fixed-variant: '#584324'\n  secondary-fixed: '#dee6c5'\n  secondary-fixed-dim: '#c2caaa'\n  on-secondary-fixed: '#171e09'\n  on-secondary-fixed-variant: '#424a31'\n  tertiary-fixed: '#e4e2dd'\n  tertiary-fixed-dim: '#c8c6c2'\n  on-tertiary-fixed: '#1b1c19'\n  on-tertiary-fixed-variant: '#474744'\n  background: '#fff8f5'\n  on-background: '#1e1b19'\n  surface-variant: '#e8e1de'\ntypography:\n  display-lg:\n    fontFamily: Bodoni Moda\n    fontSize: 84px\n    fontWeight: '600'\n    lineHeight: 92px\n    letterSpacing: -0.02em\n  display-lg-mobile:\n    fontFamily: Bodoni Moda\n    fontSize: 48px\n    fontWeight: '600'\n    lineHeight: 52px\n    letterSpacing: -0.01em\n  headline-md:\n    fontFamily: Bodoni Moda\n    fontSize: 40px\n    fontWeight: '500'\n    lineHeight: 48px\n  headline-sm:\n    fontFamily: Bodoni Moda\n    fontSize: 24px\n    fontWeight: '500'\n    lineHeight: 32px\n  body-lg:\n    fontFamily: Space Grotesk\n    fontSize: 18px\n    fontWeight: '400'\n    lineHeight: 28px\n  body-md:\n    fontFamily: Space Grotesk\n    fontSize: 16px\n    fontWeight: '400'\n    lineHeight: 24px\n  label-caps:\n    fontFamily: Space Grotesk\n    fontSize: 12px\n    fontWeight: '600'\n    lineHeight: 16px\n    letterSpacing: 0.1em\nspacing:\n  unit: 8px\n  container-max: 1440px\n  gutter: 32px\n  margin-desktop: 80px\n  margin-mobile: 24px\n  section-gap: 160px\n---\n\n## Brand & Style\n\nThe brand personality is high-fashion, Mediterranean, and architecturally avant-garde. It targets a sophisticated audience that appreciates the intersection of luxury and effortless simplicity. The UI should evoke a sense of calm, warmth, and \"sun-drenched\" lightness.\n\nThe design style is a refined **Minimalism** with an editorial focus. It prioritizes the \"void\" as much as the content. By utilizing extreme negative space and asymmetrical modularity, the design system creates a weightless atmosphere where every element has room to breathe. The aesthetic mimics the tactile quality of raw linen and the sharp shadows of a southern sun.\n\n## Colors\n\nThe palette is rooted in natural, earthy tones that suggest a summer in Provence. \n\n- **Ivory (#F9F7F2):** Used as the primary canvas. It is a warm, breathable whitespace that replaces pure white to reduce ocular strain and add a linen-like warmth.\n- **Sand (#D2B48C):** The primary accent color, used for subtle highlights, interactive backgrounds, and structural dividers.\n- **Soft Olive (#828A6D):** A secondary accent used sparingly for success states, botanical-themed UI elements, or secondary CTAs.\n- **Warm Charcoal (#33302E):** The primary text color. It provides high legibility against ivory while remaining softer and more organic than true black.\n\n## Typography\n\nThis design system employs a high-contrast typographic pairing to achieve an editorial look. \n\n**Bodoni Moda** is used for headlines and display text. Its vertical stress and extreme contrast between thick and thin strokes provide a sense of luxury. For impact, use large-scale display sizes with tight tracking.\n\n**Space Grotesk** serves as the functional workhorse for UI, body copy, and labels. Its geometric and slightly technical nature balances the romanticism of the serif, ensuring the interface feels contemporary and precise. \n\n**Instruction:** Never overlap text on images. Text should always occupy its own ivory container or sit in the whitespace adjacent to imagery to maintain architectural clarity.\n\n## Layout & Spacing\n\nThe layout philosophy is based on an **asymmetrical modular grid**. Unlike traditional symmetrical layouts, this design system encourages \"weighted\" compositions where elements are offset to create visual interest and movement.\n\n- **Desktop:** A 12-column grid with wide 32px gutters and significant 80px outer margins.\n- **Mobile:** A 4-column grid with 16px gutters and 24px margins.\n- **Rhythm:** Use large vertical gaps (160px+) between major sections to emphasize the \"weightless\" feeling. Elements should often span across 5 or 7 columns rather than even numbers to reinforce the asymmetrical aesthetic.\n\n## Elevation & Depth\n\nTo maintain the sun-drenched, weightless feel, this design system avoids heavy drop shadows and traditional z-axis elevation.\n\n- **Flat Layering:** Depth is achieved through color blocking (Ivory on Sand) rather than shadows.\n- **Low-Contrast Outlines:** If a boundary is required, use a 1px solid border in a slightly darker shade of Sand or a very faint Charcoal at 10% opacity.\n- **Sun-Bleached Shadows:** When shadows are strictly necessary for utility (e.g., floating menus), use an ultra-diffused \"light leak\" shadow: a large blur radius (30px+) with a very low opacity (5%) warm tint.\n\n## Shapes\n\nThe shape language is strictly **Sharp (0px)**. \n\nTo mirror the architectural nature of high-fashion editorial design, all containers, buttons, and image frames must have crisp, 90-degree angles. This sharpness provides a structured counterpoint to the softness of the ivory and sand color palette.\n\n## Components\n\n### Buttons\nPrimary buttons are rectangular with no border radius. Use a solid Warm Charcoal background with Ivory text for high impact. Secondary buttons should use a 1px Warm Charcoal border with no fill. All hover states should be a subtle transition to the Soft Olive or a slight shift in the Sand background tone.\n\n### Input Fields\nInputs are minimalist, consisting only of a 1px bottom border in Warm Charcoal. Labels use the `label-caps` style and sit 8px above the line. Error states are indicated by the Soft Olive color or a change in stroke weight, rather than harsh reds.\n\n### Cards\nCards are defined by generous padding (40px+) and background color shifts (e.g., a Sand card on an Ivory background) rather than borders or shadows. Images within cards must be full-width and maintain their sharp corners.\n\n### Imagery\nImages are the focal point. They should be treated as architectural elements within the grid. Use varying aspect ratios (e.g., 4:5 for portraits, 16:9 for wide landscapes) and arrange them asymmetrically to create a \"scrapbook\" editorial flow.\n\n### Navigation\nThe navigation should be sparse. Use wide letter-spacing for menu items in `label-caps`. The logo should be prominent and set in Bodoni Moda to establish the brand's luxury positioning immediately.",
+    "colorVariant": "FIDELITY",
+    "overridePrimaryColor": "#d2b48c",
+    "overrideSecondaryColor": "#828a6d",
+    "overrideTertiaryColor": "#f9f7f2",
+    "overrideNeutralColor": "#33302e",
+    "spacingScale": 2,
+    "typography": {
+      "headline-md": {
+        "fontFamily": "Bodoni Moda",
+        "fontSize": "40px",
+        "fontWeight": "500",
+        "lineHeight": "48px"
+      },
+      "headline-sm": {
+        "fontFamily": "Bodoni Moda",
+        "fontSize": "24px",
+        "fontWeight": "500",
+        "lineHeight": "32px"
+      },
+      "display-lg": {
+        "fontFamily": "Bodoni Moda",
+        "fontSize": "84px",
+        "fontWeight": "600",
+        "lineHeight": "92px",
+        "letterSpacing": "-0.02em"
+      },
+      "body-lg": {
+        "fontFamily": "Space Grotesk",
+        "fontSize": "18px",
+        "fontWeight": "400",
+        "lineHeight": "28px"
+      },
+      "label-caps": {
+        "fontFamily": "Space Grotesk",
+        "fontSize": "12px",
+        "fontWeight": "600",
+        "lineHeight": "16px",
+        "letterSpacing": "0.1em"
+      },
+      "body-md": {
+        "fontFamily": "Space Grotesk",
+        "fontSize": "16px",
+        "fontWeight": "400",
+        "lineHeight": "24px"
+      },
+      "display-lg-mobile": {
+        "fontFamily": "Bodoni Moda",
+        "fontSize": "48px",
+        "fontWeight": "600",
+        "lineHeight": "52px",
+        "letterSpacing": "-0.01em"
+      }
+    },
+    "spacing": {
+      "container-max": "1440px",
+      "margin-mobile": "24px",
+      "gutter": "32px",
+      "section-gap": "160px",
+      "unit": "8px",
+      "margin-desktop": "80px"
+    },
+    "headlineFontFamily": "Bodoni Moda",
+    "bodyFontFamily": "Space Grotesk",
+    "labelFontFamily": "Space Grotesk"
+  },
+  "deviceType": "DESKTOP",
+  "screenType": "DESIGN",
+  "screenMetadata": {
+    "agentType": "PRO_AGENT",
+    "status": "COMPLETE"
+  },
+  "designSystem": {
+    "name": "assets/fe083312c4fd48e49a586d4242e02af0",
+    "designSystem": {
+      "displayName": "Linen & Light",
+      "styleGuidelines": "## Brand & Style\n\nThe brand personality is high-fashion, Mediterranean, and architecturally avant-garde. It targets a sophisticated audience that appreciates the intersection of luxury and effortless simplicity. The UI should evoke a sense of calm, warmth, and \"sun-drenched\" lightness.\n\nThe design style is a refined **Minimalism** with an editorial focus. It prioritizes the \"void\" as much as the content. By utilizing extreme negative space and asymmetrical modularity, the design system creates a weightless atmosphere where every element has room to breathe. The aesthetic mimics the tactile quality of raw linen and the sharp shadows of a southern sun.\n\n## Layout & Spacing\n\nThe layout philosophy is based on an **asymmetrical modular grid**. Unlike traditional symmetrical layouts, this design system encourages \"weighted\" compositions where elements are offset to create visual interest and movement.\n\n- **Desktop:** A 12-column grid with wide 32px gutters and significant 80px outer margins.\n- **Mobile:** A 4-column grid with 16px gutters and 24px margins.\n- **Rhythm:** Use large vertical gaps (160px+) between major sections to emphasize the \"weightless\" feeling. Elements should often span across 5 or 7 columns rather than even numbers to reinforce the asymmetrical aesthetic.\n\n## Elevation & Depth\n\nTo maintain the sun-drenched, weightless feel, this design system avoids heavy drop shadows and traditional z-axis elevation.\n\n- **Flat Layering:** Depth is achieved through color blocking (Ivory on Sand) rather than shadows.\n- **Low-Contrast Outlines:** If a boundary is required, use a 1px solid border in a slightly darker shade of Sand or a very faint Charcoal at 10% opacity.\n- **Sun-Bleached Shadows:** When shadows are strictly necessary for utility (e.g., floating menus), use an ultra-diffused \"light leak\" shadow: a large blur radius (30px+) with a very low opacity (5%) warm tint.\n\n## Components\n\n### Buttons\nPrimary buttons are rectangular with no border radius. Use a solid Warm Charcoal background with Ivory text for high impact. Secondary buttons should use a 1px Warm Charcoal border with no fill. All hover states should be a subtle transition to the Soft Olive or a slight shift in the Sand background tone.\n\n### Input Fields\nInputs are minimalist, consisting only of a 1px bottom border in Warm Charcoal. Labels use the `label-caps` style and sit 8px above the line. Error states are indicated by the Soft Olive color or a change in stroke weight, rather than harsh reds.\n\n### Cards\nCards are defined by generous padding (40px+) and background color shifts (e.g., a Sand card on an Ivory background) rather than borders or shadows. Images within cards must be full-width and maintain their sharp corners.\n\n### Imagery\nImages are the focal point. They should be treated as architectural elements within the grid. Use varying aspect ratios (e.g., 4:5 for portraits, 16:9 for wide landscapes) and arrange them asymmetrically to create a \"scrapbook\" editorial flow.\n\n### Navigation\nThe navigation should be sparse. Use wide letter-spacing for menu items in `label-caps`. The logo should be prominent and set in Bodoni Moda to establish the brand's luxury positioning immediately.",
+      "theme": {
+        "colorMode": "LIGHT",
+        "font": "BODONI_MODA",
+        "customColor": "#d2b48c",
+        "headlineFont": "BODONI_MODA",
+        "bodyFont": "SPACE_GROTESK",
+        "labelFont": "SPACE_GROTESK",
+        "namedColors": {
+          "on_tertiary_fixed_variant": "#474744",
+          "primary": "#725a39",
+          "primary_fixed": "#feddb3",
+          "surface_container": "#f3ece9",
+          "on_surface_variant": "#4d453c",
+          "surface_container_low": "#f9f2ef",
+          "outline_variant": "#d1c5b8",
+          "on_primary_fixed_variant": "#584324",
+          "secondary": "#5a6147",
+          "on_secondary": "#ffffff",
+          "on_secondary_fixed": "#171e09",
+          "surface": "#fff8f5",
+          "on_tertiary": "#ffffff",
+          "surface_bright": "#fff8f5",
+          "on_background": "#1e1b19",
+          "error": "#ba1a1a",
+          "tertiary": "#5e5e5b",
+          "tertiary_container": "#bab9b4",
+          "inverse_surface": "#33302e",
+          "primary_fixed_dim": "#e1c299",
+          "inverse_on_surface": "#f6efec",
+          "background": "#fff8f5",
+          "secondary_fixed_dim": "#c2caaa",
+          "error_container": "#ffdad6",
+          "on_primary": "#ffffff",
+          "secondary_fixed": "#dee6c5",
+          "on_error_container": "#93000a",
+          "on_tertiary_fixed": "#1b1c19",
+          "on_tertiary_container": "#494a46",
+          "secondary_container": "#dbe3c2",
+          "primary_container": "#d2b48c",
+          "surface_dim": "#dfd9d5",
+          "surface_container_highest": "#e8e1de",
+          "surface_container_high": "#eee7e3",
+          "on_primary_fixed": "#281801",
+          "tertiary_fixed": "#e4e2dd",
+          "on_surface": "#1e1b19",
+          "on_secondary_container": "#5e664b",
+          "surface_container_lowest": "#ffffff",
+          "surface_variant": "#e8e1de",
+          "on_error": "#ffffff",
+          "on_primary_container": "#5b4526",
+          "tertiary_fixed_dim": "#c8c6c2",
+          "outline": "#7f766a",
+          "on_secondary_fixed_variant": "#424a31",
+          "surface_tint": "#725a39",
+          "inverse_primary": "#e1c299"
+        },
+        "designMd": "---\nname: Linen & Light\ncolors:\n  surface: '#fff8f5'\n  surface-dim: '#dfd9d5'\n  surface-bright: '#fff8f5'\n  surface-container-lowest: '#ffffff'\n  surface-container-low: '#f9f2ef'\n  surface-container: '#f3ece9'\n  surface-container-high: '#eee7e3'\n  surface-container-highest: '#e8e1de'\n  on-surface: '#1e1b19'\n  on-surface-variant: '#4d453c'\n  inverse-surface: '#33302e'\n  inverse-on-surface: '#f6efec'\n  outline: '#7f766a'\n  outline-variant: '#d1c5b8'\n  surface-tint: '#725a39'\n  primary: '#725a39'\n  on-primary: '#ffffff'\n  primary-container: '#d2b48c'\n  on-primary-container: '#5b4526'\n  inverse-primary: '#e1c299'\n  secondary: '#5a6147'\n  on-secondary: '#ffffff'\n  secondary-container: '#dbe3c2'\n  on-secondary-container: '#5e664b'\n  tertiary: '#5e5e5b'\n  on-tertiary: '#ffffff'\n  tertiary-container: '#bab9b4'\n  on-tertiary-container: '#494a46'\n  error: '#ba1a1a'\n  on-error: '#ffffff'\n  error-container: '#ffdad6'\n  on-error-container: '#93000a'\n  primary-fixed: '#feddb3'\n  primary-fixed-dim: '#e1c299'\n  on-primary-fixed: '#281801'\n  on-primary-fixed-variant: '#584324'\n  secondary-fixed: '#dee6c5'\n  secondary-fixed-dim: '#c2caaa'\n  on-secondary-fixed: '#171e09'\n  on-secondary-fixed-variant: '#424a31'\n  tertiary-fixed: '#e4e2dd'\n  tertiary-fixed-dim: '#c8c6c2'\n  on-tertiary-fixed: '#1b1c19'\n  on-tertiary-fixed-variant: '#474744'\n  background: '#fff8f5'\n  on-background: '#1e1b19'\n  surface-variant: '#e8e1de'\ntypography:\n  display-lg:\n    fontFamily: Bodoni Moda\n    fontSize: 84px\n    fontWeight: '600'\n    lineHeight: 92px\n    letterSpacing: -0.02em\n  display-lg-mobile:\n    fontFamily: Bodoni Moda\n    fontSize: 48px\n    fontWeight: '600'\n    lineHeight: 52px\n    letterSpacing: -0.01em\n  headline-md:\n    fontFamily: Bodoni Moda\n    fontSize: 40px\n    fontWeight: '500'\n    lineHeight: 48px\n  headline-sm:\n    fontFamily: Bodoni Moda\n    fontSize: 24px\n    fontWeight: '500'\n    lineHeight: 32px\n  body-lg:\n    fontFamily: Space Grotesk\n    fontSize: 18px\n    fontWeight: '400'\n    lineHeight: 28px\n  body-md:\n    fontFamily: Space Grotesk\n    fontSize: 16px\n    fontWeight: '400'\n    lineHeight: 24px\n  label-caps:\n    fontFamily: Space Grotesk\n    fontSize: 12px\n    fontWeight: '600'\n    lineHeight: 16px\n    letterSpacing: 0.1em\nspacing:\n  unit: 8px\n  container-max: 1440px\n  gutter: 32px\n  margin-desktop: 80px\n  margin-mobile: 24px\n  section-gap: 160px\n---\n\n## Brand & Style\n\nThe brand personality is high-fashion, Mediterranean, and architecturally avant-garde. It targets a sophisticated audience that appreciates the intersection of luxury and effortless simplicity. The UI should evoke a sense of calm, warmth, and \"sun-drenched\" lightness.\n\nThe design style is a refined **Minimalism** with an editorial focus. It prioritizes the \"void\" as much as the content. By utilizing extreme negative space and asymmetrical modularity, the design system creates a weightless atmosphere where every element has room to breathe. The aesthetic mimics the tactile quality of raw linen and the sharp shadows of a southern sun.\n\n## Colors\n\nThe palette is rooted in natural, earthy tones that suggest a summer in Provence. \n\n- **Ivory (#F9F7F2):** Used as the primary canvas. It is a warm, breathable whitespace that replaces pure white to reduce ocular strain and add a linen-like warmth.\n- **Sand (#D2B48C):** The primary accent color, used for subtle highlights, interactive backgrounds, and structural dividers.\n- **Soft Olive (#828A6D):** A secondary accent used sparingly for success states, botanical-themed UI elements, or secondary CTAs.\n- **Warm Charcoal (#33302E):** The primary text color. It provides high legibility against ivory while remaining softer and more organic than true black.\n\n## Typography\n\nThis design system employs a high-contrast typographic pairing to achieve an editorial look. \n\n**Bodoni Moda** is used for headlines and display text. Its vertical stress and extreme contrast between thick and thin strokes provide a sense of luxury. For impact, use large-scale display sizes with tight tracking.\n\n**Space Grotesk** serves as the functional workhorse for UI, body copy, and labels. Its geometric and slightly technical nature balances the romanticism of the serif, ensuring the interface feels contemporary and precise. \n\n**Instruction:** Never overlap text on images. Text should always occupy its own ivory container or sit in the whitespace adjacent to imagery to maintain architectural clarity.\n\n## Layout & Spacing\n\nThe layout philosophy is based on an **asymmetrical modular grid**. Unlike traditional symmetrical layouts, this design system encourages \"weighted\" compositions where elements are offset to create visual interest and movement.\n\n- **Desktop:** A 12-column grid with wide 32px gutters and significant 80px outer margins.\n- **Mobile:** A 4-column grid with 16px gutters and 24px margins.\n- **Rhythm:** Use large vertical gaps (160px+) between major sections to emphasize the \"weightless\" feeling. Elements should often span across 5 or 7 columns rather than even numbers to reinforce the asymmetrical aesthetic.\n\n## Elevation & Depth\n\nTo maintain the sun-drenched, weightless feel, this design system avoids heavy drop shadows and traditional z-axis elevation.\n\n- **Flat Layering:** Depth is achieved through color blocking (Ivory on Sand) rather than shadows.\n- **Low-Contrast Outlines:** If a boundary is required, use a 1px solid border in a slightly darker shade of Sand or a very faint Charcoal at 10% opacity.\n- **Sun-Bleached Shadows:** When shadows are strictly necessary for utility (e.g., floating menus), use an ultra-diffused \"light leak\" shadow: a large blur radius (30px+) with a very low opacity (5%) warm tint.\n\n## Shapes\n\nThe shape language is strictly **Sharp (0px)**. \n\nTo mirror the architectural nature of high-fashion editorial design, all containers, buttons, and image frames must have crisp, 90-degree angles. This sharpness provides a structured counterpoint to the softness of the ivory and sand color palette.\n\n## Components\n\n### Buttons\nPrimary buttons are rectangular with no border radius. Use a solid Warm Charcoal background with Ivory text for high impact. Secondary buttons should use a 1px Warm Charcoal border with no fill. All hover states should be a subtle transition to the Soft Olive or a slight shift in the Sand background tone.\n\n### Input Fields\nInputs are minimalist, consisting only of a 1px bottom border in Warm Charcoal. Labels use the `label-caps` style and sit 8px above the line. Error states are indicated by the Soft Olive color or a change in stroke weight, rather than harsh reds.\n\n### Cards\nCards are defined by generous padding (40px+) and background color shifts (e.g., a Sand card on an Ivory background) rather than borders or shadows. Images within cards must be full-width and maintain their sharp corners.\n\n### Imagery\nImages are the focal point. They should be treated as architectural elements within the grid. Use varying aspect ratios (e.g., 4:5 for portraits, 16:9 for wide landscapes) and arrange them asymmetrically to create a \"scrapbook\" editorial flow.\n\n### Navigation\nThe navigation should be sparse. Use wide letter-spacing for menu items in `label-caps`. The logo should be prominent and set in Bodoni Moda to establish the brand's luxury positioning immediately.",
+        "colorVariant": "FIDELITY",
+        "overridePrimaryColor": "#d2b48c",
+        "overrideSecondaryColor": "#828a6d",
+        "overrideTertiaryColor": "#f9f7f2",
+        "overrideNeutralColor": "#33302e",
+        "spacingScale": 2,
+        "typography": {
+          "display-lg-mobile": {
+            "fontFamily": "Bodoni Moda",
+            "fontSize": "48px",
+            "fontWeight": "600",
+            "lineHeight": "52px",
+            "letterSpacing": "-0.01em"
+          },
+          "body-md": {
+            "fontFamily": "Space Grotesk",
+            "fontSize": "16px",
+            "fontWeight": "400",
+            "lineHeight": "24px"
+          },
+          "label-caps": {
+            "fontFamily": "Space Grotesk",
+            "fontSize": "12px",
+            "fontWeight": "600",
+            "lineHeight": "16px",
+            "letterSpacing": "0.1em"
+          },
+          "body-lg": {
+            "fontFamily": "Space Grotesk",
+            "fontSize": "18px",
+            "fontWeight": "400",
+            "lineHeight": "28px"
+          },
+          "display-lg": {
+            "fontFamily": "Bodoni Moda",
+            "fontSize": "84px",
+            "fontWeight": "600",
+            "lineHeight": "92px",
+            "letterSpacing": "-0.02em"
+          },
+          "headline-md": {
+            "fontFamily": "Bodoni Moda",
+            "fontSize": "40px",
+            "fontWeight": "500",
+            "lineHeight": "48px"
+          },
+          "headline-sm": {
+            "fontFamily": "Bodoni Moda",
+            "fontSize": "24px",
+            "fontWeight": "500",
+            "lineHeight": "32px"
+          }
+        },
+        "spacing": {
+          "margin-mobile": "24px",
+          "container-max": "1440px",
+          "unit": "8px",
+          "margin-desktop": "80px",
+          "gutter": "32px",
+          "section-gap": "160px"
+        },
+        "headlineFontFamily": "Bodoni Moda",
+        "bodyFontFamily": "Space Grotesk",
+        "labelFontFamily": "Space Grotesk"
+      }
+    },
+    "version": "1"
+  }
+}

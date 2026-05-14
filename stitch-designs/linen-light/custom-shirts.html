@@ -1,0 +1,237 @@
+<!DOCTYPE html>
+
+<html class="light" lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>L'ART TAILLEUR - Custom Shirts</title>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com/css2?family=Bodoni+Moda:ital,opsz,wght@0,6..96,400..900;1,6..96,400..900&amp;family=Space+Grotesk:wght@300..700&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<script id="tailwind-config">
+        tailwind.config = {
+            darkMode: "class",
+            theme: {
+                extend: {
+                    "colors": {
+                        "on-error-container": "#93000a",
+                        "on-surface": "#1e1b19",
+                        "surface-variant": "#e8e1de",
+                        "surface-container": "#f3ece9",
+                        "on-secondary-container": "#5e664b",
+                        "inverse-surface": "#33302e",
+                        "on-tertiary": "#ffffff",
+                        "on-surface-variant": "#4d453c",
+                        "outline-variant": "#d1c5b8",
+                        "primary": "#725a39",
+                        "primary-fixed": "#feddb3",
+                        "on-primary-container": "#5b4526",
+                        "error": "#ba1a1a",
+                        "tertiary-fixed-dim": "#c8c6c2",
+                        "tertiary-fixed": "#e4e2dd",
+                        "surface-bright": "#fff8f5",
+                        "on-primary-fixed-variant": "#584324",
+                        "error-container": "#ffdad6",
+                        "surface-container-highest": "#e8e1de",
+                        "surface-container-low": "#f9f2ef",
+                        "on-secondary-fixed": "#171e09",
+                        "background": "#fff8f5",
+                        "inverse-primary": "#e1c299",
+                        "inverse-on-surface": "#f6efec",
+                        "surface": "#fff8f5",
+                        "secondary-fixed-dim": "#c2caaa",
+                        "on-secondary-fixed-variant": "#424a31",
+                        "secondary-container": "#dbe3c2",
+                        "on-primary-fixed": "#281801",
+                        "secondary": "#5a6147",
+                        "outline": "#7f766a",
+                        "secondary-fixed": "#dee6c5",
+                        "on-background": "#1e1b19",
+                        "surface-container-lowest": "#ffffff",
+                        "primary-fixed-dim": "#e1c299",
+                        "tertiary-container": "#bab9b4",
+                        "surface-tint": "#725a39",
+                        "tertiary": "#5e5e5b",
+                        "on-tertiary-container": "#494a46",
+                        "primary-container": "#d2b48c",
+                        "on-tertiary-fixed-variant": "#474744",
+                        "on-secondary": "#ffffff",
+                        "surface-dim": "#dfd9d5",
+                        "on-error": "#ffffff",
+                        "surface-container-high": "#eee7e3",
+                        "on-tertiary-fixed": "#1b1c19",
+                        "on-primary": "#ffffff"
+                    },
+                    "borderRadius": {
+                        "DEFAULT": "0.25rem",
+                        "lg": "0.5rem",
+                        "xl": "0.75rem",
+                        "full": "9999px"
+                    },
+                    "spacing": {
+                        "container-max": "1440px",
+                        "unit": "8px",
+                        "gutter": "32px",
+                        "section-gap": "160px",
+                        "margin-mobile": "24px",
+                        "margin-desktop": "80px"
+                    },
+                    "fontFamily": {
+                        "label-caps": ["Space Grotesk"],
+                        "display-lg": ["Bodoni Moda"],
+                        "headline-sm": ["Bodoni Moda"],
+                        "display-lg-mobile": ["Bodoni Moda"],
+                        "body-md": ["Space Grotesk"],
+                        "body-lg": ["Space Grotesk"],
+                        "headline-md": ["Bodoni Moda"]
+                    },
+                    "fontSize": {
+                        "label-caps": ["12px", { "lineHeight": "16px", "letterSpacing": "0.1em", "fontWeight": "600" }],
+                        "display-lg": ["84px", { "lineHeight": "92px", "letterSpacing": "-0.02em", "fontWeight": "600" }],
+                        "headline-sm": ["24px", { "lineHeight": "32px", "fontWeight": "500" }],
+                        "display-lg-mobile": ["48px", { "lineHeight": "52px", "letterSpacing": "-0.01em", "fontWeight": "600" }],
+                        "body-md": ["16px", { "lineHeight": "24px", "fontWeight": "400" }],
+                        "body-lg": ["18px", { "lineHeight": "28px", "fontWeight": "400" }],
+                        "headline-md": ["40px", { "lineHeight": "48px", "fontWeight": "500" }]
+                    }
+                }
+            }
+        }
+    </script>
+<style>
+        .material-symbols-outlined {
+            font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24;
+        }
+    </style>
+</head>
+<body class="bg-surface text-on-surface font-body-md antialiased overflow-x-hidden">
+<!-- TopNavBar -->
+<nav class="w-full top-0 sticky border-b border-outline-variant bg-surface z-50">
+<div class="flex justify-between items-center w-full px-margin-mobile md:px-margin-desktop py-6 max-w-container-max mx-auto">
+<div class="hidden md:flex gap-8">
+<a class="text-label-caps font-label-caps text-primary font-bold border-b border-primary pb-1" href="#">SHIRTS</a>
+<a class="text-label-caps font-label-caps text-on-surface-variant hover:text-on-surface transition-colors duration-300" href="#">TROUSERS</a>
+<a class="text-label-caps font-label-caps text-on-surface-variant hover:text-on-surface transition-colors duration-300" href="#">WEDDING</a>
+</div>
+<a class="text-headline-md font-headline-md text-on-surface tracking-tighter" href="#">L'ART TAILLEUR</a>
+<div class="flex gap-4 items-center">
+<button class="hover:opacity-70 transition-opacity duration-300">
+<span class="material-symbols-outlined text-on-surface" data-icon="search">search</span>
+</button>
+<button class="hover:opacity-70 transition-opacity duration-300 hidden md:block">
+<span class="material-symbols-outlined text-on-surface" data-icon="person">person</span>
+</button>
+<button class="hover:opacity-70 transition-opacity duration-300">
+<span class="material-symbols-outlined text-on-surface" data-icon="shopping_bag">shopping_bag</span>
+</button>
+<button class="md:hidden hover:opacity-70 transition-opacity duration-300">
+<span class="material-symbols-outlined text-on-surface" data-icon="menu">menu</span>
+</button>
+</div>
+</div>
+</nav>
+<main class="max-w-container-max mx-auto">
+<!-- Hero Section -->
+<section class="grid grid-cols-4 md:grid-cols-12 gap-gutter px-margin-mobile md:px-margin-desktop mt-20 md:mt-32 mb-section-gap">
+<div class="col-span-4 md:col-span-6 flex flex-col justify-center order-2 md:order-1 pt-12 md:pt-0">
+<h1 class="text-display-lg-mobile md:text-display-lg font-display-lg-mobile md:font-display-lg text-on-surface mb-8">Custom Shirts,<br/>Built Around You</h1>
+<p class="text-body-lg font-body-lg text-on-surface-variant max-w-md mb-12">Choose your fabric, collar, cuffs, pockets, and fit. Our signature raw linen and crisp cottons are selected for their architectural stance and tactile richness.</p>
+<button class="bg-on-surface text-on-tertiary px-8 py-4 text-label-caps font-label-caps w-fit hover:bg-primary transition-colors duration-300">START CUSTOMIZING</button>
+</div>
+<div class="col-span-4 md:col-span-6 order-1 md:order-2">
+<div class="aspect-[4/5] bg-surface-container relative w-full overflow-hidden">
+<img alt="A high-fashion editorial close-up of a crisp, white custom-tailored shirt against a warm, sun-drenched sand background. The lighting is harsh yet elegant, casting sharp architectural shadows that highlight the texture of the cotton fabric. The mood is minimalist, luxurious, and Mediterranean, focusing purely on the garment's precise collar construction and raw tactile quality." class="object-cover w-full h-full object-center" data-alt="A high-fashion editorial close-up of a crisp, white custom-tailored shirt against a warm, sun-drenched sand background. The lighting is harsh yet elegant, casting sharp architectural shadows that highlight the texture of the cotton fabric. The mood is minimalist, luxurious, and Mediterranean, focusing purely on the garment's precise collar construction and raw tactile quality." src="https://lh3.googleusercontent.com/aida-public/AB6AXuCc1oNyIWRAdOpP7nx_-AkRX6yKKb2wEpn6-nWaAqbXwqfCqwEeERz5FpzpOQyjci-XPg_olVY_lOYpL5ga6Tj0_LWTWS11iXGNOHlLg2h-9KZJqyjTaiIICLu4FAt8fKVJdyUVWEIHZ0Tmtg0xFLCXD_E3Ts4q62REhHGPvH_bDTBesyK_NMMEi4aRH20exqP1FpS3qKm_7IU9so6NZT3-byrXQO2hlnJ7qExyhyWK6lePsdI-YZghkhYKWRBRIA4pl1weJLh1VZ3l"/>
+</div>
+</div>
+</section>
+<!-- The Foundation: Fabric -->
+<section class="px-margin-mobile md:px-margin-desktop mb-section-gap">
+<div class="grid grid-cols-4 md:grid-cols-12 gap-gutter">
+<div class="col-span-4 md:col-span-12 mb-12">
+<h2 class="text-headline-sm font-headline-sm text-on-surface mb-2">01 — The Foundation</h2>
+<p class="text-body-md font-body-md text-on-surface-variant">Select a fabric engineered for your environment.</p>
+</div>
+<div class="col-span-4 md:col-span-4 group cursor-pointer">
+<div class="aspect-square bg-surface-container mb-6 overflow-hidden relative">
+<img alt="A macro shot of crisp, tightly woven Egyptian cotton fabric in pristine white. The lighting is bright and directional, emphasizing the smooth, formal texture and subtle stiffness of the material. Set against a soft ivory backdrop, the image conveys high-end tailoring, precision, and classic elegance suitable for formal wear." class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105" data-alt="A macro shot of crisp, tightly woven Egyptian cotton fabric in pristine white. The lighting is bright and directional, emphasizing the smooth, formal texture and subtle stiffness of the material. Set against a soft ivory backdrop, the image conveys high-end tailoring, precision, and classic elegance suitable for formal wear." src="https://lh3.googleusercontent.com/aida-public/AB6AXuA-OZ2AOdtNX7Dkj66b32Olx3y3n2AMweg9GlcR0ktzGM3lyvYMIYwJKGbkxE7S0vSQBNNlB_CeKEBIcJnuD9dLeQiDc-9JyXYRIOm1TODaCVIW-Z7xrXCmpDMV-so9cCiiZAkrnnzk4L34dFWilMwqoBWCMgP5gL_OKfBxbbeL50UDxAFF4_AhSZwjAZzk6VXHaqc484NKYrr2CC_dp_oG3NpVSrxzzNyZKUB_jItM-KsvyT9aPGpyWJWhMr4rjtOH-M5bja93_PhL"/>
+</div>
+<h3 class="text-label-caps font-label-caps text-on-surface mb-2">EGYPTIAN COTTON</h3>
+<p class="text-body-md font-body-md text-on-surface-variant">Crisp, structured, and formal.</p>
+</div>
+<div class="col-span-4 md:col-span-4 group cursor-pointer md:mt-12">
+<div class="aspect-square bg-surface-container mb-6 overflow-hidden relative">
+<img alt="A close-up view of raw linen fabric in a warm, natural sand tone. The loose, irregular weave is highlighted by warm, dappled sunlight, showcasing its breathable and tactile qualities. The aesthetic is relaxed, Mediterranean, and earthy, emphasizing the natural imperfections and luxurious weightlessness of the textile." class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105" data-alt="A close-up view of raw linen fabric in a warm, natural sand tone. The loose, irregular weave is highlighted by warm, dappled sunlight, showcasing its breathable and tactile qualities. The aesthetic is relaxed, Mediterranean, and earthy, emphasizing the natural imperfections and luxurious weightlessness of the textile." src="https://lh3.googleusercontent.com/aida-public/AB6AXuAG4gqwbvBt0yvxkZQJ4iq1cy1nGVZBxPJ-sOaaQnTiKbCR9lKtrrMCLVTfoKaFkj5-8Y8Kk0szwxhrwAxUk4seKafSj54mpaRETebg4iLMnPfWTdsKPvyGgH1bl_8_4VHTrzPfPU3L_3nRbgQxXcaOw7shwszjT-QNx_W_WiaXsfhr8W8tsiEa3RJqfpFTveZ7zo--weiwbliLV4-LYbJdO3baWb7GtWbp4jxR3kZD6BEeVw06j2W1vXQ6OZDbxSIEkkMBzGcVWza2"/>
+</div>
+<h3 class="text-label-caps font-label-caps text-on-surface mb-2">RAW LINEN</h3>
+<p class="text-body-md font-body-md text-on-surface-variant">Breathable, textured, and relaxed.</p>
+</div>
+<div class="col-span-4 md:col-span-4 group cursor-pointer md:mt-24">
+<div class="aspect-square bg-surface-container mb-6 overflow-hidden relative">
+<img alt="A detailed shot of Italian poplin fabric draped elegantly to show off its subtle sheen and smooth surface. The color is a soft, warm coffee brown. Studio lighting creates gentle highlights that emphasize the fabric's lightweight yet dense structure. The mood is sophisticated, sleek, and highly polished, suitable for luxury shirting." class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105" data-alt="A detailed shot of Italian poplin fabric draped elegantly to show off its subtle sheen and smooth surface. The color is a soft, warm coffee brown. Studio lighting creates gentle highlights that emphasize the fabric's lightweight yet dense structure. The mood is sophisticated, sleek, and highly polished, suitable for luxury shirting." src="https://lh3.googleusercontent.com/aida-public/AB6AXuBB-7nvjmYW1rK7LrVrKkc5V__mfZ39bItkbJ46U_MSvJGh6DIDLb5CFnPq0V08dfT-7xbZ5zMUP2QXjzwvziiaqKYemSTEzmUyIbcLdL9UOcIeJcbDnWHS0CN4GyqXxJeW5V5TUuSsKHNkQ7DN_vqLcMYNqxMyVp40vDi9Jq4FQMyMA07cl1sn5Th29BiTxq0OOjZL55T_tuLoii5Benv_IcWrYfDbijR16xafnkMiz90clNxaMzDA3JNvcCREmsc8kpu5yGwnIq8F"/>
+</div>
+<h3 class="text-label-caps font-label-caps text-on-surface mb-2">ITALIAN POPLIN</h3>
+<p class="text-body-md font-body-md text-on-surface-variant">Smooth, dense, with a subtle sheen.</p>
+</div>
+</div>
+</section>
+<!-- Collar Architecture -->
+<section class="px-margin-mobile md:px-margin-desktop mb-section-gap">
+<div class="grid grid-cols-4 md:grid-cols-12 gap-gutter items-center">
+<div class="col-span-4 md:col-span-5 md:col-start-2 order-2 md:order-1 mt-12 md:mt-0">
+<div class="space-y-12">
+<div>
+<h2 class="text-headline-sm font-headline-sm text-on-surface mb-2">02 — Collar Architecture</h2>
+<p class="text-body-md font-body-md text-on-surface-variant mb-8">The defining structure of your silhouette.</p>
+</div>
+<div class="border-b border-outline-variant pb-6 hover:border-primary transition-colors cursor-pointer group">
+<h3 class="text-label-caps font-label-caps text-on-surface flex justify-between items-center group-hover:text-primary transition-colors">
+                                CLASSIC
+                                <span class="material-symbols-outlined text-sm">arrow_forward</span>
+</h3>
+<p class="text-body-md font-body-md text-on-surface-variant mt-2">Traditional proportions for everyday versatility.</p>
+</div>
+<div class="border-b border-outline-variant pb-6 hover:border-primary transition-colors cursor-pointer group">
+<h3 class="text-label-caps font-label-caps text-on-surface flex justify-between items-center group-hover:text-primary transition-colors">
+                                SPREAD
+                                <span class="material-symbols-outlined text-sm">arrow_forward</span>
+</h3>
+<p class="text-body-md font-body-md text-on-surface-variant mt-2">Wider stance, ideal for substantial knots.</p>
+</div>
+<div class="border-b border-outline-variant pb-6 hover:border-primary transition-colors cursor-pointer group">
+<h3 class="text-label-caps font-label-caps text-on-surface flex justify-between items-center group-hover:text-primary transition-colors">
+                                MANDARIN
+                                <span class="material-symbols-outlined text-sm">arrow_forward</span>
+</h3>
+<p class="text-body-md font-body-md text-on-surface-variant mt-2">Minimalist band, stripped of the fold.</p>
+</div>
+</div>
+</div>
+<div class="col-span-4 md:col-span-5 md:col-start-8 order-1 md:order-2">
+<div class="aspect-[3/4] bg-surface-container relative w-full overflow-hidden">
+<img alt="An architectural close-up of a men's shirt collar, specifically a crisp spread collar in white poplin. The image is cropped tightly to emphasize the geometry and precise stitching of the collar points against a bare, warm sand-colored neck. The lighting is soft but directional, creating subtle shadows that enhance the garment's structure in a minimalist, editorial style." class="w-full h-full object-cover" data-alt="An architectural close-up of a men's shirt collar, specifically a crisp spread collar in white poplin. The image is cropped tightly to emphasize the geometry and precise stitching of the collar points against a bare, warm sand-colored neck. The lighting is soft but directional, creating subtle shadows that enhance the garment's structure in a minimalist, editorial style." src="https://lh3.googleusercontent.com/aida-public/AB6AXuDuBIdOib5RRyNfBj67hJ_OlWpwPOr8XvO_vNqZisNgFzqCYMy5-kZ1SMMh96cVfxDeJzl6ja24M5wX3e-vuHdso1YYWG7JWkiwRI0FAfLmzCxrBAyL75h6NlR42choFLtYLDkdTFKsYu_Q2JMX-qYM-WDLms-5P3wHaMlC4MRIWZkf9fv7X3DbdqcrJVIZD7qQ16rN88PQ1wjAFeex9ZSq4WKYCkFlq_MOxPmOz_xhK7QkE757eMIWQeoQZsxjcyExgwlBXTqOzNkO"/>
+</div>
+</div>
+</div>
+</section>
+</main>
+<!-- Footer -->
+<footer class="bg-surface-container-highest w-full mt-section-gap">
+<div class="grid grid-cols-1 md:grid-cols-12 gap-gutter px-margin-mobile md:px-margin-desktop py-margin-mobile md:py-margin-desktop max-w-container-max mx-auto">
+<div class="col-span-1 md:col-span-4 mb-8 md:mb-0 flex flex-col justify-between">
+<span class="text-headline-sm font-headline-sm text-on-surface">L'ART TAILLEUR</span>
+<span class="text-body-md font-body-md text-on-surface-variant mt-12 block">© 2024 L'ART TAILLEUR. ARCHITECTURAL TAILORING.</span>
+</div>
+<div class="col-span-1 md:col-span-8 flex flex-col md:flex-row gap-8 md:gap-16 md:justify-end">
+<div class="flex flex-col gap-4">
+<a class="text-body-md font-body-md text-on-surface-variant hover:text-primary transition-colors duration-200" href="#">Sizing Guide</a>
+<a class="text-body-md font-body-md text-on-surface-variant hover:text-primary transition-colors duration-200" href="#">Shipping</a>
+<a class="text-body-md font-body-md text-on-surface-variant hover:text-primary transition-colors duration-200" href="#">Sustainability</a>
+</div>
+<div class="flex flex-col gap-4">
+<a class="text-body-md font-body-md text-on-surface-variant hover:text-primary transition-colors duration-200" href="#">Atelier Visit</a>
+<a class="text-body-md font-body-md text-on-surface-variant hover:text-primary transition-colors duration-200" href="#">Terms</a>
+</div>
+</div>
+</div>
+</footer>
+</body></html>

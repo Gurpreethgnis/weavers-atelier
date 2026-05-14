@@ -1,0 +1,65 @@
+---
+alwaysApply: true
+---
+
+# Forms and Data Standards
+
+All forms must be functional, validated, and future-commerce-ready.
+
+Universal lead fields:
+- fullName
+- email
+- phone or whatsapp
+- country
+- city
+- preferredContactMethod
+- garmentInterest
+- needByDate
+- notes
+- uploadedReferences, where relevant
+
+Lead types:
+- general
+- shirt
+- trouser
+- denim
+- weddingwear
+- statement_piece
+- instagram_recreate
+- measurement_help
+- consultation
+
+Form UX standards:
+- Use clear labels.
+- Use helpful placeholder text.
+- Use validation before submit.
+- Show loading state.
+- Show success state.
+- Show error state.
+- Preserve input if submission fails.
+- Use mobile-friendly controls.
+- Avoid long intimidating forms where a step-based flow is better.
+
+Validation standards:
+- Name required.
+- At least one contact method required.
+- Email must be valid if provided.
+- Phone/WhatsApp should support country codes.
+- Need-by date cannot be in the past.
+- Measurement values must be numeric.
+- Measurement unit is required when measurements are submitted.
+- File uploads must enforce type and size limits.
+
+File upload standards:
+- Support JPG, PNG, WebP.
+- Support HEIC if feasible.
+- PDF optional for measurement sheets.
+- Show max file size.
+- Show upload progress or loading state if possible.
+- Show uploaded file preview where appropriate.
+
+Submission standards:
+- Prefer structured JSON shape.
+- Keep data ready for CRM/admin/backend.
+- Never silently fail.
+- Always tell the customer what happens next.

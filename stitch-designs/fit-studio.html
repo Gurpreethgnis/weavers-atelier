@@ -1,0 +1,239 @@
+<!DOCTYPE html>
+
+<html class="dark" lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>The Atelier Protocol - Weavers Atelier</title>
+<!-- Google Fonts -->
+<link href="https://fonts.googleapis.com" rel="preconnect"/>
+<link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/>
+<link href="https://fonts.googleapis.com/css2?family=Bodoni+Moda:ital,opsz,wght@0,6..96,400..900;1,6..96,400..900&amp;family=Space+Grotesk:wght@300..700&amp;display=swap" rel="stylesheet"/>
+<!-- Material Symbols -->
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<!-- Tailwind CSS -->
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<!-- Tailwind Configuration -->
+<script id="tailwind-config">
+        tailwind.config = {
+            darkMode: "class",
+            theme: {
+                extend: {
+                    "colors": {
+                        "surface-container-low": "#1c1b1b",
+                        "on-primary-fixed": "#1c1b1b",
+                        "on-secondary-fixed-variant": "#5d4201",
+                        "surface-container-lowest": "#0e0e0e",
+                        "on-primary": "#313030",
+                        "primary-container": "#1a1a1a",
+                        "secondary-fixed-dim": "#e9c176",
+                        "on-primary-container": "#848282",
+                        "primary-fixed-dim": "#c8c6c5",
+                        "on-surface": "#e5e2e1",
+                        "on-tertiary-fixed": "#261a00",
+                        "on-tertiary-fixed-variant": "#554422",
+                        "inverse-surface": "#e5e2e1",
+                        "secondary-container": "#604403",
+                        "background": "#131313",
+                        "primary": "#c8c6c5",
+                        "surface-container-high": "#2a2a2a",
+                        "surface-variant": "#353534",
+                        "error": "#ffb4ab",
+                        "on-secondary-fixed": "#261900",
+                        "inverse-on-surface": "#313030",
+                        "tertiary-container": "#241800",
+                        "surface": "#131313",
+                        "surface-dim": "#131313",
+                        "inverse-primary": "#5f5e5e",
+                        "surface-tint": "#c8c6c5",
+                        "primary-fixed": "#e5e2e1",
+                        "on-error-container": "#ffdad6",
+                        "outline-variant": "#444748",
+                        "tertiary": "#dcc497",
+                        "on-surface-variant": "#c4c7c7",
+                        "on-secondary": "#412d00",
+                        "tertiary-fixed": "#f9dfb1",
+                        "surface-container-highest": "#353534",
+                        "error-container": "#93000a",
+                        "tertiary-fixed-dim": "#dcc497",
+                        "secondary-fixed": "#ffdea5",
+                        "on-tertiary": "#3d2e0e",
+                        "on-error": "#690005",
+                        "on-primary-fixed-variant": "#474746",
+                        "secondary": "#e9c176",
+                        "on-background": "#e5e2e1",
+                        "surface-bright": "#3a3939",
+                        "on-secondary-container": "#dab36a",
+                        "outline": "#8e9192",
+                        "on-tertiary-container": "#958058",
+                        "surface-container": "#201f1f"
+                    },
+                    "borderRadius": {
+                        "DEFAULT": "0.25rem",
+                        "lg": "0.5rem",
+                        "xl": "0.75rem",
+                        "full": "9999px"
+                    },
+                    "spacing": {
+                        "margin-desktop": "64px",
+                        "gutter": "24px",
+                        "unit": "4px",
+                        "margin-mobile": "20px",
+                        "block-gap": "120px"
+                    },
+                    "fontFamily": {
+                        "display-lg": ["Bodoni Moda"],
+                        "ui-button": ["Space Grotesk"],
+                        "label-caps": ["Space Grotesk"],
+                        "headline-md": ["Bodoni Moda"],
+                        "body-lg": ["Space Grotesk"],
+                        "body-md": ["Space Grotesk"],
+                        "headline-lg-mobile": ["Bodoni Moda"],
+                        "headline-lg": ["Bodoni Moda"]
+                    },
+                    "fontSize": {
+                        "display-lg": ["84px", { "lineHeight": "90px", "letterSpacing": "-0.02em", "fontWeight": "700" }],
+                        "ui-button": ["14px", { "lineHeight": "20px", "letterSpacing": "0.05em", "fontWeight": "500" }],
+                        "label-caps": ["12px", { "lineHeight": "16px", "letterSpacing": "0.15em", "fontWeight": "600" }],
+                        "headline-md": ["32px", { "lineHeight": "40px", "fontWeight": "500" }],
+                        "body-lg": ["18px", { "lineHeight": "28px", "letterSpacing": "0.01em", "fontWeight": "400" }],
+                        "body-md": ["16px", { "lineHeight": "24px", "fontWeight": "400" }],
+                        "headline-lg-mobile": ["32px", { "lineHeight": "38px", "fontWeight": "600" }],
+                        "headline-lg": ["48px", { "lineHeight": "56px", "letterSpacing": "-0.01em", "fontWeight": "600" }]
+                    }
+                }
+            }
+        }
+    </script>
+<style>
+        .material-symbols-outlined {
+            font-variation-settings: 'FILL' 0, 'wght' 300, 'GRAD' 0, 'opsz' 24;
+        }
+    </style>
+</head>
+<body class="bg-background text-on-background min-h-screen flex flex-col font-body-md text-body-md selection:bg-secondary selection:text-surface-container-lowest">
+<!-- TopNavBar -->
+<nav class="bg-surface-container-low dark:bg-surface-container-low text-secondary dark:text-secondary font-display-lg text-display-lg Headlines, font-body-md text-body-md Body docked full-width top-0 border-b border-secondary-container dark:border-secondary-container flat no shadows flex justify-between items-center w-full px-margin-desktop py-6 max-w-[1440px] mx-auto z-50 sticky">
+<div class="flex-1 flex justify-start">
+<a class="font-display-lg text-headline-md tracking-tighter text-on-surface dark:text-on-surface hover:text-secondary transition-colors duration-300 outline-none focus:ring-2 focus:ring-secondary focus:ring-offset-2 focus:ring-offset-surface-container-low flex items-center" href="#"><img alt="Weavers Atelier Logo" class="h-8 w-auto inline-block mr-3 invert-[0.8] sepia-[0.4] saturate-[5] hue-rotate-[10deg]" src="https://lh3.googleusercontent.com/aida/ADBb0ujqAbXGQege7T4cyEK_hbeRHtKw44RDHqIEhsyCeEPA8BKKo4Tf-Uu_DmdwNvRkINrobsSDw4cFCTlT0zqdxvB548rNVHhBVMCpCpcE_lZzwKwSW0Ns-z1LInPRQDEZBaiDKmOMjKxbZKZKR4AO8W4KXYNd5SRXgYYiTK94AsDYPyJHZmYrjqTd_N8zjbHXEXCrV4-p9mJUZQPeJDLqWMAv-OAXF7EE2bh4uGNb0YNFZpTQdiyxGiVF1A"/>
+            WEAVERS ATELIER
+        </a>
+</div>
+<div class="hidden md:flex flex-1 justify-center gap-8 items-center">
+<a class="text-on-surface-variant font-medium hover:text-secondary transition-colors duration-300 text-label-caps uppercase outline-none focus:text-secondary" href="#">Shirts</a>
+<a class="text-on-surface-variant font-medium hover:text-secondary transition-colors duration-300 text-label-caps uppercase outline-none focus:text-secondary" href="#">Trousers</a>
+<a class="text-on-surface-variant font-medium hover:text-secondary transition-colors duration-300 text-label-caps uppercase outline-none focus:text-secondary" href="#">Denim</a>
+<a class="text-on-surface-variant font-medium hover:text-secondary transition-colors duration-300 text-label-caps uppercase outline-none focus:text-secondary" href="#">Weddingwear</a>
+<a class="text-secondary font-bold border-b-2 border-secondary pb-1 hover:text-secondary transition-colors duration-300 text-label-caps uppercase outline-none Active: opacity-80 transition-opacity" href="#">Custom</a>
+</div>
+<div class="flex flex-1 justify-end items-center gap-6">
+<button class="hover:text-secondary transition-colors duration-300 outline-none focus:ring-2 focus:ring-secondary rounded-full p-1 text-on-surface flex items-center justify-center">
+<span class="material-symbols-outlined" data-icon="shopping_bag">shopping_bag</span>
+</button>
+<button class="hover:text-secondary transition-colors duration-300 outline-none focus:ring-2 focus:ring-secondary rounded-full p-1 text-on-surface flex items-center justify-center">
+<span class="material-symbols-outlined" data-icon="person">person</span>
+</button>
+</div>
+</nav>
+<!-- Main Content Canvas -->
+<main class="flex-grow w-full max-w-[1440px] mx-auto px-margin-mobile md:px-margin-desktop pb-block-gap">
+<!-- Hero Section -->
+<header class="py-block-gap grid grid-cols-1 md:grid-cols-12 gap-gutter">
+<div class="md:col-span-10 md:col-start-2 text-center md:text-left flex flex-col gap-6">
+<span class="font-label-caps text-label-caps uppercase text-secondary tracking-widest border-l-2 border-secondary pl-4 inline-block self-start md:self-auto">Architecture of Garment</span>
+<h1 class="font-display-lg text-[48px] md:text-display-lg text-on-surface">The Atelier Protocol</h1>
+<p class="font-body-lg text-body-lg text-on-surface-variant max-w-2xl mt-4">
+                    A rigorous sequence of technical precision and uncompromising aesthetic judgment. Every commission undergoes strict geometric mapping and a mandatory review threshold before a single incision is made into the cloth.
+                </p>
+</div>
+</header>
+<!-- The Protocol Grid -->
+<section class="grid grid-cols-1 md:grid-cols-12 gap-gutter">
+<!-- Step 01 -->
+<article class="md:col-span-6 bg-surface-container-low border border-surface-variant flex flex-col">
+<div class="w-full h-80 bg-background relative border-b border-surface-variant">
+<img alt="Tailor measuring fabric" class="w-full h-full object-cover grayscale opacity-80" data-alt="A cinematic, low-key photograph of hands carefully measuring dark charcoal wool fabric with a vintage brass tape measure. The lighting is dramatic, casting deep shadows that emphasize the texture of the cloth and the metallic glint of the tools. The aesthetic perfectly matches the Nocturnal Atelier style, focusing on heavy, structural lines and mysterious opulence. The setting feels like a private, midnight studio dedicated to bespoke craftsmanship." src="https://lh3.googleusercontent.com/aida-public/AB6AXuCCpArpu9ZA9q6V2bX9sWb4SBoKkHRLKKUTTqICkdPiuQWKShE8Ka1Qqj7szdFF7MNM4YHs5SQ4VcHM4UsxbhNhuRZv1v9R1dYzBs7rtqhJezj5i0yKYrfVwhtgB9DFpnFHh4HVvgZ5F8OO2gbWS7UG4ttcUI8oDZPQz89HdbzGrwgVcgn_qNsqpukFa4N6DSesEVrDoPt-vg3gLX7rnXgv5RA94HJhsaHrIgpJmzqTeQTWhgRgmRYw1aCEPCbOJvPb88R_dm0YzzX8"/>
+</div>
+<div class="p-10 flex gap-6">
+<span class="font-display-lg text-display-lg text-on-surface-variant/10 leading-none select-none">01</span>
+<div class="flex flex-col justify-center">
+<h2 class="font-headline-md text-headline-md text-on-surface mb-2">Architectural Blueprint</h2>
+<p class="font-body-md text-body-md text-on-surface-variant">
+                            Initial consultation translates anatomical reality into structural data points. We do not take measurements; we map the topography of the frame to establish the garment's foundational grid.
+                        </p>
+</div>
+</div>
+</article>
+<!-- Step 02 -->
+<article class="md:col-span-6 bg-surface-container-low border border-surface-variant flex flex-col">
+<div class="p-10 flex gap-6 border-b border-surface-variant flex-grow">
+<span class="font-display-lg text-display-lg text-on-surface-variant/10 leading-none select-none">02</span>
+<div class="flex flex-col justify-center">
+<h2 class="font-headline-md text-headline-md text-on-surface mb-2">Geometric Drafting</h2>
+<p class="font-body-md text-body-md text-on-surface-variant">
+                            Data translates to two-dimensional geometry. Patterns are drafted from raw mathematical principles, creating absolute modularity. Every curve is intentional, every angle calculated for specific tension and drape.
+                        </p>
+</div>
+</div>
+<div class="w-full h-80 bg-background relative">
+<img alt="Drafting patterns" class="w-full h-full object-cover grayscale opacity-80" data-alt="An overhead, architectural shot of crisp, rigid sewing patterns laid out on a matte black cutting table. The patterns are illuminated by a sharp, focused beam of light that highlights stark geometric lines and precise measurements drawn in white chalk. The surrounding area falls into absolute darkness, adhering to a minimalist opulence theme. The image captures the brutalist precision and technical rigor of high-fashion drafting." src="https://lh3.googleusercontent.com/aida-public/AB6AXuCq_ExMu4CsrtCAlNqHiJOH_UGPsVTRmDEgY4vLZ2ZqHISKf74Dfe7evkOfyJ_MBCeEIVnTLvS_yWwd1TIstDhlpYcB56eexVGpRvXcyEm9Qq2IU2aL-gU9lhWi_OoZHclx7cSP7z3_4NehYJ6OZNgkH-TmVXKZvmWPfr_KblQRkO0fFJ0BVWJ1H7HFlyvKcnDpvrnNnz34SbVxYOWZpOPMjdnpaAZNVv8cZQrPGe77QJgpQyizotAV4Z--MytequJuzRL4c10RiK-Q"/>
+</div>
+</article>
+<!-- Step 03: Highlight - Reviewed Before Cutting -->
+<article class="md:col-span-12 bg-surface-container-lowest border border-secondary/30 relative overflow-hidden mt-8 md:mt-16 group">
+<!-- Tonal layering: subtle inner ring -->
+<div class="absolute inset-0 ring-1 ring-inset ring-secondary/10 pointer-events-none"></div>
+<div class="grid grid-cols-1 md:grid-cols-2">
+<div class="p-12 md:p-20 flex flex-col justify-center border-b md:border-b-0 md:border-r border-surface-variant/50 relative z-10">
+<div class="flex items-start gap-8 mb-8">
+<span class="font-display-lg text-display-lg text-secondary leading-none select-none">03</span>
+<div class="mt-4">
+<span class="font-label-caps text-label-caps uppercase text-secondary tracking-widest block mb-4">Critical Threshold</span>
+<h2 class="font-headline-lg text-[36px] md:text-headline-lg text-on-surface leading-tight">Reviewed<br/>Before Cutting</h2>
+</div>
+</div>
+<p class="font-body-lg text-body-lg text-on-surface-variant max-w-lg mb-10 pl-[104px]">
+                            The paramount law of the Weavers Atelier. Drafted blueprints undergo a severe, multidisciplinary audit. Tension physics, structural integrity, and fabric behavior are calculated against the chosen textile. No shear touches cloth until the geometry is certified flawless.
+                        </p>
+<div class="pl-[104px]">
+<ul class="flex flex-col gap-4 border-l border-surface-variant pl-6">
+<li class="flex items-center gap-3">
+<span class="material-symbols-outlined text-secondary text-sm" data-icon="check_box_outline_blank">check_box_outline_blank</span>
+<span class="font-label-caps text-label-caps text-on-surface uppercase">Tension Vector Analysis</span>
+</li>
+<li class="flex items-center gap-3">
+<span class="material-symbols-outlined text-secondary text-sm" data-icon="check_box_outline_blank">check_box_outline_blank</span>
+<span class="font-label-caps text-label-caps text-on-surface uppercase">Pattern Registration Audit</span>
+</li>
+<li class="flex items-center gap-3">
+<span class="material-symbols-outlined text-secondary text-sm" data-icon="check_box_outline_blank">check_box_outline_blank</span>
+<span class="font-label-caps text-label-caps text-on-surface uppercase">Final Approval Authority</span>
+</li>
+</ul>
+</div>
+</div>
+<div class="w-full h-[500px] md:h-auto bg-background relative z-0">
+<div class="absolute inset-0 bg-gradient-to-r from-surface-container-lowest via-transparent to-transparent z-10 hidden md:block"></div>
+<img alt="Tailor shears over fabric" class="w-full h-full object-cover grayscale opacity-90 transition-transform duration-700 group-hover:scale-105" data-alt="A stark, high-contrast close-up of heavy tailor's shears resting over a perfectly marked piece of obsidian-black fabric, paused just before the first cut. A subtle, golden glow emanates from a single, unseen light source, reflecting off the metallic blades and highlighting a chalk line. The mood is tense and highly intentional, embodying the authoritative and uncompromising nature of the Atelier Protocol. The composition strictly isolates the subject against deep, atmospheric shadows." src="https://lh3.googleusercontent.com/aida-public/AB6AXuBBwi2RECQV1TZqpZQ9v-Hu-qISS6eHVJErErTFOa7_0LGSYeVPakBT47smpvIHdxtDRsRi4oXcvL6G2QaPNSoW5KPOuQuqRGIA8YjO3HuSeH0mrNan6iU0QTR8fQ-msYFNA5cK9Z7SICBGUg0UPaq9TKywJioZtxl6v2dwJAHyrxvQtKAoy19Qd0z_OHoy6RskiC3wVPZWGQ-Bot1Wfq1nI7ZDbDTVnv7R7KjhQFtvowvKBTwSV3EQmigNKA4IFDm0mmCrbvuNSZ1V"/>
+</div>
+</div>
+</article>
+</section>
+</main>
+<!-- Footer -->
+<footer class="bg-surface-container-lowest dark:bg-surface-container-lowest text-secondary dark:text-secondary font-label-caps text-label-caps full-width border-t border-secondary-container flat no shadows flex flex-col md:flex-row justify-between items-center w-full px-margin-desktop py-block-gap max-w-[1440px] mx-auto mt-auto">
+<div class="font-display-lg text-headline-lg text-on-surface mb-8 md:mb-0 text-center md:text-left flex items-center justify-center md:justify-start"><img alt="Weavers Atelier Logo" class="h-8 w-auto inline-block mr-3 invert-[0.8] sepia-[0.4] saturate-[5] hue-rotate-[10deg]" src="https://lh3.googleusercontent.com/aida/ADBb0ujqAbXGQege7T4cyEK_hbeRHtKw44RDHqIEhsyCeEPA8BKKo4Tf-Uu_DmdwNvRkINrobsSDw4cFCTlT0zqdxvB548rNVHhBVMCpCpcE_lZzwKwSW0Ns-z1LInPRQDEZBaiDKmOMjKxbZKZKR4AO8W4KXYNd5SRXgYYiTK94AsDYPyJHZmYrjqTd_N8zjbHXEXCrV4-p9mJUZQPeJDLqWMAv-OAXF7EE2bh4uGNb0YNFZpTQdiyxGiVF1A"/>
+            WEAVERS ATELIER
+        </div>
+<div class="flex flex-col md:flex-row items-center gap-8 md:gap-12 text-center md:text-left">
+<div class="flex gap-8">
+<a class="text-on-surface-variant hover:text-on-surface transition-colors Focus: outline-none transition-all uppercase tracking-widest" href="#">Archives</a>
+<a class="text-on-surface-variant hover:text-on-surface transition-colors Focus: outline-none transition-all uppercase tracking-widest" href="#">Terms</a>
+<a class="text-on-surface-variant hover:text-on-surface transition-colors Focus: outline-none transition-all uppercase tracking-widest" href="#">Atelier Locality</a>
+</div>
+<p class="text-on-surface-variant/50 text-[10px] uppercase tracking-widest mt-8 md:mt-0">
+                © 2024 WEAVERS ATELIER. ALL RIGHTS RESERVED.
+            </p>
+</div>
+</footer>
+</body></html>

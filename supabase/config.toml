@@ -1,0 +1,23 @@
+# Supabase configuration for Weavers Atelier
+# Run `supabase init` and replace this file, or configure manually
+
+[project]
+id = "weavers-atelier"
+
+[api]
+enabled = true
+port = 54321
+max_rows = 1000
+
+[db]
+port = 54322
+major_version = 15
+
+[studio]
+enabled = true
+port = 54323
+
+[storage]
+enabled = true
+# References bucket for customer uploads
+# Create via Dashboard: Storage > New Bucket > "references" > Private

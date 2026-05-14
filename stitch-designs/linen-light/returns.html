@@ -1,0 +1,226 @@
+<!DOCTYPE html>
+
+<html class="light" lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<link href="https://fonts.googleapis.com/css2?family=Bodoni+Moda:ital,wght@0,400..900;1,400..900&amp;family=Space+Grotesk:wght@300..700&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<script id="tailwind-config">
+        tailwind.config = {
+            darkMode: "class",
+            theme: {
+                extend: {
+                    "colors": {
+                        "on-primary": "#ffffff",
+                        "tertiary-container": "#bab9b4",
+                        "on-tertiary-fixed": "#1b1c19",
+                        "on-tertiary-container": "#494a46",
+                        "error": "#ba1a1a",
+                        "on-primary-fixed": "#281801",
+                        "on-error-container": "#93000a",
+                        "inverse-primary": "#e1c299",
+                        "surface-bright": "#fff8f5",
+                        "surface-dim": "#dfd9d5",
+                        "on-surface-variant": "#4d453c",
+                        "on-surface": "#1e1b19",
+                        "on-background": "#1e1b19",
+                        "primary": "#725a39",
+                        "tertiary": "#5e5e5b",
+                        "on-tertiary-fixed-variant": "#474744",
+                        "on-tertiary": "#ffffff",
+                        "inverse-on-surface": "#f6efec",
+                        "on-primary-fixed-variant": "#584324",
+                        "surface-container-high": "#eee7e3",
+                        "primary-fixed-dim": "#e1c299",
+                        "outline": "#7f766a",
+                        "error-container": "#ffdad6",
+                        "on-primary-container": "#5b4526",
+                        "background": "#fff8f5",
+                        "secondary-container": "#dbe3c2",
+                        "on-secondary-container": "#5e664b",
+                        "primary-container": "#d2b48c",
+                        "secondary-fixed": "#dee6c5",
+                        "surface": "#fff8f5",
+                        "surface-tint": "#725a39",
+                        "secondary": "#5a6147",
+                        "secondary-fixed-dim": "#c2caaa",
+                        "on-secondary": "#ffffff",
+                        "on-error": "#ffffff",
+                        "surface-variant": "#e8e1de",
+                        "surface-container-lowest": "#ffffff",
+                        "on-secondary-fixed": "#171e09",
+                        "tertiary-fixed": "#e4e2dd",
+                        "primary-fixed": "#feddb3",
+                        "surface-container-low": "#f9f2ef",
+                        "surface-container-highest": "#e8e1de",
+                        "outline-variant": "#d1c5b8",
+                        "tertiary-fixed-dim": "#c8c6c2",
+                        "on-secondary-fixed-variant": "#424a31",
+                        "surface-container": "#f3ece9",
+                        "inverse-surface": "#33302e"
+                    },
+                    "borderRadius": {
+                        "DEFAULT": "0.25rem",
+                        "lg": "0.5rem",
+                        "xl": "0.75rem",
+                        "full": "9999px"
+                    },
+                    "spacing": {
+                        "unit": "8px",
+                        "margin-desktop": "80px",
+                        "section-gap": "160px",
+                        "container-max": "1440px",
+                        "margin-mobile": "24px",
+                        "gutter": "32px"
+                    },
+                    "fontFamily": {
+                        "body-md": ["Space Grotesk"],
+                        "headline-md": ["Bodoni Moda"],
+                        "body-lg": ["Space Grotesk"],
+                        "display-lg-mobile": ["Bodoni Moda"],
+                        "label-caps": ["Space Grotesk"],
+                        "headline-sm": ["Bodoni Moda"],
+                        "display-lg": ["Bodoni Moda"]
+                    },
+                    "fontSize": {
+                        "body-md": ["16px", {"lineHeight": "24px", "fontWeight": "400"}],
+                        "headline-md": ["40px", {"lineHeight": "48px", "fontWeight": "500"}],
+                        "body-lg": ["18px", {"lineHeight": "28px", "fontWeight": "400"}],
+                        "display-lg-mobile": ["48px", {"lineHeight": "52px", "letterSpacing": "-0.01em", "fontWeight": "600"}],
+                        "label-caps": ["12px", {"lineHeight": "16px", "letterSpacing": "0.1em", "fontWeight": "600"}],
+                        "headline-sm": ["24px", {"lineHeight": "32px", "fontWeight": "500"}],
+                        "display-lg": ["84px", {"lineHeight": "92px", "letterSpacing": "-0.02em", "fontWeight": "600"}]
+                    }
+                }
+            }
+        }
+    </script>
+</head>
+<body class="bg-background text-on-background font-body-md overflow-x-hidden">
+<!-- TopNavBar -->
+<header class="docked full-width top-0 z-50 flex justify-between items-center w-full px-margin-desktop py-6 h-24 bg-background border-b border-outline-variant">
+<div class="font-headline-md text-headline-md tracking-tighter text-on-background uppercase">WEAVERS ATELIER</div>
+<nav class="hidden md:flex gap-gutter items-center">
+<a class="font-label-caps text-label-caps text-on-surface-variant hover:text-secondary transition-colors duration-300" href="#">Lookbook</a>
+<a class="font-label-caps text-label-caps text-on-surface-variant hover:text-secondary transition-colors duration-300" href="#">Customizer</a>
+<a class="font-label-caps text-label-caps text-on-surface-variant hover:text-secondary transition-colors duration-300" href="#">Fit Studio</a>
+<a class="font-label-caps text-label-caps text-on-surface-variant hover:text-secondary transition-colors duration-300" href="#">Process</a>
+</nav>
+<div class="flex gap-6 items-center text-secondary">
+<span class="material-symbols-outlined cursor-pointer hover:opacity-80 transition-all duration-500" data-icon="shopping_bag">shopping_bag</span>
+<span class="material-symbols-outlined cursor-pointer hover:opacity-80 transition-all duration-500" data-icon="menu">menu</span>
+</div>
+</header>
+<main class="max-w-container-max mx-auto">
+<!-- Hero Section -->
+<section class="mt-24 px-margin-desktop grid grid-cols-12 gap-gutter">
+<div class="col-span-12 md:col-span-7 flex flex-col justify-center">
+<span class="font-label-caps text-label-caps text-secondary mb-4">THE PROTOCOL OF SATISFACTION</span>
+<h1 class="font-display-lg text-display-lg mb-8 leading-none">Returns &amp; Alterations</h1>
+<p class="font-body-lg text-body-lg text-on-surface-variant max-w-xl mb-12">
+                    A commitment to architectural precision. We view every garment as a living structure, intended to evolve and align perfectly with your form. Our trust policy ensures that the pursuit of the perfect fit is never a journey you walk alone.
+                </p>
+</div>
+<div class="col-span-12 md:col-span-5 relative h-[600px] overflow-hidden bg-surface-container">
+<img alt="Tailoring precision" class="w-full h-full object-cover" data-alt="A macro close-up of a tailor's hand precisely measuring a high-end linen suit with a vintage measuring tape. The lighting is warm and sun-drenched, mimicking a Mediterranean afternoon. The color palette is composed of soft ivories, warm sands, and charcoal accents. The atmosphere is serene and focused on architectural detail and luxury craftsmanship." src="https://lh3.googleusercontent.com/aida-public/AB6AXuDMC2EWfwm-HiWtwo2KvA6le-K4uYOKu52nnB-MkBYMfP-L1vOLx9q0suRiH9JXZ-3IE2X-hZzVrd8OVdO-6YZnmStt1TlPhLdxhu1r3VeGqGOxOHgXmNF3uj_zoufPxE6okdtwz7Qyj8idPVhrt8a4HtyumKfcDwdjI8zskPyT9q81s8AApKMHakxOrbQqWjLgz7BxwCzq8afkrz9KwV7heoce2o75QyvF9iuAN4o_4E1mCB3q_LAmv9sK6nHL6P1coyNhITAIncXH"/>
+</div>
+</section>
+<!-- The Atelier Guarantee (Bento Grid Style) -->
+<section class="mt-section-gap px-margin-desktop">
+<div class="grid grid-cols-12 gap-gutter">
+<div class="col-span-12 md:col-span-4 bg-surface-container p-12 flex flex-col justify-between h-full">
+<div>
+<span class="material-symbols-outlined text-primary text-4xl mb-6" data-icon="straighten">straighten</span>
+<h3 class="font-headline-sm text-headline-sm mb-4">The 30-Day Alignment</h3>
+<p class="font-body-md text-body-md text-on-surface-variant">Complimentary alterations within the first thirty days of delivery. We ensure the drape and silhouette meet our atelier standards.</p>
+</div>
+</div>
+<div class="col-span-12 md:col-span-8 relative h-[400px] bg-secondary-container flex items-end p-12 overflow-hidden">
+<img alt="Studio atmosphere" class="absolute inset-0 w-full h-full object-cover mix-blend-overlay opacity-30" data-alt="An ethereal wide shot of a minimalist atelier studio with large windows overlooking a sun-soaked garden. The space is filled with neutral linen fabrics draped over architectural forms. Sunlight creates sharp, high-contrast shadows across the light-colored floor, reinforcing a weightless, Mediterranean luxury aesthetic." src="https://lh3.googleusercontent.com/aida-public/AB6AXuAwmDN4JQb4n54073VoMOfLHR5hqXz15zXLhrvvt16LAdnMPMVxdRFwkiaSkT-O2epUnb0iYHfnGalEMbIFjVT13GB3VrsEW19bnDbwP99iTpxPqVrt9IhI_irgAlhWbeQt9iUhCcj1mXa8WenY4Ul2gUn0CxItmHGXb7v1D1wPU2ZeAS92honw9bIZqB6VstDBnGFyFr_4gKbh4QEJvqDT_adCtDwhDmJvZ8o_KqkMXfnzsZEyvURz-a97s3fG1IuRVnAqPgkO_B-3"/>
+<div class="relative z-10 max-w-lg">
+<h2 class="font-headline-md text-headline-md text-on-secondary-container mb-4">Fit Adjustments</h2>
+<p class="font-body-md text-body-md text-on-secondary-container/80 italic">"A garment is only complete when it resonates with the wearer's movement." — The Master Weaver</p>
+</div>
+</div>
+<div class="col-span-12 md:col-span-8 bg-surface-container-high p-12 flex flex-col justify-center border-l-2 border-primary">
+<h3 class="font-headline-sm text-headline-sm mb-4">Anomalies &amp; Remakes</h3>
+<p class="font-body-md text-body-md text-on-surface-variant max-w-2xl mb-6">In the rare event of a structural anomaly or a fit that deviates from the digital fit profile, our atelier will initiate a full remake of the garment at zero cost to the client.</p>
+<button class="w-fit bg-on-background text-background px-10 py-4 font-label-caps text-label-caps hover:bg-secondary transition-all duration-300">REQUEST PROTOCOL REVIEW</button>
+</div>
+<div class="col-span-12 md:col-span-4 bg-primary-container p-12 text-on-primary-container">
+<span class="material-symbols-outlined text-4xl mb-6" data-icon="verified_user">verified_user</span>
+<h3 class="font-headline-sm text-headline-sm mb-4">Bespoke Support</h3>
+<p class="font-body-md text-body-md">Bespoke items are architectural singulars and are final sale. However, our support team remains at your disposal to facilitate local tailoring credits or atelier-direct refinements.</p>
+</div>
+</div>
+</section>
+<!-- The Process (Asymmetric List) -->
+<section class="mt-section-gap px-margin-desktop mb-section-gap">
+<div class="grid grid-cols-12 gap-gutter">
+<div class="col-span-12 md:col-span-5">
+<h2 class="font-headline-md text-headline-md mb-12">The Resolution Flow</h2>
+<div class="space-y-16">
+<div class="flex gap-8 items-start">
+<span class="font-headline-sm text-headline-sm text-outline">01</span>
+<div>
+<h4 class="font-label-caps text-label-caps mb-2">DOCUMENTATION</h4>
+<p class="font-body-md text-body-md text-on-surface-variant">Provide a digital fit assessment through our Fit Studio interface, documenting the areas requiring architectural adjustment.</p>
+</div>
+</div>
+<div class="flex gap-8 items-start">
+<span class="font-headline-sm text-headline-sm text-outline">02</span>
+<div>
+<h4 class="font-label-caps text-label-caps mb-2">EXPERT CONSULTATION</h4>
+<p class="font-body-md text-body-md text-on-surface-variant">A dedicated Master Tailor will review your submission and propose a modification strategy or a total remake within 48 hours.</p>
+</div>
+</div>
+<div class="flex gap-8 items-start">
+<span class="font-headline-sm text-headline-sm text-outline">03</span>
+<div>
+<h4 class="font-label-caps text-label-caps mb-2">SECURE LOGISTICS</h4>
+<p class="font-body-md text-body-md text-on-surface-variant">We provide white-glove collection services for all garments returning to the atelier for structural adjustment.</p>
+</div>
+</div>
+</div>
+</div>
+<div class="col-span-12 md:col-span-6 md:col-start-7 bg-surface-container p-16 relative">
+<div class="absolute -top-12 -left-12 w-24 h-24 bg-primary/10 rounded-full"></div>
+<div class="relative z-10">
+<h3 class="font-headline-sm text-headline-sm mb-8 italic text-secondary">"Trust is the finest fiber we weave."</h3>
+<p class="font-body-lg text-body-lg mb-8 leading-relaxed">We understand that bespoke luxury requires confidence. Our protocol is designed to remove the friction of online tailoring, ensuring your wardrobe is an asset, not a variable.</p>
+<form class="space-y-8">
+<div class="border-b border-on-background py-4">
+<label class="font-label-caps text-label-caps block mb-2">INQUIRY TYPE</label>
+<select class="w-full bg-transparent border-none p-0 focus:ring-0 font-body-md">
+<option>New Alteration Request</option>
+<option>Remake Inquiry</option>
+<option>Fit Consultation</option>
+</select>
+</div>
+<div class="border-b border-on-background py-4">
+<label class="font-label-caps text-label-caps block mb-2">ORDER REFERENCE</label>
+<input class="w-full bg-transparent border-none p-0 focus:ring-0 font-body-md placeholder:text-outline-variant" placeholder="e.g. WA-7702-00" type="text"/>
+</div>
+<button class="w-full bg-on-background text-background py-6 font-label-caps text-label-caps hover:bg-secondary transition-all duration-500" type="submit">INITIATE PROTOCOL</button>
+</form>
+</div>
+</div>
+</div>
+</section>
+</main>
+<!-- Footer -->
+<footer class="w-full px-margin-desktop py-24 flex flex-col items-center gap-12 bg-background border-t border-outline-variant">
+<div class="font-headline-md text-headline-md text-on-background tracking-widest uppercase">WEAVERS ATELIER</div>
+<div class="flex flex-wrap justify-center gap-10">
+<a class="font-label-caps text-label-caps tracking-widest text-on-surface-variant hover:text-on-surface transition-colors duration-300" href="#">Worldwide Delivery</a>
+<a class="font-label-caps text-label-caps tracking-widest text-on-surface-variant hover:text-on-surface transition-colors duration-300" href="#">Terms of Service</a>
+<a class="font-label-caps text-label-caps tracking-widest text-on-surface-variant hover:text-on-surface transition-colors duration-300" href="#">Privacy Policy</a>
+<a class="font-label-caps text-label-caps tracking-widest text-on-surface-variant hover:text-on-surface transition-colors duration-300" href="#">Contact Atelier</a>
+</div>
+<div class="font-label-caps text-label-caps tracking-widest text-secondary opacity-60">
+            © 2024 WEAVERS ATELIER. ARCHITECTURAL MINIMALISM IN MENSWEAR.
+        </div>
+</footer>
+</body></html>

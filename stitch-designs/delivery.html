@@ -1,0 +1,308 @@
+<!DOCTYPE html>
+
+<html class="dark" lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Weavers Fit Studio - The Geometry of Fit</title>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com/css2?family=Bodoni+Moda:opsz,wght@6..96,400..900&amp;family=Space+Grotesk:wght@400;500;600&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<script id="tailwind-config">
+        tailwind.config = {
+          darkMode: "class",
+          theme: {
+            extend: {
+              "colors": {
+                      "surface-container-low": "#1c1b1b",
+                      "on-primary-fixed": "#1c1b1b",
+                      "on-secondary-fixed-variant": "#5d4201",
+                      "surface-container-lowest": "#0e0e0e",
+                      "on-primary": "#313030",
+                      "primary-container": "#1a1a1a",
+                      "secondary-fixed-dim": "#e9c176",
+                      "on-primary-container": "#848282",
+                      "primary-fixed-dim": "#c8c6c5",
+                      "on-surface": "#e5e2e1",
+                      "on-tertiary-fixed": "#261a00",
+                      "on-tertiary-fixed-variant": "#554422",
+                      "inverse-surface": "#e5e2e1",
+                      "secondary-container": "#604403",
+                      "background": "#131313",
+                      "primary": "#c8c6c5",
+                      "surface-container-high": "#2a2a2a",
+                      "surface-variant": "#353534",
+                      "error": "#ffb4ab",
+                      "on-secondary-fixed": "#261900",
+                      "inverse-on-surface": "#313030",
+                      "tertiary-container": "#241800",
+                      "surface": "#131313",
+                      "surface-dim": "#131313",
+                      "inverse-primary": "#5f5e5e",
+                      "surface-tint": "#c8c6c5",
+                      "primary-fixed": "#e5e2e1",
+                      "on-error-container": "#ffdad6",
+                      "outline-variant": "#444748",
+                      "tertiary": "#dcc497",
+                      "on-surface-variant": "#c4c7c7",
+                      "on-secondary": "#412d00",
+                      "tertiary-fixed": "#f9dfb1",
+                      "surface-container-highest": "#353534",
+                      "error-container": "#93000a",
+                      "tertiary-fixed-dim": "#dcc497",
+                      "secondary-fixed": "#ffdea5",
+                      "on-tertiary": "#3d2e0e",
+                      "on-error": "#690005",
+                      "on-primary-fixed-variant": "#474746",
+                      "secondary": "#e9c176",
+                      "on-background": "#e5e2e1",
+                      "surface-bright": "#3a3939",
+                      "on-secondary-container": "#dab36a",
+                      "outline": "#8e9192",
+                      "on-tertiary-container": "#958058",
+                      "surface-container": "#201f1f"
+              },
+              "borderRadius": {
+                      "DEFAULT": "0.25rem",
+                      "lg": "0.5rem",
+                      "xl": "0.75rem",
+                      "full": "9999px"
+              },
+              "spacing": {
+                      "margin-desktop": "64px",
+                      "gutter": "24px",
+                      "unit": "4px",
+                      "margin-mobile": "20px",
+                      "block-gap": "120px"
+              },
+              "fontFamily": {
+                      "display-lg": [
+                              "Bodoni Moda"
+                      ],
+                      "ui-button": [
+                              "Space Grotesk"
+                      ],
+                      "label-caps": [
+                              "Space Grotesk"
+                      ],
+                      "headline-md": [
+                              "Bodoni Moda"
+                      ],
+                      "body-lg": [
+                              "Space Grotesk"
+                      ],
+                      "body-md": [
+                              "Space Grotesk"
+                      ],
+                      "headline-lg-mobile": [
+                              "Bodoni Moda"
+                      ],
+                      "headline-lg": [
+                              "Bodoni Moda"
+                      ]
+              },
+              "fontSize": {
+                      "display-lg": [
+                              "84px",
+                              {
+                                      "lineHeight": "90px",
+                                      "letterSpacing": "-0.02em",
+                                      "fontWeight": "700"
+                              }
+                      ],
+                      "ui-button": [
+                              "14px",
+                              {
+                                      "lineHeight": "20px",
+                                      "letterSpacing": "0.05em",
+                                      "fontWeight": "500"
+                              }
+                      ],
+                      "label-caps": [
+                              "12px",
+                              {
+                                      "lineHeight": "16px",
+                                      "letterSpacing": "0.15em",
+                                      "fontWeight": "600"
+                              }
+                      ],
+                      "headline-md": [
+                              "32px",
+                              {
+                                      "lineHeight": "40px",
+                                      "fontWeight": "500"
+                              }
+                      ],
+                      "body-lg": [
+                              "18px",
+                              {
+                                      "lineHeight": "28px",
+                                      "letterSpacing": "0.01em",
+                                      "fontWeight": "400"
+                              }
+                      ],
+                      "body-md": [
+                              "16px",
+                              {
+                                      "lineHeight": "24px",
+                                      "fontWeight": "400"
+                              }
+                      ],
+                      "headline-lg-mobile": [
+                              "32px",
+                              {
+                                      "lineHeight": "38px",
+                                      "fontWeight": "600"
+                              }
+                      ],
+                      "headline-lg": [
+                              "48px",
+                              {
+                                      "lineHeight": "56px",
+                                      "letterSpacing": "-0.01em",
+                                      "fontWeight": "600"
+                              }
+                      ]
+              }
+      },
+          },
+        }
+    </script>
+<style>
+        .material-symbols-outlined {
+            font-variation-settings: 'FILL' 0, 'wght' 300, 'GRAD' 0, 'opsz' 24;
+        }
+    </style>
+</head>
+<body class="bg-surface-container-lowest text-on-surface min-h-screen flex flex-col">
+<!-- TopNavBar Shared Component -->
+<header class="bg-surface-container-low border-b border-secondary-container w-full top-0 z-50">
+<nav class="flex justify-between items-center w-full px-margin-mobile md:px-margin-desktop py-6 max-w-[1440px] mx-auto relative">
+<div class="font-display-lg text-headline-md tracking-tighter text-on-surface uppercase z-10"><div class="flex items-center gap-3"><img alt="Weavers Atelier Logo" class="h-8 w-auto brightness-0 invert-[.8] sepia-[.4] saturate-[5] hue-rotate-[10deg]" src="https://lh3.googleusercontent.com/aida/ADBb0ujqAbXGQege7T4cyEK_hbeRHtKw44RDHqIEhsyCeEPA8BKKo4Tf-Uu_DmdwNvRkINrobsSDw4cFCTlT0zqdxvB548rNVHhBVMCpCpcE_lZzwKwSW0Ns-z1LInPRQDEZBaiDKmOMjKxbZKZKR4AO8W4KXYNd5SRXgYYiTK94AsDYPyJHZmYrjqTd_N8zjbHXEXCrV4-p9mJUZQPeJDLqWMAv-OAXF7EE2bh4uGNb0YNFZpTQdiyxGiVF1A" style="filter: brightness(0) saturate(100%) invert(87%) sepia(18%) saturate(1131%) hue-rotate(341deg) brightness(96%) contrast(89%);"/><span>WEAVERS ATELIER</span></div></div>
+<div class="hidden md:flex gap-8 items-center absolute left-1/2 -translate-x-1/2 justify-center pointer-events-none w-full">
+<a class="pointer-events-auto font-body-md text-body-md text-on-surface-variant font-medium hover:text-secondary transition-colors duration-300" href="#">Shirts</a>
+<a class="pointer-events-auto font-body-md text-body-md text-on-surface-variant font-medium hover:text-secondary transition-colors duration-300" href="#">Trousers</a>
+<a class="pointer-events-auto font-body-md text-body-md text-on-surface-variant font-medium hover:text-secondary transition-colors duration-300" href="#">Denim</a>
+<a class="pointer-events-auto font-body-md text-body-md text-on-surface-variant font-medium hover:text-secondary transition-colors duration-300" href="#">Weddingwear</a>
+<a class="pointer-events-auto font-body-md text-body-md text-secondary font-bold border-b-2 border-secondary pb-1 hover:text-secondary transition-colors duration-300 opacity-80 transition-opacity" href="#">Custom</a>
+</div>
+<div class="flex gap-4 items-center z-10">
+<button class="hover:text-secondary transition-colors duration-300 focus:outline-none focus:text-secondary">
+<span class="material-symbols-outlined text-secondary">shopping_bag</span>
+</button>
+<button class="hover:text-secondary transition-colors duration-300 focus:outline-none focus:text-secondary">
+<span class="material-symbols-outlined text-secondary">person</span>
+</button>
+</div>
+</nav>
+</header>
+<main class="flex-grow">
+<!-- Hero Section -->
+<section class="w-full px-margin-mobile md:px-margin-desktop py-block-gap max-w-[1440px] mx-auto border-b border-secondary-container">
+<div class="grid grid-cols-1 md:grid-cols-12 gap-gutter">
+<div class="col-span-1 md:col-span-6 flex flex-col justify-center pr-0 md:pr-12">
+<span class="font-label-caps text-label-caps text-secondary mb-6 block uppercase tracking-[0.2em]">Weavers Fit Studio</span>
+<h1 class="font-display-lg text-headline-lg-mobile md:text-display-lg text-on-surface mb-8 uppercase leading-tight">
+                        The Geometry<br/>Of Fit
+                    </h1>
+<p class="font-body-lg text-body-lg text-on-surface-variant max-w-md">
+                        Precision engineered for the brutalist aesthetic. Submit your exacting measurements using our standardized atelier protocol to construct your bespoke architectural silhouette.
+                    </p>
+</div>
+<div class="col-span-1 md:col-span-6 mt-12 md:mt-0">
+<div class="w-full aspect-[3/4] md:aspect-square bg-surface-container-low border border-secondary-container p-2">
+<div class="w-full h-full bg-cover bg-center" data-alt="A striking high-contrast black and white fashion photograph showing the detailed back construction of a bespoke tailored jacket on a mannequin. The lighting is cinematic, casting deep shadows that emphasize the structural lines, precise stitching, and architectural geometry of the garment. The background is a pure, abyssal black typical of the Weavers Atelier aesthetic." style="background-image: url('https://lh3.googleusercontent.com/aida-public/AB6AXuCKLxml3D8GxIhpvSBkYEfI-1b22WP7E-MfRcAbFXOkYpohWBUi84qRo5uHEY_1erdIb5Kf07wAi0eRpZD2nMDwXCilFu1C98gqljbydTYAOYYi0qOhGDIUi8lhVHkcLRf9Ate-QLE0xKtFYGsjA5zAaBitt4WnAOu2shHKMSQfqXMC4TuB6fSha0i-4zKtX_--5XPRjZ1jcHv1U-XgakOXi2nhlYtqzsk_kZFvjfJ6qgvDEwmKkKOS3MU367gnfHjJ5wOzV1yxSD-f');">
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- Measurement Protocol Section -->
+<section class="w-full px-margin-mobile md:px-margin-desktop py-block-gap max-w-[1440px] mx-auto border-b border-secondary-container">
+<div class="grid grid-cols-1 md:grid-cols-12 gap-gutter">
+<!-- Left: Diagram -->
+<div class="col-span-1 md:col-span-5 order-2 md:order-1">
+<div class="sticky top-32 w-full aspect-[4/5] bg-surface-container-low border border-secondary-container p-2">
+<div class="w-full h-full bg-cover bg-center opacity-80 mix-blend-luminosity" data-alt="A technical, blueprint-style diagram overlay on a dark silhouette of a human torso. The diagram features sharp, fine, muted gold lines indicating precise measurement points across the shoulders, chest, and arms. The background is a deep charcoal, reflecting the brutalist geometry and precision required for the Atelier Protocol. The overall mood is clinical yet opulent." style="background-image: url('https://lh3.googleusercontent.com/aida-public/AB6AXuC_Hj7gisQDh-kNxpHaHH7GSt9QjMae5rc6Qf-XTXUn1iOIgbyYRVf_Eqavzx_mrcdATHKnkKORw51AhuT5YVy5kSIetw8xN9Y_Om0g6miNudHwS_xq_c8OU9osJF0xaOhDoAV08-3OztNNQSOUNrvVwnaRy1JmSkz_RyQ19cDKnNfZRDbt59bSf1PHqkv4Uu3OjIsoEBLcfKN-s5m9vcIhPG71-O7VULFTFU9uaT7qqFN5Y4pn8WZS9MTXPqBI3TXpyPnfU7u910VG');">
+</div>
+</div>
+</div>
+<!-- Right: Form -->
+<div class="col-span-1 md:col-span-7 md:pl-12 order-1 md:order-2 mb-12 md:mb-0">
+<div class="mb-16">
+<h2 class="font-headline-md text-headline-md text-on-surface mb-4">Atelier Protocol</h2>
+<p class="font-body-md text-body-md text-on-surface-variant">Execute measurements in centimeters against bare skin. Retain strict posture.</p>
+</div>
+<form class="space-y-12">
+<!-- Atelier List Item 01 -->
+<div class="flex items-start gap-6 group">
+<span class="font-display-lg text-headline-lg text-surface-variant group-focus-within:text-secondary transition-colors select-none">01</span>
+<div class="w-full pt-2">
+<label class="font-label-caps text-label-caps text-on-surface-variant block mb-4 uppercase">Shoulder Span</label>
+<input class="w-full bg-transparent border-b border-secondary-container text-on-surface font-body-lg py-2 px-0 focus:ring-0 focus:border-secondary placeholder-outline-variant transition-colors" placeholder="Measure point to point" type="number"/>
+</div>
+</div>
+<!-- Atelier List Item 02 -->
+<div class="flex items-start gap-6 group">
+<span class="font-display-lg text-headline-lg text-surface-variant group-focus-within:text-secondary transition-colors select-none">02</span>
+<div class="w-full pt-2">
+<label class="font-label-caps text-label-caps text-on-surface-variant block mb-4 uppercase">Chest Circumference</label>
+<input class="w-full bg-transparent border-b border-secondary-container text-on-surface font-body-lg py-2 px-0 focus:ring-0 focus:border-secondary placeholder-outline-variant transition-colors" placeholder="Fullest point, breath neutral" type="number"/>
+</div>
+</div>
+<!-- Atelier List Item 03 -->
+<div class="flex items-start gap-6 group">
+<span class="font-display-lg text-headline-lg text-surface-variant group-focus-within:text-secondary transition-colors select-none">03</span>
+<div class="w-full pt-2">
+<label class="font-label-caps text-label-caps text-on-surface-variant block mb-4 uppercase">Arm Length</label>
+<input class="w-full bg-transparent border-b border-secondary-container text-on-surface font-body-lg py-2 px-0 focus:ring-0 focus:border-secondary placeholder-outline-variant transition-colors" placeholder="Shoulder point to wrist bone" type="number"/>
+</div>
+</div>
+<!-- Atelier List Item 04 -->
+<div class="flex items-start gap-6 group">
+<span class="font-display-lg text-headline-lg text-surface-variant group-focus-within:text-secondary transition-colors select-none">04</span>
+<div class="w-full pt-2">
+<label class="font-label-caps text-label-caps text-on-surface-variant block mb-4 uppercase">Torso Length</label>
+<input class="w-full bg-transparent border-b border-secondary-container text-on-surface font-body-lg py-2 px-0 focus:ring-0 focus:border-secondary placeholder-outline-variant transition-colors" placeholder="Nape to desired hemline" type="number"/>
+</div>
+</div>
+<div class="pt-8 pl-[72px]">
+<button class="bg-secondary text-on-secondary font-ui-button text-ui-button px-8 py-4 uppercase tracking-widest hover:bg-secondary-fixed transition-colors border border-transparent" type="button">
+                                Submit Dimensions
+                            </button>
+</div>
+</form>
+</div>
+</div>
+</section>
+<!-- Video Fitting CTA -->
+<section class="w-full px-margin-mobile md:px-margin-desktop py-block-gap max-w-[1440px] mx-auto">
+<div class="bg-surface-container-low border border-secondary-container p-12 md:p-24 flex flex-col items-center text-center relative overflow-hidden">
+<!-- Abstract geometry background element -->
+<div class="absolute inset-0 opacity-5 pointer-events-none" style="background-image: repeating-linear-gradient(45deg, #e9c176 0, #e9c176 1px, transparent 1px, transparent 20px);">
+</div>
+<span class="material-symbols-outlined text-secondary text-5xl mb-8 font-light" style="font-variation-settings: 'wght' 200;">videocam</span>
+<h2 class="font-display-lg text-headline-lg text-on-surface mb-6 uppercase">Require Precision Assistance?</h2>
+<p class="font-body-lg text-body-lg text-on-surface-variant max-w-2xl mb-10">
+                    The margin for error in bespoke geometry is zero. Book a synchronous video fitting session. Our master tailors will guide your measurements in real-time, ensuring absolute structural integrity.
+                </p>
+<button class="bg-transparent text-secondary border border-secondary font-ui-button text-ui-button px-8 py-4 uppercase tracking-widest hover:bg-secondary hover:text-on-secondary transition-all duration-300">
+                    Book Video Consultation
+                </button>
+</div>
+</section>
+</main>
+<!-- Footer Shared Component -->
+<footer class="bg-surface-container-lowest border-t border-secondary-container w-full mt-auto">
+<div class="flex flex-col md:flex-row justify-between items-center w-full px-margin-desktop py-block-gap max-w-[1440px] mx-auto gap-12 md:gap-0">
+<div class="font-display-lg text-headline-lg text-on-surface uppercase tracking-tighter"><div class="flex items-center gap-4"><img alt="Weavers Atelier Logo" class="h-10 w-auto" src="https://lh3.googleusercontent.com/aida/ADBb0ujqAbXGQege7T4cyEK_hbeRHtKw44RDHqIEhsyCeEPA8BKKo4Tf-Uu_DmdwNvRkINrobsSDw4cFCTlT0zqdxvB548rNVHhBVMCpCpcE_lZzwKwSW0Ns-z1LInPRQDEZBaiDKmOMjKxbZKZKR4AO8W4KXYNd5SRXgYYiTK94AsDYPyJHZmYrjqTd_N8zjbHXEXCrV4-p9mJUZQPeJDLqWMAv-OAXF7EE2bh4uGNb0YNFZpTQdiyxGiVF1A" style="filter: brightness(0) saturate(100%) invert(87%) sepia(18%) saturate(1131%) hue-rotate(341deg) brightness(96%) contrast(89%);"/><span>WEAVERS ATELIER</span></div></div>
+<div class="flex gap-8 items-center">
+<a class="font-label-caps text-label-caps text-on-surface-variant hover:text-on-surface transition-colors focus:outline-none transition-all uppercase" href="#">Archives</a>
+<a class="font-label-caps text-label-caps text-on-surface-variant hover:text-on-surface transition-colors focus:outline-none transition-all uppercase" href="#">Terms</a>
+<a class="font-label-caps text-label-caps text-on-surface-variant hover:text-on-surface transition-colors focus:outline-none transition-all uppercase" href="#">Atelier Locality</a>
+</div>
+<div class="font-label-caps text-label-caps text-on-surface-variant uppercase">
+                © 2024 WEAVERS ATELIER. ALL RIGHTS RESERVED.
+            </div>
+</div>
+</footer>
+</body></html>

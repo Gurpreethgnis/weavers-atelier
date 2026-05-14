@@ -1,0 +1,244 @@
+<!DOCTYPE html>
+
+<html class="dark" lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<link href="https://fonts.googleapis.com/css2?family=Bodoni+Moda:ital,wght@0,400..900;1,400..900&amp;family=Space+Grotesk:wght@300..700&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<style>
+        .material-symbols-outlined {
+            font-variation-settings: 'FILL' 0, 'wght' 300, 'GRAD' 0, 'opsz' 24;
+        }
+        body {
+            background-color: #131313;
+            cursor: crosshair;
+        }
+        .text-glow {
+            text-shadow: 0 0 15px rgba(233, 193, 118, 0.3);
+        }
+    </style>
+<script id="tailwind-config">
+        tailwind.config = {
+            darkMode: "class",
+            theme: {
+                extend: {
+                    "colors": {
+                        "surface": "#131313",
+                        "primary-container": "#1a1a1a",
+                        "secondary-fixed": "#ffdea5",
+                        "surface-variant": "#353534",
+                        "surface-container-lowest": "#0e0e0e",
+                        "surface-tint": "#c8c6c5",
+                        "secondary": "#e9c176",
+                        "secondary-fixed-dim": "#e9c176",
+                        "on-secondary": "#412d00",
+                        "on-error": "#690005",
+                        "on-secondary-fixed": "#261900",
+                        "tertiary-fixed": "#f9dfb1",
+                        "primary-fixed": "#e5e2e1",
+                        "tertiary-fixed-dim": "#dcc497",
+                        "on-secondary-fixed-variant": "#5d4201",
+                        "surface-container": "#201f1f",
+                        "inverse-surface": "#e5e2e1",
+                        "surface-container-low": "#1c1b1b",
+                        "surface-container-highest": "#353534",
+                        "outline-variant": "#444748",
+                        "on-error-container": "#ffdad6",
+                        "on-primary": "#313030",
+                        "tertiary-container": "#241800",
+                        "on-tertiary-fixed": "#261a00",
+                        "on-tertiary-container": "#958058",
+                        "error": "#ffb4ab",
+                        "on-primary-fixed": "#1c1b1b",
+                        "surface-bright": "#3a3939",
+                        "surface-dim": "#131313",
+                        "inverse-primary": "#5f5e5e",
+                        "primary": "#c8c6c5",
+                        "tertiary": "#dcc497",
+                        "on-surface-variant": "#c4c7c7",
+                        "on-surface": "#e5e2e1",
+                        "on-background": "#e5e2e1",
+                        "on-primary-container": "#848282",
+                        "background": "#131313",
+                        "secondary-container": "#604403",
+                        "on-secondary-container": "#dab36a",
+                        "on-tertiary-fixed-variant": "#554422",
+                        "on-tertiary": "#3d2e0e",
+                        "inverse-on-surface": "#313030",
+                        "on-primary-fixed-variant": "#474746",
+                        "surface-container-high": "#2a2a2a",
+                        "primary-fixed-dim": "#c8c6c5",
+                        "outline": "#8e9192",
+                        "error-container": "#93000a"
+                    },
+                    "borderRadius": {
+                        "DEFAULT": "0.25rem",
+                        "lg": "0.5rem",
+                        "xl": "0.75rem",
+                        "full": "9999px"
+                    },
+                    "spacing": {
+                        "unit": "4px",
+                        "margin-desktop": "64px",
+                        "block-gap": "120px",
+                        "margin-mobile": "20px",
+                        "gutter": "24px"
+                    },
+                    "fontFamily": {
+                        "headline-md": ["Bodoni Moda"],
+                        "body-lg": ["Space Grotesk"],
+                        "headline-lg-mobile": ["Bodoni Moda"],
+                        "body-md": ["Space Grotesk"],
+                        "ui-button": ["Space Grotesk"],
+                        "headline-lg": ["Bodoni Moda"],
+                        "display-lg": ["Bodoni Moda"],
+                        "label-caps": ["Space Grotesk"],
+                        "label-technical": ["Space Grotesk"]
+                    },
+                    "fontSize": {
+                        "label-technical": ["11px", { "lineHeight": "14px", "letterSpacing": "0.1em", "fontWeight": "500" }],
+                        "headline-md": ["32px", { "lineHeight": "40px", "fontWeight": "500" }],
+                        "body-lg": ["18px", { "lineHeight": "28px", "letterSpacing": "0.01em", "fontWeight": "400" }],
+                        "headline-lg-mobile": ["32px", { "lineHeight": "38px", "fontWeight": "600" }],
+                        "body-md": ["16px", { "lineHeight": "24px", "fontWeight": "400" }],
+                        "ui-button": ["14px", { "lineHeight": "20px", "letterSpacing": "0.05em", "fontWeight": "500" }],
+                        "headline-lg": ["48px", { "lineHeight": "56px", "letterSpacing": "-0.01em", "fontWeight": "600" }],
+                        "display-lg": ["84px", { "lineHeight": "90px", "letterSpacing": "-0.02em", "fontWeight": "700" }],
+                        "label-caps": ["12px", { "lineHeight": "16px", "letterSpacing": "0.15em", "fontWeight": "600" }]
+                    }
+                },
+            },
+        }
+    </script>
+</head>
+<body class="bg-surface text-on-surface">
+<!-- TopNavBar -->
+<nav class="fixed top-0 z-[60] w-full h-20 bg-surface/80 backdrop-blur-xl border-b border-outline-variant transition-none">
+<div class="flex justify-between items-center max-w-[1440px] mx-auto px-margin-desktop w-full h-full">
+<div class="font-display-lg text-[24px] lg:text-[32px] text-on-surface tracking-tighter uppercase font-bold">WEAVERS</div>
+<div class="hidden md:flex items-center gap-12">
+<a class="font-label-technical text-label-technical text-on-surface-variant hover:text-primary transition-colors uppercase" href="#">Bespoke</a>
+<a class="font-label-technical text-label-technical text-on-surface-variant hover:text-primary transition-colors uppercase" href="#">Studio</a>
+<a class="font-label-technical text-label-technical text-on-surface-variant hover:text-primary transition-colors uppercase" href="#">Archive</a>
+<a class="font-label-technical text-label-technical text-on-surface-variant hover:text-primary transition-colors uppercase" href="#">Logistics</a>
+</div>
+<div class="flex items-center gap-6">
+<button class="font-label-technical text-label-technical bg-on-tertiary-fixed-variant text-on-tertiary px-6 py-2 uppercase tracking-widest hidden lg:block">FINAL PROTOCOL</button>
+<span class="material-symbols-outlined text-on-surface cursor-pointer" data-icon="menu">menu</span>
+</div>
+</div>
+</nav>
+<main class="pt-40 pb-20 px-margin-mobile md:px-margin-desktop max-w-[1440px] mx-auto">
+<!-- Hero Header -->
+<header class="mb-block-gap">
+<p class="font-label-caps text-label-caps text-secondary uppercase tracking-[0.3em] mb-4">Post-Acquisition Governance</p>
+<h1 class="font-display-lg text-display-lg leading-tight mb-8">The Protocol of <br/><span class="italic text-primary-fixed">Satisfaction.</span></h1>
+<div class="w-full h-px bg-outline-variant opacity-30"></div>
+</header>
+<!-- The Atelier Guarantee Section -->
+<section class="grid grid-cols-1 lg:grid-cols-12 gap-gutter mb-block-gap items-center">
+<div class="lg:col-span-5 space-y-8">
+<div class="border-l-2 border-secondary pl-8">
+<h2 class="font-headline-lg text-headline-lg mb-4">The Atelier Guarantee</h2>
+<p class="font-body-lg text-body-lg text-on-surface-variant max-w-md">Our commitment to architectural precision extends beyond the final stitch. We ensure every garment functions as a second skin, governed by the laws of bespoke excellence.</p>
+</div>
+<div class="space-y-6">
+<div class="flex items-start gap-4">
+<span class="font-headline-md text-headline-md text-secondary opacity-40">01</span>
+<div>
+<h3 class="font-label-caps text-label-caps text-on-surface mb-2">30-DAY CALIBRATION</h3>
+<p class="font-body-md text-body-md text-on-surface-variant">Complimentary alterations for 30 days following delivery to ensure a perfect technical fit.</p>
+</div>
+</div>
+<div class="flex items-start gap-4">
+<span class="font-headline-md text-headline-md text-secondary opacity-40">02</span>
+<div>
+<h3 class="font-label-caps text-label-caps text-on-surface mb-2">FIT ADJUSTMENTS</h3>
+<p class="font-body-md text-body-md text-on-surface-variant">Direct access to our senior pattern makers for anatomical refinements and structural tuning.</p>
+</div>
+</div>
+<div class="flex items-start gap-4">
+<span class="font-headline-md text-headline-md text-secondary opacity-40">03</span>
+<div>
+<h3 class="font-label-caps text-label-caps text-on-surface mb-2">REMAKE POLICY</h3>
+<p class="font-body-md text-body-md text-on-surface-variant">In the rare instance of a structural anomaly, a complete technical remake will be initiated.</p>
+</div>
+</div>
+</div>
+</div>
+<div class="lg:col-span-7 aspect-[4/5] bg-surface-container-low overflow-hidden border border-outline-variant">
+<img alt="Tailoring details" class="w-full h-full object-cover grayscale opacity-60 hover:scale-105 transition-transform duration-1000" data-alt="A macro cinematic shot of a bespoke tailor's hand precisely measuring a dark charcoal wool fabric with a vintage wooden ruler. The lighting is low-key, highlighting the intricate texture of the textile and the sharp lines of a chalk mark. The scene is set in a nocturnal atelier with deep shadows and warm bronze highlights, reflecting a mood of focused craftsmanship and high-end mystery." src="https://lh3.googleusercontent.com/aida-public/AB6AXuDd5eIGBCcWY4x3xSj6GGKNgUZkzmspGjrQxmCGVFAtlb45FODq6lArsDXPpHcLGmhCEVW56lMa4pGlakxOifUqyX7V3HpiIHwPIeZ_RsCR1woFxpowHskd796neUNld-d5YYDv9AneitG5NqBUrDYDG79BP5ViCAt2jMW_Igvse5CVN4HCC-UT146kfN3y1ulOKHyCX6d43pezHpaninJEjs3soKiaVKY66--KvRK2AhKnfP5vy0JtOjEuCtIJSqS9H_mtrxe7BCHp"/>
+</div>
+</section>
+<!-- Bespoke Policy Card -->
+<section class="grid grid-cols-1 lg:grid-cols-2 gap-px bg-outline-variant border border-outline-variant mb-block-gap">
+<div class="p-16 bg-surface flex flex-col justify-center">
+<h2 class="font-headline-lg text-headline-lg mb-8 leading-tight">Bespoke Items &amp; <br/>Finality</h2>
+<p class="font-body-lg text-body-lg text-on-surface-variant mb-12">Due to the unique biological mapping and singular nature of bespoke creation, all commissioned pieces are final. They are artifacts created specifically for one individual. While returns are not permitted, our <span class="text-secondary font-bold italic">Perfect Support System</span> ensures the garment evolves with you.</p>
+<div class="flex items-center gap-4 group cursor-pointer">
+<span class="font-label-caps text-label-caps text-secondary tracking-[0.2em]">CONSULT PATTERN TEAM</span>
+<span class="material-symbols-outlined text-secondary group-hover:translate-x-2 transition-transform" data-icon="trending_flat">trending_flat</span>
+</div>
+</div>
+<div class="bg-surface-container overflow-hidden">
+<img alt="Bespoke workshop" class="w-full h-full object-cover grayscale hover:opacity-80 transition-opacity" data-alt="A wide, atmospheric shot of a minimalist, high-fashion design studio at midnight. Structural architectural drawings and fabric swatches are meticulously arranged on a large black stone table. The space is illuminated by a single spotlight creating sharp geometric shadows. The aesthetic is monochromatic and premium, evoking the quiet intensity of a nocturnal atelier where high-luxury garments are conceived." src="https://lh3.googleusercontent.com/aida-public/AB6AXuAMTq5ArLY4qJRYtDK12FFvp-7QyHtmeHQpgIOHIHeoPc5o4TU9UyR8mQTAeQvaStElBiW6_y0M8iDKFNQc5KdDb1mN8GIbXsD9jr0ozlBufXQLd95uz3WsXk9VNS9fbfU42U0jHTlKk72bWrBzIB6gIBjb7y8yjF7_GgdmSmFcvElSure3BbRaDd6l6Il3ZFmfnGh2Er_mvb5dbzc-dsaJ8VxA-2A1K1Zo3Eu6lcc07kmjlRJhyKbfEaH6H6HGDSDwDHWZtmznMlPg"/>
+</div>
+</section>
+<!-- Detailed Protocols -->
+<section class="grid grid-cols-1 md:grid-cols-3 gap-gutter">
+<div class="p-10 border border-outline-variant bg-surface-container-low">
+<span class="material-symbols-outlined text-secondary text-4xl mb-6" data-icon="inventory_2">inventory_2</span>
+<h3 class="font-label-caps text-label-caps text-on-surface mb-4 tracking-widest">RETURNS PROTOCOL</h3>
+<p class="font-body-md text-body-md text-on-surface-variant">Ready-to-wear pieces must be returned in original 'As-Delivered' condition within 14 days. Security tags must remain intact for processing.</p>
+</div>
+<div class="p-10 border border-outline-variant bg-surface-container-low">
+<span class="material-symbols-outlined text-secondary text-4xl mb-6" data-icon="architecture">architecture</span>
+<h3 class="font-label-caps text-label-caps text-on-surface mb-4 tracking-widest">ALTERATION LOGISTICS</h3>
+<p class="font-body-md text-body-md text-on-surface-variant">Scheduled pickups for alterations are handled via our Global Logistics division. Secure transit is guaranteed for every archival piece.</p>
+</div>
+<div class="p-10 border border-outline-variant bg-surface-container-low">
+<span class="material-symbols-outlined text-secondary text-4xl mb-6" data-icon="verified">verified</span>
+<h3 class="font-label-caps text-label-caps text-on-surface mb-4 tracking-widest">VALIDATION PROCESS</h3>
+<p class="font-body-md text-body-md text-on-surface-variant">Every request undergoes a 48-hour technical review by our Quality Control unit before a protocol resolution is issued.</p>
+</div>
+</section>
+</main>
+<!-- Footer -->
+<footer class="border-t border-outline-variant bg-surface-container-lowest mt-block-gap">
+<div class="max-w-[1440px] mx-auto px-margin-desktop py-16 flex flex-col md:flex-row justify-between items-end">
+<div class="w-full md:w-1/2">
+<div class="font-display-lg text-primary uppercase opacity-20 mb-8 leading-none">WEAVERS</div>
+<p class="font-label-technical text-label-technical text-on-surface-variant max-w-sm">
+                    © 2024 WEAVERS ATELIER. ALL RIGHTS RESERVED. ARCHITECTURAL TAILORING DIVISION.
+                </p>
+</div>
+<div class="flex flex-wrap gap-8 mt-12 md:mt-0 justify-end">
+<a class="font-label-technical text-label-technical text-on-surface-variant hover:text-primary transition-colors" href="#">Privacy Protocol</a>
+<a class="font-label-technical text-label-technical text-on-surface-variant hover:text-primary transition-colors" href="#">Terms of Service</a>
+<a class="font-label-technical text-label-technical text-primary underline" href="#">Atelier Intelligence</a>
+<a class="font-label-technical text-label-technical text-on-surface-variant hover:text-primary transition-colors" href="#">Global Logistics</a>
+</div>
+</div>
+</footer>
+<!-- SideNavBar (Suppressed on simple pages, but kept for technical shell consistency where relevant) -->
+<aside class="hidden lg:flex flex-col h-screen fixed left-0 top-0 z-50 w-20 border-r border-outline-variant bg-surface-container-low group hover:w-80 transition-all duration-300">
+<div class="p-6 h-20 flex items-center justify-center border-b border-outline-variant">
+<span class="material-symbols-outlined text-on-surface-variant" data-icon="architecture">architecture</span>
+</div>
+<div class="flex flex-col flex-1 py-10">
+<div class="group-hover:px-8 px-0 flex justify-center group-hover:justify-start items-center gap-4 py-6 text-on-surface-variant border-b border-outline-variant hover:bg-on-tertiary-fixed-variant hover:text-on-tertiary cursor-pointer transition-colors">
+<span class="material-symbols-outlined" data-icon="inventory_2">inventory_2</span>
+<span class="hidden group-hover:block font-label-technical uppercase whitespace-nowrap">Order Archive</span>
+</div>
+<div class="group-hover:px-8 px-0 flex justify-center group-hover:justify-start items-center gap-4 py-6 bg-on-tertiary-fixed-variant text-on-tertiary cursor-pointer">
+<span class="material-symbols-outlined" data-icon="straighten">straighten</span>
+<span class="hidden group-hover:block font-label-technical uppercase whitespace-nowrap">Protocol Management</span>
+</div>
+</div>
+<div class="p-8 border-t border-outline-variant opacity-0 group-hover:opacity-100 transition-opacity">
+<p class="font-label-technical text-[10px] text-on-surface-variant">TECHNICAL OVERLAY V.01.24</p>
+</div>
+</aside>
+</body></html>

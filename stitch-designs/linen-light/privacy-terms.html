@@ -1,0 +1,277 @@
+<!DOCTYPE html>
+
+<html class="light" lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<link href="https://fonts.googleapis.com/css2?family=Bodoni+Moda:ital,wght@0,400..900;1,400..900&amp;family=Space+Grotesk:wght@300..700&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<style>
+        .material-symbols-outlined {
+            font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24;
+        }
+        body {
+            -webkit-font-smoothing: antialiased;
+            -moz-osx-font-smoothing: grayscale;
+        }
+    </style>
+<script id="tailwind-config">
+        tailwind.config = {
+            darkMode: "class",
+            theme: {
+                extend: {
+                    "colors": {
+                        "surface-dim": "#dfd9d5",
+                        "primary": "#725a39",
+                        "surface-container": "#f3ece9",
+                        "surface": "#fff8f5",
+                        "on-tertiary-fixed-variant": "#474744",
+                        "on-background": "#1e1b19",
+                        "on-surface-variant": "#4d453c",
+                        "inverse-primary": "#e1c299",
+                        "tertiary-container": "#bab9b4",
+                        "on-secondary": "#ffffff",
+                        "surface-container-lowest": "#ffffff",
+                        "outline-variant": "#d1c5b8",
+                        "on-tertiary-container": "#494a46",
+                        "on-primary-fixed-variant": "#584324",
+                        "secondary-fixed-dim": "#c2caaa",
+                        "on-error": "#ffffff",
+                        "inverse-surface": "#33302e",
+                        "inverse-on-surface": "#f6efec",
+                        "primary-container": "#d2b48c",
+                        "tertiary": "#5e5e5b",
+                        "secondary": "#5a6147",
+                        "surface-container-low": "#f9f2ef",
+                        "on-tertiary": "#ffffff",
+                        "secondary-container": "#dbe3c2",
+                        "secondary-fixed": "#dee6c5",
+                        "on-secondary-fixed": "#171e09",
+                        "surface-container-highest": "#e8e1de",
+                        "on-error-container": "#93000a",
+                        "outline": "#7f766a",
+                        "surface-variant": "#e8e1de",
+                        "on-tertiary-fixed": "#1b1c19",
+                        "on-primary-fixed": "#281801",
+                        "error-container": "#ffdad6",
+                        "surface-tint": "#725a39",
+                        "tertiary-fixed-dim": "#c8c6c2",
+                        "on-surface": "#1e1b19",
+                        "on-primary-container": "#5b4526",
+                        "background": "#fff8f5",
+                        "tertiary-fixed": "#e4e2dd",
+                        "primary-fixed-dim": "#e1c299",
+                        "on-secondary-fixed-variant": "#424a31",
+                        "surface-bright": "#fff8f5",
+                        "surface-container-high": "#eee7e3",
+                        "error": "#ba1a1a",
+                        "on-primary": "#ffffff",
+                        "primary-fixed": "#feddb3",
+                        "on-secondary-container": "#5e664b"
+                    },
+                    "borderRadius": {
+                        "DEFAULT": "0px",
+                        "lg": "0px",
+                        "xl": "0px",
+                        "full": "9999px"
+                    },
+                    "spacing": {
+                        "unit": "8px",
+                        "section-gap": "160px",
+                        "margin-desktop": "80px",
+                        "margin-mobile": "24px",
+                        "gutter": "32px",
+                        "container-max": "1440px"
+                    },
+                    "fontFamily": {
+                        "body-lg": ["Space Grotesk"],
+                        "display-lg": ["Bodoni Moda"],
+                        "headline-sm": ["Bodoni Moda"],
+                        "label-caps": ["Space Grotesk"],
+                        "headline-md": ["Bodoni Moda"],
+                        "display-lg-mobile": ["Bodoni Moda"],
+                        "body-md": ["Space Grotesk"]
+                    },
+                    "fontSize": {
+                        "body-lg": ["18px", {"lineHeight": "28px", "fontWeight": "400"}],
+                        "display-lg": ["84px", {"lineHeight": "92px", "letterSpacing": "-0.02em", "fontWeight": "600"}],
+                        "headline-sm": ["24px", {"lineHeight": "32px", "fontWeight": "500"}],
+                        "label-caps": ["12px", {"lineHeight": "16px", "letterSpacing": "0.1em", "fontWeight": "600"}],
+                        "headline-md": ["40px", {"lineHeight": "48px", "fontWeight": "500"}],
+                        "display-lg-mobile": ["48px", {"lineHeight": "52px", "letterSpacing": "-0.01em", "fontWeight": "600"}],
+                        "body-md": ["16px", {"lineHeight": "24px", "fontWeight": "400"}]
+                    }
+                },
+            },
+        }
+    </script>
+</head>
+<body class="bg-surface text-on-surface selection:bg-primary-container selection:text-on-primary-container">
+<!-- TopNavBar -->
+<nav class="bg-surface dark:bg-inverse-surface border-b border-outline-variant/30 docked full-width top-0 z-50 sticky">
+<div class="flex justify-between items-center w-full px-margin-mobile md:px-margin-desktop py-6 max-w-container-max mx-auto">
+<div class="flex items-center">
+<a class="font-display-lg text-headline-sm uppercase tracking-[0.2em] text-on-surface dark:text-inverse-on-surface" href="#">WEAVERS ATELIER</a>
+</div>
+<div class="hidden md:flex items-center gap-10">
+<a class="font-label-caps text-label-caps text-on-surface-variant dark:text-outline-variant hover:text-primary dark:hover:text-inverse-primary transition-colors duration-500" href="#">Bespoke</a>
+<a class="font-label-caps text-label-caps text-on-surface-variant dark:text-outline-variant hover:text-primary dark:hover:text-inverse-primary transition-colors duration-500" href="#">Collections</a>
+<a class="font-label-caps text-label-caps text-on-surface-variant dark:text-outline-variant hover:text-primary dark:hover:text-inverse-primary transition-colors duration-500" href="#">Atelier</a>
+<a class="font-label-caps text-label-caps text-on-surface-variant dark:text-outline-variant hover:text-primary dark:hover:text-inverse-primary transition-colors duration-500" href="#">Stories</a>
+</div>
+<div class="flex items-center gap-6">
+<button class="text-on-surface hover:text-primary transition-colors">
+<span class="material-symbols-outlined" data-icon="shopping_bag">shopping_bag</span>
+</button>
+<button class="text-on-surface hover:text-primary transition-colors">
+<span class="material-symbols-outlined" data-icon="person">person</span>
+</button>
+</div>
+</div>
+</nav>
+<main class="max-w-container-max mx-auto px-margin-mobile md:px-margin-desktop">
+<!-- Hero Section -->
+<header class="py-24 md:py-section-gap grid grid-cols-4 md:grid-cols-12 gap-gutter items-end">
+<div class="col-span-4 md:col-span-7">
+<p class="font-label-caps text-label-caps text-primary mb-6">COMPLIANCE &amp; TRANSPARENCY</p>
+<h1 class="font-display-lg-mobile md:font-display-lg text-display-lg-mobile md:text-display-lg text-on-surface">Legal &amp; Ethics <br/><span class="italic font-normal">Framework.</span></h1>
+</div>
+<div class="col-span-4 md:col-span-4 md:col-start-9 pb-4">
+<p class="font-body-lg text-body-lg text-on-surface-variant leading-relaxed">
+                    At Weavers Atelier, we treat your privacy with the same meticulous care we apply to our looms. Our terms are crafted to ensure a respectful and clear relationship between artisan and patron.
+                </p>
+</div>
+</header>
+<!-- Dynamic Grid Layout for Content -->
+<section class="mb-section-gap">
+<div class="grid grid-cols-4 md:grid-cols-12 gap-gutter">
+<!-- Sidebar Navigation (Sticky) -->
+<aside class="hidden md:block md:col-span-3 sticky top-32 h-fit">
+<nav class="space-y-4">
+<a class="block font-label-caps text-label-caps text-primary border-l-2 border-primary pl-4 transition-all" href="#intro">01. INTRODUCTION</a>
+<a class="block font-label-caps text-label-caps text-on-surface-variant hover:text-primary border-l-2 border-transparent pl-4 transition-all" href="#data">02. DATA COLLECTION</a>
+<a class="block font-label-caps text-label-caps text-on-surface-variant hover:text-primary border-l-2 border-transparent pl-4 transition-all" href="#bespoke">03. BESPOKE TERMS</a>
+<a class="block font-label-caps text-label-caps text-on-surface-variant hover:text-primary border-l-2 border-transparent pl-4 transition-all" href="#shipping">04. SHIPPING &amp; CUSTOMS</a>
+<a class="block font-label-caps text-label-caps text-on-surface-variant hover:text-primary border-l-2 border-transparent pl-4 transition-all" href="#intellectual">05. INTELLECTUAL PROPERTY</a>
+</nav>
+</aside>
+<!-- Content Area -->
+<div class="col-span-4 md:col-span-8 md:col-start-5 space-y-24">
+<!-- Section: Introduction -->
+<div class="scroll-mt-32" id="intro">
+<h2 class="font-headline-md text-headline-md text-on-surface mb-8 border-b border-outline-variant/30 pb-4 italic">01. Introduction</h2>
+<div class="space-y-6">
+<p class="font-body-lg text-body-lg text-on-surface-variant">
+                                Weavers Atelier (referred to as "the Atelier", "we", "our", or "us") is committed to protecting the privacy of our clientele. This document outlines how we manage personal information and the terms governing the purchase of our handcrafted textiles.
+                            </p>
+<p class="font-body-md text-body-md text-on-surface-variant">
+                                By engaging with our services, navigating our digital space, or commissioning a bespoke piece, you acknowledge and agree to the practices described herein. We reserve the right to refine these terms as our craft evolves.
+                            </p>
+</div>
+</div>
+<!-- Image Interlude (Asymmetric Card) -->
+<div class="relative w-full aspect-[16/7] overflow-hidden bg-surface-container-high">
+<img class="w-full h-full object-cover" data-alt="An architectural close-up of a sun-drenched weaving studio with raw linen threads hanging from a minimalist timber loom. The lighting is high-key and warm, casting sharp, elegant shadows across a textured sand-colored wall. The aesthetic is clean and Mediterranean, emphasizing high-fashion minimalism and professional craftsmanship." src="https://lh3.googleusercontent.com/aida-public/AB6AXuCLL00WnzzMyG3qUZQJP0IGcxpA0kuw15SX-xePZuPGp4XxSXSOzOimj8fiW0pGRF8i-NbOvPqQuOQum9i59SYKRXfOSicrTip6Ialrkyr6wFR__V6E_3jgWRJQeiRSC_vqCTWVRpOvd_g-psmYuG0TnWCvJYWvR_qTwyc4jo4bXNEIdRhFfvwwHAlvUkZdUiKlaQGxpwcFF3pDyEghAGlLIw4SSetvqnjitVS6p0yeX844_HfpzAsWNNzPMa2I6nuL91OFbAHtFwWb"/>
+</div>
+<!-- Section: Data Collection -->
+<div class="scroll-mt-32" id="data">
+<h2 class="font-headline-md text-headline-md text-on-surface mb-8 border-b border-outline-variant/30 pb-4 italic">02. Data Collection</h2>
+<div class="grid grid-cols-1 md:grid-cols-2 gap-gutter">
+<div class="space-y-4">
+<h3 class="font-label-caps text-label-caps text-primary">PURPOSEFUL ACQUISITION</h3>
+<p class="font-body-md text-body-md text-on-surface-variant">
+                                    We collect only the information necessary to fulfill your orders and provide a personalized experience. This includes identity data, contact details, and financial transaction information processed through secure, encrypted gateways.
+                                </p>
+</div>
+<div class="space-y-4">
+<h3 class="font-label-caps text-label-caps text-primary">THE DIGITAL FOOTPRINT</h3>
+<p class="font-body-md text-body-md text-on-surface-variant">
+                                    Like the subtle patterns in our weave, we use cookies to understand how you interact with our atelier. This data is used solely to enhance site performance and provide relevant aesthetic inspiration.
+                                </p>
+</div>
+</div>
+</div>
+<!-- Section: Bespoke Terms -->
+<div class="scroll-mt-32 bg-surface-container p-12 md:p-16" id="bespoke">
+<h2 class="font-headline-md text-headline-md text-on-surface mb-8 italic">03. Bespoke Terms</h2>
+<div class="space-y-8">
+<div class="border-l border-primary pl-8">
+<p class="font-body-lg text-body-lg text-on-surface italic mb-4">"Every thread is a commitment."</p>
+<p class="font-body-md text-body-md text-on-surface-variant">
+                                    Bespoke commissions represent a unique collaboration. Once a design is finalized and weaving commences, cancellations are not permitted due to the custom nature of the materials and labor involved.
+                                </p>
+</div>
+<ul class="space-y-4 font-body-md text-body-md text-on-surface-variant list-none">
+<li class="flex items-start gap-4">
+<span class="text-primary font-bold">01</span>
+<span>A non-refundable deposit of 50% is required for all bespoke commissions.</span>
+</li>
+<li class="flex items-start gap-4">
+<span class="text-primary font-bold">02</span>
+<span>Lead times are estimates based on artisanal capacity and material sourcing.</span>
+</li>
+<li class="flex items-start gap-4">
+<span class="text-primary font-bold">03</span>
+<span>Slight variations in dye and weave are characteristics of natural fibers and hand-looming.</span>
+</li>
+</ul>
+</div>
+</div>
+<!-- Section: Shipping & Customs -->
+<div class="scroll-mt-32" id="shipping">
+<h2 class="font-headline-md text-headline-md text-on-surface mb-8 border-b border-outline-variant/30 pb-4 italic">04. Shipping &amp; Customs</h2>
+<div class="space-y-6">
+<p class="font-body-md text-body-md text-on-surface-variant">
+                                We ship our textiles globally with white-glove couriers to ensure they reach you in pristine condition. All orders are insured against transit damage.
+                            </p>
+<div class="p-8 border border-outline-variant/30">
+<h4 class="font-label-caps text-label-caps text-on-surface mb-4">INTERNATIONAL DUTIES</h4>
+<p class="font-body-md text-body-md text-on-surface-variant">
+                                    Please be advised that for deliveries outside the European Union, the recipient is responsible for all import duties, customs fees, and local taxes. We recommend consulting your local customs office for estimated costs prior to finalizing a purchase.
+                                </p>
+</div>
+</div>
+</div>
+<!-- Section: Intellectual Property -->
+<div class="scroll-mt-32" id="intellectual">
+<h2 class="font-headline-md text-headline-md text-on-surface mb-8 border-b border-outline-variant/30 pb-4 italic">05. Intellectual Property</h2>
+<p class="font-body-md text-body-md text-on-surface-variant">
+                            All designs, motifs, textile patterns, and imagery featured in this atelier are the exclusive intellectual property of Weavers Atelier. Unauthorized reproduction, distribution, or imitation of our handcrafted patterns is strictly prohibited and protected by international copyright laws.
+                        </p>
+</div>
+<!-- Contact/CTA Card -->
+<div class="bg-primary text-on-primary p-12 md:p-20 text-center">
+<h3 class="font-headline-sm text-headline-sm mb-6">Clarifications Required?</h3>
+<p class="font-body-lg text-body-lg mb-10 opacity-90 max-w-xl mx-auto">
+                            If you require further explanation regarding our terms or how we handle your data, our legal concierge is available for private consultation.
+                        </p>
+<a class="inline-block px-12 py-5 bg-surface text-primary font-label-caps text-label-caps hover:bg-surface-dim transition-colors" href="mailto:legal@weaversatelier.com">CONTACT ATELIER</a>
+</div>
+</div>
+</div>
+</section>
+</main>
+<!-- Footer -->
+<footer class="bg-surface-container-highest dark:bg-inverse-surface border-t border-outline-variant/20">
+<div class="flex flex-col md:flex-row justify-between items-start gap-gutter w-full px-margin-mobile md:px-margin-desktop py-section-gap max-w-container-max mx-auto">
+<div class="space-y-6">
+<p class="font-display-lg text-headline-md text-on-surface dark:text-inverse-on-surface">WEAVERS ATELIER</p>
+<p class="font-label-caps text-label-caps text-on-surface-variant max-w-xs">
+                    ARCHITECTURAL TEXTILES FOR THE SOPHISTICATED HOME. CRAFTED BY HAND, GUIDED BY LIGHT.
+                </p>
+</div>
+<div class="grid grid-cols-2 md:grid-cols-1 gap-4">
+<a class="font-label-caps text-label-caps text-on-surface-variant hover:text-on-surface transition-opacity duration-300" href="#">Sustainability</a>
+<a class="font-label-caps text-label-caps text-on-surface-variant hover:text-on-surface transition-opacity duration-300" href="#">Shipping &amp; Returns</a>
+<a class="font-label-caps text-label-caps text-primary font-bold" href="#">Legal</a>
+<a class="font-label-caps text-label-caps text-on-surface-variant hover:text-on-surface transition-opacity duration-300" href="#">Journal</a>
+</div>
+<div class="mt-8 md:mt-0">
+<p class="font-label-caps text-label-caps text-on-surface-variant opacity-70">
+                    © 2024 WEAVERS ATELIER. HANDCRAFTED EXCELLENCE.
+                </p>
+</div>
+</div>
+</footer>
+</body></html>

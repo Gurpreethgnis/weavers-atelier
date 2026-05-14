@@ -1,0 +1,37 @@
+# Development files
+.env.local
+.env*.local
+
+# Source images and assets in /assets folder (cursor generated)
+assets/
+
+# Stitch designs (development only)
+stitch-designs/
+
+# Scripts (not needed in production)
+scripts/
+
+# Documentation and plans
+docs/
+*.md
+!README.md
+
+# Images source folder (if any)
+Images/
+
+# Git
+.git/
+
+# Node modules (Vercel will install fresh)
+node_modules/
+
+# Build cache
+.next/
+.turbo/
+
+# Test files
+*.test.ts
+*.test.tsx
+*.spec.ts
+*.spec.tsx
+__tests__/

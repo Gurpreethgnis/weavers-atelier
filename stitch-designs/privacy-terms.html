@@ -1,0 +1,323 @@
+<!DOCTYPE html>
+
+<html class="dark" lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com/css2?family=Bodoni+Moda:ital,wght@0,400..900;1,400..900&amp;family=Space+Grotesk:wght@300..700&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<script id="tailwind-config">
+      tailwind.config = {
+        darkMode: "class",
+        theme: {
+          extend: {
+            "colors": {
+                    "primary": "#c8c6c5",
+                    "surface-dim": "#131313",
+                    "surface-container": "#201f1f",
+                    "surface": "#131313",
+                    "on-background": "#e5e2e1",
+                    "on-tertiary-fixed-variant": "#554422",
+                    "on-surface-variant": "#c4c7c7",
+                    "inverse-primary": "#5f5e5e",
+                    "tertiary-container": "#241800",
+                    "on-secondary": "#412d00",
+                    "surface-container-lowest": "#0e0e0e",
+                    "outline-variant": "#444748",
+                    "on-tertiary-container": "#958058",
+                    "secondary-fixed-dim": "#e9c176",
+                    "on-error": "#690005",
+                    "inverse-surface": "#e5e2e1",
+                    "on-primary-fixed-variant": "#474746",
+                    "inverse-on-surface": "#313030",
+                    "primary-container": "#1a1a1a",
+                    "surface-container-low": "#1c1b1b",
+                    "tertiary": "#dcc497",
+                    "secondary": "#e9c176",
+                    "secondary-container": "#604403",
+                    "on-tertiary": "#3d2e0e",
+                    "on-secondary-fixed": "#261900",
+                    "secondary-fixed": "#ffdea5",
+                    "surface-container-highest": "#353534",
+                    "on-error-container": "#ffdad6",
+                    "surface-variant": "#353534",
+                    "on-tertiary-fixed": "#261a00",
+                    "on-primary-fixed": "#1c1b1b",
+                    "outline": "#8e9192",
+                    "error-container": "#93000a",
+                    "surface-tint": "#c8c6c5",
+                    "background": "#131313",
+                    "tertiary-fixed-dim": "#dcc497",
+                    "on-surface": "#e5e2e1",
+                    "on-primary-container": "#848282",
+                    "primary-fixed-dim": "#c8c6c5",
+                    "tertiary-fixed": "#f9dfb1",
+                    "surface-bright": "#3a3939",
+                    "on-secondary-fixed-variant": "#5d4201",
+                    "surface-container-high": "#2a2a2a",
+                    "error": "#ffb4ab",
+                    "primary-fixed": "#e5e2e1",
+                    "on-secondary-container": "#dab36a",
+                    "on-primary": "#313030"
+            },
+            "borderRadius": {
+                    "DEFAULT": "0.25rem",
+                    "lg": "0.5rem",
+                    "xl": "0.75rem",
+                    "full": "9999px"
+            },
+            "spacing": {
+                    "block-gap": "120px",
+                    "unit": "4px",
+                    "margin-desktop": "64px",
+                    "margin-mobile": "20px",
+                    "gutter": "24px"
+            },
+            "fontFamily": {
+                    "label-caps": ["Space Grotesk"],
+                    "headline-md": ["Bodoni Moda"],
+                    "headline-lg-mobile": ["Bodoni Moda"],
+                    "ui-button": ["Space Grotesk"],
+                    "body-md": ["Space Grotesk"],
+                    "body-lg": ["Space Grotesk"],
+                    "display-lg": ["Bodoni Moda"],
+                    "headline-lg": ["Bodoni Moda"]
+            },
+            "fontSize": {
+                    "label-caps": ["12px", {"lineHeight": "16px", "letterSpacing": "0.15em", "fontWeight": "600"}],
+                    "headline-md": ["32px", {"lineHeight": "40px", "fontWeight": "500"}],
+                    "headline-lg-mobile": ["32px", {"lineHeight": "38px", "fontWeight": "600"}],
+                    "ui-button": ["14px", {"lineHeight": "20px", "letterSpacing": "0.05em", "fontWeight": "500"}],
+                    "body-md": ["16px", {"lineHeight": "24px", "fontWeight": "400"}],
+                    "body-lg": ["18px", {"lineHeight": "28px", "letterSpacing": "0.01em", "fontWeight": "400"}],
+                    "display-lg": ["84px", {"lineHeight": "90px", "letterSpacing": "-0.02em", "fontWeight": "700"}],
+                    "headline-lg": ["48px", {"lineHeight": "56px", "letterSpacing": "-0.01em", "fontWeight": "600"}]
+            }
+          },
+        },
+      }
+    </script>
+<style>
+        body {
+            background-color: #080808;
+            color: #e5e2e1;
+        }
+        .bronze-border {
+            border: 1px solid #4A3F35;
+        }
+        .bronze-underline {
+            border-bottom: 1px solid #4A3F35;
+        }
+        .dimmed-overlay {
+            background: linear-gradient(to bottom, rgba(8,8,8,0.8), rgba(8,8,8,1));
+        }
+    </style>
+</head>
+<body class="antialiased selection:bg-secondary selection:text-surface">
+<!-- TopNavBar -->
+<nav class="fixed top-0 w-full z-50 bg-surface/80 backdrop-blur-3xl border-b border-outline-variant/30 h-24">
+<div class="flex justify-between items-center px-margin-desktop h-full max-w-full mx-auto">
+<div class="flex items-center gap-12">
+<span class="font-headline-lg text-headline-lg tracking-tighter text-on-surface uppercase">WEAVERS ATELIER</span>
+<div class="hidden md:flex gap-8">
+<a class="text-on-surface-variant font-ui-button text-ui-button uppercase tracking-widest hover:text-primary transition-colors duration-300" href="#">Bespoke</a>
+<a class="text-on-surface-variant font-ui-button text-ui-button uppercase tracking-widest hover:text-primary transition-colors duration-300" href="#">Archive</a>
+<a class="text-on-surface-variant font-ui-button text-ui-button uppercase tracking-widest hover:text-primary transition-colors duration-300" href="#">Atelier</a>
+<a class="text-on-surface-variant font-ui-button text-ui-button uppercase tracking-widest hover:text-primary transition-colors duration-300" href="#">Heritage</a>
+</div>
+</div>
+<div class="flex items-center gap-6">
+<button class="material-symbols-outlined text-primary hover:opacity-70 transition-opacity">search</button>
+<button class="material-symbols-outlined text-primary hover:opacity-70 transition-opacity">shopping_bag</button>
+<button class="material-symbols-outlined text-primary hover:opacity-70 transition-opacity">menu</button>
+</div>
+</div>
+</nav>
+<main class="pt-48 pb-block-gap">
+<div class="px-margin-desktop max-w-7xl mx-auto">
+<!-- Hero Header Section -->
+<header class="mb-block-gap grid grid-cols-1 md:grid-cols-12 gap-gutter items-end">
+<div class="md:col-span-8">
+<span class="font-label-caps text-label-caps text-secondary block mb-4">LEGAL FRAMEWORK</span>
+<h1 class="font-display-lg text-display-lg uppercase leading-tight">Privacy <br/>&amp; Terms</h1>
+</div>
+<div class="md:col-span-4 pb-4">
+<p class="font-body-md text-body-md text-on-surface-variant border-l border-outline-variant/30 pl-6">
+                        Effective as of December 2024. Our commitment to your digital sovereignty and the integrity of our architectural craftsmanship.
+                    </p>
+</div>
+</header>
+<div class="grid grid-cols-1 md:grid-cols-12 gap-gutter">
+<!-- Sidebar Anchor -->
+<aside class="hidden md:block md:col-span-3 sticky top-48 self-start h-fit">
+<nav class="flex flex-col gap-6">
+<div class="group">
+<a class="font-ui-button text-ui-button uppercase tracking-widest text-primary flex items-center gap-3" href="#privacy">
+<span class="w-2 h-2 bg-secondary block"></span>
+                                Privacy Policy
+                            </a>
+</div>
+<div class="group">
+<a class="font-ui-button text-ui-button uppercase tracking-widest text-on-surface-variant hover:text-primary transition-all flex items-center gap-3" href="#terms">
+<span class="w-2 h-2 border border-outline-variant block"></span>
+                                Terms of Service
+                            </a>
+</div>
+<div class="group">
+<a class="font-ui-button text-ui-button uppercase tracking-widest text-on-surface-variant hover:text-primary transition-all flex items-center gap-3" href="#compliance">
+<span class="w-2 h-2 border border-outline-variant block"></span>
+                                Compliance
+                            </a>
+</div>
+<div class="mt-12">
+<div class="p-6 bronze-border bg-surface-container-low">
+<span class="font-label-caps text-label-caps text-secondary block mb-2">NEEDLE &amp; LOOM</span>
+<p class="font-body-md text-sm text-on-surface-variant">The signature of authenticity. Every clause curated for clarity.</p>
+</div>
+</div>
+</nav>
+</aside>
+<!-- Content Area -->
+<div class="md:col-span-9 space-y-block-gap">
+<!-- Section: Privacy Policy -->
+<section class="relative" id="privacy">
+<div class="flex items-baseline gap-8 mb-12">
+<span class="font-headline-md text-headline-md text-outline-variant/30">01</span>
+<h2 class="font-headline-lg text-headline-lg uppercase border-b border-outline-variant/30 pb-4 w-full">Privacy Policy</h2>
+</div>
+<div class="space-y-12 max-w-4xl">
+<div class="space-y-4">
+<h3 class="font-headline-md text-headline-md text-secondary">Information Harvest</h3>
+<p class="font-body-lg text-body-lg text-on-surface-variant leading-relaxed">
+                                    At Weavers Atelier, your personal data is treated with the same reverence as our rare textiles. We collect only what is essential to provide our bespoke experience: identifying information, measurement profiles, and digital interaction signatures.
+                                </p>
+</div>
+<div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+<div class="p-8 bg-surface-container-low bronze-border">
+<h4 class="font-label-caps text-label-caps text-primary mb-4">COLLECTION METHODS</h4>
+<ul class="font-body-md space-y-3 text-on-surface-variant">
+<li>• Direct Boutique Interaction</li>
+<li>• Atelier Digital Portal</li>
+<li>• Measured Fitting Sessions</li>
+<li>• Transactional Logistics</li>
+</ul>
+</div>
+<div class="p-8 bg-surface-container-low bronze-border">
+<h4 class="font-label-caps text-label-caps text-primary mb-4">YOUR SOVEREIGNTY</h4>
+<ul class="font-body-md space-y-3 text-on-surface-variant">
+<li>• Right to Erasure</li>
+<li>• Archive Portability</li>
+<li>• Profiling Restriction</li>
+<li>• Informed Consent</li>
+</ul>
+</div>
+</div>
+<div class="space-y-4">
+<h3 class="font-headline-md text-headline-md text-secondary">Atmospheric Cookies</h3>
+<p class="font-body-md text-body-md text-on-surface-variant">
+                                    Our digital sanctuary utilizes minimal telemetry to remember your architectural preferences and curated selections. These technical markers are temporary and designed for site performance only.
+                                </p>
+</div>
+</div>
+</section>
+<!-- Section: Terms of Service -->
+<section class="relative" id="terms">
+<div class="flex items-baseline gap-8 mb-12">
+<span class="font-headline-md text-headline-md text-outline-variant/30">02</span>
+<h2 class="font-headline-lg text-headline-lg uppercase border-b border-outline-variant/30 pb-4 w-full">Terms of Service</h2>
+</div>
+<div class="space-y-12 max-w-4xl">
+<div class="space-y-4">
+<h3 class="font-headline-md text-headline-md text-secondary">Atelier Etiquette</h3>
+<p class="font-body-lg text-body-lg text-on-surface-variant leading-relaxed">
+                                    By entering the Weavers Atelier digital space, you agree to respect the intellectual property of our artisans. All geometric patterns, weave blueprints, and photographic compositions are protected under international copyright law.
+                                </p>
+</div>
+<div class="space-y-8">
+<div class="bronze-underline pb-6">
+<h4 class="font-label-caps text-label-caps text-primary mb-2">I. INTELLECTUAL SANCTITY</h4>
+<p class="font-body-md text-on-surface-variant">Unauthorized reproduction of our silhouettes or digital assets is strictly prohibited. Our designs are the result of multi-generational heritage knowledge.</p>
+</div>
+<div class="bronze-underline pb-6">
+<h4 class="font-label-caps text-label-caps text-primary mb-2">II. TRANSACTIONAL INTEGRITY</h4>
+<p class="font-body-md text-on-surface-variant">Orders placed through the Atelier are final upon the commencement of the cutting phase. We prioritize precision; ensure your profiles are accurate.</p>
+</div>
+<div class="bronze-underline pb-6">
+<h4 class="font-label-caps text-label-caps text-primary mb-2">III. GEOMETRIC LIMITATION</h4>
+<p class="font-body-md text-on-surface-variant">Weavers Atelier is not responsible for variations in tactile perception due to digital screen calibration. We recommend boutique viewings for final approval.</p>
+</div>
+</div>
+</div>
+</section>
+<!-- Image Section (Atmospheric) -->
+<div class="grid grid-cols-1 md:grid-cols-12 gap-gutter h-[600px]">
+<div class="md:col-span-7 relative h-full">
+<img class="w-full h-full object-cover bronze-border" data-alt="A cinematic, low-light photograph of a high-fashion weaving atelier at midnight. A single spotlight illuminates a massive, antique wooden loom with intricate bronze gears. Deep shadows dominate the composition, with textured charcoal-colored fabrics draped elegantly over architectural steel beams. The atmosphere is quiet, mysterious, and evokes a sense of deep heritage craftsmanship and luxury." src="https://lh3.googleusercontent.com/aida-public/AB6AXuAztgY-M6fMmSnpLNniKscqnquuwI2wnJHKLOZFoJdr58o108bbsnSwp4dPXHjaZs8WgBGcuUhZor7WANkSncAMlv20ou1ilwOkb09jdFwYtPNPj9WoEhyb8GhIjLoIeuGYcOXnvavkD-5OSrw634fTOQ9wiDEkUt8Yq6KL7Xt50w24SAJ5vcSIykynYQ5RE7YJnW1ZFWjFYZG0NMi1jUYg05636-VxCf2Rp1m8k6Y0AjyJC35U9WZbgyCcolIF2sjtJH8_pWrD3gT6"/>
+</div>
+<div class="md:col-span-5 bg-surface-container flex flex-col justify-center p-12 bronze-border">
+<span class="font-label-caps text-label-caps text-secondary mb-6">THE ARCHIVE</span>
+<h3 class="font-headline-md text-headline-md mb-8">Every thread is a commitment.</h3>
+<p class="font-body-md text-on-surface-variant italic">"We do not just sell garments; we architect experiences that endure through time."</p>
+<div class="mt-12">
+<button class="px-8 py-4 bg-secondary text-surface font-ui-button text-ui-button uppercase tracking-widest hover:brightness-110 transition-all">Download PDF Archive</button>
+</div>
+</div>
+</div>
+<!-- Section: Compliance -->
+<section class="relative" id="compliance">
+<div class="flex items-baseline gap-8 mb-12">
+<span class="font-headline-md text-headline-md text-outline-variant/30">03</span>
+<h2 class="font-headline-lg text-headline-lg uppercase border-b border-outline-variant/30 pb-4 w-full">Compliance</h2>
+</div>
+<div class="grid grid-cols-1 md:grid-cols-3 gap-12 max-w-4xl">
+<div>
+<h4 class="font-label-caps text-label-caps text-primary mb-4">GDPR RIGOR</h4>
+<p class="font-body-md text-sm text-on-surface-variant">Our standards meet and exceed European data sovereignty mandates, ensuring complete transparency for our global clientele.</p>
+</div>
+<div>
+<h4 class="font-label-caps text-label-caps text-primary mb-4">ETHICAL SOURCING</h4>
+<p class="font-body-md text-sm text-on-surface-variant">Transparency in our supply chain is not just legal; it's moral. We disclose all textile origins upon request.</p>
+</div>
+<div>
+<h4 class="font-label-caps text-label-caps text-primary mb-4">LITIGATION</h4>
+<p class="font-body-md text-sm text-on-surface-variant">All legal disputes are governed by the courts of the jurisdiction in which the specific Atelier boutique resides.</p>
+</div>
+</div>
+</section>
+</div>
+</div>
+</div>
+</main>
+<!-- Footer -->
+<footer class="relative w-full pt-block-gap pb-12 bg-surface-container-lowest border-t border-outline-variant/20">
+<div class="grid grid-cols-1 md:grid-cols-12 gap-gutter px-margin-desktop max-w-full mx-auto">
+<div class="md:col-span-4">
+<span class="font-headline-md text-headline-md text-on-surface block mb-8">WEAVERS ATELIER</span>
+<p class="font-body-md text-secondary max-w-xs">Crafted for the modern architect. Curating excellence since 1924.</p>
+</div>
+<div class="md:col-span-2">
+<h4 class="font-label-caps text-label-caps text-primary mb-6">EXPLORE</h4>
+<div class="flex flex-col gap-4">
+<a class="font-body-md text-on-surface-variant hover:text-primary transition-all duration-500 hover:tracking-widest" href="#">Sustainability</a>
+<a class="font-body-md text-on-surface-variant hover:text-primary transition-all duration-500 hover:tracking-widest" href="#">Care Guide</a>
+</div>
+</div>
+<div class="md:col-span-2">
+<h4 class="font-label-caps text-label-caps text-primary mb-6">ASSISTANCE</h4>
+<div class="flex flex-col gap-4">
+<a class="font-body-md text-on-surface-variant hover:text-primary transition-all duration-500 hover:tracking-widest" href="#">Shipping</a>
+<a class="font-body-md text-on-surface-variant hover:text-primary transition-all duration-500 hover:tracking-widest" href="#">Contact</a>
+</div>
+</div>
+<div class="md:col-span-4 flex flex-col justify-between items-end">
+<div class="flex gap-6">
+<span class="material-symbols-outlined text-secondary">share</span>
+<span class="material-symbols-outlined text-secondary">camera_alt</span>
+<span class="material-symbols-outlined text-secondary">mail</span>
+</div>
+<p class="font-label-caps text-label-caps text-on-surface-variant mt-12">© 2024 WEAVERS ATELIER. CRAFTED FOR THE MODERN ARCHITECT.</p>
+</div>
+</div>
+</footer>
+</body></html>

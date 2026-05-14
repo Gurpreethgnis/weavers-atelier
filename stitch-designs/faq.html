@@ -1,0 +1,293 @@
+<!DOCTYPE html>
+
+<html lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Worldwide Delivery - Weavers Atelier</title>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com/css2?family=Bodoni+Moda:ital,opsz,wght@0,6..96,400..900;1,6..96,400..900&amp;family=Space+Grotesk:wght@300..700&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<script id="tailwind-config">
+  tailwind.config = {
+    darkMode: "class",
+    theme: {
+      extend: {
+        "colors": {
+                "outline-variant": "#444748",
+                "outline": "#8e9192",
+                "on-secondary": "#412d00",
+                "on-primary-fixed-variant": "#474746",
+                "on-error": "#690005",
+                "primary-fixed-dim": "#c8c6c5",
+                "primary": "#c8c6c5",
+                "secondary-fixed": "#ffdea5",
+                "surface-container-highest": "#353534",
+                "inverse-primary": "#5f5e5e",
+                "background": "#131313",
+                "surface-container-low": "#1c1b1b",
+                "error-container": "#93000a",
+                "on-tertiary": "#3d2e0e",
+                "on-primary": "#313030",
+                "surface-container-lowest": "#0e0e0e",
+                "error": "#ffb4ab",
+                "tertiary-container": "#241800",
+                "on-error-container": "#ffdad6",
+                "primary-fixed": "#e5e2e1",
+                "tertiary": "#dcc497",
+                "tertiary-fixed": "#f9dfb1",
+                "surface-container-high": "#2a2a2a",
+                "on-secondary-container": "#dab36a",
+                "tertiary-fixed-dim": "#dcc497",
+                "surface-tint": "#c8c6c5",
+                "on-secondary-fixed-variant": "#5d4201",
+                "secondary-container": "#604403",
+                "on-tertiary-fixed-variant": "#554422",
+                "on-tertiary-container": "#958058",
+                "on-primary-fixed": "#1c1b1b",
+                "on-surface-variant": "#c4c7c7",
+                "on-tertiary-fixed": "#261a00",
+                "surface-variant": "#353534",
+                "inverse-surface": "#e5e2e1",
+                "surface-dim": "#131313",
+                "on-surface": "#e5e2e1",
+                "primary-container": "#1a1a1a",
+                "surface-bright": "#3a3939",
+                "on-secondary-fixed": "#261900",
+                "on-primary-container": "#848282",
+                "surface-container": "#201f1f",
+                "on-background": "#e5e2e1",
+                "surface": "#131313",
+                "secondary-fixed-dim": "#e9c176",
+                "secondary": "#e9c176",
+                "inverse-on-surface": "#313030"
+        },
+        "borderRadius": {
+                "DEFAULT": "0.25rem",
+                "lg": "0.5rem",
+                "xl": "0.75rem",
+                "full": "9999px"
+        },
+        "spacing": {
+                "gutter": "24px",
+                "margin-mobile": "20px",
+                "margin-desktop": "64px",
+                "unit": "4px",
+                "block-gap": "120px"
+        },
+        "fontFamily": {
+                "ui-button": [
+                        "Space Grotesk"
+                ],
+                "label-caps": [
+                        "Space Grotesk"
+                ],
+                "body-md": [
+                        "Space Grotesk"
+                ],
+                "body-lg": [
+                        "Space Grotesk"
+                ],
+                "headline-lg-mobile": [
+                        "Bodoni Moda"
+                ],
+                "headline-md": [
+                        "Bodoni Moda"
+                ],
+                "headline-lg": [
+                        "Bodoni Moda"
+                ],
+                "display-lg": [
+                        "Bodoni Moda"
+                ]
+        },
+        "fontSize": {
+                "ui-button": [
+                        "14px",
+                        {
+                                "lineHeight": "20px",
+                                "letterSpacing": "0.05em",
+                                "fontWeight": "500"
+                        }
+                ],
+                "label-caps": [
+                        "12px",
+                        {
+                                "lineHeight": "16px",
+                                "letterSpacing": "0.15em",
+                                "fontWeight": "600"
+                        }
+                ],
+                "body-md": [
+                        "16px",
+                        {
+                                "lineHeight": "24px",
+                                "fontWeight": "400"
+                        }
+                ],
+                "body-lg": [
+                        "18px",
+                        {
+                                "lineHeight": "28px",
+                                "letterSpacing": "0.01em",
+                                "fontWeight": "400"
+                        }
+                ],
+                "headline-lg-mobile": [
+                        "32px",
+                        {
+                                "lineHeight": "38px",
+                                "fontWeight": "600"
+                        }
+                ],
+                "headline-md": [
+                        "32px",
+                        {
+                                "lineHeight": "40px",
+                                "fontWeight": "500"
+                        }
+                ],
+                "headline-lg": [
+                        "48px",
+                        {
+                                "lineHeight": "56px",
+                                "letterSpacing": "-0.01em",
+                                "fontWeight": "600"
+                        }
+                ],
+                "display-lg": [
+                        "84px",
+                        {
+                                "lineHeight": "90px",
+                                "letterSpacing": "-0.02em",
+                                "fontWeight": "700"
+                        }
+                ]
+        }
+},
+    },
+  }
+</script>
+<style>
+        .material-symbols-outlined {
+          font-variation-settings:
+          'FILL' 0,
+          'wght' 400,
+          'GRAD' 0,
+          'opsz' 24
+        }
+    </style>
+</head>
+<body class="bg-background text-on-background font-body-md min-h-screen flex flex-col">
+<!-- TopNavBar -->
+<nav class="bg-surface border-b border-outline-variant/10 w-full top-0 sticky z-50 h-20">
+<div class="grid grid-cols-2 md:grid-cols-3 items-center px-margin-mobile md:px-margin-desktop h-full max-w-[1440px] mx-auto">
+<div class="font-headline-md text-headline-md tracking-tighter text-on-surface justify-self-start"><div class="flex items-center gap-3">
+<img alt="Weavers Atelier Logo" class="h-8 w-auto" src="https://lh3.googleusercontent.com/aida/ADBb0ujqAbXGQege7T4cyEK_hbeRHtKw44RDHqIEhsyCeEPA8BKKo4Tf-Uu_DmdwNvRkINrobsSDw4cFCTlT0zqdxvB548rNVHhBVMCpCpcE_lZzwKwSW0Ns-z1LInPRQDEZBaiDKmOMjKxbZKZKR4AO8W4KXYNd5SRXgYYiTK94AsDYPyJHZmYrjqTd_N8zjbHXEXCrV4-p9mJUZQPeJDLqWMAv-OAXF7EE2bh4uGNb0YNFZpTQdiyxGiVF1A" style="filter: brightness(0) saturate(100%) invert(86%) sepia(21%) saturate(1039%) hue-rotate(344deg) brightness(96%) contrast(89%);"/>
+<span>WEAVERS ATELIER</span>
+</div></div>
+<div class="hidden md:flex gap-gutter items-center justify-self-center">
+<a class="font-label-caps text-label-caps text-on-surface-variant hover:text-primary transition-colors duration-300 cursor-pointer" href="#">Shirts</a>
+<a class="font-label-caps text-label-caps text-on-surface-variant hover:text-primary transition-colors duration-300 cursor-pointer" href="#">Trousers</a>
+<a class="font-label-caps text-label-caps text-on-surface-variant hover:text-primary transition-colors duration-300 cursor-pointer" href="#">Denim</a>
+<a class="font-label-caps text-label-caps text-on-surface-variant hover:text-primary transition-colors duration-300 cursor-pointer" href="#">Weddingwear</a>
+<a class="font-label-caps text-label-caps text-on-surface-variant hover:text-primary transition-colors duration-300 cursor-pointer" href="#">Custom Looks</a>
+</div>
+<div class="flex items-center gap-4 text-primary cursor-pointer transition-opacity active:opacity-70 justify-self-end">
+<span class="material-symbols-outlined" data-icon="shopping_bag">shopping_bag</span>
+</div>
+</div>
+</nav>
+<main class="flex-grow">
+<!-- Hero Section -->
+<section class="max-w-[1440px] mx-auto px-margin-mobile md:px-margin-desktop pt-32 pb-24">
+<div class="grid grid-cols-1 md:grid-cols-12 gap-gutter">
+<div class="col-span-1 md:col-span-8 md:col-start-2">
+<h1 class="font-display-lg text-headline-lg-mobile md:text-display-lg text-on-surface mb-8">Delivered to Your Door</h1>
+<p class="font-body-lg text-body-lg text-on-surface-variant max-w-2xl">
+                        Our commitment to craftsmanship extends to how your garments arrive. We partner with premium global couriers to ensure your bespoke pieces reach you securely and elegantly, anywhere in the world.
+                    </p>
+</div>
+</div>
+</section>
+<!-- Global Reach Map Section -->
+<section class="max-w-[1440px] mx-auto px-margin-mobile md:px-margin-desktop py-24 bg-surface-container-low">
+<div class="grid grid-cols-1 md:grid-cols-12 gap-gutter items-center">
+<div class="col-span-1 md:col-span-4 md:col-start-2">
+<h2 class="font-headline-md text-headline-md text-on-surface mb-6">Global Reach</h2>
+<p class="font-body-md text-body-md text-on-surface-variant mb-12">
+                        From our atelier to your wardrobe. We currently offer expedited shipping to major style capitals and discerning clients across North America, Europe, Asia, and Oceania.
+                    </p>
+<ul class="space-y-4">
+<li class="flex items-center gap-4 border-b border-outline-variant/30 pb-4">
+<span class="font-label-caps text-label-caps text-on-surface w-24">AMERICAS</span>
+<span class="font-body-md text-body-md text-on-surface-variant">USA, Canada, Mexico, Brazil</span>
+</li>
+<li class="flex items-center gap-4 border-b border-outline-variant/30 pb-4">
+<span class="font-label-caps text-label-caps text-on-surface w-24">EUROPE</span>
+<span class="font-body-md text-body-md text-on-surface-variant">UK, France, Italy, Germany, Spain</span>
+</li>
+<li class="flex items-center gap-4 border-b border-outline-variant/30 pb-4">
+<span class="font-label-caps text-label-caps text-on-surface w-24">ASIA PACIFIC</span>
+<span class="font-body-md text-body-md text-on-surface-variant">Australia, Japan, South Korea, Singapore</span>
+</li>
+</ul>
+</div>
+<div class="col-span-1 md:col-span-6 md:col-start-7">
+<div class="aspect-square bg-surface-variant overflow-hidden">
+<img alt="Abstract map representation" class="w-full h-full object-cover opacity-80" data-alt="A highly stylized, minimalist map illustration rendered in a sun-drenched, Mediterranean color palette of warm sand, ivory, and soft olive tones. The map features abstracted, geometric continents without rigid borders, suggesting seamless global connectivity and fluid movement. Subtle, elegant connecting lines arc across the oceans, symbolizing premium international shipping routes. The overall aesthetic is calm, luxurious, and editorial, resembling a high-end fashion magazine spread rather than a literal geographic tool." src="https://lh3.googleusercontent.com/aida-public/AB6AXuBzxCA-tBmdT1hhZOoSA2JoyKHkUoShjA2HFyougmVR8e3IMQhHw94VuosE1OvkpN6Jr7kGU9pn2L_W9KTn1xYRi-FqybVQI2QIzOsF1Uz414c0Y4bankRqfQxrg19QI-P0QYuXbmMTtBVy4G7dIiltu8i1mDzUrPRYan45C-zvYx9hJO1wk4Z3DIIzw9l7rZ5rUKBe_B_VjmlS-X4cItfzyqpNWSbDILV4I68rLUPhJmZII9kE5Ae0q0ycedCzdgp8sTd7q3_K7ka0"/>
+</div>
+</div>
+</div>
+</section>
+<!-- Timeline Section -->
+<section class="max-w-[1440px] mx-auto px-margin-mobile md:px-margin-desktop py-block-gap">
+<div class="grid grid-cols-1 md:grid-cols-12 gap-gutter">
+<div class="col-span-1 md:col-span-10 md:col-start-2">
+<h2 class="font-headline-md text-headline-md text-on-surface mb-16 text-center">Production &amp; Transit Times</h2>
+<div class="grid grid-cols-1 md:grid-cols-3 gap-12">
+<!-- Step 1 -->
+<div class="bg-surface-container-high p-12 text-center flex flex-col items-center">
+<span class="material-symbols-outlined text-4xl text-primary mb-6" data-icon="cut">cut</span>
+<h3 class="font-headline-md text-[24px] text-on-surface mb-4">The Making</h3>
+<p class="font-label-caps text-label-caps text-primary mb-4 tracking-widest">3 - 4 WEEKS</p>
+<p class="font-body-md text-body-md text-on-surface-variant">Every garment is crafted to order. Our tailors take their time to ensure perfection in every seam and detail.</p>
+</div>
+<!-- Step 2 -->
+<div class="bg-surface p-12 text-center flex flex-col items-center border border-outline-variant/20">
+<span class="material-symbols-outlined text-4xl text-primary mb-6" data-icon="package_2">package_2</span>
+<h3 class="font-headline-md text-[24px] text-on-surface mb-4">Quality Control</h3>
+<p class="font-label-caps text-label-caps text-primary mb-4 tracking-widest">2 - 3 DAYS</p>
+<p class="font-body-md text-body-md text-on-surface-variant">A rigorous final inspection. We press, steam, and package your order in our signature garment bags.</p>
+</div>
+<!-- Step 3 -->
+<div class="bg-surface-container-high p-12 text-center flex flex-col items-center">
+<span class="material-symbols-outlined text-4xl text-primary mb-6" data-icon="flight_takeoff">flight_takeoff</span>
+<h3 class="font-headline-md text-[24px] text-on-surface mb-4">Global Transit</h3>
+<p class="font-label-caps text-label-caps text-primary mb-4 tracking-widest">3 - 7 DAYS</p>
+<p class="font-body-md text-body-md text-on-surface-variant">Shipped via express courier with full tracking. Taxes and duties are calculated at checkout for a seamless delivery.</p>
+</div>
+</div>
+</div>
+</div>
+</section>
+</main>
+<!-- Footer -->
+<footer class="bg-surface-container-low mt-block-gap w-full">
+<div class="grid grid-cols-1 md:grid-cols-2 gap-gutter px-margin-mobile md:px-margin-desktop py-20 max-w-[1440px] mx-auto">
+<div>
+<div class="font-headline-md text-headline-md text-on-surface mb-6"><div class="flex items-center gap-3">
+<img alt="Weavers Atelier Logo" class="h-8 w-auto" src="https://lh3.googleusercontent.com/aida/ADBb0ujqAbXGQege7T4cyEK_hbeRHtKw44RDHqIEhsyCeEPA8BKKo4Tf-Uu_DmdwNvRkINrobsSDw4cFCTlT0zqdxvB548rNVHhBVMCpCpcE_lZzwKwSW0Ns-z1LInPRQDEZBaiDKmOMjKxbZKZKR4AO8W4KXYNd5SRXgYYiTK94AsDYPyJHZmYrjqTd_N8zjbHXEXCrV4-p9mJUZQPeJDLqWMAv-OAXF7EE2bh4uGNb0YNFZpTQdiyxGiVF1A" style="filter: brightness(0) saturate(100%) invert(86%) sepia(21%) saturate(1039%) hue-rotate(344deg) brightness(96%) contrast(89%);"/>
+<span>WEAVERS ATELIER</span>
+</div></div>
+<div class="font-label-caps text-label-caps text-secondary">© 2024 WEAVERS ATELIER. ARCHITECTURAL SIMPLICITY.</div>
+</div>
+<div class="flex flex-col md:flex-row md:justify-end gap-6 md:gap-12">
+<a class="font-body-md text-body-md text-on-surface-variant hover:text-primary transition-colors duration-200" href="#">Brand Philosophy</a>
+<a class="font-body-md text-body-md text-on-surface-variant hover:text-primary transition-colors duration-200" href="#">Sustainability</a>
+<a class="font-body-md text-body-md text-primary font-bold hover:text-primary transition-colors duration-200" href="#">Shipping &amp; Returns</a>
+<a class="font-body-md text-body-md text-on-surface-variant hover:text-primary transition-colors duration-200" href="#">Contact</a>
+<a class="font-body-md text-body-md text-on-surface-variant hover:text-primary transition-colors duration-200" href="#">Privacy Policy</a>
+</div>
+</div>
+</footer>
+</body></html>

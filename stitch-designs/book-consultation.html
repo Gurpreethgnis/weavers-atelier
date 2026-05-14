@@ -1,0 +1,279 @@
+<!DOCTYPE html>
+
+<html class="dark" lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<link href="https://fonts.googleapis.com/css2?family=Bodoni+Moda:ital,wght@0,400..900;1,400..900&amp;family=Space+Grotesk:wght@300..700&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<script id="tailwind-config">
+      tailwind.config = {
+        darkMode: "class",
+        theme: {
+          extend: {
+            "colors": {
+                    "surface": "#131313",
+                    "primary-container": "#1a1a1a",
+                    "secondary-fixed": "#ffdea5",
+                    "surface-variant": "#353534",
+                    "surface-container-lowest": "#0e0e0e",
+                    "surface-tint": "#c8c6c5",
+                    "secondary": "#e9c176",
+                    "secondary-fixed-dim": "#e9c176",
+                    "on-secondary": "#412d00",
+                    "on-error": "#690005",
+                    "on-secondary-fixed": "#261900",
+                    "tertiary-fixed": "#f9dfb1",
+                    "primary-fixed": "#e5e2e1",
+                    "tertiary-fixed-dim": "#dcc497",
+                    "on-secondary-fixed-variant": "#5d4201",
+                    "surface-container": "#201f1f",
+                    "inverse-surface": "#e5e2e1",
+                    "surface-container-low": "#1c1b1b",
+                    "surface-container-highest": "#353534",
+                    "outline-variant": "#444748",
+                    "on-error-container": "#ffdad6",
+                    "on-primary": "#313030",
+                    "tertiary-container": "#241800",
+                    "on-tertiary-fixed": "#261a00",
+                    "on-tertiary-container": "#958058",
+                    "error": "#ffb4ab",
+                    "on-primary-fixed": "#1c1b1b",
+                    "surface-bright": "#3a3939",
+                    "surface-dim": "#131313",
+                    "inverse-primary": "#5f5e5e",
+                    "primary": "#c8c6c5",
+                    "tertiary": "#dcc497",
+                    "on-surface-variant": "#c4c7c7",
+                    "on-surface": "#e5e2e1",
+                    "on-background": "#e5e2e1",
+                    "on-primary-container": "#848282",
+                    "background": "#131313",
+                    "secondary-container": "#604403",
+                    "on-secondary-container": "#dab36a",
+                    "on-tertiary-fixed-variant": "#554422",
+                    "on-tertiary": "#3d2e0e",
+                    "inverse-on-surface": "#313030",
+                    "on-primary-fixed-variant": "#474746",
+                    "surface-container-high": "#2a2a2a",
+                    "primary-fixed-dim": "#c8c6c5",
+                    "outline": "#8e9192",
+                    "error-container": "#93000a"
+            },
+            "borderRadius": {
+                    "DEFAULT": "0.25rem",
+                    "lg": "0.5rem",
+                    "xl": "0.75rem",
+                    "full": "9999px"
+            },
+            "spacing": {
+                    "unit": "4px",
+                    "margin-desktop": "64px",
+                    "block-gap": "120px",
+                    "margin-mobile": "20px",
+                    "gutter": "24px"
+            },
+            "fontFamily": {
+                    "headline-md": ["Bodoni Moda"],
+                    "body-lg": ["Space Grotesk"],
+                    "headline-lg-mobile": ["Bodoni Moda"],
+                    "body-md": ["Space Grotesk"],
+                    "ui-button": ["Space Grotesk"],
+                    "headline-lg": ["Bodoni Moda"],
+                    "display-lg": ["Bodoni Moda"],
+                    "label-caps": ["Space Grotesk"]
+            },
+            "fontSize": {
+                    "headline-md": ["32px", {"lineHeight": "40px", "fontWeight": "500"}],
+                    "body-lg": ["18px", {"lineHeight": "28px", "letterSpacing": "0.01em", "fontWeight": "400"}],
+                    "headline-lg-mobile": ["32px", {"lineHeight": "38px", "fontWeight": "600"}],
+                    "body-md": ["16px", {"lineHeight": "24px", "fontWeight": "400"}],
+                    "ui-button": ["14px", {"lineHeight": "20px", "letterSpacing": "0.05em", "fontWeight": "500"}],
+                    "headline-lg": ["48px", {"lineHeight": "56px", "letterSpacing": "-0.01em", "fontWeight": "600"}],
+                    "display-lg": ["84px", {"lineHeight": "90px", "letterSpacing": "-0.02em", "fontWeight": "700"}],
+                    "label-caps": ["12px", {"lineHeight": "16px", "letterSpacing": "0.15em", "fontWeight": "600"}]
+            }
+          },
+        },
+      }
+    </script>
+<style>
+        .material-symbols-outlined {
+            font-variation-settings: 'FILL' 0, 'wght' 300, 'GRAD' 0, 'opsz' 24;
+        }
+        body {
+            background-color: #131313;
+            color: #e5e2e1;
+        }
+        .custom-scrollbar::-webkit-scrollbar {
+            width: 2px;
+        }
+        .custom-scrollbar::-webkit-scrollbar-track {
+            background: #131313;
+        }
+        .custom-scrollbar::-webkit-scrollbar-thumb {
+            background: #4A3F35;
+        }
+    </style>
+</head>
+<body class="bg-surface font-body-md overflow-x-hidden">
+<!-- TopNavBar (Shared Component) -->
+<nav class="fixed top-0 left-0 w-full h-20 bg-surface/90 backdrop-blur-xl border-b border-outline-variant z-50">
+<div class="flex justify-between items-center max-w-[1440px] mx-auto px-margin-desktop h-full">
+<div class="font-display-lg text-[32px] text-on-surface tracking-tighter uppercase">WEAVERS</div>
+<div class="hidden md:flex gap-10">
+<a class="text-on-surface-variant hover:text-primary transition-colors uppercase font-label-caps text-label-caps" href="#">Bespoke</a>
+<a class="text-on-surface-variant hover:text-primary transition-colors uppercase font-label-caps text-label-caps" href="#">Studio</a>
+<a class="text-on-surface-variant hover:text-primary transition-colors uppercase font-label-caps text-label-caps" href="#">Archive</a>
+<a class="text-on-surface-variant hover:text-primary transition-colors uppercase font-label-caps text-label-caps" href="#">Logistics</a>
+</div>
+<div class="flex items-center gap-6">
+<button class="font-label-caps text-label-caps text-primary border border-outline-variant px-6 py-2 hover:bg-on-tertiary-fixed-variant transition-colors">FINAL PROTOCOL</button>
+<span class="material-symbols-outlined text-on-surface cursor-pointer" data-icon="menu">menu</span>
+</div>
+</div>
+</nav>
+<main class="pt-40 pb-block-gap">
+<div class="max-w-[1440px] mx-auto px-margin-desktop">
+<!-- Hero Section / Context -->
+<header class="mb-24 grid grid-cols-12 gap-gutter">
+<div class="col-span-12 md:col-span-7">
+<span class="font-label-caps text-label-caps text-secondary mb-4 block uppercase tracking-[0.3em]">Bespoke Engagement</span>
+<h1 class="font-headline-lg text-headline-lg text-on-surface mb-8">Secure Your Place in the Archive.</h1>
+<p class="font-body-lg text-body-lg text-on-surface-variant max-w-xl">
+                        A Weaver's consultation is a private, multi-sensory experience where architectural precision meets ancestral craftsmanship. Appointments are intentional, exclusive, and strictly limited.
+                    </p>
+</div>
+</header>
+<div class="grid grid-cols-12 gap-block-gap">
+<!-- Left Column: The Form -->
+<div class="col-span-12 md:col-span-7 space-y-20">
+<form class="space-y-16">
+<!-- Garment Focus -->
+<section>
+<label class="font-label-caps text-label-caps text-secondary uppercase mb-8 block">01. Select Focus Area</label>
+<div class="grid grid-cols-1 md:grid-cols-3 gap-6">
+<label class="group relative cursor-pointer">
+<input checked="" class="peer sr-only" name="focus" type="radio"/>
+<div class="border border-outline-variant p-8 bg-surface-container-low transition-all peer-checked:border-secondary peer-checked:bg-on-tertiary-fixed-variant/10">
+<div class="font-headline-md text-[24px] mb-2">Weddingwear</div>
+<div class="font-label-caps text-[10px] text-on-surface-variant">Ceremonial Architecture</div>
+</div>
+</label>
+<label class="group relative cursor-pointer">
+<input class="peer sr-only" name="focus" type="radio"/>
+<div class="border border-outline-variant p-8 bg-surface-container-low transition-all peer-checked:border-secondary peer-checked:bg-on-tertiary-fixed-variant/10">
+<div class="font-headline-md text-[24px] mb-2">Bespoke</div>
+<div class="font-label-caps text-[10px] text-on-surface-variant">Individual Blueprint</div>
+</div>
+</label>
+<label class="group relative cursor-pointer">
+<input class="peer sr-only" name="focus" type="radio"/>
+<div class="border border-outline-variant p-8 bg-surface-container-low transition-all peer-checked:border-secondary peer-checked:bg-on-tertiary-fixed-variant/10">
+<div class="font-headline-md text-[24px] mb-2">Denim</div>
+<div class="font-label-caps text-[10px] text-on-surface-variant">Structured Resilience</div>
+</div>
+</label>
+</div>
+</section>
+<!-- Personal Details -->
+<section>
+<label class="font-label-caps text-label-caps text-secondary uppercase mb-8 block">02. Identity Disclosure</label>
+<div class="grid grid-cols-1 md:grid-cols-2 gap-x-12 gap-y-12">
+<div class="relative">
+<label class="font-label-caps text-[10px] text-on-surface-variant absolute -top-4 left-0">FULL LEGAL NAME</label>
+<input class="w-full bg-transparent border-0 border-b border-outline-variant focus:ring-0 focus:border-secondary py-4 px-0 font-body-md text-on-surface" placeholder="Johnathan Doe" type="text"/>
+</div>
+<div class="relative">
+<label class="font-label-caps text-[10px] text-on-surface-variant absolute -top-4 left-0">SECURE EMAIL ADDRESS</label>
+<input class="w-full bg-transparent border-0 border-b border-outline-variant focus:ring-0 focus:border-secondary py-4 px-0 font-body-md text-on-surface" placeholder="archive@weavers.com" type="email"/>
+</div>
+<div class="relative md:col-span-2">
+<label class="font-label-caps text-[10px] text-on-surface-variant absolute -top-4 left-0">CONSULTATION NOTES</label>
+<textarea class="w-full bg-transparent border-0 border-b border-outline-variant focus:ring-0 focus:border-secondary py-4 px-0 font-body-md text-on-surface resize-none" placeholder="Describe the silhouette or intent..." rows="3"></textarea>
+</div>
+</div>
+</section>
+<!-- Date & Time -->
+<section>
+<label class="font-label-caps text-label-caps text-secondary uppercase mb-8 block">03. Temporal Slot</label>
+<div class="grid grid-cols-1 md:grid-cols-2 gap-12">
+<div class="space-y-4">
+<div class="font-label-caps text-[10px] text-on-surface-variant uppercase">Available Epochs</div>
+<input class="w-full bg-surface-container border border-outline-variant p-4 text-on-surface focus:border-secondary focus:ring-0 [color-scheme:dark]" type="date"/>
+</div>
+<div class="space-y-4">
+<div class="font-label-caps text-[10px] text-on-surface-variant uppercase">Precision Time (GMT)</div>
+<div class="grid grid-cols-3 gap-2">
+<button class="border border-outline-variant p-2 text-[12px] font-label-caps hover:bg-secondary hover:text-surface transition-all" type="button">10:00</button>
+<button class="border border-secondary p-2 text-[12px] font-label-caps bg-on-tertiary-fixed-variant/20 text-secondary" type="button">14:00</button>
+<button class="border border-outline-variant p-2 text-[12px] font-label-caps hover:bg-secondary hover:text-surface transition-all" type="button">16:00</button>
+</div>
+</div>
+</div>
+</section>
+<button class="w-full bg-secondary text-surface font-label-caps text-label-caps py-6 uppercase tracking-[0.2em] hover:bg-white transition-colors" type="submit">Request Formal Invitation</button>
+</form>
+</div>
+<!-- Right Column: What to Expect & Imagery -->
+<aside class="col-span-12 md:col-span-5 space-y-24">
+<div class="border border-outline-variant bg-surface-container-low p-12 space-y-12">
+<div class="aspect-[4/5] bg-surface-container-high overflow-hidden">
+<img class="w-full h-full object-cover opacity-80 grayscale hover:grayscale-0 transition-all duration-700" data-alt="A cinematic, high-fashion shot of a tailor's hands meticulously working on a heavy black velvet garment with gold thread. The lighting is dramatic, with deep shadows and a single warm spotlight illuminating the tactile textures. The overall mood is luxurious, quiet, and highly focused, capturing the artisanal spirit of a nocturnal atelier." src="https://lh3.googleusercontent.com/aida-public/AB6AXuD5eVRtsURiYbHI2bXdNK5WjpQzpJn7Zj598qFGGDD0lp3frlMK9NTDD73zSJAHMJjp-Ve0litIhOkzuUlPTSe1KB_kPHVtWmUv2ZBtwsTxxkt55QR5wEo9n76LDdrie9RAeSitsqp-SQ-F0lvWvKwYSj4qoWl2Rw5VUiXOUCPUZtv-97LsRzU8tXWW3p9trm248734Xl4WC_vQlhroqaHNe4L2P7_bIjI6Et31Xq13LjQDx1-V01geQI2fTxZ-hzCg4ht4TQNIFKEu"/>
+</div>
+<div class="space-y-8">
+<h3 class="font-headline-md text-headline-md text-secondary uppercase">Protocol &amp; Expectations</h3>
+<ul class="space-y-6">
+<li class="flex gap-6 items-start">
+<span class="font-headline-md text-primary opacity-30 text-[24px]">01</span>
+<div>
+<div class="font-label-caps text-label-caps text-on-surface mb-1">THE MEASUREMENT GESTURE</div>
+<p class="text-[14px] text-on-surface-variant">A 40-point kinetic fitting to understand how your body moves through space.</p>
+</div>
+</li>
+<li class="flex gap-6 items-start">
+<span class="font-headline-md text-primary opacity-30 text-[24px]">02</span>
+<div>
+<div class="font-label-caps text-label-caps text-on-surface mb-1">MATERIAL ARCHIVE ACCESS</div>
+<p class="text-[14px] text-on-surface-variant">Private selection of rare textiles, from Himalayan wools to architectural denims.</p>
+</div>
+</li>
+<li class="flex gap-6 items-start">
+<span class="font-headline-md text-primary opacity-30 text-[24px]">03</span>
+<div>
+<div class="font-label-caps text-label-caps text-on-surface mb-1">DESIGN BLUEPRINTING</div>
+<p class="text-[14px] text-on-surface-variant">Collaborative sketching with our Lead Architect to define your silhouette.</p>
+</div>
+</li>
+</ul>
+</div>
+</div>
+<div class="p-8 border-l-2 border-secondary bg-surface-container-lowest">
+<p class="font-body-md italic text-on-surface-variant">
+                            "The garment is not merely clothing; it is the structural integrity of your presence."
+                        </p>
+<div class="mt-4 font-label-caps text-[10px] text-secondary">— WEAVERS ATELIER PHILOSOPHY</div>
+</div>
+</aside>
+</div>
+</div>
+</main>
+<!-- Footer (Shared Component) -->
+<footer class="border-t border-outline-variant bg-surface-container-lowest">
+<div class="max-w-[1440px] mx-auto px-margin-desktop py-16 flex flex-col md:flex-row justify-between items-end gap-12">
+<div class="flex flex-col gap-8 w-full md:w-auto">
+<div class="font-display-lg text-primary uppercase opacity-20 text-[60px] leading-none">WEAVERS</div>
+<div class="flex flex-wrap gap-8">
+<a class="font-label-caps text-label-caps text-on-surface-variant hover:text-primary transition-colors" href="#">Privacy Protocol</a>
+<a class="font-label-caps text-label-caps text-on-surface-variant hover:text-primary transition-colors" href="#">Terms of Service</a>
+<a class="font-label-caps text-label-caps text-on-surface-variant hover:text-primary transition-colors" href="#">Atelier Intelligence</a>
+<a class="font-label-caps text-label-caps text-on-surface-variant hover:text-primary transition-colors" href="#">Global Logistics</a>
+</div>
+</div>
+<div class="font-label-caps text-[10px] text-on-surface-variant text-right max-w-md">
+                © 2024 WEAVERS ATELIER. ALL RIGHTS RESERVED. ARCHITECTURAL TAILORING DIVISION.
+            </div>
+</div>
+</footer>
+</body></html>

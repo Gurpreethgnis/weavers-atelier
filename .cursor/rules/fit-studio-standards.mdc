@@ -1,0 +1,50 @@
+---
+alwaysApply: true
+---
+
+# Fit Studio Standards
+
+Weavers Fit Studio must reduce fear and capture useful data.
+
+Supported measurement paths:
+1. Body measurements
+2. Garment measurements
+3. Reference upload
+4. Video fitting request
+
+Required Fit Studio features:
+- Inches/cm toggle
+- Body vs garment measurement choice
+- Shirt measurement guide
+- Trouser measurement guide
+- Jeans measurement guide
+- Jacket/weddingwear measurement guide
+- Fit preference selector
+- Measurement confidence question
+- Reference image upload
+- Height and weight fields where useful
+- Usual ready-made size fields where useful
+
+Measurement confidence options:
+- Very confident
+- Somewhat confident
+- Please review carefully
+- I want a video fitting before production
+
+UX standards:
+- Explain body vs garment measurements clearly.
+- Do not show every measurement field at once.
+- Use progressive disclosure.
+- Group measurements by garment type.
+- Use illustrations or placeholders for diagrams where design requires.
+- Warn customers that custom fit depends on measurement accuracy.
+- Encourage reference upload for jeans, shirts, trousers, jackets, and weddingwear.
+
+Data standards:
+- Store measurement unit.
+- Store measurement method.
+- Store garment category.
+- Store fit preference.
+- Store confidence level.
+- Store notes.
+- Link measurements to lead/order when available.

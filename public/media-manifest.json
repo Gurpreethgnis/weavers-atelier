@@ -1,0 +1,359 @@
+{
+  "version": 1,
+  "generatedAt": "2026-05-13T20:35:35.784Z",
+  "entries": {
+    "image:raw/3893255089616288361-3893254909286386581": {
+      "type": "image",
+      "source": "Images\\gallery-dl\\instagram\\itsweavers\\3893255089616288361_3893254909286386581.jpg",
+      "outputs": {
+        "jpg": "/images/raw/3893255089616288361-3893254909286386581.jpg",
+        "webp": "/images/raw/3893255089616288361-3893254909286386581.webp"
+      },
+      "preset": "raw",
+      "width": 1080,
+      "height": 1350,
+      "aspect": "1080/1350",
+      "inpainted": true,
+      "detectedText": [
+        "Summer",
+        "Wedding",
+        "Fits",
+        "Must-have",
+        "Styles",
+        "ama",
+        "Z|",
+        "A",
+        "Summer",
+        "Wedding",
+        "Fits",
+        "Styles",
+        "3",
+        "%",
+        "=",
+        "=",
+        "Pod",
+        "AR",
+        "ad",
+        "HER",
+        "a",
+        "I",
+        "Tir",
+        "i!",
+        "\\"
+      ],
+      "qa": {
+        "textRemainsAfterProcessing": true,
+        "confidence": 71
+      },
+      "processedAt": "2026-05-13T20:33:03.997Z"
+    },
+    "image:lookbook/summer-wedding-group": {
+      "type": "image",
+      "source": "Images\\gallery-dl\\instagram\\itsweavers\\3893255089616288361_3893254909286386581.jpg",
+      "outputs": {
+        "jpg": "/images/lookbook/summer-wedding-group.jpg",
+        "webp": "/images/lookbook/summer-wedding-group.webp"
+      },
+      "preset": "lookbook",
+      "width": 1080,
+      "height": 1350,
+      "aspect": "0.7500",
+      "inpainted": true,
+      "detectedText": [
+        "Summer",
+        "Wedding",
+        "Fits",
+        "Must-have",
+        "Styles",
+        "ama",
+        "Z|",
+        "A",
+        "Summer",
+        "Wedding",
+        "Fits",
+        "Styles",
+        "3",
+        "%",
+        "=",
+        "=",
+        "Pod",
+        "AR",
+        "ad",
+        "HER",
+        "a",
+        "I",
+        "Tir",
+        "i!",
+        "\\"
+      ],
+      "qa": {
+        "textRemainsAfterProcessing": true,
+        "confidence": 71
+      },
+      "altSuggestion": "Group of men in pastel summer wedding attire standing in a sunlit courtyard",
+      "processedAt": "2026-05-13T20:33:37.365Z"
+    },
+    "image:lookbook/ivory-floral-nehru": {
+      "type": "image",
+      "source": "Images\\gallery-dl\\instagram\\itsweavers\\3893255089616288361_3893254911668774538.jpg",
+      "outputs": {
+        "jpg": "/images/lookbook/ivory-floral-nehru.jpg",
+        "webp": "/images/lookbook/ivory-floral-nehru.webp"
+      },
+      "preset": "lookbook",
+      "width": 1023,
+      "height": 1278,
+      "aspect": "0.7500",
+      "inpainted": true,
+      "detectedText": [
+        "Summer",
+        "Wedding",
+        "Fits",
+        "Must-have",
+        "Styles",
+        "A",
+        "=",
+        "\\\\edding",
+        "ne",
+        "/",
+        "4",
+        "ers",
+        "A",
+        "re",
+        "a",
+        "mmer",
+        "Wedding",
+        "g",
+        "Spd",
+        "As.",
+        "24",
+        "pe",
+        "a",
+        "es."
+      ],
+      "qa": {
+        "textRemainsAfterProcessing": true,
+        "confidence": 67
+      },
+      "altSuggestion": "Man in ivory floral nehru jacket with matching kurta",
+      "processedAt": "2026-05-13T20:33:57.853Z"
+    },
+    "image:lookbook/pink-floral-nehru": {
+      "type": "image",
+      "source": "Images\\gallery-dl\\instagram\\itsweavers\\3893255089616288361_3893254954400334466.jpg",
+      "outputs": {
+        "jpg": "/images/lookbook/pink-floral-nehru.jpg",
+        "webp": "/images/lookbook/pink-floral-nehru.webp"
+      },
+      "preset": "lookbook",
+      "width": 1023,
+      "height": 1278,
+      "aspect": "0.7500",
+      "inpainted": true,
+      "detectedText": [
+        "Must-have",
+        "Styles",
+        "(]",
+        "ING",
+        "tS",
+        "a",
+        "N'",
+        "TS",
+        "3",
+        "ummer",
+        "Wedding",
+        "Fits",
+        "5",
+        "IN",
+        "GENS",
+        "©",
+        "4"
+      ],
+      "qa": {
+        "textRemainsAfterProcessing": true,
+        "confidence": 70
+      },
+      "altSuggestion": "Man in pink floral nehru jacket with coordinated kurta",
+      "processedAt": "2026-05-13T20:34:14.645Z"
+    },
+    "image:lookbook/blue-nehru-tradition": {
+      "type": "image",
+      "source": "Images\\gallery-dl\\instagram\\itsweavers\\3880954842030655271_3880954393835682749.jpg",
+      "outputs": {
+        "jpg": "/images/lookbook/blue-nehru-tradition.jpg",
+        "webp": "/images/lookbook/blue-nehru-tradition.webp"
+      },
+      "preset": "lookbook",
+      "width": 1080,
+      "height": 1350,
+      "aspect": "0.7500",
+      "inpainted": true,
+      "detectedText": [
+        "Soul",
+        "of",
+        "[ON",
+        "AY",
+        "Jil",
+        "[iF",
+        "ry",
+        "{",
+        "58",
+        "p",
+        "“2",
+        "of",
+        "\\\\",
+        ")"
+      ],
+      "qa": {
+        "textRemainsAfterProcessing": true,
+        "confidence": 67
+      },
+      "altSuggestion": "Man in traditional blue nehru jacket with white kurta",
+      "processedAt": "2026-05-13T20:34:29.607Z"
+    },
+    "video:tailoring-detail-1": {
+      "type": "video",
+      "source": "Images\\gallery-dl\\instagram\\itsweavers\\3745276989910645275.mp4",
+      "outputs": {
+        "mp4": "/videos/tailoring-detail-1/tailoring-detail-1.mp4",
+        "webm": "/videos/tailoring-detail-1/tailoring-detail-1.webm",
+        "poster": "/videos/tailoring-detail-1/tailoring-detail-1-poster.jpg"
+      },
+      "width": 406,
+      "height": 720,
+      "durationSec": 8.001,
+      "bitrateKbps": 1500,
+      "hasAudio": false,
+      "processedAt": "2026-05-13T20:34:51.372Z",
+      "label": "tailoring-detail-1"
+    },
+    "video:studio-walk": {
+      "type": "video",
+      "source": "Images\\gallery-dl\\instagram\\itsweavers\\3854792829792958363.mp4",
+      "outputs": {
+        "mp4": "/videos/studio-walk/studio-walk.mp4",
+        "webm": "/videos/studio-walk/studio-walk.webm",
+        "poster": "/videos/studio-walk/studio-walk-poster.jpg"
+      },
+      "width": 404,
+      "height": 720,
+      "durationSec": 8.001067,
+      "bitrateKbps": 1500,
+      "hasAudio": false,
+      "processedAt": "2026-05-13T20:35:04.327Z",
+      "label": "studio-walk"
+    },
+    "video:weddingwear-1": {
+      "type": "video",
+      "source": "Images\\gallery-dl\\instagram\\itsweavers\\3865808224079806003.mp4",
+      "outputs": {
+        "mp4": "/videos/weddingwear-1/weddingwear-1.mp4",
+        "webm": "/videos/weddingwear-1/weddingwear-1.webm",
+        "poster": "/videos/weddingwear-1/weddingwear-1-poster.jpg"
+      },
+      "width": 406,
+      "height": 720,
+      "durationSec": 8,
+      "bitrateKbps": 1500,
+      "hasAudio": false,
+      "processedAt": "2026-05-13T20:35:05.951Z",
+      "label": "weddingwear-1"
+    },
+    "video:weddingwear-2": {
+      "type": "video",
+      "source": "Images\\gallery-dl\\instagram\\itsweavers\\3869935027224675468.mp4",
+      "outputs": {
+        "mp4": "/videos/weddingwear-2/weddingwear-2.mp4",
+        "webm": "/videos/weddingwear-2/weddingwear-2.webm",
+        "poster": "/videos/weddingwear-2/weddingwear-2-poster.jpg"
+      },
+      "width": 406,
+      "height": 720,
+      "durationSec": 8,
+      "bitrateKbps": 1500,
+      "hasAudio": false,
+      "processedAt": "2026-05-13T20:35:07.123Z",
+      "label": "weddingwear-2"
+    },
+    "video:shirt-detail-1": {
+      "type": "video",
+      "source": "Images\\gallery-dl\\instagram\\itsweavers\\3872864391250876725.mp4",
+      "outputs": {
+        "mp4": "/videos/shirt-detail-1/shirt-detail-1.mp4",
+        "webm": "/videos/shirt-detail-1/shirt-detail-1.webm",
+        "poster": "/videos/shirt-detail-1/shirt-detail-1-poster.jpg"
+      },
+      "width": 406,
+      "height": 720,
+      "durationSec": 8,
+      "bitrateKbps": 1500,
+      "hasAudio": false,
+      "processedAt": "2026-05-13T20:35:19.971Z",
+      "label": "shirt-detail-1"
+    },
+    "video:denim-detail-1": {
+      "type": "video",
+      "source": "Images\\gallery-dl\\instagram\\itsweavers\\3874370462360075441.mp4",
+      "outputs": {
+        "mp4": "/videos/denim-detail-1/denim-detail-1.mp4",
+        "webm": "/videos/denim-detail-1/denim-detail-1.webm",
+        "poster": "/videos/denim-detail-1/denim-detail-1-poster.jpg"
+      },
+      "width": 406,
+      "height": 720,
+      "durationSec": 8,
+      "bitrateKbps": 1500,
+      "hasAudio": false,
+      "processedAt": "2026-05-13T20:35:22.152Z",
+      "label": "denim-detail-1"
+    },
+    "video:tailoring-detail-2": {
+      "type": "video",
+      "source": "Images\\gallery-dl\\instagram\\itsweavers\\3877999641962150364.mp4",
+      "outputs": {
+        "mp4": "/videos/tailoring-detail-2/tailoring-detail-2.mp4",
+        "webm": "/videos/tailoring-detail-2/tailoring-detail-2.webm",
+        "poster": "/videos/tailoring-detail-2/tailoring-detail-2-poster.jpg"
+      },
+      "width": 406,
+      "height": 720,
+      "durationSec": 8,
+      "bitrateKbps": 1500,
+      "hasAudio": false,
+      "processedAt": "2026-05-13T20:35:22.981Z",
+      "label": "tailoring-detail-2"
+    },
+    "video:weddingwear-3": {
+      "type": "video",
+      "source": "Images\\gallery-dl\\instagram\\itsweavers\\3880208047573773147.mp4",
+      "outputs": {
+        "mp4": "/videos/weddingwear-3/weddingwear-3.mp4",
+        "webm": "/videos/weddingwear-3/weddingwear-3.webm",
+        "poster": "/videos/weddingwear-3/weddingwear-3-poster.jpg"
+      },
+      "width": 406,
+      "height": 720,
+      "durationSec": 8,
+      "bitrateKbps": 1500,
+      "hasAudio": false,
+      "processedAt": "2026-05-13T20:35:34.658Z",
+      "label": "weddingwear-3"
+    },
+    "video:shirt-detail-2": {
+      "type": "video",
+      "source": "Images\\gallery-dl\\instagram\\itsweavers\\3885140454100026152.mp4",
+      "outputs": {
+        "mp4": "/videos/shirt-detail-2/shirt-detail-2.mp4",
+        "webm": "/videos/shirt-detail-2/shirt-detail-2.webm",
+        "poster": "/videos/shirt-detail-2/shirt-detail-2-poster.jpg"
+      },
+      "width": 406,
+      "height": 720,
+      "durationSec": 8,
+      "bitrateKbps": 1500,
+      "hasAudio": false,
+      "processedAt": "2026-05-13T20:35:35.783Z",
+      "label": "shirt-detail-2"
+    }
+  }
+}

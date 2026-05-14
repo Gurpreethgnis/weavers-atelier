@@ -1,0 +1,296 @@
+<!DOCTYPE html>
+
+<html class="dark" lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Weavers Fit Studio - Weavers Atelier</title>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com" rel="preconnect"/>
+<link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/>
+<link href="https://fonts.googleapis.com/css2?family=Bodoni+Moda:ital,opsz,wght@0,6..96,400..900;1,6..96,400..900&amp;family=Space+Grotesk:wght@300..700&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<style>
+        .material-symbols-outlined {
+            font-variation-settings: 'FILL' 0, 'wght' 300, 'GRAD' 0, 'opsz' 24;
+        }
+    </style>
+<script id="tailwind-config">
+  tailwind.config = {
+    darkMode: "class",
+    theme: {
+      extend: {
+        "colors": {
+                "outline-variant": "#444748",
+                "outline": "#8e9192",
+                "on-secondary": "#412d00",
+                "on-primary-fixed-variant": "#474746",
+                "on-error": "#690005",
+                "primary-fixed-dim": "#c8c6c5",
+                "primary": "#c8c6c5",
+                "secondary-fixed": "#ffdea5",
+                "surface-container-highest": "#353534",
+                "inverse-primary": "#5f5e5e",
+                "background": "#131313",
+                "surface-container-low": "#1c1b1b",
+                "error-container": "#93000a",
+                "on-tertiary": "#3d2e0e",
+                "on-primary": "#313030",
+                "surface-container-lowest": "#0e0e0e",
+                "error": "#ffb4ab",
+                "tertiary-container": "#241800",
+                "on-error-container": "#ffdad6",
+                "primary-fixed": "#e5e2e1",
+                "tertiary": "#dcc497",
+                "tertiary-fixed": "#f9dfb1",
+                "surface-container-high": "#2a2a2a",
+                "on-secondary-container": "#dab36a",
+                "tertiary-fixed-dim": "#dcc497",
+                "surface-tint": "#c8c6c5",
+                "on-secondary-fixed-variant": "#5d4201",
+                "secondary-container": "#604403",
+                "on-tertiary-fixed-variant": "#554422",
+                "on-tertiary-container": "#958058",
+                "on-primary-fixed": "#1c1b1b",
+                "on-surface-variant": "#c4c7c7",
+                "on-tertiary-fixed": "#261a00",
+                "surface-variant": "#353534",
+                "inverse-surface": "#e5e2e1",
+                "surface-dim": "#131313",
+                "on-surface": "#e5e2e1",
+                "primary-container": "#1a1a1a",
+                "surface-bright": "#3a3939",
+                "on-secondary-fixed": "#261900",
+                "on-primary-container": "#848282",
+                "surface-container": "#201f1f",
+                "on-background": "#e5e2e1",
+                "surface": "#131313",
+                "secondary-fixed-dim": "#e9c176",
+                "secondary": "#e9c176",
+                "inverse-on-surface": "#313030"
+        },
+        "borderRadius": {
+                "DEFAULT": "0.25rem",
+                "lg": "0.5rem",
+                "xl": "0.75rem",
+                "full": "9999px"
+        },
+        "spacing": {
+                "gutter": "24px",
+                "margin-mobile": "20px",
+                "margin-desktop": "64px",
+                "unit": "4px",
+                "block-gap": "120px"
+        },
+        "fontFamily": {
+                "ui-button": [
+                        "Space Grotesk"
+                ],
+                "label-caps": [
+                        "Space Grotesk"
+                ],
+                "body-md": [
+                        "Space Grotesk"
+                ],
+                "body-lg": [
+                        "Space Grotesk"
+                ],
+                "headline-lg-mobile": [
+                        "Bodoni Moda"
+                ],
+                "headline-md": [
+                        "Bodoni Moda"
+                ],
+                "headline-lg": [
+                        "Bodoni Moda"
+                ],
+                "display-lg": [
+                        "Bodoni Moda"
+                ]
+        },
+        "fontSize": {
+                "ui-button": [
+                        "14px",
+                        {
+                                "lineHeight": "20px",
+                                "letterSpacing": "0.05em",
+                                "fontWeight": "500"
+                        }
+                ],
+                "label-caps": [
+                        "12px",
+                        {
+                                "lineHeight": "16px",
+                                "letterSpacing": "0.15em",
+                                "fontWeight": "600"
+                        }
+                ],
+                "body-md": [
+                        "16px",
+                        {
+                                "lineHeight": "24px",
+                                "fontWeight": "400"
+                        }
+                ],
+                "body-lg": [
+                        "18px",
+                        {
+                                "lineHeight": "28px",
+                                "letterSpacing": "0.01em",
+                                "fontWeight": "400"
+                        }
+                ],
+                "headline-lg-mobile": [
+                        "32px",
+                        {
+                                "lineHeight": "38px",
+                                "fontWeight": "600"
+                        }
+                ],
+                "headline-md": [
+                        "32px",
+                        {
+                                "lineHeight": "40px",
+                                "fontWeight": "500"
+                        }
+                ],
+                "headline-lg": [
+                        "48px",
+                        {
+                                "lineHeight": "56px",
+                                "letterSpacing": "-0.01em",
+                                "fontWeight": "600"
+                        }
+                ],
+                "display-lg": [
+                        "84px",
+                        {
+                                "lineHeight": "90px",
+                                "letterSpacing": "-0.02em",
+                                "fontWeight": "700"
+                        }
+                ]
+        }
+},
+    },
+  }
+</script>
+</head>
+<body class="bg-background text-on-surface antialiased selection:bg-primary-container selection:text-on-primary-container">
+<!-- TopNavBar -->
+<nav class="w-full top-0 sticky bg-surface border-b border-outline-variant/30 z-50">
+<div class="grid grid-cols-2 md:grid-cols-3 items-center px-margin-mobile md:px-margin-desktop py-4 max-w-7xl mx-auto">
+<div class="flex items-center gap-3 font-headline-md text-headline-md tracking-tighter text-on-surface justify-self-start">
+<img alt="Weavers Atelier Logo" class="h-8 w-auto brightness-0 invert-[0.8] sepia-[0.3] saturate-[10] hue-rotate-[10deg]" src="https://lh3.googleusercontent.com/aida/ADBb0ujqAbXGQege7T4cyEK_hbeRHtKw44RDHqIEhsyCeEPA8BKKo4Tf-Uu_DmdwNvRkINrobsSDw4cFCTlT0zqdxvB548rNVHhBVMCpCpcE_lZzwKwSW0Ns-z1LInPRQDEZBaiDKmOMjKxbZKZKR4AO8W4KXYNd5SRXgYYiTK94AsDYPyJHZmYrjqTd_N8zjbHXEXCrV4-p9mJUZQPeJDLqWMAv-OAXF7EE2bh4uGNb0YNFZpTQdiyxGiVF1A"/>
+<span>WEAVERS ATELIER</span>
+</div>
+<div class="hidden md:flex items-center justify-center gap-gutter font-label-caps text-label-caps justify-self-center">
+<a class="text-on-surface-variant hover:text-primary transition-colors duration-300 cursor-pointer active:opacity-70" href="#">Shirts</a>
+<a class="text-on-surface-variant hover:text-primary transition-colors duration-300 cursor-pointer active:opacity-70" href="#">Trousers</a>
+<a class="text-on-surface-variant hover:text-primary transition-colors duration-300 cursor-pointer active:opacity-70" href="#">Denim</a>
+<a class="text-on-surface-variant hover:text-primary transition-colors duration-300 cursor-pointer active:opacity-70" href="#">Weddingwear</a>
+<a class="text-on-surface border-b border-primary pb-1 hover:text-primary transition-colors duration-300 cursor-pointer active:opacity-70" href="#">Custom Looks</a>
+</div>
+<div class="flex items-center justify-end gap-4 text-primary justify-self-end">
+<button class="cursor-pointer transition-opacity active:opacity-70 hover:text-primary-fixed-dim">
+<span class="material-symbols-outlined">shopping_bag</span>
+</button>
+</div>
+</div>
+</nav>
+<main class="w-full">
+<!-- Hero / Headline Section -->
+<section class="max-w-7xl mx-auto px-margin-mobile md:px-margin-desktop pt-block-gap pb-24">
+<div class="grid grid-cols-4 md:grid-cols-12 gap-gutter">
+<div class="col-span-4 md:col-span-8">
+<h1 class="font-display-lg text-headline-lg-mobile md:text-display-lg text-on-surface tracking-tighter">Your Fit, Guided</h1>
+</div>
+<div class="col-span-4 md:col-span-4 flex items-end pt-8 md:pt-0">
+<p class="font-body-lg text-body-lg text-on-surface-variant max-w-sm">
+                        Welcome to the Weavers Fit Studio. A precise, architectural approach to bespoke tailoring. Choose your preferred method to begin crafting your unique silhouette.
+                    </p>
+</div>
+</div>
+</section>
+<!-- Options / Asymmetrical Bento Grid -->
+<section class="max-w-7xl mx-auto px-margin-mobile md:px-margin-desktop pb-block-gap">
+<div class="grid grid-cols-4 md:grid-cols-12 gap-gutter">
+<!-- Body Measurements (Large Left) -->
+<div class="col-span-4 md:col-span-7 bg-surface-container-low p-8 md:p-16 flex flex-col justify-between group cursor-pointer transition-colors duration-500 hover:bg-surface-container">
+<div class="mb-12">
+<span class="font-label-caps text-label-caps text-primary mb-4 block">Method 01</span>
+<h2 class="font-headline-md text-headline-md text-on-surface mb-6">Body Measurements</h2>
+<p class="font-body-md text-body-md text-on-surface-variant max-w-md">
+                            Follow our clean, anatomical step-by-step guide to capture your true physical dimensions. Ideal for first-time commissions requiring absolute precision.
+                        </p>
+</div>
+<div class="relative w-full aspect-[4/3] bg-surface overflow-hidden">
+<img alt="Anatomical diagram" class="w-full h-full object-cover opacity-80 invert" data-alt="A minimalist, high-fashion anatomical diagram of a male torso used for tailoring measurements. The illustration is rendered in clean, fine charcoal lines against a warm ivory background, reflecting a sun-drenched Mediterranean aesthetic. The visual style relies on extreme negative space, soft sand tones, and a stark, architectural simplicity that emphasizes bespoke luxury and exactitude." src="https://lh3.googleusercontent.com/aida-public/AB6AXuBcNZGWiq7uKNsflvOV4l9afDC8XL8YPChUY-s62hn6sQxVC0LOrCiuutSNcmloax0CS3GAnOR31dGIEYJYsHdtF7XXGd_hgoQLymN5EWofZ9R1AJ2teqLzdMKyv_SqNQsuedKJBIn_XmWVcWq5crT5Vqpyo8IqRhir0SQWX_QMkw7DysYj2zgifSt31Zoj5sHIJB9Oxz3GF6MujdqiQuhbOjXzIWAeN39FLWgVMmay9S0MAV0ORexeff9lo13WF27uJF2fTEoEKIGw"/>
+</div>
+<div class="mt-12">
+<button class="bg-primary text-on-primary px-8 py-4 font-label-caps text-label-caps uppercase tracking-widest hover:bg-primary-fixed transition-colors duration-300">
+                            Start Guide
+                        </button>
+</div>
+</div>
+<!-- Right Column Stack -->
+<div class="col-span-4 md:col-span-5 flex flex-col gap-gutter">
+<!-- Garment Measurements (Top Right) -->
+<div class="bg-surface-container p-8 md:p-12 flex-1 flex flex-col justify-between group cursor-pointer transition-colors duration-500 hover:bg-surface-container-high">
+<div>
+<span class="font-label-caps text-label-caps text-primary mb-4 block">Method 02</span>
+<h2 class="font-headline-md text-headline-md text-on-surface mb-4">Garment Measurements</h2>
+<p class="font-body-md text-body-md text-on-surface-variant mb-12">
+                                Replicate the fit of a piece you already own. Lay it flat and input the dimensions.
+                            </p>
+</div>
+<!-- Form Preview (Visual only, flat styling) -->
+<div class="flex flex-col gap-8 opacity-70 group-hover:opacity-100 transition-opacity duration-300">
+<div class="relative pt-6">
+<label class="font-label-caps text-label-caps text-on-surface-variant absolute top-0 left-0">Shoulder Width (cm)</label>
+<input class="w-full bg-transparent border-0 border-b border-outline-variant pb-2 px-0 font-body-md text-body-md text-on-surface focus:ring-0" disabled="" placeholder="e.g. 44.5" type="text"/>
+</div>
+<div class="relative pt-6">
+<label class="font-label-caps text-label-caps text-on-surface-variant absolute top-0 left-0">Chest Point-to-Point (cm)</label>
+<input class="w-full bg-transparent border-0 border-b border-outline-variant pb-2 px-0 font-body-md text-body-md text-on-surface focus:ring-0" disabled="" placeholder="e.g. 52.0" type="text"/>
+</div>
+</div>
+</div>
+<!-- Video Fitting (Bottom Right) -->
+<div class="bg-secondary-container p-8 md:p-12 flex-1 flex flex-col justify-between">
+<div>
+<span class="font-label-caps text-label-caps text-on-secondary-container mb-4 block">Method 03</span>
+<h2 class="font-headline-md text-headline-md text-on-secondary-container mb-4">Video Fitting</h2>
+<p class="font-body-md text-body-md text-on-secondary-container opacity-80 mb-12">
+                                Connect live with a Master Tailor from our atelier. We will guide your tape measure in real-time.
+                            </p>
+</div>
+<button class="border border-on-secondary-container text-on-secondary-container px-8 py-4 font-label-caps text-label-caps uppercase tracking-widest hover:bg-on-secondary-container hover:text-secondary-container transition-colors duration-300 self-start">
+                            Book Appointment
+                        </button>
+</div>
+</div>
+</div>
+</section>
+</main>
+<!-- Footer -->
+<footer class="w-full bg-surface-container-low mt-block-gap">
+<div class="grid grid-cols-1 md:grid-cols-2 gap-gutter px-margin-mobile md:px-margin-desktop py-20 max-w-7xl mx-auto">
+<div class="flex flex-col gap-8">
+<div class="flex items-center gap-3 font-headline-md text-headline-md text-on-surface">
+<img alt="Weavers Atelier Logo" class="h-8 w-auto brightness-0 invert-[0.8] sepia-[0.3] saturate-[10] hue-rotate-[10deg]" src="https://lh3.googleusercontent.com/aida/ADBb0ujqAbXGQege7T4cyEK_hbeRHtKw44RDHqIEhsyCeEPA8BKKo4Tf-Uu_DmdwNvRkINrobsSDw4cFCTlT0zqdxvB548rNVHhBVMCpCpcE_lZzwKwSW0Ns-z1LInPRQDEZBaiDKmOMjKxbZKZKR4AO8W4KXYNd5SRXgYYiTK94AsDYPyJHZmYrjqTd_N8zjbHXEXCrV4-p9mJUZQPeJDLqWMAv-OAXF7EE2bh4uGNb0YNFZpTQdiyxGiVF1A"/>
+<span>WEAVERS ATELIER</span>
+</div>
+<p class="font-label-caps text-label-caps text-on-surface-variant tracking-widest">
+                    © 2024 WEAVERS ATELIER. ARCHITECTURAL SIMPLICITY.
+                </p>
+</div>
+<div class="flex flex-col md:items-end justify-center gap-4 font-body-md text-body-md text-on-surface-variant">
+<a class="hover:text-primary transition-colors duration-200" href="#">Brand Philosophy</a>
+<a class="hover:text-primary transition-colors duration-200" href="#">Sustainability</a>
+<a class="hover:text-primary transition-colors duration-200" href="#">Shipping &amp; Returns</a>
+<a class="hover:text-primary transition-colors duration-200" href="#">Contact</a>
+<a class="hover:text-primary transition-colors duration-200" href="#">Privacy Policy</a>
+</div>
+</div>
+</footer>
+</body></html>

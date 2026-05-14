@@ -1,0 +1,51 @@
+---
+alwaysApply: true
+---
+
+# SEO, Accessibility, and Performance Standards
+
+SEO:
+Every public page should include:
+- Title
+- Meta description
+- Open Graph title
+- Open Graph description
+- Open Graph image where available
+- Canonical URL where applicable
+
+SEO themes:
+- Custom menswear
+- Custom shirts for men
+- Tailored trousers
+- Custom jeans
+- Embroidered jeans for men
+- Custom denim
+- Weddingwear for men
+- Groom outfits
+- Statement menswear
+- Personalized clothing for men
+- Made-to-measure shirts
+- Custom embroidered clothing
+
+Accessibility:
+- Use semantic HTML.
+- Use proper heading order.
+- Add alt text for meaningful images.
+- Hide decorative images from screen readers.
+- Use keyboard-accessible menus.
+- Use visible focus states.
+- Connect labels to inputs.
+- Connect errors to fields.
+- Do not rely on color alone for selected states.
+- Respect reduced-motion preferences.
+
+Performance:
+- Optimize images.
+- Use responsive images.
+- Lazy-load below-the-fold media.
+- Avoid heavy Instagram embeds above the fold.
+- Avoid unnecessary client-side JavaScript.
+- Avoid oversized animation libraries unless already used.
+- Keep homepage fast on mobile.
+
+A premium site must feel fast, not just look expensive.
