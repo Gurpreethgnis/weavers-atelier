@@ -12,7 +12,7 @@ export const homeContent = {
       href: "/how-it-works",
     },
     image: {
-      src: "/images/hero/home-hero.jpg",
+      src: "/images/hero/home-hero-landscape.jpg",
       alt: "Premium menswear collection featuring tailored shirts and statement denim — Weavers Atelier",
     },
   },
