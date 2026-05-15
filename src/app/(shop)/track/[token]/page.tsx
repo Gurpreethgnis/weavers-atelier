@@ -14,7 +14,7 @@ import { createServiceClient } from "@/lib/supabase/server";
 import type { Order, OrderItem, OrderStatus } from "@/lib/supabase/types";
 
 export const metadata: Metadata = {
-  title: "Track Order | Weavers Atelier",
+  title: "Track Order | Weaver's Atelier",
   description: "Track your order status and shipment.",
 };
 

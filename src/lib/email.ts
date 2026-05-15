@@ -26,7 +26,7 @@ export async function sendEmail({ to, subject, html, replyTo }: SendEmailOptions
   try {
     const resend = getResend();
     const { data, error } = await resend.emails.send({
-      from: "Weavers Atelier <noreply@weavers.studio>",
+      from: "Weaver's Atelier <noreply@weavers.studio>",
       to,
       subject,
       html,
@@ -88,12 +88,12 @@ export async function sendCustomerConfirmation(
         </div>
         <div class="content">
           <p>Dear ${customerName},</p>
-          <p>Thank you for reaching out to Weavers Atelier. We've received your ${type === "inquiry" ? "inquiry" : type === "consultation" ? "consultation request" : type === "order" ? "custom order request" : "measurements"}.</p>
+          <p>Thank you for reaching out to Weaver's Atelier. We've received your ${type === "inquiry" ? "inquiry" : type === "consultation" ? "consultation request" : type === "order" ? "custom order request" : "measurements"}.</p>
           <p>Our team will review the details and get back to you within 24-48 hours. If you have any urgent questions, feel free to reach us on WhatsApp.</p>
           <p>Best regards,<br>The Weavers Team</p>
         </div>
         <div class="footer">
-          <p>Weavers Atelier — Custom Menswear, Made for You</p>
+          <p>Weaver's Atelier — Custom Menswear, Made for You</p>
           <p><a href="https://instagram.com/itsweavers">@itsweavers</a></p>
         </div>
       </div>
@@ -231,7 +231,7 @@ export async function sendOrderConfirmation(data: OrderConfirmationData) {
         </div>
         <div class="footer">
           <p>Questions? Reply to this email or contact us on WhatsApp.</p>
-          <p>Weavers Atelier — Custom Menswear, Made for You</p>
+          <p>Weaver's Atelier — Custom Menswear, Made for You</p>
         </div>
       </div>
     </body>

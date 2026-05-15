@@ -5,7 +5,7 @@ export const metadata: Metadata = {
   description:
     "Schedule a personalized styling consultation. Discuss your vision, get expert advice, and start your custom menswear journey.",
   openGraph: {
-    title: "Book a Consultation | Weavers Atelier",
+    title: "Book a Consultation | Weaver's Atelier",
     description:
       "Schedule a personalized styling consultation. Discuss your vision, get expert advice, and start your custom menswear journey.",
   },

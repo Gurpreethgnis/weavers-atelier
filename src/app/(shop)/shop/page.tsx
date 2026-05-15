@@ -7,11 +7,11 @@ import { shopContent } from "@/content/shop";
 import type { Collection } from "@/lib/supabase/types";
 
 export const metadata: Metadata = {
-  title: "Shop the Collection | Weavers Atelier",
+  title: "Shop the Collection | Weaver's Atelier",
   description:
     "Premium menswear designed for the modern man. Shop shirts, trousers, and statement denim in standard sizes or customize for your perfect fit.",
   openGraph: {
-    title: "Shop the Collection | Weavers Atelier",
+    title: "Shop the Collection | Weaver's Atelier",
     description:
       "Premium menswear designed for the modern man. Standard sizes XS–XL, or customize any piece.",
   },

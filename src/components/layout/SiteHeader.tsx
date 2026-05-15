@@ -111,7 +111,7 @@ export function SiteHeader() {
         <Link
           href="/"
           className="flex items-center gap-3"
-          aria-label="Weavers Atelier - Home"
+          aria-label="Weaver's Atelier - Home"
         >
           <span className="text-headline-md tracking-widest text-secondary">
             WEAVERS ATELIER

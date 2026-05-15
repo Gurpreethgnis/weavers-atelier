@@ -2,7 +2,7 @@ export const faqContent = {
   hero: {
     headline: "Frequently Asked Questions",
     subheadline:
-      "Everything you need to know about shopping with Weavers Atelier.",
+      "Everything you need to know about shopping with Weaver's Atelier.",
   },
 
   categories: [

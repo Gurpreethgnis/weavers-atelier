@@ -3,7 +3,7 @@ export const deliveryContent = {
     kicker: "Shipping & Delivery",
     headline: "Delivered Worldwide",
     description:
-      "Every Weavers Atelier piece is carefully packaged and shipped directly to you, anywhere in the world. Express and standard options available.",
+      "Every Weaver's Atelier piece is carefully packaged and shipped directly to you, anywhere in the world. Express and standard options available.",
   },
 
   shipping: {

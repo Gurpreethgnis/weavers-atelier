@@ -4,11 +4,11 @@ import { ArrowRight } from "lucide-react";
 import { howItWorksContent } from "@/content/how-it-works";
 
 export const metadata: Metadata = {
-  title: "How It Works | Weavers Atelier",
+  title: "How It Works | Weaver's Atelier",
   description:
     "From selection to your door. Whether you're buying off the rack or going custom, here's what to expect.",
   openGraph: {
-    title: "How It Works | Weavers Atelier",
+    title: "How It Works | Weaver's Atelier",
     description:
       "From selection to your door. Whether you're buying off the rack or going custom, here's what to expect.",
   },

@@ -6,11 +6,11 @@ import { WhatsAppButton } from "@/components/layout/WhatsAppButton";
 import { HeroImage } from "@/components/layout/HeroImage";
 
 export const metadata: Metadata = {
-  title: "Weddingwear | Weavers Atelier",
+  title: "Weddingwear | Weaver's Atelier",
   description:
     "Custom wedding suits, tuxedos, sherwanis, and bandhgalas. Made to your measurements for grooms, groomsmen, and guests.",
   openGraph: {
-    title: "Weddingwear | Weavers Atelier",
+    title: "Weddingwear | Weaver's Atelier",
     description:
       "Custom wedding suits, tuxedos, sherwanis, and bandhgalas. Made to your measurements.",
   },

@@ -13,7 +13,7 @@ export const homeContent = {
     },
     image: {
       src: "/images/hero/home-hero-landscape.jpg",
-      alt: "Premium menswear collection featuring tailored shirts and statement denim — Weavers Atelier",
+      alt: "Premium menswear collection featuring tailored shirts and statement denim — Weaver's Atelier",
     },
   },
 

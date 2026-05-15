@@ -80,8 +80,8 @@ const templateMeta: Record<
   account_welcome: {
     description: "Sent when a customer creates an account",
     variables: ["customer_name"],
-    defaultSubject: "Welcome to Weavers Atelier",
-    defaultHtml: `<h1>Welcome to Weavers Atelier, {{customer_name}}!</h1>
+    defaultSubject: "Welcome to Weaver's Atelier",
+    defaultHtml: `<h1>Welcome to Weaver's Atelier, {{customer_name}}!</h1>
 <p>Your account has been created successfully.</p>
 <p>You can now:</p>
 <ul>

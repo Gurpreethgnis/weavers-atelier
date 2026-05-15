@@ -6,9 +6,9 @@ import { customShirtsContent } from "@/content/custom-shirts";
 export const metadata: Metadata = {
   title: "Custom Shirts | The Architecture of the Shirt",
   description:
-    "Bespoke custom shirts engineered for precision. Every collar point and cuff line maintains structural integrity. Commission your piece at Weavers Atelier.",
+    "Bespoke custom shirts engineered for precision. Every collar point and cuff line maintains structural integrity. Commission your piece at Weaver's Atelier.",
   openGraph: {
-    title: "Custom Shirts | Weavers Atelier",
+    title: "Custom Shirts | Weaver's Atelier",
     description:
       "A study in precision. Bespoke shirts with architectural construction and premium fabrics.",
   },

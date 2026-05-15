@@ -5,11 +5,11 @@ import { trousersContent } from "@/content/trousers";
 import { HeroImage } from "@/components/layout/HeroImage";
 
 export const metadata: Metadata = {
-  title: "Tailored Trousers | Weavers Atelier",
+  title: "Tailored Trousers | Weaver's Atelier",
   description:
     "From classic dress trousers to casual chinos. Shop standard sizes (XS–XL) or customize every detail for your perfect fit.",
   openGraph: {
-    title: "Tailored Trousers | Weavers Atelier",
+    title: "Tailored Trousers | Weaver's Atelier",
     description:
       "From classic dress trousers to casual chinos. Shop standard sizes (XS–XL) or customize every detail for your perfect fit.",
   },
@@ -59,7 +59,7 @@ export default function TrousersPage() {
           <div className="md:col-span-7 mt-12 md:mt-0">
             <HeroImage
               src="/images/hero/trousers-black-set.jpg"
-              alt="Editorial portrait of a man in custom tailored black trousers — Weavers Atelier menswear"
+              alt="Editorial portrait of a man in custom tailored black trousers — Weaver's Atelier menswear"
               priority
             />
           </div>

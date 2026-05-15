@@ -2,13 +2,13 @@ import type { Metadata } from "next";
 import { LegalPage } from "@/components/layout/LegalPage";
 
 export const metadata: Metadata = {
-  title: "Privacy Policy | Weavers Atelier",
+  title: "Privacy Policy | Weaver's Atelier",
   description:
-    "Learn how Weavers Atelier collects, uses, and protects your personal information.",
+    "Learn how Weaver's Atelier collects, uses, and protects your personal information.",
   openGraph: {
-    title: "Privacy Policy | Weavers Atelier",
+    title: "Privacy Policy | Weaver's Atelier",
     description:
-      "Learn how Weavers Atelier collects, uses, and protects your personal information.",
+      "Learn how Weaver's Atelier collects, uses, and protects your personal information.",
   },
 };
 

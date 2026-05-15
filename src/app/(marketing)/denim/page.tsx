@@ -5,11 +5,11 @@ import { denimContent } from "@/content/denim";
 import { HeroImage } from "@/components/layout/HeroImage";
 
 export const metadata: Metadata = {
-  title: "Statement Denim | Weavers Atelier",
+  title: "Statement Denim | Weaver's Atelier",
   description:
     "Custom denim with embroidery, patchwork, and distressing. Japanese selvedge and premium denim made to your measurements.",
   openGraph: {
-    title: "Statement Denim | Weavers Atelier",
+    title: "Statement Denim | Weaver's Atelier",
     description:
       "Custom denim with embroidery, patchwork, and distressing. Japanese selvedge and premium denim.",
   },

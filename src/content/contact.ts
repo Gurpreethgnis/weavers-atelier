@@ -26,7 +26,7 @@ export const contactContent = {
 
   businessInfo: {
     title: "Business Information",
-    company: "Weavers Atelier LLC",
+    company: "Weaver's Atelier LLC",
     address: {
       line1: "651 N Broad St, Suite 201",
       line2: "Middletown, DE 19709",
@@ -99,7 +99,7 @@ export const contactContent = {
     },
     consent: {
       label:
-        "I agree to Weavers Atelier storing my information to respond to this inquiry.",
+        "I agree to Weaver's Atelier storing my information to respond to this inquiry.",
     },
     submit: "Send Message",
     successMessage: "Thanks! We'll get back to you within 24 hours.",

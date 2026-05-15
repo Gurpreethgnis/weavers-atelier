@@ -71,18 +71,18 @@ export async function generateMetadata({
 
   if (!product) {
     return {
-      title: "Product Not Found | Weavers Atelier",
+      title: "Product Not Found | Weaver's Atelier",
     };
   }
 
   const primaryImage = product.product_images?.find((img) => img.is_primary);
 
   return {
-    title: product.seo_title || `${product.name} | Weavers Atelier`,
+    title: product.seo_title || `${product.name} | Weaver's Atelier`,
     description:
       product.seo_description ||
       product.description?.slice(0, 160) ||
-      `Shop ${product.name} from Weavers Atelier`,
+      `Shop ${product.name} from Weaver's Atelier`,
     openGraph: {
       title: product.seo_title || product.name,
       description: product.seo_description || product.description || "",

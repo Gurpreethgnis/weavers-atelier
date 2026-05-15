@@ -5,7 +5,7 @@ import { getStripeServer } from "@/lib/stripe";
 import { createServiceClient } from "@/lib/supabase/server";
 
 export const metadata: Metadata = {
-  title: "Order Confirmed | Weavers Atelier",
+  title: "Order Confirmed | Weaver's Atelier",
   description: "Thank you for your order.",
 };
 

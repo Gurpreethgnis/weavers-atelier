@@ -58,14 +58,14 @@ export async function generateMetadata({ params }: PageProps): Promise<Metadata>
   const info = CATEGORY_INFO[category];
 
   if (!info) {
-    return { title: "Customize | Weavers Atelier" };
+    return { title: "Customize | Weaver's Atelier" };
   }
 
   return {
-    title: `${info.title} | Weavers Atelier`,
+    title: `${info.title} | Weaver's Atelier`,
     description: info.description,
     openGraph: {
-      title: `${info.title} | Weavers Atelier`,
+      title: `${info.title} | Weaver's Atelier`,
       description: info.description,
     },
   };

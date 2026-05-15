@@ -8,7 +8,7 @@ export const metadata: Metadata = {
   description:
     "Free alterations within 30 days. We stand behind the fit of every garment we create.",
   openGraph: {
-    title: "Returns & Alterations | Weavers Atelier",
+    title: "Returns & Alterations | Weaver's Atelier",
     description:
       "Free alterations within 30 days. We stand behind the fit of every garment we create.",
   },

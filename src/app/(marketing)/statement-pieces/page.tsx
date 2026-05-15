@@ -6,11 +6,11 @@ import { WhatsAppButton } from "@/components/layout/WhatsAppButton";
 import { HeroImage } from "@/components/layout/HeroImage";
 
 export const metadata: Metadata = {
-  title: "Statement Pieces | Weavers Atelier",
+  title: "Statement Pieces | Weaver's Atelier",
   description:
     "Custom jackets, embroidered outerwear, bespoke waistcoats, and one-of-a-kind creations. Beyond categories.",
   openGraph: {
-    title: "Statement Pieces | Weavers Atelier",
+    title: "Statement Pieces | Weaver's Atelier",
     description:
       "Custom jackets, embroidered outerwear, bespoke waistcoats, and one-of-a-kind creations.",
   },
@@ -34,7 +34,7 @@ export default function StatementPiecesPage() {
       <section className="relative w-full h-screen min-h-[600px] max-h-[900px] mb-block-gap overflow-hidden cinematic-shadow">
         <HeroImage
           src="/images/hero/statement-navy-gold.jpg"
-          alt="A navy long jacket with gold embroidered placket photographed in a heritage-styled set — a Weavers Atelier statement piece"
+          alt="A navy long jacket with gold embroidered placket photographed in a heritage-styled set — a Weaver's Atelier statement piece"
           aspect="aspect-auto"
           priority
           sizes="100vw"

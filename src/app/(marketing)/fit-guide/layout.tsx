@@ -5,7 +5,7 @@ export const metadata: Metadata = {
   description:
     "Perfect fit starts with accurate measurements. Use our interactive guide or schedule a video session for personalized assistance.",
   openGraph: {
-    title: "Fit Studio | Weavers Atelier",
+    title: "Fit Studio | Weaver's Atelier",
     description:
       "Perfect fit starts with accurate measurements. Use our interactive guide or schedule a video session for personalized assistance.",
   },

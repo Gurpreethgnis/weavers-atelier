@@ -109,7 +109,7 @@ export async function submitCustomQuote(input: CustomQuoteInput): Promise<QuoteR
               <p style="margin-top: 24px;">If you have any questions, reply to this email or reach us on WhatsApp.</p>
             </div>
             <div class="footer">
-              <p>Weavers Atelier — Custom Menswear, Made for You</p>
+              <p>Weaver's Atelier — Custom Menswear, Made for You</p>
             </div>
           </div>
         </body>

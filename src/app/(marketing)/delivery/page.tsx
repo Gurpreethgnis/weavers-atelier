@@ -4,11 +4,11 @@ import { ArrowRight } from "lucide-react";
 import { deliveryContent } from "@/content/delivery";
 
 export const metadata: Metadata = {
-  title: "Worldwide Delivery | Weavers Atelier",
+  title: "Worldwide Delivery | Weaver's Atelier",
   description:
     "Free shipping on orders over $250. Express and standard options available. Track your order every step of the way.",
   openGraph: {
-    title: "Worldwide Delivery | Weavers Atelier",
+    title: "Worldwide Delivery | Weaver's Atelier",
     description:
       "Free shipping on orders over $250. Express and standard options available.",
   },

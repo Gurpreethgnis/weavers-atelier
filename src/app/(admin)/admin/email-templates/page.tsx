@@ -57,7 +57,7 @@ export default async function AdminEmailTemplatesPage() {
     },
     {
       key: "account_welcome",
-      subject: "Welcome to Weavers Atelier",
+      subject: "Welcome to Weaver's Atelier",
       description: "Sent when a customer creates an account",
       variables: ["customer_name"],
     },

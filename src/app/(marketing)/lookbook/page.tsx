@@ -7,11 +7,11 @@ import { PageHero } from "@/components/layout/PageHero";
 import { lookbookContent } from "@/content/shop";
 
 export const metadata: Metadata = {
-  title: "Lookbook | Weavers Atelier",
+  title: "Lookbook | Weaver's Atelier",
   description:
     "Inspiration from our latest work. Every piece can be recreated or customized to your preferences.",
   openGraph: {
-    title: "Lookbook | Weavers Atelier",
+    title: "Lookbook | Weaver's Atelier",
     description:
       "Inspiration from our latest work. Every piece can be recreated or customized to your preferences.",
   },
@@ -82,10 +82,10 @@ export default async function LookbookPage() {
             we can make almost anything.
           </p>
           <Link
-            href="/shop"
+            href="/customize/shirts"
             className="bg-inverse-surface text-inverse-on-surface font-ui-button px-10 py-5 hover:bg-surface-tint hover:text-on-surface transition-colors duration-300 inline-flex items-center justify-center gap-3"
           >
-            Shop the Collection
+            Start Your Custom Order
             <ArrowRight className="h-4 w-4" />
           </Link>
         </div>
@@ -95,9 +95,8 @@ export default async function LookbookPage() {
 }
 
 function LookbookCard({ item }: { item: LookbookItem }) {
-  const href = item.product_id
-    ? `/shop/${getCategorySlug(item.category)}/${item.product_id}`
-    : `/shop/${getCategorySlug(item.category)}`;
+  // Link to customize page for custom ordering (products are made-to-order)
+  const href = `/customize/${getCategorySlug(item.category)}`;
 
   return (
     <Link href={href} className="group block">
@@ -158,7 +157,7 @@ function FallbackLookbook() {
       }) => (
         <Link
           key={item.id}
-          href={`/shop/${getCategorySlug(item.category)}`}
+          href={`/customize/${getCategorySlug(item.category)}`}
           className="group block"
         >
           <article className="space-y-4">

@@ -1,13 +1,13 @@
 import type { Metadata } from "next";
 
 export const metadata: Metadata = {
-  title: "Contact | Weavers Atelier",
+  title: "Contact | Weaver's Atelier",
   description:
-    "Reach the Weavers Atelier team. Send us an inquiry, book a consultation, or connect via WhatsApp for personalized assistance.",
+    "Reach the Weaver's Atelier team. Send us an inquiry, book a consultation, or connect via WhatsApp for personalized assistance.",
   openGraph: {
-    title: "Contact | Weavers Atelier",
+    title: "Contact | Weaver's Atelier",
     description:
-      "Reach the Weavers Atelier team. Send us an inquiry, book a consultation, or connect via WhatsApp for personalized assistance.",
+      "Reach the Weaver's Atelier team. Send us an inquiry, book a consultation, or connect via WhatsApp for personalized assistance.",
   },
 };
 

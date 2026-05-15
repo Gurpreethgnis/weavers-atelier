@@ -68,15 +68,15 @@ export async function generateMetadata({
 
   if (!data) {
     return {
-      title: "Collection Not Found | Weavers Atelier",
+      title: "Collection Not Found | Weaver's Atelier",
     };
   }
 
   return {
-    title: `${data.categoryInfo.name} | Weavers Atelier`,
+    title: `${data.categoryInfo.name} | Weaver's Atelier`,
     description: data.categoryInfo.description,
     openGraph: {
-      title: `Shop ${data.categoryInfo.name} | Weavers Atelier`,
+      title: `Shop ${data.categoryInfo.name} | Weaver's Atelier`,
       description: data.categoryInfo.description,
     },
   };

@@ -19,8 +19,8 @@ const spaceGrotesk = Space_Grotesk({
 
 export const metadata: Metadata = {
   title: {
-    default: "Custom Menswear, Made for You | Weavers Atelier",
-    template: "%s | Weavers Atelier",
+    default: "Custom Menswear, Made for You | Weaver's Atelier",
+    template: "%s | Weaver's Atelier",
   },
   description:
     "Tailored shirts, trousers, denim, weddingwear, and statement pieces — made around your fit, your style, and your occasion.",
@@ -35,22 +35,22 @@ export const metadata: Metadata = {
     "statement menswear",
     "made-to-measure",
   ],
-  authors: [{ name: "Weavers Atelier" }],
-  creator: "Weavers Atelier",
+  authors: [{ name: "Weaver's Atelier" }],
+  creator: "Weaver's Atelier",
   metadataBase: new URL(
     process.env.NEXT_PUBLIC_SITE_URL || "https://weavers.studio"
   ),
   openGraph: {
     type: "website",
     locale: "en_US",
-    siteName: "Weavers Atelier",
-    title: "Custom Menswear, Made for You | Weavers Atelier",
+    siteName: "Weaver's Atelier",
+    title: "Custom Menswear, Made for You | Weaver's Atelier",
     description:
       "Tailored shirts, trousers, denim, weddingwear, and statement pieces — made around your fit, your style, and your occasion.",
   },
   twitter: {
     card: "summary_large_image",
-    title: "Custom Menswear, Made for You | Weavers Atelier",
+    title: "Custom Menswear, Made for You | Weaver's Atelier",
     description:
       "Tailored shirts, trousers, denim, weddingwear, and statement pieces — made around your fit, your style, and your occasion.",
   },

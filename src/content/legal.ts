@@ -21,7 +21,7 @@ export const legalContent = {
   privacy: {
     title: "Privacy Policy",
     intro:
-      "Weavers Atelier ('we', 'us', 'our') is committed to protecting your privacy. This policy explains how we collect, use, and protect your personal information.",
+      "Weaver's Atelier ('we', 'us', 'our') is committed to protecting your privacy. This policy explains how we collect, use, and protect your personal information.",
     sections: [
       {
         id: "information-collected",
@@ -128,7 +128,7 @@ export const legalContent = {
   terms: {
     title: "Terms of Service",
     intro:
-      "By using Weavers Atelier ('the Site'), you agree to these terms. If you don't agree, please don't use our services.",
+      "By using Weaver's Atelier ('the Site'), you agree to these terms. If you don't agree, please don't use our services.",
     sections: [
       {
         id: "orders",
@@ -149,7 +149,7 @@ export const legalContent = {
           "You are responsible for providing accurate measurements. We'll do our best to guide you.",
           "Quotes are valid for 14 days from issuance.",
           "Production begins only after payment is received.",
-          "Custom designs remain the intellectual property of Weavers Atelier.",
+          "Custom designs remain the intellectual property of Weaver's Atelier.",
         ],
       },
       {
@@ -171,7 +171,7 @@ export const legalContent = {
         id: "intellectual-property",
         title: "Intellectual Property",
         content:
-          "All content on this site (images, text, designs, logos) is owned by Weavers Atelier and protected by copyright. You may not reproduce, distribute, or use our content without written permission.",
+          "All content on this site (images, text, designs, logos) is owned by Weaver's Atelier and protected by copyright. You may not reproduce, distribute, or use our content without written permission.",
       },
       {
         id: "limitation-of-liability",
@@ -209,7 +209,7 @@ export const legalContent = {
       "For questions about these policies or to exercise your data rights:",
     email: "legal@weaversatelier.com",
     address: {
-      company: "Weavers Atelier LLC",
+      company: "Weaver's Atelier LLC",
       line1: "651 N Broad St, Suite 201",
       line2: "Middletown, DE 19709",
       country: "United States",

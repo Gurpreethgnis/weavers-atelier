@@ -1,13 +1,13 @@
 import type { Metadata } from "next";
 
 export const metadata: Metadata = {
-  title: "FAQ | Weavers Atelier",
+  title: "FAQ | Weaver's Atelier",
   description:
-    "Frequently asked questions about custom menswear, measurements, pricing, delivery, and alterations at Weavers Atelier.",
+    "Frequently asked questions about custom menswear, measurements, pricing, delivery, and alterations at Weaver's Atelier.",
   openGraph: {
-    title: "FAQ | Weavers Atelier",
+    title: "FAQ | Weaver's Atelier",
     description:
-      "Frequently asked questions about custom menswear, measurements, pricing, delivery, and alterations at Weavers Atelier.",
+      "Frequently asked questions about custom menswear, measurements, pricing, delivery, and alterations at Weaver's Atelier.",
   },
 };
 
