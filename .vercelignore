@@ -16,8 +16,8 @@ docs/
 *.md
 !README.md
 
-# Images source folder (if any)
-Images/
+# Images source folder at project root (cursor generated, NOT public/images)
+/Images/
 
 # Git
 .git/
