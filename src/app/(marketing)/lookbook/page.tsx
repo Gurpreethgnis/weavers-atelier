@@ -82,7 +82,7 @@ export default async function LookbookPage() {
             we can make almost anything.
           </p>
           <Link
-            href="/customize/shirts"
+            href="/customize/shirt"
             className="bg-inverse-surface text-inverse-on-surface font-ui-button px-10 py-5 hover:bg-surface-tint hover:text-on-surface transition-colors duration-300 inline-flex items-center justify-center gap-3"
           >
             Start Your Custom Order
@@ -207,18 +207,21 @@ function FallbackLookbook() {
 }
 
 function getCategorySlug(category: string): string {
+  // Returns singular category slug for /customize/{category} route
   switch (category.toLowerCase()) {
     case "shirts":
-      return "shirts";
+    case "shirt":
+      return "shirt";
     case "trousers":
-      return "trousers";
+    case "trouser":
+      return "trouser";
     case "denim":
       return "denim";
     case "outerwear":
     case "sets":
     case "weddingwear":
-      return "shirts"; // Default fallback to shirts for now
+      return "shirt"; // Default fallback to shirt for now
     default:
-      return "shirts";
+      return "shirt";
   }
 }
