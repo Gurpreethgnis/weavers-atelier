@@ -114,7 +114,7 @@ export function SiteHeader() {
           aria-label="Weaver's Atelier - Home"
         >
           <span className="text-headline-md tracking-widest text-secondary">
-            WEAVERS ATELIER
+            WEAVER'S ATELIER
           </span>
         </Link>
 

@@ -7,7 +7,7 @@ export function SiteFooter() {
         {/* Logo */}
         <Link href="/" className="flex items-center gap-3">
           <span className="text-headline-md tracking-widest text-secondary">
-            WEAVERS ATELIER
+            WEAVER'S ATELIER
           </span>
         </Link>
 

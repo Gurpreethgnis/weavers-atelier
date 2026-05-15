@@ -87,7 +87,7 @@ export function MobileNav({ open, onClose, navigation }: MobileNavProps) {
           {/* Header */}
           <div className="flex items-center justify-between p-6 border-b border-outline-variant/20">
             <span className="text-headline-md tracking-widest text-secondary">
-              WEAVERS ATELIER
+              WEAVER'S ATELIER
             </span>
             <button
               type="button"
