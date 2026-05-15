@@ -95,8 +95,8 @@ export default async function LookbookPage() {
 }
 
 function LookbookCard({ item }: { item: LookbookItem }) {
-  // Link to customize page for custom ordering (products are made-to-order)
-  const href = `/customize/${getCategorySlug(item.category)}`;
+  // Link to detail page where user can choose standard or custom
+  const href = `/lookbook/${item.id}`;
 
   return (
     <Link href={href} className="group block">
@@ -146,63 +146,68 @@ function FallbackLookbook() {
   const { sampleLookbookItems } = require("@/content/instagram-looks");
 
   return (
-    <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-gutter">
-      {sampleLookbookItems.slice(0, 6).map((item: {
-        id: string;
-        title: string;
-        category: string;
-        imageUrl: string;
-        startingPrice: string;
-        tags?: string[];
-      }) => (
-        <Link
-          key={item.id}
-          href={`/customize/${getCategorySlug(item.category)}`}
-          className="group block"
-        >
-          <article className="space-y-4">
-            <div className="relative aspect-[3/4] overflow-hidden bg-surface-dim">
-              <Image
-                src={item.imageUrl}
-                alt={item.title}
-                fill
-                className="object-cover transition-transform duration-500 group-hover:scale-105"
-                sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
-              />
-              <div className="absolute inset-0 bg-gradient-to-t from-inverse-surface/60 via-transparent to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300" />
-              <div className="absolute bottom-0 left-0 right-0 p-6 translate-y-4 opacity-0 group-hover:translate-y-0 group-hover:opacity-100 transition-all duration-300">
-                <span className="text-inverse-on-surface font-ui-button text-sm inline-flex items-center gap-2">
-                  {lookbookContent.cta}
-                  <ArrowRight className="h-4 w-4" />
-                </span>
-              </div>
-            </div>
-
-            <div className="space-y-1">
-              <h3 className="text-body-lg font-medium text-on-surface group-hover:text-secondary transition-colors">
-                {item.title}
-              </h3>
-              <p className="text-sm text-on-surface-variant">
-                {item.startingPrice}
-              </p>
-            </div>
-
-            {item.tags && item.tags.length > 0 && (
-              <div className="flex flex-wrap gap-2">
-                {item.tags.slice(0, 3).map((tag: string) => (
-                  <span
-                    key={tag}
-                    className="text-xs text-on-surface-variant border border-outline-variant px-2 py-1"
-                  >
-                    {tag}
+    <>
+      <p className="text-center text-on-surface-variant mb-8">
+        Browse our inspirational pieces below. Each can be customized to your preferences.
+      </p>
+      <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-gutter">
+        {sampleLookbookItems.slice(0, 6).map((item: {
+          id: string;
+          title: string;
+          category: string;
+          imageUrl: string;
+          startingPrice: string;
+          tags?: string[];
+        }) => (
+          <Link
+            key={item.id}
+            href={`/customize/${getCategorySlug(item.category)}`}
+            className="group block"
+          >
+            <article className="space-y-4">
+              <div className="relative aspect-[3/4] overflow-hidden bg-surface-dim">
+                <Image
+                  src={item.imageUrl}
+                  alt={item.title}
+                  fill
+                  className="object-cover transition-transform duration-500 group-hover:scale-105"
+                  sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
+                />
+                <div className="absolute inset-0 bg-gradient-to-t from-inverse-surface/60 via-transparent to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300" />
+                <div className="absolute bottom-0 left-0 right-0 p-6 translate-y-4 opacity-0 group-hover:translate-y-0 group-hover:opacity-100 transition-all duration-300">
+                  <span className="text-inverse-on-surface font-ui-button text-sm inline-flex items-center gap-2">
+                    Customize This Look
+                    <ArrowRight className="h-4 w-4" />
                   </span>
-                ))}
+                </div>
               </div>
-            )}
-          </article>
-        </Link>
-      ))}
-    </div>
+
+              <div className="space-y-1">
+                <h3 className="text-body-lg font-medium text-on-surface group-hover:text-secondary transition-colors">
+                  {item.title}
+                </h3>
+                <p className="text-sm text-on-surface-variant">
+                  {item.startingPrice}
+                </p>
+              </div>
+
+              {item.tags && item.tags.length > 0 && (
+                <div className="flex flex-wrap gap-2">
+                  {item.tags.slice(0, 3).map((tag: string) => (
+                    <span
+                      key={tag}
+                      className="text-xs text-on-surface-variant border border-outline-variant px-2 py-1"
+                    >
+                      {tag}
+                    </span>
+                  ))}
+                </div>
+              )}
+            </article>
+          </Link>
+        ))}
+      </div>
+    </>
   );
 }
 

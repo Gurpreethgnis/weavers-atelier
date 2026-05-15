@@ -286,6 +286,10 @@ export interface Database {
           cta_label: string | null;
           featured: boolean;
           sort_order: number;
+          product_id: string | null;
+          price_cents: number | null;
+          sizes: SizeOption[] | null;
+          rtw_available: boolean;
         };
         Insert: Omit<
           Database["public"]["Tables"]["lookbook_items"]["Row"],
