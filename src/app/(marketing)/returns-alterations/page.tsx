@@ -140,14 +140,19 @@ export default function ReturnsAlterationsPage() {
           <span className="text-label-caps text-secondary tracking-widest block mb-6">
             {nonReturnable.title}
           </span>
-          <ul className="grid grid-cols-1 md:grid-cols-2 gap-4">
-            {nonReturnable.items.map((item) => (
-              <li key={item} className="flex gap-3">
-                <span className="text-on-surface-variant">✕</span>
-                <span className="text-body-md text-on-surface-variant">{item}</span>
-              </li>
-            ))}
-          </ul>
+          <details className="border border-outline-variant p-6 bg-surface">
+            <summary className="cursor-pointer text-body-md text-on-surface font-medium">
+              View full non-returnable list
+            </summary>
+            <ul className="grid grid-cols-1 md:grid-cols-2 gap-4 mt-4">
+              {nonReturnable.items.map((item) => (
+                <li key={item} className="flex gap-3">
+                  <span className="text-on-surface-variant">✕</span>
+                  <span className="text-body-md text-on-surface-variant">{item}</span>
+                </li>
+              ))}
+            </ul>
+          </details>
         </div>
       </section>
 
@@ -156,18 +161,23 @@ export default function ReturnsAlterationsPage() {
         <span className="text-label-caps text-secondary tracking-widest block mb-6">
           {refunds.title}
         </span>
-        <div className="space-y-6">
-          {refunds.items.map((item) => (
-            <div key={item.question} className="border-l-2 border-secondary pl-6">
-              <h3 className="text-body-lg font-medium text-on-surface mb-2">
-                {item.question}
-              </h3>
-              <p className="text-body-md text-on-surface-variant">
-                {item.answer}
-              </p>
-            </div>
-          ))}
-        </div>
+        <details className="border border-outline-variant p-6 bg-surface">
+          <summary className="cursor-pointer text-body-lg text-on-surface font-medium">
+            View refund and payment details
+          </summary>
+          <div className="space-y-6 mt-6">
+            {refunds.items.map((item) => (
+              <div key={item.question} className="border-l-2 border-secondary pl-6">
+                <h3 className="text-body-lg font-medium text-on-surface mb-2">
+                  {item.question}
+                </h3>
+                <p className="text-body-md text-on-surface-variant">
+                  {item.answer}
+                </p>
+              </div>
+            ))}
+          </div>
+        </details>
       </section>
 
       {/* Final CTA */}

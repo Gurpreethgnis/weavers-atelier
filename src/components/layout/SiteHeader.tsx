@@ -28,7 +28,6 @@ const navigation: NavItem[] = [
   { name: "Lookbook", type: "link", href: "/lookbook" },
   { name: "Weddingwear", type: "link", href: "/weddingwear" },
   { name: "Statement Pieces", type: "link", href: "/statement-pieces" },
-  { name: "How It Works", type: "link", href: "/how-it-works" },
   { name: "Contact", type: "link", href: "/contact" },
 ];
 
@@ -114,7 +113,7 @@ export function SiteHeader() {
           aria-label="Weaver's Atelier - Home"
         >
           <span className="text-headline-md tracking-widest text-secondary">
-            WEAVER'S ATELIER
+            WEAVERS ATELIER
           </span>
         </Link>
 

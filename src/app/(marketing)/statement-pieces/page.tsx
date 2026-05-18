@@ -22,9 +22,7 @@ export default function StatementPiecesPage() {
     introduction,
     categories,
     customizationDepth,
-    process,
     timeline,
-    pricing,
     cta,
   } = statementPiecesContent;
 
@@ -144,23 +142,32 @@ export default function StatementPiecesPage() {
             </p>
           </div>
 
-          {/* Row 3: Two Equal */}
-          {categories.slice(4).map((category) => (
-            <div
-              key={category.name}
-              className="md:col-span-6 bronze-border p-8 hover:border-secondary transition-colors duration-300"
-            >
-              <span className="text-label-caps text-on-surface-variant/60 block mb-6">
-                {category.examples}
-              </span>
-              <h3 className="text-headline-md text-on-surface mb-4">
-                {category.name}
-              </h3>
-              <p className="text-body-lg text-on-surface-variant">
-                {category.description}
-              </p>
-            </div>
-          ))}
+          {/* Row 3: Additional categories via disclosure */}
+          <div className="md:col-span-12">
+            <details className="border border-outline-variant bg-surface p-6">
+              <summary className="cursor-pointer text-body-lg text-on-surface font-medium">
+                View additional statement categories
+              </summary>
+              <div className="grid grid-cols-1 md:grid-cols-2 gap-gutter mt-6">
+                {categories.slice(4).map((category) => (
+                  <div
+                    key={category.name}
+                    className="md:col-span-1 bronze-border p-8 hover:border-secondary transition-colors duration-300"
+                  >
+                    <span className="text-label-caps text-on-surface-variant/60 block mb-6">
+                      {category.examples}
+                    </span>
+                    <h3 className="text-headline-md text-on-surface mb-4">
+                      {category.name}
+                    </h3>
+                    <p className="text-body-lg text-on-surface-variant">
+                      {category.description}
+                    </p>
+                  </div>
+                ))}
+              </div>
+            </details>
+          </div>
         </div>
       </section>
 
@@ -168,7 +175,7 @@ export default function StatementPiecesPage() {
       <section className="bg-surface-container-high py-block-gap mb-block-gap">
         <div className="container-atelier">
           <h2 className="text-headline-lg text-on-surface text-center mb-16">
-            The Depth of Customization
+            Customization
           </h2>
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-gutter">
             {customizationDepth.map((item) => (
@@ -188,35 +195,11 @@ export default function StatementPiecesPage() {
         </div>
       </section>
 
-      {/* Process — Numbered Steps */}
-      <section className="container-atelier mb-block-gap">
-        <div className="border-b border-outline-variant pb-8 mb-16">
-          <h2 className="text-headline-lg text-on-surface">{process.headline}</h2>
-        </div>
-        <div className="grid grid-cols-1 md:grid-cols-12 gap-gutter">
-          {process.steps.map((step) => (
-            <div key={step.number} className="md:col-span-3 relative">
-              <span className="text-display-lg text-surface-container-highest opacity-50 absolute -top-4 -left-2 pointer-events-none select-none">
-                {step.number}
-              </span>
-              <div className="pt-16">
-                <h3 className="text-body-lg text-on-surface font-medium mb-3">
-                  {step.title}
-                </h3>
-                <p className="text-body-md text-on-surface-variant">
-                  {step.description}
-                </p>
-              </div>
-            </div>
-          ))}
-        </div>
-      </section>
-
       {/* Timeline — Bordered Box */}
       <section className="container-atelier mb-block-gap">
         <div className="bronze-border p-12 md:p-16 bg-surface-container">
           <span className="text-label-caps text-secondary tracking-widest block mb-6">
-            Planning Ahead
+            Lead Time
           </span>
           <h2 className="text-headline-md text-on-surface mb-6">
             {timeline.headline}
@@ -227,48 +210,13 @@ export default function StatementPiecesPage() {
         </div>
       </section>
 
-      {/* Pricing */}
-      <section className="bg-surface-container-high py-block-gap mb-block-gap">
-        <div className="container-atelier">
-          <div className="text-center mb-16">
-            <span className="text-label-caps text-secondary tracking-widest block mb-4">
-              Investment
-            </span>
-            <h2 className="text-headline-lg text-on-surface mb-4">
-              Starting Points
-            </h2>
-            <p className="text-body-md text-on-surface-variant max-w-xl mx-auto">
-              {pricing.note}
-            </p>
-          </div>
-          <div className="grid grid-cols-1 md:grid-cols-3 gap-gutter max-w-4xl mx-auto">
-            {pricing.examples.map((example) => (
-              <div
-                key={example.name}
-                className="border border-outline-variant/30 bg-surface p-8 text-center hover:border-secondary transition-colors duration-300"
-              >
-                <h3 className="text-body-lg text-on-surface font-medium mb-2">
-                  {example.name}
-                </h3>
-                <p className="text-headline-md text-secondary mb-4">
-                  {example.price}
-                </p>
-                <p className="text-body-md text-on-surface-variant">
-                  {example.description}
-                </p>
-              </div>
-            ))}
-          </div>
-        </div>
-      </section>
-
       {/* Private Archive CTA Strip */}
       <section className="border-y border-outline-variant py-20 mb-block-gap">
         <div className="container-atelier">
           <div className="grid grid-cols-1 md:grid-cols-12 gap-gutter items-center">
             <div className="md:col-span-6">
               <span className="text-label-caps text-secondary tracking-widest block mb-4">
-                Private Archive
+                Private Reference
               </span>
               <h2 className="text-headline-lg text-on-surface mb-4">
                 {cta.headline}

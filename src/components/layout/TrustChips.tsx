@@ -4,23 +4,23 @@ import { cn } from "@/lib/utils";
 const trustItems = [
   {
     icon: Ruler,
-    label: "Custom Fit",
-    description: "Made to your measurements",
+    label: "Fit-Conscious Design",
+    description: "Designed around proportion",
   },
   {
     icon: Truck,
     label: "Worldwide Delivery",
-    description: "Safe shipping globally",
+    description: "Tracked from dispatch to door",
   },
   {
     icon: RefreshCw,
-    label: "Free Alterations",
-    description: "Perfect fit guaranteed",
+    label: "Guided Custom Process",
+    description: "Clear steps, tailored outcomes",
   },
   {
     icon: MessageCircle,
-    label: "Expert Support",
-    description: "Personal styling help",
+    label: "Made With Care",
+    description: "Crafted with measured precision",
   },
 ];
 

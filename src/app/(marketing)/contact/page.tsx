@@ -22,7 +22,7 @@ const contactSchema = z.object({
 type ContactFormData = z.infer<typeof contactSchema>;
 
 export default function ContactPage() {
-  const { hero, channels, businessInfo, departments, form, faq, cta } =
+  const { hero, channels, businessInfo, departments, form, cta } =
     contactContent;
 
   const [isSubmitting, setIsSubmitting] = useState(false);
@@ -66,7 +66,7 @@ export default function ContactPage() {
             Message Sent
           </span>
           <h1 className="text-headline-lg-mobile md:text-display-lg text-on-surface mb-8">
-            We'll Be in Touch
+            We&apos;ll Be in Touch
           </h1>
           <p className="text-body-lg text-on-surface-variant mb-12">
             {form.successMessage}
@@ -82,7 +82,7 @@ export default function ContactPage() {
               href="/shop"
               className="border border-outline-variant font-ui-button px-10 py-5 hover:border-secondary transition-colors duration-300"
             >
-              Shop the Collection
+              Shop Menswear
             </Link>
           </div>
         </div>
@@ -304,58 +304,35 @@ export default function ContactPage() {
         </div>
       </section>
 
-      {/* Departments Section */}
+      {/* Specialist Contacts */}
       <section className="container-atelier mb-block-gap">
         <span className="text-label-caps text-secondary tracking-widest block mb-6">
           {departments.title}
         </span>
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-gutter">
-          {departments.items.map((dept) => (
-            <div key={dept.department} className="border border-outline-variant p-6">
-              <h3 className="text-body-lg font-medium text-on-surface mb-2">
-                {dept.department}
-              </h3>
-              <p className="text-body-md text-on-surface-variant mb-4">
-                {dept.description}
-              </p>
-              <a
-                href={`mailto:${dept.email}`}
-                className="text-sm text-secondary hover:underline inline-flex items-center gap-2"
-              >
-                {dept.email}
-                <ExternalLink className="h-3 w-3" />
-              </a>
-            </div>
-          ))}
-        </div>
-      </section>
-
-      {/* FAQ Section */}
-      <section className="bg-surface-container-high py-block-gap mb-block-gap">
-        <div className="container-atelier">
-          <span className="text-label-caps text-secondary tracking-widest block mb-6">
-            {faq.title}
-          </span>
-          <div className="grid grid-cols-1 md:grid-cols-2 gap-gutter">
-            {faq.items.map((item) => (
-              <div key={item.question} className="border-l-2 border-secondary pl-6">
+        <details className="border border-outline-variant p-6 bg-surface">
+          <summary className="cursor-pointer text-body-lg text-on-surface font-medium">
+            View specialist email contacts
+          </summary>
+          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-gutter mt-6">
+            {departments.items.map((dept) => (
+              <div key={dept.department} className="border border-outline-variant p-6">
                 <h3 className="text-body-lg font-medium text-on-surface mb-2">
-                  {item.question}
+                  {dept.department}
                 </h3>
-                <p className="text-body-md text-on-surface-variant mb-3">
-                  {item.answer}
+                <p className="text-body-md text-on-surface-variant mb-4">
+                  {dept.description}
                 </p>
-                <Link
-                  href={item.link.href}
+                <a
+                  href={`mailto:${dept.email}`}
                   className="text-sm text-secondary hover:underline inline-flex items-center gap-2"
                 >
-                  {item.link.text}
-                  <ArrowRight className="h-3 w-3" />
-                </Link>
+                  {dept.email}
+                  <ExternalLink className="h-3 w-3" />
+                </a>
               </div>
             ))}
           </div>
-        </div>
+        </details>
       </section>
 
       {/* CTA */}

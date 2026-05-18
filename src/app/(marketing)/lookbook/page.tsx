@@ -75,17 +75,16 @@ export default async function LookbookPage() {
             Your Vision
           </span>
           <h2 className="text-headline-lg-mobile md:text-headline-lg text-on-surface mb-8">
-            Don't See What You're Looking For?
+            Looking for Something Specific?
           </h2>
           <p className="text-body-lg text-on-surface-variant mb-12">
-            Send us any image — from any source. If we can make it, we will. And
-            we can make almost anything.
+            Share a reference image, fabric direction, or silhouette. We&apos;ll guide the right custom path.
           </p>
           <Link
             href="/customize/shirt"
             className="bg-inverse-surface text-inverse-on-surface font-ui-button px-10 py-5 hover:bg-surface-tint hover:text-on-surface transition-colors duration-300 inline-flex items-center justify-center gap-3"
           >
-            Start Your Custom Order
+            Send Inspiration
             <ArrowRight className="h-4 w-4" />
           </Link>
         </div>

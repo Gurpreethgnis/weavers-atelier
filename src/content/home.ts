@@ -1,15 +1,15 @@
 export const homeContent = {
   hero: {
-    headline: "Shop the Collection",
+    headline: "Custom Menswear, Made for You",
     subheadline:
-      "Premium menswear, crafted with intention. Browse our curated selection of shirts, trousers, and statement denim — or go custom for something uniquely yours.",
+      "Shirts, trousers, denim, weddingwear, and statement pieces — designed with intention, shaped around your fit, and finished with quiet confidence.",
     cta: {
-      text: "Shop Now",
+      text: "Shop Menswear",
       href: "/shop",
     },
     secondaryCta: {
-      text: "Make It Custom",
-      href: "/how-it-works",
+      text: "Start a Custom Order",
+      href: "/customize/shirt",
     },
     image: {
       src: "/images/hero/home-hero-landscape.jpg",
@@ -18,12 +18,12 @@ export const homeContent = {
   },
 
   categories: {
-    headline: "The Collection",
+    headline: "Featured Categories",
     items: [
       {
         name: "Shirts",
         description:
-          "Impeccably cut shirts in premium fabrics. Choose your size or customize every detail.",
+          "Clean lines, considered fabric, and custom detail when needed.",
         href: "/shop/shirts",
         image: {
           src: "/images/custom-shirts/hero-shirt.jpg",
@@ -33,7 +33,7 @@ export const homeContent = {
       {
         name: "Trousers",
         description:
-          "Tailored trousers built for the perfect fit. Ready-to-wear sizes or custom measurements.",
+          "Tailored structure with room for movement and proportion.",
         href: "/shop/trousers",
         image: {
           src: "/images/trousers/dress-trousers.jpg",
@@ -43,7 +43,7 @@ export const homeContent = {
       {
         name: "Denim",
         description:
-          "Statement jeans with distinctive details. Embroidery, contrast stitching, custom washes.",
+          "Statement washes, sharper cuts, and expressive finishing.",
         href: "/shop/denim",
         image: {
           src: "/images/denim/hero-denim.jpg",
@@ -56,40 +56,40 @@ export const homeContent = {
   madeForYou: {
     headline: "Made for You",
     subheadline:
-      "When standard sizes don't cut it — or when you want something truly personal — our custom process delivers exactly what you envision.",
+      "When the fit or detail needs to be exact, we guide a custom piece from first reference to final finish.",
     features: [
       {
         icon: "straighten",
-        title: "Your Measurements",
+        title: "Your Proportions",
         description:
-          "Every custom piece starts with precise measurements. Use our fit guide, send a reference garment, or book a video fitting.",
+          "Share measurements, reference garments, or request guided support.",
       },
       {
         icon: "tune",
-        title: "Your Choices",
+        title: "Your Direction",
         description:
-          "Fabric, collar, cuffs, buttons, pockets, stitching — every detail is yours to decide. We guide you through the options.",
+          "Fabric, silhouette, and finishing details are shaped around your intent.",
       },
       {
         icon: "verified",
-        title: "Your Guarantee",
+        title: "Our Standard",
         description:
-          "Free alterations within 30 days. If we can't get it right, we'll remake it at no extra cost.",
+          "Fit-conscious construction, guided process, and reliable aftercare.",
       },
     ],
     cta: {
       text: "Start a Custom Order",
-      href: "/how-it-works",
+      href: "/customize/shirt",
     },
   },
 
   occasions: {
-    headline: "For Every Occasion",
+    headline: "Occasion-Led",
     items: [
       {
         name: "Weddingwear",
         description:
-          "Groomswear, sherwanis, and reception pieces designed for your most important day. Consultation required.",
+          "For ceremonies, receptions, and the moments that matter most.",
         href: "/weddingwear",
         image: {
           src: "/images/weddingwear/sherwanis.jpg",
@@ -99,7 +99,7 @@ export const homeContent = {
       {
         name: "Statement Pieces",
         description:
-          "Embroidered jackets, heritage designs, and one-of-a-kind creations. For those who want to be remembered.",
+          "One-off garments and expressive tailoring shaped from an idea.",
         href: "/statement-pieces",
         image: {
           src: "/images/statement/hero-statement.jpg",
@@ -107,45 +107,45 @@ export const homeContent = {
         },
       },
     ],
-    note: "Weddingwear and statement pieces are consultation-only. We'll discuss your vision, timeline, and budget before production.",
+    note: "Both routes begin with a focused consultation before production starts.",
   },
 
   trust: {
-    headline: "The Weavers Promise",
+    headline: "Atelier Notes",
     items: [
       {
         icon: "local_shipping",
         title: "Worldwide Delivery",
-        description: "Free shipping on orders over $250. International delivery to 40+ countries.",
+        description: "Tracked dispatch with careful packaging.",
       },
       {
         icon: "sync_alt",
-        title: "Free Alterations",
-        description: "30 days to request fit adjustments. We cover return shipping.",
+        title: "Guided Custom Process",
+        description: "Clear steps from direction to delivery.",
       },
       {
         icon: "lock",
         title: "Secure Checkout",
-        description: "Your payment and personal data are protected by Stripe's industry-leading security.",
+        description: "Protected payment flow through Stripe.",
       },
       {
         icon: "support_agent",
-        title: "Real Support",
-        description: "Questions? Our team responds within 24 hours. WhatsApp, email, or chat.",
+        title: "Made With Care",
+        description: "Craftsmanship with fit and finish in focus.",
       },
     ],
   },
 
   cta: {
-    headline: "Ready to Shop?",
+    headline: "Choose Your Direction",
     description:
-      "Browse the collection, customize to your taste, or reach out with questions. We're here to help you look your best.",
+      "Explore the collection, begin a custom piece, or speak with the atelier for guidance.",
     primaryCta: {
-      text: "Shop the Collection",
+      text: "Shop Menswear",
       href: "/shop",
     },
     secondaryCta: {
-      text: "Contact Us",
+      text: "Speak With the Atelier",
       href: "/contact",
     },
   },

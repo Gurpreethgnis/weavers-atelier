@@ -93,11 +93,11 @@ export function LookbookCard({
         {/* Hover Overlay */}
         <div className="absolute inset-0 bg-surface/90 opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex flex-col items-center justify-center gap-4 p-6">
           <Link
-            href={`/book-consultation?type=instagram_recreate&ref=${id}`}
+            href={`/contact?subject=custom&look=${id}`}
             onClick={handleRecreateClick}
             className="bg-inverse-surface text-inverse-on-surface text-label-caps px-6 py-3 tracking-widest hover:bg-surface-tint hover:text-on-surface transition-colors duration-300"
           >
-            Recreate This Look
+            Send Inspiration
           </Link>
           {instagramUrl && (
             <a

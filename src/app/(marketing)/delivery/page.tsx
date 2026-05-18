@@ -83,25 +83,30 @@ export default function DeliveryPage() {
           <p className="text-body-lg text-on-surface-variant mb-12 max-w-2xl">
             {destinations.description}
           </p>
-          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-gutter">
-            {destinations.regions.map((region) => (
-              <div key={region.name}>
-                <h3 className="text-body-lg text-on-surface font-medium mb-4">
-                  {region.name}
-                </h3>
-                <ul className="space-y-2">
-                  {region.countries.map((country) => (
-                    <li
-                      key={country}
-                      className="text-body-md text-on-surface-variant"
-                    >
-                      {country}
-                    </li>
-                  ))}
-                </ul>
-              </div>
-            ))}
-          </div>
+          <details className="border border-outline-variant bg-surface p-6">
+            <summary className="cursor-pointer text-body-lg text-on-surface font-medium">
+              View regional destination details
+            </summary>
+            <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-gutter mt-6">
+              {destinations.regions.map((region) => (
+                <div key={region.name}>
+                  <h3 className="text-body-lg text-on-surface font-medium mb-4">
+                    {region.name}
+                  </h3>
+                  <ul className="space-y-2">
+                    {region.countries.map((country) => (
+                      <li
+                        key={country}
+                        className="text-body-md text-on-surface-variant"
+                      >
+                        {country}
+                      </li>
+                    ))}
+                  </ul>
+                </div>
+              ))}
+            </div>
+          </details>
         </div>
       </section>
 
@@ -195,18 +200,23 @@ export default function DeliveryPage() {
         <span className="text-label-caps text-secondary tracking-widest block mb-6">
           {issues.title}
         </span>
-        <div className="space-y-6">
-          {issues.items.map((item) => (
-            <div key={item.question} className="border-l-2 border-secondary pl-6">
-              <h3 className="text-body-lg font-medium text-on-surface mb-2">
-                {item.question}
-              </h3>
-              <p className="text-body-md text-on-surface-variant">
-                {item.answer}
-              </p>
-            </div>
-          ))}
-        </div>
+        <details className="border border-outline-variant p-6 bg-surface">
+          <summary className="cursor-pointer text-body-lg text-on-surface font-medium">
+            View delivery support guidance
+          </summary>
+          <div className="space-y-6 mt-6">
+            {issues.items.map((item) => (
+              <div key={item.question} className="border-l-2 border-secondary pl-6">
+                <h3 className="text-body-lg font-medium text-on-surface mb-2">
+                  {item.question}
+                </h3>
+                <p className="text-body-md text-on-surface-variant">
+                  {item.answer}
+                </p>
+              </div>
+            ))}
+          </div>
+        </details>
       </section>
 
       {/* Final CTA */}

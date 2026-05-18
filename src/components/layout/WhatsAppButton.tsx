@@ -28,7 +28,7 @@ interface WhatsAppButtonProps {
 export function WhatsAppButton({
   context = "general",
   customMessage,
-  label = "Chat on WhatsApp",
+  label = "Speak With the Atelier",
   variant = "default",
   size = "md",
   className,

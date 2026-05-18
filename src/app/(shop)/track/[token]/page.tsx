@@ -248,7 +248,7 @@ export default async function TrackOrderPage({ params }: TrackPageProps) {
             href="/contact"
             className="inline-flex items-center gap-2 text-secondary hover:underline"
           >
-            Contact Us
+            Speak With the Atelier
             <ArrowRight className="w-4 h-4" />
           </Link>
         </div>

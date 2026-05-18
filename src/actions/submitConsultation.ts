@@ -37,7 +37,7 @@ export async function submitConsultation(data: ConsultationFormData) {
       budget_range: formData.budget_range || null,
       role: formData.role || null,
       number_of_outfits: formData.number_of_outfits || null,
-      source_page: "/book-consultation",
+      source_page: "/contact",
     });
 
     if (dbError) {

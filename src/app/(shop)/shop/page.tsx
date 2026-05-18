@@ -161,11 +161,10 @@ export default async function ShopPage() {
       {/* Browse By Occasion */}
       <section className="container-atelier py-16 md:py-24">
         <h2 className="text-2xl md:text-3xl font-heading font-semibold text-center mb-4">
-          Custom & Consultation
+          Atelier Services
         </h2>
         <p className="text-on-surface-variant text-center max-w-2xl mx-auto mb-12">
-          Some occasions call for something truly bespoke. For weddingwear and
-          statement pieces, our team works with you from concept to completion.
+          For weddingwear and statement projects, we guide the piece from first direction to final fit.
         </p>
 
         <div className="grid grid-cols-1 md:grid-cols-2 gap-8 max-w-4xl mx-auto">
@@ -180,7 +179,7 @@ export default async function ShopPage() {
                   Weddingwear
                 </h3>
                 <p className="text-surface/80 text-sm">
-                  Book a consultation →
+                  Start a wedding consultation →
                 </p>
               </div>
             </div>
@@ -197,7 +196,7 @@ export default async function ShopPage() {
                   Statement Pieces
                 </h3>
                 <p className="text-surface/80 text-sm">
-                  Book a consultation →
+                  Send inspiration →
                 </p>
               </div>
             </div>

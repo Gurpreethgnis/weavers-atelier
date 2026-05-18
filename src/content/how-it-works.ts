@@ -2,7 +2,7 @@ export const howItWorksContent = {
   hero: {
     headline: "How It Works",
     subheadline:
-      "From selection to your door. Whether you're buying off the rack or going custom, here's what to expect.",
+      "Choose from the collection or begin a custom piece. Either way, the process is personal and clearly guided.",
   },
 
   paths: {
@@ -10,111 +10,74 @@ export const howItWorksContent = {
     standard: {
       title: "Ready-to-Wear",
       description:
-        "Choose your piece, select your size (XS–XL), and check out. Made to order with a 2–3 week lead time. No stock limits — every size is always available.",
+        "Select your piece, choose your size, and complete checkout. We prepare the garment and ship with tracking.",
       steps: [
-        "Browse the collection",
-        "Select your size",
-        "Checkout with Stripe",
-        "We make it, you receive it",
+        "Browse and select your piece",
+        "Choose size and complete checkout",
+        "We prepare and deliver with tracking",
       ],
       cta: {
-        text: "Shop the Collection",
+        text: "Shop Menswear",
         href: "/shop",
       },
     },
     custom: {
-      title: "Made for You",
+      title: "Start Custom",
       description:
-        "Want something uniquely yours? Submit your measurements and preferences, we'll send you a quote, and once you approve, we craft your piece exactly as specified.",
+        "Share your measurements, preferences, or inspiration. We confirm direction before production begins.",
       steps: [
-        "Select a product and click 'Customize'",
-        "Tell us your size, preferences, and vision",
-        "Receive a quote (free, no commitment)",
-        "Accept the quote and pay via secure invoice",
-        "We make it to your exact specifications",
+        "Submit your request and reference details",
+        "Review and approve your quote",
+        "We craft and deliver your piece",
       ],
       cta: {
-        text: "How Custom Works",
+        text: "Start a Custom Order",
         href: "#custom-process",
       },
     },
   },
 
   customProcess: {
-    headline: "The Custom Process",
+    headline: "Custom Process",
     steps: [
       {
         number: "01",
         title: "Submit Your Request",
         description:
-          "On any product page, click 'Customize This Piece.' Tell us about the fit you want, any modifications, and share inspiration images if you have them.",
+          "Share measurements, fit preferences, and reference imagery if available.",
         details: [
           "No payment required to request a quote",
-          "Share reference images from anywhere",
-          "Tell us your timeline and budget if relevant",
+          "References from any source are welcome",
+          "Event date and timeline help us plan accurately",
         ],
       },
       {
         number: "02",
-        title: "Measurements & Preferences",
+        title: "Approve Direction",
         description:
-          "Complete our measurement guide or send us a garment that fits well. We'll capture everything we need to build your piece perfectly.",
+          "We send a clear quote with timeline and specification summary for approval.",
         details: [
-          "Self-measurement guide with clear instructions",
-          "Video fitting available for complex pieces",
-          "Your measurements saved for future orders",
+          "Transparent pricing and lead-time",
+          "Questions resolved before production begins",
+          "Secure payment via Stripe invoice",
         ],
         cta: {
-          text: "View Fit Guide",
-          href: "/fit-guide",
+          text: "Speak With the Atelier",
+          href: "/contact",
         },
       },
       {
         number: "03",
-        title: "Receive Your Quote",
+        title: "Craft & Deliver",
         description:
-          "Within 48 hours, you'll receive a detailed quote with price, lead time, and specifications. No surprises — just clear terms.",
+          "Once approved, your piece moves into production, quality review, and tracked delivery.",
         details: [
-          "Transparent pricing with no hidden fees",
-          "Exact production timeline",
-          "Any questions answered before you commit",
-        ],
-      },
-      {
-        number: "04",
-        title: "Approve & Pay",
-        description:
-          "Happy with the quote? Accept it and pay securely via Stripe. We'll begin production immediately.",
-        details: [
-          "Pay via credit card, Apple Pay, or Google Pay",
-          "Secure invoicing through Stripe",
-          "Full receipt and order confirmation",
-        ],
-      },
-      {
-        number: "05",
-        title: "Crafting",
-        description:
-          "Skilled tailors cut, construct, and finish your piece. Quality checks at every stage.",
-        details: [
-          "Shirts: 7–10 days",
-          "Trousers: 10–14 days",
-          "Denim: 14–21 days (embroidery adds time)",
-          "Weddingwear & Statement: 4–8 weeks",
-        ],
-      },
-      {
-        number: "06",
-        title: "Delivery & Beyond",
-        description:
-          "Your garment is carefully packaged and shipped worldwide with tracking. If anything isn't right, we'll fix it.",
-        details: [
-          "Express and standard shipping available",
-          "Full tracking from dispatch to delivery",
-          "Free alterations within 30 days",
+          "Quality check before dispatch",
+          "Tracking shared once shipped",
+          "Aftercare support if refinement is needed",
         ],
         cta: {
-          text: "Shipping Details",
+          text: "Delivery Details",
           href: "/delivery",
         },
       },
@@ -123,10 +86,10 @@ export const howItWorksContent = {
 
   timeline: {
     headline: "Production Times",
-    note: "These are standard estimates. Complex designs, embroidery, and custom fabrics may add time. Wedding orders should start 4–6 months early.",
+    note: "These are guide ranges. Complexity, fabric sourcing, and event dates can affect timing.",
     items: [
       { garment: "Shirts (RTW)", time: "2–3 weeks" },
-      { garment: "Shirts (Custom)", time: "2–3 weeks" },
+      { garment: "Shirts (Custom)", time: "2–4 weeks" },
       { garment: "Trousers", time: "2–3 weeks" },
       { garment: "Denim (standard)", time: "3–4 weeks" },
       { garment: "Denim (embroidered)", time: "4–5 weeks" },
@@ -136,19 +99,19 @@ export const howItWorksContent = {
   },
 
   trust: {
-    headline: "Our Commitment",
+    headline: "Atelier Standard",
     points: [
       {
         icon: "verified",
-        title: "Quality Guarantee",
+        title: "Made With Care",
         description:
-          "If you're not satisfied with craftsmanship, we'll remake the garment at no extra cost.",
+          "Each piece is reviewed for fit, finish, and consistency.",
       },
       {
         icon: "sync_alt",
-        title: "Free Alterations",
+        title: "Fit-Conscious Support",
         description:
-          "Within 30 days of delivery, we'll adjust fit at no charge. Return shipping is on us.",
+          "If refinement is needed, we help guide the next step.",
       },
       {
         icon: "lock",
@@ -158,23 +121,23 @@ export const howItWorksContent = {
       },
       {
         icon: "support_agent",
-        title: "Real Support",
+        title: "Guided Process",
         description:
-          "Questions at any stage? Reach us via WhatsApp or email. We respond within 24 hours.",
+          "Direct support from request to delivery.",
       },
     ],
   },
 
   cta: {
-    headline: "Ready to Start?",
+    headline: "Choose Your Route",
     description:
-      "Shop the collection for ready sizes, or customize any piece to your exact specifications.",
+      "Shop ready-to-wear essentials or begin a custom order with clear, guided steps.",
     primaryCta: {
-      text: "Shop the Collection",
+      text: "Shop Menswear",
       href: "/shop",
     },
     secondaryCta: {
-      text: "Contact Us",
+      text: "Speak With the Atelier",
       href: "/contact",
     },
   },

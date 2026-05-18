@@ -155,58 +155,64 @@ export default function FitGuidePage() {
               {measurementGuide.note}
             </p>
           </div>
+          <details className="border border-outline-variant bg-surface">
+            <summary className="cursor-pointer px-6 py-4 text-body-lg text-on-surface font-medium">
+              Detailed measurement instructions
+            </summary>
+            <div className="px-6 pb-6 pt-2">
+              {/* Tips */}
+              <div className="bronze-border p-8 mb-12 bg-surface">
+                <span className="text-label-caps text-secondary block mb-4">Best Practices</span>
+                <ul className="grid grid-cols-1 md:grid-cols-2 gap-3">
+                  {measurementGuide.tips.map((tip) => (
+                    <li key={tip} className="flex gap-3">
+                      <Check className="h-5 w-5 text-secondary flex-shrink-0 mt-0.5" />
+                      <span className="text-body-md text-on-surface-variant">{tip}</span>
+                    </li>
+                  ))}
+                </ul>
+              </div>
 
-          {/* Tips */}
-          <div className="bronze-border p-8 mb-12 bg-surface">
-            <span className="text-label-caps text-secondary block mb-4">Best Practices</span>
-            <ul className="grid grid-cols-1 md:grid-cols-2 gap-3">
-              {measurementGuide.tips.map((tip) => (
-                <li key={tip} className="flex gap-3">
-                  <Check className="h-5 w-5 text-secondary flex-shrink-0 mt-0.5" />
-                  <span className="text-body-md text-on-surface-variant">{tip}</span>
-                </li>
-              ))}
-            </ul>
-          </div>
+              {/* Garment Tabs */}
+              <div className="flex flex-wrap gap-2 mb-8">
+                {measurementGuide.garmentGuides.map((guide) => (
+                  <button
+                    key={guide.id}
+                    onClick={() => setSelectedGuide(guide.id)}
+                    className={`font-ui-button px-6 py-3 transition-colors duration-300 ${
+                      selectedGuide === guide.id
+                        ? "bg-inverse-surface text-inverse-on-surface"
+                        : "text-on-surface-variant hover:text-on-surface border border-outline-variant hover:border-secondary"
+                    }`}
+                  >
+                    {guide.name}
+                  </button>
+                ))}
+              </div>
 
-          {/* Garment Tabs */}
-          <div className="flex flex-wrap gap-2 mb-8">
-            {measurementGuide.garmentGuides.map((guide) => (
-              <button
-                key={guide.id}
-                onClick={() => setSelectedGuide(guide.id)}
-                className={`font-ui-button px-6 py-3 transition-colors duration-300 ${
-                  selectedGuide === guide.id
-                    ? "bg-inverse-surface text-inverse-on-surface"
-                    : "text-on-surface-variant hover:text-on-surface border border-outline-variant hover:border-secondary"
-                }`}
-              >
-                {guide.name}
-              </button>
-            ))}
-          </div>
-
-          {/* Measurements List */}
-          {activeGuide && (
-            <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
-              {activeGuide.measurements.map((m, index) => (
-                <div
-                  key={m.name}
-                  className="bg-surface p-6 border border-outline-variant"
-                >
-                  <span className="text-label-caps text-secondary block mb-2">
-                    {String(index + 1).padStart(2, "0")}
-                  </span>
-                  <h4 className="text-body-lg text-on-surface font-medium mb-2">
-                    {m.name}
-                  </h4>
-                  <p className="text-body-md text-on-surface-variant">
-                    {m.description}
-                  </p>
+              {/* Measurements List */}
+              {activeGuide && (
+                <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
+                  {activeGuide.measurements.map((m, index) => (
+                    <div
+                      key={m.name}
+                      className="bg-surface p-6 border border-outline-variant"
+                    >
+                      <span className="text-label-caps text-secondary block mb-2">
+                        {String(index + 1).padStart(2, "0")}
+                      </span>
+                      <h4 className="text-body-lg text-on-surface font-medium mb-2">
+                        {m.name}
+                      </h4>
+                      <p className="text-body-md text-on-surface-variant">
+                        {m.description}
+                      </p>
+                    </div>
+                  ))}
                 </div>
-              ))}
+              )}
             </div>
-          )}
+          </details>
         </div>
       </section>
 

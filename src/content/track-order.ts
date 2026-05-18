@@ -107,7 +107,7 @@ export const trackOrderContent = {
     description:
       "We couldn't find an order with that number. Double-check your order number and email, or contact us for help.",
     cta: {
-      text: "Contact Support",
+      text: "Speak With the Atelier",
       href: "/contact",
     },
   },
@@ -115,10 +115,10 @@ export const trackOrderContent = {
   needHelp: {
     headline: "Need Help?",
     description:
-      "If you have questions about your order or need to make changes, contact us.",
+      "If you need support with tracking or delivery, we're here to assist.",
     email: "support@weaversatelier.com",
     cta: {
-      text: "Contact Us",
+      text: "Speak With the Atelier",
       href: "/contact",
     },
   },

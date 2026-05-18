@@ -2,9 +2,9 @@ export const fitGuideContent = {
   hero: {
     headline: "Fit Guide",
     subheadline:
-      "Choosing the right size is easy. Our standard sizes (XS–XL) work for most body types. If you need something more precise, go custom.",
+      "A simple guide to choosing your size, sharing measurements, and deciding when custom is the better path.",
     cta: {
-      text: "Start Shopping",
+      text: "Shop Menswear",
       href: "/shop",
     },
   },
@@ -50,7 +50,7 @@ export const fitGuideContent = {
   whenToCustom: {
     headline: "When to Go Custom",
     description:
-      "Standard sizes work for most, but custom is the way to go if you want perfect fit or specific details.",
+      "Standard sizes work for many builds. Choose custom when precision, proportion, or personal detail matters.",
     reasons: [
       {
         title: "You're Between Sizes",
@@ -65,7 +65,7 @@ export const fitGuideContent = {
       {
         title: "You Have Specific Preferences",
         description:
-          "Different collar style? Longer sleeves? Monogram? Custom lets you modify any detail.",
+          "Collar, length, rise, taper, or finishing details can all be adjusted.",
       },
       {
         title: "Your Body Doesn't Fit Standard Charts",
@@ -74,8 +74,8 @@ export const fitGuideContent = {
       },
     ],
     cta: {
-      text: "Learn About Custom Orders",
-      href: "/how-it-works#custom-process",
+      text: "Start a Custom Order",
+      href: "/customize/shirt",
     },
   },
 
@@ -87,7 +87,7 @@ export const fitGuideContent = {
       "Have someone help you for best accuracy",
       "Measure over light undergarments, not bulky clothing",
       "Stand naturally — don't hold your breath or pose",
-      "Measure twice, submit once",
+      "Measure with care",
       "When in doubt, round up slightly",
     ],
     garmentGuides: [
@@ -182,7 +182,7 @@ export const fitGuideContent = {
       },
     ],
     cta: {
-      text: "Contact Us for Help",
+      text: "Speak With the Atelier",
       href: "/contact",
     },
   },
@@ -190,13 +190,13 @@ export const fitGuideContent = {
   cta: {
     headline: "Know Your Size?",
     description:
-      "Shop the collection with confidence. If you need help, we're just a message away.",
+      "Start with your closest size, then move to custom when precision is needed.",
     primaryCta: {
-      text: "Shop the Collection",
+      text: "Shop Menswear",
       href: "/shop",
     },
     secondaryCta: {
-      text: "Contact Us",
+      text: "Speak With the Atelier",
       href: "/contact",
     },
   },

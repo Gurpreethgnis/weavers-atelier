@@ -2,9 +2,9 @@ export const instagramLooksContent = {
   hero: {
     headline: "Lookbook",
     subheadline:
-      "Inspiration from our latest work. Every piece can be shopped directly or customized to your preferences.",
+      "A curated selection of recent looks and references from the atelier.",
     cta: {
-      text: "Shop the Collection",
+      text: "Shop Menswear",
       href: "/shop",
     },
   },
@@ -16,19 +16,19 @@ export const instagramLooksContent = {
         number: "01",
         title: "Find Your Inspiration",
         description:
-          "Browse our lookbook for pieces that catch your eye. Each look links directly to shoppable products.",
+          "Browse looks that align with your style direction.",
       },
       {
         number: "02",
         title: "Shop or Customize",
         description:
-          "Buy in standard sizes (XS–XL) or click 'Customize' for a made-to-measure version with your specifications.",
+          "Shop directly or send a reference for custom interpretation.",
       },
       {
         number: "03",
         title: "Made for You",
         description:
-          "Every order is made to order. Your piece is crafted specifically for you.",
+          "Every piece is prepared with care and delivered with tracking.",
       },
     ],
   },
@@ -44,13 +44,13 @@ export const instagramLooksContent = {
   cta: {
     headline: "Don't See What You're Looking For?",
     description:
-      "Browse our full collection or contact us for custom requests.",
+      "Share your direction and we'll help map the right next step.",
     primaryCta: {
-      text: "Shop the Collection",
+      text: "Shop Menswear",
       href: "/shop",
     },
     secondaryCta: {
-      text: "Contact Us",
+      text: "Send Inspiration",
       href: "/contact",
     },
   },

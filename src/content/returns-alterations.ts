@@ -1,9 +1,9 @@
 export const returnsAlterationsContent = {
   hero: {
     kicker: "Returns & Alterations",
-    headline: "Our Fit Guarantee",
+    headline: "Returns & Alterations",
     description:
-      "We stand behind every piece we make. If something doesn't fit right, we'll fix it. If it can't be fixed, we'll remake it.",
+      "We stand behind the fit and finish of every piece. If something needs attention, we’ll guide the right next step.",
   },
 
   guarantee: {
@@ -12,19 +12,19 @@ export const returnsAlterationsContent = {
       {
         title: "30-Day Fit Adjustments",
         description:
-          "Within 30 days of delivery, we offer complimentary alterations to ensure your garment fits perfectly. This covers minor fit refinements that may be needed after your first wear.",
+          "Within 30 days of delivery, we offer fit-focused adjustment support for eligible requests.",
         note: "Applies to both ready-to-wear and custom orders.",
       },
       {
         title: "Remake Policy",
         description:
-          "If a garment cannot be altered to achieve proper fit (e.g., significant sizing error on our part), we will remake the piece at no additional cost.",
+          "If a garment cannot be reasonably adjusted due to a confirmed production issue, we evaluate remakes at no additional cost.",
         note: "Applies to manufacturing defects or measurement errors by our team.",
       },
       {
         title: "Future Alterations",
         description:
-          "Body changes over time? We offer alteration services at preferential rates for Weavers customers. Contact us to discuss your needs.",
+          "Additional alterations can be arranged after the guarantee period.",
         note: "Subject to current alteration pricing.",
       },
     ],
@@ -36,7 +36,7 @@ export const returnsAlterationsContent = {
       {
         title: "Ready-to-Wear Returns",
         description:
-          "Ready-to-wear items in standard sizes may be returned within 14 days of delivery for a full refund. Items must be unworn, unwashed, with all tags attached, in original packaging.",
+          "Ready-to-wear items may be returned within policy windows when unworn and in original condition.",
         conditions: [
           "Return shipping is prepaid by us (US customers)",
           "International return shipping is customer responsibility",
@@ -51,7 +51,7 @@ export const returnsAlterationsContent = {
       {
         title: "Custom Orders",
         description:
-          "Custom pieces are made to your specifications and measurements. Due to the personalized nature of bespoke work, custom orders are final sale — they cannot be returned or refunded.",
+          "Custom pieces are made to your specifications and are final sale.",
         note: "However, our fit guarantee still applies. If the fit isn't right, we'll alter or remake at no charge.",
       },
     ],
@@ -62,27 +62,27 @@ export const returnsAlterationsContent = {
     steps: [
       {
         number: "01",
-        title: "Contact Us",
+        title: "Send Your Request",
         description:
-          "Email us at support@weaversatelier.com with your order number and describe the fit issue.",
+          "Contact us with your order number and a brief description of the issue.",
       },
       {
         number: "02",
-        title: "We Assess & Respond",
+        title: "Review & Guidance",
         description:
-          "Within 48 hours, we'll review your case and provide instructions. We may request photos of the fit issue.",
+          "We review your case and share clear instructions, including any photos needed.",
       },
       {
         number: "03",
-        title: "Ship to Us",
+        title: "Send Item",
         description:
-          "We'll provide a prepaid shipping label (US) or shipping instructions (international). Send the garment in its original packaging.",
+          "For approved cases, we provide shipping guidance and next steps.",
       },
       {
         number: "04",
-        title: "Alteration & Return",
+        title: "Refine & Return",
         description:
-          "Turnaround is typically 5–7 business days after receipt. We'll ship the altered garment back to you with tracking.",
+          "We complete the approved refinement and return your garment with tracking.",
       },
     ],
   },
@@ -121,11 +121,11 @@ export const returnsAlterationsContent = {
 
   cta: {
     kicker: "Questions?",
-    headline: "We're Here to Help",
+    headline: "Need Fit or Return Support?",
     description:
-      "Have questions about fit, alterations, or returns? Our team responds within 24 hours.",
+      "Share your request and we will guide the right path quickly and clearly.",
     primaryCta: {
-      text: "Contact Us",
+      text: "Speak With the Atelier",
       href: "/contact",
     },
     secondaryCta: {

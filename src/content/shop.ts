@@ -1,10 +1,10 @@
 export const shopContent = {
   landing: {
-    headline: "Shop the Collection",
+    headline: "The Collection",
     subheadline:
-      "Premium menswear designed for the modern man. Standard sizes XS–XL, or customize any piece for your perfect fit.",
+      "Refined menswear essentials, made with considered proportions, custom options, and a sharper sense of fit.",
     featuredCta: {
-      label: "View All",
+      label: "Shop Menswear",
       href: "/shop",
     },
   },
@@ -13,19 +13,19 @@ export const shopContent = {
     shirt: {
       name: "Shirts",
       description:
-        "From crisp oxford cloth to luxurious linen. Every shirt is made to order with meticulous attention to detail.",
+        "Clean lines, custom details, everyday precision.",
       heroImage: "/images/custom-shirts/hero-shirt.jpg",
     },
     trouser: {
       name: "Trousers",
       description:
-        "Classic tailored trousers built for comfort and style. Versatile pieces that move from office to evening with ease.",
+        "Tailored structure with room for movement.",
       heroImage: "/images/trousers/dress-trousers.jpg",
     },
     denim: {
       name: "Denim",
       description:
-        "Statement denim with character. Premium Japanese and Italian selvedge, custom embroidery options, and a fit that's yours alone.",
+        "Statement washes and sharper cuts, made to stand apart.",
       heroImage: "/images/denim/hero-denim.jpg",
     },
     weddingwear: {
@@ -64,9 +64,9 @@ export const shopContent = {
   },
 
   leadTime: {
-    title: "Made to Order",
+    title: "Made with Intention",
     description:
-      "Every piece is crafted after you order—no mass production, no inventory sitting in a warehouse.",
+      "Each order is prepared with care, whether selected from the collection or adjusted through custom detail.",
     standard: {
       label: "Standard Sizes",
       days: "10–14 business days",
@@ -105,7 +105,7 @@ export const shopContent = {
     description:
       "We're curating this collection. Check back soon or explore our other offerings.",
     cta: {
-      label: "Browse All",
+      label: "Shop Menswear",
       href: "/shop",
     },
   },
@@ -114,6 +114,6 @@ export const shopContent = {
 export const lookbookContent = {
   title: "Lookbook",
   subtitle:
-    "Inspiration from our latest work. Every piece can be recreated or customized to your preferences.",
-  cta: "Shop This Look",
+    "A curated edit of recent pieces and references from our atelier.",
+  cta: "Send Inspiration",
 };

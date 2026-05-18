@@ -20,7 +20,7 @@ export function CategoryCard({
   href,
   imageSrc,
   imageAlt,
-  ctaLabel = "Explore",
+  ctaLabel = "Shop Menswear",
   variant = "default",
   className,
 }: CategoryCardProps) {

@@ -15,7 +15,7 @@ export const metadata: Metadata = {
 };
 
 export default function HowItWorksPage() {
-  const { hero, paths, customProcess, timeline, trust, cta } = howItWorksContent;
+  const { hero, paths, customProcess, timeline, cta } = howItWorksContent;
 
   return (
     <>
@@ -42,7 +42,7 @@ export default function HowItWorksPage() {
           {/* Standard / RTW */}
           <div className="border border-outline-variant p-8 md:p-12 hover:border-secondary transition-colors duration-300">
             <span className="text-label-caps text-secondary block mb-4">
-              Option 1
+              Ready-to-Wear
             </span>
             <h3 className="text-headline-md text-on-surface mb-4">
               {paths.standard.title}
@@ -74,7 +74,7 @@ export default function HowItWorksPage() {
           {/* Custom */}
           <div className="border border-secondary bg-surface-container p-8 md:p-12">
             <span className="text-label-caps text-secondary block mb-4">
-              Option 2
+              Custom
             </span>
             <h3 className="text-headline-md text-on-surface mb-4">
               {paths.custom.title}
@@ -114,50 +114,55 @@ export default function HowItWorksPage() {
             </h2>
           </div>
 
-          <div className="space-y-12">
-            {customProcess.steps.map((step) => (
-              <div
-                key={step.number}
-                className="grid grid-cols-1 md:grid-cols-12 gap-gutter items-start"
-              >
-                {/* Step Number */}
-                <div className="md:col-span-2">
-                  <span className="text-display-lg text-secondary/20 block">
-                    {step.number}
-                  </span>
-                </div>
+          <details className="border border-outline-variant bg-surface p-6 md:p-8">
+            <summary className="cursor-pointer text-body-lg text-on-surface font-medium">
+              View detailed custom steps
+            </summary>
+            <div className="space-y-12 mt-8">
+              {customProcess.steps.map((step) => (
+                <div
+                  key={step.number}
+                  className="grid grid-cols-1 md:grid-cols-12 gap-gutter items-start"
+                >
+                  {/* Step Number */}
+                  <div className="md:col-span-2">
+                    <span className="text-display-lg text-secondary/20 block">
+                      {step.number}
+                    </span>
+                  </div>
 
-                {/* Content */}
-                <div className="md:col-span-10">
-                  <h3 className="text-headline-md text-on-surface mb-4">
-                    {step.title}
-                  </h3>
-                  <p className="text-body-lg text-on-surface-variant mb-6 max-w-2xl">
-                    {step.description}
-                  </p>
-                  <ul className="space-y-2 mb-4">
-                    {step.details.map((detail) => (
-                      <li key={detail} className="flex gap-3">
-                        <span className="w-1.5 h-1.5 bg-secondary mt-2.5 flex-shrink-0" />
-                        <span className="text-body-md text-on-surface-variant">
-                          {detail}
-                        </span>
-                      </li>
-                    ))}
-                  </ul>
-                  {"cta" in step && step.cta && (
-                    <Link
-                      href={step.cta.href}
-                      className="text-label-caps text-secondary hover:text-on-surface transition-colors inline-flex items-center gap-2"
-                    >
-                      {step.cta.text}
-                      <ArrowRight className="h-3 w-3" />
-                    </Link>
-                  )}
+                  {/* Content */}
+                  <div className="md:col-span-10">
+                    <h3 className="text-headline-md text-on-surface mb-4">
+                      {step.title}
+                    </h3>
+                    <p className="text-body-lg text-on-surface-variant mb-6 max-w-2xl">
+                      {step.description}
+                    </p>
+                    <ul className="space-y-2 mb-4">
+                      {step.details.map((detail) => (
+                        <li key={detail} className="flex gap-3">
+                          <span className="w-1.5 h-1.5 bg-secondary mt-2.5 flex-shrink-0" />
+                          <span className="text-body-md text-on-surface-variant">
+                            {detail}
+                          </span>
+                        </li>
+                      ))}
+                    </ul>
+                    {"cta" in step && step.cta && (
+                      <Link
+                        href={step.cta.href}
+                        className="text-label-caps text-secondary hover:text-on-surface transition-colors inline-flex items-center gap-2"
+                      >
+                        {step.cta.text}
+                        <ArrowRight className="h-3 w-3" />
+                      </Link>
+                    )}
+                  </div>
                 </div>
-              </div>
-            ))}
-          </div>
+              ))}
+            </div>
+          </details>
         </div>
       </section>
 
@@ -175,49 +180,26 @@ export default function HowItWorksPage() {
               {timeline.note}
             </p>
           </div>
-          <div className="grid grid-cols-2 md:grid-cols-4 lg:grid-cols-7 gap-4">
-            {timeline.items.map((item) => (
-              <div
-                key={item.garment}
-                className="border border-outline-variant bg-surface p-4 text-center hover:border-secondary transition-colors duration-300"
-              >
-                <span className="text-body-md text-on-surface block mb-2">
-                  {item.garment}
-                </span>
-                <span className="text-label-caps text-secondary">
-                  {item.time}
-                </span>
-              </div>
-            ))}
-          </div>
-        </div>
-      </section>
-
-      {/* Trust Chips */}
-      <section className="container-atelier mb-block-gap">
-        <div className="mb-12">
-          <span className="text-label-caps text-secondary tracking-widest block mb-4">
-            Guarantee
-          </span>
-          <h2 className="text-headline-lg text-on-surface">{trust.headline}</h2>
-        </div>
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-gutter">
-          {trust.points.map((point) => (
-            <div
-              key={point.title}
-              className="border border-outline-variant p-6 hover:border-secondary transition-colors duration-300"
-            >
-              <span className="material-symbols-outlined text-secondary text-[32px] mb-4 block">
-                {point.icon}
-              </span>
-              <h3 className="text-body-lg text-on-surface font-medium mb-2">
-                {point.title}
-              </h3>
-              <p className="text-body-md text-on-surface-variant">
-                {point.description}
-              </p>
+          <details className="border border-outline-variant bg-surface p-6">
+            <summary className="cursor-pointer text-body-md text-on-surface font-medium">
+              View timeline by garment category
+            </summary>
+            <div className="grid grid-cols-2 md:grid-cols-4 lg:grid-cols-7 gap-4 mt-6">
+              {timeline.items.map((item) => (
+                <div
+                  key={item.garment}
+                  className="border border-outline-variant bg-surface p-4 text-center hover:border-secondary transition-colors duration-300"
+                >
+                  <span className="text-body-md text-on-surface block mb-2">
+                    {item.garment}
+                  </span>
+                  <span className="text-label-caps text-secondary">
+                    {item.time}
+                  </span>
+                </div>
+              ))}
             </div>
-          ))}
+          </details>
         </div>
       </section>
 

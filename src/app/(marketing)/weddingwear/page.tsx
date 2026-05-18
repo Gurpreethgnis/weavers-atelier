@@ -24,8 +24,6 @@ export default function WeddingwearPage() {
     customizationOptions,
     timeline,
     groomsmenProgram,
-    process,
-    pricing,
     cta,
   } = weddingwearContent;
 
@@ -107,7 +105,7 @@ export default function WeddingwearPage() {
               {attireCategories[0].description}
             </p>
             <Link
-              href="/book-consultation?type=weddingwear"
+              href="/contact?subject=wedding"
               className="text-label-caps text-secondary hover:text-on-surface transition-colors inline-flex items-center gap-2"
             >
               Inquire <ArrowRight className="h-3 w-3" />
@@ -140,25 +138,30 @@ export default function WeddingwearPage() {
           </div>
         </div>
 
-        {/* Additional Categories */}
-        <div className="grid grid-cols-1 md:grid-cols-3 gap-gutter mt-16">
+      {/* Additional Categories */}
+      <details className="border border-outline-variant bg-surface p-6 mt-16">
+        <summary className="cursor-pointer text-body-lg text-on-surface font-medium">
+          View additional weddingwear categories
+        </summary>
+        <div className="grid grid-cols-1 md:grid-cols-3 gap-gutter mt-6">
           {attireCategories.slice(3).map((category) => (
-            <div
-              key={category.name}
-              className="border border-outline-variant p-8 hover:border-secondary transition-colors duration-300"
-            >
-              <span className="text-label-caps text-secondary block mb-3">
-                {category.for}
-              </span>
-              <h3 className="text-body-lg text-on-surface font-medium mb-3">
-                {category.name}
-              </h3>
-              <p className="text-body-md text-on-surface-variant">
-                {category.description}
-              </p>
-            </div>
-          ))}
+              <div
+                key={category.name}
+                className="border border-outline-variant p-8 hover:border-secondary transition-colors duration-300"
+              >
+                <span className="text-label-caps text-secondary block mb-3">
+                  {category.for}
+                </span>
+                <h3 className="text-body-lg text-on-surface font-medium mb-3">
+                  {category.name}
+                </h3>
+                <p className="text-body-md text-on-surface-variant">
+                  {category.description}
+                </p>
+              </div>
+            ))}
         </div>
+      </details>
       </section>
 
       {/* Personalization Band */}
@@ -232,10 +235,10 @@ export default function WeddingwearPage() {
               {groomsmenProgram.description}
             </p>
             <Link
-              href="/book-consultation?type=weddingwear&group=true"
+              href="/contact?subject=wedding&group=true"
               className="text-label-caps text-secondary hover:text-on-surface transition-colors inline-flex items-center gap-2"
             >
-              Inquire About Group Pricing <ArrowRight className="h-3 w-3" />
+              Discuss Group Order <ArrowRight className="h-3 w-3" />
             </Link>
           </div>
           <div className="md:col-span-7">
@@ -249,70 +252,11 @@ export default function WeddingwearPage() {
         </div>
       </section>
 
-      {/* Process — Numbered Steps */}
-      <section className="container-atelier mb-block-gap">
-        <div className="border-b border-outline-variant pb-8 mb-16">
-          <h2 className="text-headline-lg text-on-surface">{process.headline}</h2>
-        </div>
-        <div className="grid grid-cols-1 md:grid-cols-12 gap-gutter">
-          {process.steps.map((step) => (
-            <div key={step.number} className="md:col-span-3 relative">
-              <span className="text-display-lg text-surface-container-highest opacity-50 absolute -top-4 -left-2 pointer-events-none select-none">
-                {step.number}
-              </span>
-              <div className="pt-16">
-                <h3 className="text-body-lg text-on-surface font-medium mb-3">
-                  {step.title}
-                </h3>
-                <p className="text-body-md text-on-surface-variant">
-                  {step.description}
-                </p>
-              </div>
-            </div>
-          ))}
-        </div>
-      </section>
-
-      {/* Pricing */}
-      <section className="bg-surface-container-high py-block-gap mb-block-gap">
-        <div className="container-atelier">
-          <div className="text-center mb-16">
-            <span className="text-label-caps text-secondary tracking-widest block mb-4">
-              Investment
-            </span>
-            <h2 className="text-headline-lg text-on-surface mb-4">
-              Pricing Tiers
-            </h2>
-            <p className="text-body-md text-on-surface-variant max-w-xl mx-auto">
-              {pricing.note}
-            </p>
-          </div>
-          <div className="grid grid-cols-1 md:grid-cols-3 gap-gutter max-w-4xl mx-auto">
-            {pricing.tiers.map((tier) => (
-              <div
-                key={tier.name}
-                className="border border-outline-variant/30 bg-surface p-8 text-center hover:border-secondary transition-colors duration-300"
-              >
-                <h3 className="text-body-lg text-on-surface font-medium mb-2">
-                  {tier.name}
-                </h3>
-                <p className="text-headline-md text-secondary mb-4">
-                  {tier.price}
-                </p>
-                <p className="text-body-md text-on-surface-variant">
-                  {tier.description}
-                </p>
-              </div>
-            ))}
-          </div>
-        </div>
-      </section>
-
       {/* Final CTA with Event Date Capture */}
       <section className="container-atelier mb-block-gap">
         <div className="text-center max-w-2xl mx-auto">
           <span className="text-label-caps text-secondary tracking-widest block mb-6">
-            Start Your Journey
+            Next Step
           </span>
           <h2 className="text-headline-lg-mobile md:text-display-lg text-on-surface mb-8">
             {cta.headline}

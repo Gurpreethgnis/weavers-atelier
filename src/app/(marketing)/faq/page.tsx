@@ -8,7 +8,9 @@ import { faqContent } from "@/content/faq";
 export default function FAQPage() {
   const { hero, categories, contact } = faqContent;
 
-  const [selectedCategory, setSelectedCategory] = useState<string | null>(null);
+  const [selectedCategory, setSelectedCategory] = useState<string | null>(
+    categories[0]?.id ?? null
+  );
   const [openId, setOpenId] = useState<string | null>(null);
 
   const allQuestions = useMemo(() => {
@@ -92,7 +94,7 @@ export default function FAQPage() {
                   : "border border-outline-variant text-on-surface hover:border-secondary"
               }`}
             >
-              All Topics
+              All
             </button>
             {categories.map((cat) => (
               <button

@@ -2,54 +2,54 @@ export const statementPiecesContent = {
   hero: {
     headline: "Statement Pieces",
     subheadline:
-      "Beyond categories. Custom jackets, embroidered outerwear, bespoke waistcoats, and one-of-a-kind creations. When you want something the world has never seen.",
+      "For pieces outside the usual categories — custom jackets, expressive denim, embroidered sets, and one-offs built around your vision.",
     cta: {
-      text: "Start a Consultation",
+      text: "Start a Statement Piece",
       href: "/contact?subject=custom",
     },
   },
 
   introduction: {
-    headline: "One of a Kind",
+    headline: "Made from an Idea",
     description:
-      "Some pieces defy categorization. A bomber jacket with family crest embroidery. A velvet dinner jacket for a milestone birthday. A reversible coat that tells two stories. We create what doesn't exist yet — designed around your vision, crafted to last.",
+      "Bring a reference, sketch, fabric direction, or mood. We translate it into a wearable piece with structure and intent.",
   },
 
   categories: [
     {
       name: "Custom Jackets",
       description:
-        "From aviator silhouettes to tailored blazers. Leather, suede, wool, denim — or unexpected combinations.",
+        "From aviator silhouettes to tailored blazers in expected and unexpected materials.",
       examples: "Bombers, Trucker Jackets, Field Coats, Overshirts",
     },
     {
       name: "Embroidered Outerwear",
       description:
-        "Transform any garment with thread art. Florals, portraits, typography, abstract patterns — hand-stitched.",
+        "Threadwork and surface detail translated from your references.",
       examples: "Embroidered Bombers, Souvenir Jackets, Art Coats",
     },
     {
       name: "Bespoke Waistcoats",
       description:
-        "Not just wedding accessories. Statement waistcoats in brocade, velvet, or hand-painted silk.",
+        "Formal and expressive waistcoats in brocade, velvet, or textured blends.",
       examples: "Formal Vests, Double-breasted Waistcoats, Lapeled Vests",
     },
     {
       name: "Ceremonial Attire",
       description:
-        "For milestone moments. Graduations, honors, cultural celebrations, and special occasions.",
+        "Pieces designed for milestones, honors, and ceremonial settings.",
       examples: "Ceremony Jackets, Celebration Wear, Milestone Attire",
     },
     {
       name: "Signature Coats",
       description:
-        "The piece you reach for every day. Overcoats, topcoats, and car coats built to your specifications.",
+        "Outerwear with sharper proportion and custom finishing.",
       examples: "Camel Coats, Peacoats, Trench Coats, Dusters",
     },
     {
       name: "Experimental",
       description:
-        "When you have an idea we haven't listed. We love projects that push our craft.",
+        "For unconventional direction, we build the brief with you.",
       examples: "Your Vision",
     },
   ],
@@ -59,25 +59,25 @@ export const statementPiecesContent = {
       icon: "palette",
       name: "Fabric Sourcing",
       description:
-        "We hunt down exactly what you need. Vintage textiles, heritage mills, deadstock luxury fabrics.",
+        "Sourcing direction aligned to look, handfeel, and occasion.",
     },
     {
       icon: "architecture",
       name: "Structure & Silhouette",
       description:
-        "Every dimension is adjustable. Shoulder width, body length, sleeve shape — designed around your proportions.",
+        "Shoulder, balance, length, and drape tuned to your frame.",
     },
     {
       icon: "draw",
       name: "Artwork Translation",
       description:
-        "Send us an image, sketch, or idea. We translate it into embroidery, print, or textile manipulation.",
+        "Images, sketches, and references translated into wearable detail.",
     },
     {
       icon: "diamond",
       name: "Hardware & Finishes",
       description:
-        "Custom buttons, closures, and metal details. Engraved, enameled, or sourced vintage.",
+        "Closures and trim selected to support the full visual direction.",
     },
   ],
 
@@ -88,25 +88,25 @@ export const statementPiecesContent = {
         number: "01",
         title: "Discovery",
         description:
-          "Deep dive into your vision. Mood boards, references, sketches — we map out every detail.",
+          "We align on silhouette, references, and intended use.",
       },
       {
         number: "02",
         title: "Design & Quote",
         description:
-          "We produce detailed renderings and a quote. Nothing moves forward until you approve.",
+          "You receive a clear quote and direction summary before production starts.",
       },
       {
         number: "03",
         title: "Sourcing",
         description:
-          "Fabrics, trims, hardware — we source or create exactly what the design requires.",
+          "Materials and trims are sourced to match approved direction.",
       },
       {
         number: "04",
         title: "Crafting",
         description:
-          "Weeks of skilled work. Progress updates throughout. No shortcuts, no compromises.",
+          "The piece is built, reviewed, and prepared for tracked delivery.",
       },
     ],
   },
@@ -114,7 +114,7 @@ export const statementPiecesContent = {
   timeline: {
     headline: "Timeline",
     description:
-      "Statement pieces take time. Most projects require 8–16 weeks depending on complexity, embroidery, and sourcing. Rush projects are evaluated case-by-case.",
+      "Most statement projects require longer lead times based on complexity, sourcing, and finishing.",
   },
 
   pricing: {
@@ -139,15 +139,15 @@ export const statementPiecesContent = {
   },
 
   cta: {
-    headline: "Let's Make Something New",
+    headline: "Start Your Statement Piece",
     description:
-      "Tell us what you're imagining. No idea is too ambitious — we've built pieces we never thought possible.",
+      "Share your direction and references. We'll shape the next step with you.",
     primaryCta: {
-      text: "Start a Consultation",
+      text: "Start a Statement Piece",
       href: "/contact?subject=custom",
     },
     secondaryCta: {
-      text: "Chat on WhatsApp",
+      text: "Send Inspiration",
       context: "statement_piece" as const,
     },
   },

@@ -114,24 +114,29 @@ export default function TrackOrderPage() {
             <span className="text-label-caps text-secondary tracking-widest block mb-6">
               Order Statuses
             </span>
-            <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4">
-              {statusList.map((status) => (
-                <div
-                  key={status.title}
-                  className="border border-outline-variant p-6 hover:border-secondary transition-colors"
-                >
-                  <span className="material-symbols-outlined text-secondary text-[24px] mb-3 block">
-                    {status.icon}
-                  </span>
-                  <h3 className="text-body-lg text-on-surface font-medium mb-1">
-                    {status.title}
-                  </h3>
-                  <p className="text-body-md text-on-surface-variant">
-                    {status.description}
-                  </p>
-                </div>
-              ))}
-            </div>
+            <details className="border border-outline-variant p-6 bg-surface">
+              <summary className="cursor-pointer text-body-lg text-on-surface font-medium">
+                View status reference
+              </summary>
+              <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4 mt-6">
+                {statusList.map((status) => (
+                  <div
+                    key={status.title}
+                    className="border border-outline-variant p-6 hover:border-secondary transition-colors"
+                  >
+                    <span className="material-symbols-outlined text-secondary text-[24px] mb-3 block">
+                      {status.icon}
+                    </span>
+                    <h3 className="text-body-lg text-on-surface font-medium mb-1">
+                      {status.title}
+                    </h3>
+                    <p className="text-body-md text-on-surface-variant">
+                      {status.description}
+                    </p>
+                  </div>
+                ))}
+              </div>
+            </details>
           </div>
         </section>
       )}

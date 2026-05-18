@@ -87,7 +87,7 @@ export function MobileNav({ open, onClose, navigation }: MobileNavProps) {
           {/* Header */}
           <div className="flex items-center justify-between p-6 border-b border-outline-variant/20">
             <span className="text-headline-md tracking-widest text-secondary">
-              WEAVER'S ATELIER
+              WEAVERS ATELIER
             </span>
             <button
               type="button"
@@ -123,11 +123,11 @@ export function MobileNav({ open, onClose, navigation }: MobileNavProps) {
           {/* Footer CTA - Pinned */}
           <div className="p-6 border-t border-outline-variant/20">
             <Link
-              href="/book-consultation"
+              href="/customize/shirt"
               onClick={onClose}
               className="flex items-center justify-center w-full py-4 text-label-caps bg-primary-container text-on-primary-container hover:bg-surface hover:text-primary-container hover:border hover:border-primary-container transition-all duration-300"
             >
-              Book Consultation
+              Start a Custom Order
             </Link>
           </div>
         </div>

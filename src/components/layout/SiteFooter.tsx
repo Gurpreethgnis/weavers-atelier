@@ -7,17 +7,23 @@ export function SiteFooter() {
         {/* Logo */}
         <Link href="/" className="flex items-center gap-3">
           <span className="text-headline-md tracking-widest text-secondary">
-            WEAVER'S ATELIER
+            WEAVERS ATELIER
           </span>
         </Link>
 
         {/* Links */}
         <div className="flex flex-col md:flex-row gap-4 md:gap-8 items-start md:items-center">
           <Link
-            href="/delivery"
+            href="/how-it-works"
             className="text-body-md text-on-surface-variant hover:text-primary underline-offset-4 hover:underline transition-all duration-500 ease-in-out"
           >
-            Logistics
+            How It Works
+          </Link>
+          <Link
+            href="/fit-guide"
+            className="text-body-md text-on-surface-variant hover:text-primary underline-offset-4 hover:underline transition-all duration-500 ease-in-out"
+          >
+            Fit Guide
           </Link>
           <Link
             href="/track-order"
@@ -30,6 +36,18 @@ export function SiteFooter() {
             className="text-body-md text-on-surface-variant hover:text-primary underline-offset-4 hover:underline transition-all duration-500 ease-in-out"
           >
             FAQ
+          </Link>
+          <Link
+            href="/delivery"
+            className="text-body-md text-on-surface-variant hover:text-primary underline-offset-4 hover:underline transition-all duration-500 ease-in-out"
+          >
+            Delivery
+          </Link>
+          <Link
+            href="/returns-alterations"
+            className="text-body-md text-on-surface-variant hover:text-primary underline-offset-4 hover:underline transition-all duration-500 ease-in-out"
+          >
+            Returns & Alterations
           </Link>
           <Link
             href="/privacy"

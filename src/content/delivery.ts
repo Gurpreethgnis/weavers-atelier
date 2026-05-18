@@ -1,15 +1,15 @@
 export const deliveryContent = {
   hero: {
-    kicker: "Shipping & Delivery",
-    headline: "Delivered Worldwide",
+    kicker: "Delivery",
+    headline: "Prepared With Care, Delivered Worldwide",
     description:
-      "Every Weaver's Atelier piece is carefully packaged and shipped directly to you, anywhere in the world. Express and standard options available.",
+      "Each order is prepared with care and shipped with tracking once complete. Timelines vary by product type, destination, and customization.",
   },
 
   shipping: {
     title: "Shipping Options",
     description:
-      "We ship from our production facility to your door. All orders include tracking.",
+      "Choose standard or express shipping once production is complete.",
     options: [
       {
         title: "Standard Shipping",
@@ -31,9 +31,9 @@ export const deliveryContent = {
   },
 
   destinations: {
-    title: "Where We Ship",
+    title: "Destinations",
     description:
-      "We deliver to 40+ countries across six continents. If you don't see your country listed, contact us.",
+      "We ship internationally. Region details are available below for planning purposes.",
     regions: [
       {
         name: "Americas",
@@ -89,7 +89,7 @@ export const deliveryContent = {
   timelines: {
     title: "Production Times",
     description:
-      "Every order is made to order — we don't hold stock. Production begins after you place your order (or after custom quote acceptance).",
+      "Production begins after order placement or custom approval.",
     items: [
       {
         title: "Shirts",
@@ -125,15 +125,15 @@ export const deliveryContent = {
   },
 
   packaging: {
-    title: "How We Ship",
+    title: "Packaging",
     description:
-      "Every garment is folded in acid-free tissue, placed in a protective garment bag, and shipped in a reinforced box. No plastic, no waste.",
+      "Garments are packed in protective materials and reinforced shipping boxes.",
   },
 
   duties: {
     title: "Customs & Duties",
     description:
-      "International orders may be subject to import duties and taxes, which are the responsibility of the recipient. We mark packages accurately as 'apparel/clothing' with declared value. Check your country's import regulations for estimates.",
+      "International orders may be subject to local duties and taxes based on destination regulations.",
     note: "We cannot under-declare values or mark packages as gifts.",
   },
 
@@ -153,12 +153,12 @@ export const deliveryContent = {
       {
         question: "What if my package is delayed?",
         answer:
-          "Contact us with your order number. We'll investigate with the carrier and keep you updated.",
+          "Share your order number and we will coordinate with the carrier and update you.",
       },
       {
         question: "What if my package is lost or damaged?",
         answer:
-          "All shipments are insured. Contact us within 14 days of expected delivery. We'll file a claim and either reship or refund.",
+          "All shipments are insured. Contact us quickly so we can open a claim and arrange resolution.",
       },
       {
         question: "Can I change my shipping address after ordering?",
@@ -169,16 +169,16 @@ export const deliveryContent = {
   },
 
   cta: {
-    kicker: "Ready to Order?",
-    headline: "Shop the Collection",
+    kicker: "Next Step",
+    headline: "Explore the Collection",
     description:
-      "Browse our shirts, trousers, and denim. Free shipping on orders over $250.",
+      "Choose ready-to-wear essentials or begin a custom order with guided support.",
     primaryCta: {
-      text: "Shop Now",
+      text: "Shop Menswear",
       href: "/shop",
     },
     secondaryCta: {
-      text: "Contact Us",
+      text: "Speak With the Atelier",
       href: "/contact",
     },
   },

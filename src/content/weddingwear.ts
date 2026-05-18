@@ -2,48 +2,48 @@ export const weddingwearContent = {
   hero: {
     headline: "Weddingwear Made for the Moment",
     subheadline:
-      "Whether you're walking down the aisle or standing beside your best friend, you deserve more than a rental. Custom-fitted suits, tuxedos, and ceremony attire designed around your vision.",
+      "For the groom, the wedding party, and the details that deserve more than ordinary tailoring.",
     cta: {
-      text: "Start a Consultation",
+      text: "Start a Wedding Consultation",
       href: "/contact?subject=wedding",
     },
   },
 
   introduction: {
-    headline: "Your Day, Your Way",
+    headline: "Ceremonial, Personal, Precise",
     description:
-      "Wedding attire carries meaning. We listen to what the day means to you, understand the ceremony's context, and craft garments that honor the occasion while reflecting your personal style. This isn't a transaction — it's a collaboration.",
+      "Weddingwear with presence, proportion, and personal intent.",
   },
 
   attireCategories: [
     {
       name: "Wedding Suits",
       description:
-        "Classic two-piece or three-piece suits. Single or double-breasted. From navy to midnight, charcoal to soft grey.",
+        "Classic two- and three-piece tailoring shaped around your frame and ceremony tone.",
       for: "Groom, Groomsmen",
     },
     {
       name: "Tuxedos",
       description:
-        "Peak or shawl lapels. Satin or grosgrain trim. Midnight blue or classic black. The formal choice for black-tie celebrations.",
+        "Peak or shawl lapels with formal finishing for black-tie moments.",
       for: "Black Tie Events",
     },
     {
       name: "Dinner Jackets",
       description:
-        "Velvet, patterned, or classic black. Statement pieces for receptions and rehearsal dinners.",
+        "Reception-ready pieces with richer texture and evening presence.",
       for: "Receptions, Formal Events",
     },
     {
       name: "Morning Suits",
       description:
-        "Traditional formal wear for daytime ceremonies. Tailcoat, waistcoat, and striped trousers.",
+        "Traditional daytime formalwear for classic ceremonies.",
       for: "Formal Day Weddings",
     },
     {
       name: "Ceremony Separates",
       description:
-        "Mix and match pieces for multi-event weddings. Coordinate across rehearsal dinner, ceremony, and reception.",
+        "Coordinated looks across rehearsal, ceremony, and reception.",
       for: "Multi-day Celebrations",
     },
   ],
@@ -53,32 +53,32 @@ export const weddingwearContent = {
       icon: "format_paint",
       name: "Custom Colors",
       description:
-        "We source fabrics to match your exact vision. Bring a swatch, a Pantone code, or describe the shade.",
+        "Fabric direction aligned to venue, light, and ceremony palette.",
     },
     {
       icon: "draw",
       name: "Personal Details",
       description:
-        "Monograms, embroidered dates, or custom linings. The hidden details that make it uniquely yours.",
+        "Monograms, dates, and lining details kept intentional.",
     },
     {
       icon: "style",
       name: "Lapel & Collar Styles",
       description:
-        "Peak, notch, or shawl lapels. Custom width and button configurations to suit your build and style.",
+        "Lapel shape, proportion, and closure tuned to your silhouette.",
     },
     {
       icon: "checkroom",
       name: "Lining & Finishes",
       description:
-        "Personalized lining with photos, dates, or messages. Premium finishing throughout.",
+        "Finishes handled with restraint and precision.",
     },
   ],
 
   timeline: {
-    headline: "Plan Ahead",
+    headline: "Timeline",
     description:
-      "Wedding garments require time. We recommend starting 4–6 months before your event for fittings and any adjustments. Rush orders (8–10 weeks) may be available for an additional fee.",
+      "Begin early for best fit and fabric access. Rush routes are assessed case by case.",
     milestones: [
       {
         weeks: "16–24 weeks",
@@ -104,43 +104,43 @@ export const weddingwearContent = {
   },
 
   groomsmenProgram: {
-    headline: "Groomsmen Coordination",
+    headline: "Groom & Groomsmen",
     description:
-      "Outfit your entire party with coordinated pieces. We offer remote measurement assistance and group pricing. Each groomsman gets a garment that fits — not a rental that approximates.",
+      "Coordinate the full wedding party with role-specific guidance and consistent finishing.",
   },
 
   process: {
-    headline: "The Wedding Journey",
+    headline: "Wedding Process",
     steps: [
       {
         number: "01",
         title: "Consultation",
         description:
-          "Share your wedding details — venue, theme, colors, your role. We'll design around your story.",
+          "We align on ceremony context, visual direction, and event timeline.",
       },
       {
         number: "02",
         title: "Design & Fabric",
         description:
-          "Review options, select fabrics, confirm every detail from buttons to buttonholes.",
+          "Fabric, structure, and details are confirmed with you before production.",
       },
       {
         number: "03",
         title: "Measurements & Fittings",
         description:
-          "Comprehensive measurements captured. Remote fitting options available.",
+          "Measurements and fitting direction are captured for confident execution.",
       },
       {
         number: "04",
         title: "Delivery",
         description:
-          "Pressed and ready, delivered before your event. Emergency alterations available.",
+          "Delivery is planned with room for any final refinements.",
       },
     ],
   },
 
   pricing: {
-    note: "Wedding pricing varies by design complexity. Contact us for a detailed quote.",
+    note: "Pricing varies by design complexity and finishing level. Detailed quotes are provided after consultation.",
     tiers: [
       {
         name: "Classic Suit",
@@ -161,15 +161,15 @@ export const weddingwearContent = {
   },
 
   cta: {
-    headline: "Make It Memorable",
+    headline: "Start Your Wedding Consultation",
     description:
-      "You'll look back at these photos for the rest of your life. Let's create something extraordinary.",
+      "Share your date, role, and direction. We'll guide the rest.",
     primaryCta: {
-      text: "Start a Consultation",
+      text: "Start a Wedding Consultation",
       href: "/contact?subject=wedding",
     },
     secondaryCta: {
-      text: "Chat on WhatsApp",
+      text: "Speak With the Atelier",
       context: "weddingwear" as const,
     },
   },
