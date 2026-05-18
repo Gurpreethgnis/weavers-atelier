@@ -7,39 +7,33 @@ export const returnsAlterationsContent = {
   },
 
   guarantee: {
-    title: "The Weavers Guarantee",
+    title: "Fit Guarantee",
     policies: [
       {
-        title: "30-Day Fit Adjustments",
+        title: "30-Day Fit Support",
         description:
-          "Within 30 days of delivery, we offer fit-focused adjustment support for eligible requests.",
-        note: "Applies to both ready-to-wear and custom orders.",
+          "Within 30 days of delivery, we support fit-focused refinements for eligible requests.",
+        note: "Applies to ready-to-wear and custom orders.",
       },
       {
-        title: "Remake Policy",
+        title: "Remake Review",
         description:
-          "If a garment cannot be reasonably adjusted due to a confirmed production issue, we evaluate remakes at no additional cost.",
-        note: "Applies to manufacturing defects or measurement errors by our team.",
-      },
-      {
-        title: "Future Alterations",
-        description:
-          "Additional alterations can be arranged after the guarantee period.",
-        note: "Subject to current alteration pricing.",
+          "If a garment cannot be reasonably adjusted due to a confirmed production issue, we review remake eligibility at no additional cost.",
+        note: "Applies to confirmed production or measurement errors from our team.",
       },
     ],
   },
 
   returns: {
-    title: "Return Policy",
+    title: "Ready-to-Wear Returns",
     sections: [
       {
         title: "Ready-to-Wear Returns",
         description:
           "Ready-to-wear items may be returned within policy windows when unworn and in original condition.",
         conditions: [
-          "Return shipping is prepaid by us (US customers)",
-          "International return shipping is customer responsibility",
+          "US returns: prepaid return shipping",
+          "International returns: customer arranges return shipping",
           "Refund processed within 5–7 business days of receipt",
           "Original shipping fees are non-refundable",
         ],
@@ -49,10 +43,10 @@ export const returnsAlterationsContent = {
         },
       },
       {
-        title: "Custom Orders",
+        title: "Custom Order Alterations",
         description:
-          "Custom pieces are made to your specifications and are final sale.",
-        note: "However, our fit guarantee still applies. If the fit isn't right, we'll alter or remake at no charge.",
+          "Custom pieces are final sale. If fit refinement is needed, we guide an alteration path under the fit guarantee.",
+        note: "Use your order number and fit notes when reaching out.",
       },
     ],
   },
@@ -74,7 +68,7 @@ export const returnsAlterationsContent = {
       },
       {
         number: "03",
-        title: "Send Item",
+        title: "Send the Piece",
         description:
           "For approved cases, we provide shipping guidance and next steps.",
       },
@@ -99,12 +93,12 @@ export const returnsAlterationsContent = {
   },
 
   refunds: {
-    title: "Refund Information",
+    title: "Refund Timing",
     items: [
       {
         question: "How long does a refund take?",
         answer:
-          "Refunds are processed within 5–7 business days of receiving your return. It may take an additional 3–5 business days for the refund to appear on your statement, depending on your bank.",
+          "Refunds are processed within 5–7 business days after the return is received and approved. Banks may take an additional 3–5 business days to post the refund.",
       },
       {
         question: "What payment methods are refunded?",
@@ -120,10 +114,10 @@ export const returnsAlterationsContent = {
   },
 
   cta: {
-    kicker: "Questions?",
+    kicker: "Need Help",
     headline: "Need Fit or Return Support?",
     description:
-      "Share your request and we will guide the right path quickly and clearly.",
+      "Share your order details and we’ll guide the right next step.",
     primaryCta: {
       text: "Speak With the Atelier",
       href: "/contact",

@@ -10,10 +10,14 @@ export const metadata: Metadata = {
   title: "Lookbook | Weaver's Atelier",
   description:
     "Inspiration from our latest work. Every piece can be recreated or customized to your preferences.",
+  alternates: {
+    canonical: "/lookbook",
+  },
   openGraph: {
     title: "Lookbook | Weaver's Atelier",
     description:
       "Inspiration from our latest work. Every piece can be recreated or customized to your preferences.",
+    images: [{ url: "/images/hero/home-hero-landscape.jpg" }],
   },
 };
 
@@ -71,17 +75,14 @@ export default async function LookbookPage() {
       {/* CTA Section */}
       <section className="bg-surface-container-high py-block-gap">
         <div className="container-atelier text-center max-w-2xl mx-auto">
-          <span className="text-label-caps text-secondary tracking-widest block mb-6">
-            Your Vision
-          </span>
           <h2 className="text-headline-lg-mobile md:text-headline-lg text-on-surface mb-8">
-            Looking for Something Specific?
+            Have a reference in mind?
           </h2>
           <p className="text-body-lg text-on-surface-variant mb-12">
-            Share a reference image, fabric direction, or silhouette. We&apos;ll guide the right custom path.
+            Send us an image, a mood, or a garment you want to reinterpret. We&apos;ll help shape it into a custom piece with the right fit, fabric, and finish.
           </p>
           <Link
-            href="/customize/shirt"
+            href="/contact?subject=custom"
             className="bg-inverse-surface text-inverse-on-surface font-ui-button px-10 py-5 hover:bg-surface-tint hover:text-on-surface transition-colors duration-300 inline-flex items-center justify-center gap-3"
           >
             Send Inspiration
@@ -175,7 +176,7 @@ function FallbackLookbook() {
                 <div className="absolute inset-0 bg-gradient-to-t from-inverse-surface/60 via-transparent to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300" />
                 <div className="absolute bottom-0 left-0 right-0 p-6 translate-y-4 opacity-0 group-hover:translate-y-0 group-hover:opacity-100 transition-all duration-300">
                   <span className="text-inverse-on-surface font-ui-button text-sm inline-flex items-center gap-2">
-                    Customize This Look
+                    Send Inspiration
                     <ArrowRight className="h-4 w-4" />
                   </span>
                 </div>

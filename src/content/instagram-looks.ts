@@ -2,7 +2,7 @@ export const instagramLooksContent = {
   hero: {
     headline: "Lookbook",
     subheadline:
-      "A curated selection of recent looks and references from the atelier.",
+      "A curated view of recent work, styling ideas, and custom pieces that can be recreated or reinterpreted around you.",
     cta: {
       text: "Shop Menswear",
       href: "/shop",
@@ -42,16 +42,16 @@ export const instagramLooksContent = {
   ],
 
   cta: {
-    headline: "Don't See What You're Looking For?",
+    headline: "Have a reference in mind?",
     description:
-      "Share your direction and we'll help map the right next step.",
+      "Send us an image, a mood, or a garment you want to reinterpret. We’ll help shape it into a custom piece with the right fit, fabric, and finish.",
     primaryCta: {
-      text: "Shop Menswear",
-      href: "/shop",
+      text: "Send Inspiration",
+      href: "/contact?subject=custom",
     },
     secondaryCta: {
-      text: "Send Inspiration",
-      href: "/contact",
+      text: "View the Lookbook",
+      href: "/lookbook",
     },
   },
 

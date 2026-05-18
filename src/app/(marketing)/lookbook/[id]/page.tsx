@@ -2,7 +2,7 @@ import { Metadata } from "next";
 import { notFound } from "next/navigation";
 import Image from "next/image";
 import Link from "next/link";
-import { ArrowLeft, ArrowRight, Palette } from "lucide-react";
+import { ArrowLeft, ArrowRight } from "lucide-react";
 import { createServiceClient } from "@/lib/supabase/server";
 import { Breadcrumbs } from "@/components/layout/Breadcrumbs";
 import { SizeSelector } from "@/components/shop/SizeSelector";
@@ -198,58 +198,50 @@ export default async function LookbookDetailPage({
               </div>
             )}
 
-            {/* Standard Purchase Section */}
-            {hasStandardPurchase && effectivePrice > 0 && (
-              <div className="pt-6 border-t border-outline-variant space-y-4">
-                <div className="flex items-center justify-between">
-                  <h2 className="text-sm font-medium uppercase tracking-wider">
-                    Select Size
-                  </h2>
-                  <SizeGuideDrawer />
-                </div>
-
-                <SizeSelector sizes={availableSizes} productId={item.id} />
-
-                <AddToCartButton
-                  product={{
-                    id: item.id,
-                    name: item.title,
-                    price_cents: effectivePrice,
-                    image: item.image_url,
-                  }}
-                />
-              </div>
-            )}
-
-            {/* Customize Section */}
-            <div
-              className={`${hasStandardPurchase && effectivePrice > 0 ? "pt-6 border-t border-outline-variant" : "pt-6"}`}
-            >
+            <div className="pt-6 border-t border-outline-variant space-y-4">
               {hasStandardPurchase && effectivePrice > 0 && (
-                <p className="text-sm text-on-surface-variant mb-4 flex items-center gap-2">
-                  <Palette className="h-4 w-4" />
-                  Want a different fit, fabric, or details?
-                </p>
+                <>
+                  <div className="flex items-center justify-between">
+                    <h2 className="text-sm font-medium uppercase tracking-wider">
+                      Select Size
+                    </h2>
+                    <SizeGuideDrawer />
+                  </div>
+                  <SizeSelector sizes={availableSizes} productId={item.id} />
+                  <AddToCartButton
+                    product={{
+                      id: item.id,
+                      name: item.title,
+                      price_cents: effectivePrice,
+                      image: item.image_url,
+                    }}
+                  />
+                </>
               )}
 
+              <div className="grid grid-cols-1 sm:grid-cols-2 gap-3">
+                {hasStandardPurchase && (
+                  <Link
+                    href="/shop"
+                    className="w-full py-4 text-base inline-flex items-center justify-center gap-2 border border-outline hover:bg-surface-container transition-colors"
+                  >
+                    Shop This Look
+                  </Link>
+                )}
+                <Link
+                  href={`/customize/${getCategorySlug(item.category)}?ref=${item.id}&look=${encodeURIComponent(item.title)}`}
+                  className="w-full py-4 text-base inline-flex items-center justify-center gap-2 border border-outline hover:bg-surface-container transition-colors"
+                >
+                  Recreate This Look
+                </Link>
+              </div>
               <Link
-                href={`/customize/${getCategorySlug(item.category)}?ref=${item.id}&look=${encodeURIComponent(item.title)}`}
-                className={`w-full py-4 text-base inline-flex items-center justify-center gap-2 transition-colors ${
-                  hasStandardPurchase && effectivePrice > 0
-                    ? "border border-outline hover:bg-surface-container"
-                    : "bg-inverse-surface text-inverse-on-surface hover:bg-surface-tint hover:text-on-surface"
-                }`}
+                href="/contact?subject=custom"
+                className="w-full py-4 text-base inline-flex items-center justify-center gap-2 bg-inverse-surface text-inverse-on-surface hover:bg-surface-tint hover:text-on-surface transition-colors"
               >
-                Customize This Look
+                Send Inspiration
                 <ArrowRight className="h-4 w-4" />
               </Link>
-
-              {!hasStandardPurchase && (
-                <p className="text-sm text-on-surface-variant mt-3">
-                  This look is available as a custom order. We&apos;ll work with
-                  you on fit, fabric, and details.
-                </p>
-              )}
             </div>
 
             {/* Instagram Link */}

@@ -50,7 +50,7 @@ export default async function AccountPage() {
 
   const accountSections = [
     {
-      title: "Orders",
+      title: "Your Orders",
       description: `${ordersCount || 0} order${ordersCount !== 1 ? "s" : ""}`,
       href: "/account/orders",
       icon: Package,
@@ -62,7 +62,7 @@ export default async function AccountPage() {
       icon: Ruler,
     },
     {
-      title: "Addresses",
+      title: "Saved Addresses",
       description: `${addressesCount || 0} saved address${addressesCount !== 1 ? "es" : ""}`,
       href: "/account/addresses",
       icon: MapPin,
@@ -74,7 +74,7 @@ export default async function AccountPage() {
       <div className="max-w-2xl mx-auto">
         {/* Header */}
         <div className="mb-8">
-          <h1 className="text-3xl font-heading font-semibold mb-2">My Account</h1>
+          <h1 className="text-3xl font-heading font-semibold mb-2">Account Details</h1>
           <p className="text-on-surface-variant">
             Welcome back{customer?.full_name ? `, ${customer.full_name}` : ""}
           </p>

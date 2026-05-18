@@ -114,6 +114,6 @@ export const shopContent = {
 export const lookbookContent = {
   title: "Lookbook",
   subtitle:
-    "A curated edit of recent pieces and references from our atelier.",
+    "A curated view of recent work, styling ideas, and custom pieces that can be recreated or reinterpreted around you.",
   cta: "Send Inspiration",
 };

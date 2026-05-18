@@ -2,7 +2,7 @@
 
 import { useState } from "react";
 import Link from "next/link";
-import { ArrowRight, Check, Loader2, MapPin, Mail, ExternalLink } from "lucide-react";
+import { ArrowRight, Check, Loader2, MapPin, Mail } from "lucide-react";
 import { useForm } from "react-hook-form";
 import { zodResolver } from "@hookform/resolvers/zod";
 import { toast } from "sonner";
@@ -22,7 +22,7 @@ const contactSchema = z.object({
 type ContactFormData = z.infer<typeof contactSchema>;
 
 export default function ContactPage() {
-  const { hero, channels, businessInfo, departments, form, cta } =
+  const { hero, channels, businessInfo, form, cta } =
     contactContent;
 
   const [isSubmitting, setIsSubmitting] = useState(false);
@@ -100,6 +100,9 @@ export default function ContactPage() {
         <h1 className="text-display-lg text-on-surface leading-tight whitespace-pre-line">
           {hero.headline}
         </h1>
+          <p className="text-body-lg text-on-surface-variant max-w-3xl mt-6">
+            {hero.subheadline}
+          </p>
       </section>
 
       {/* Upper Split: Info Cards + Form Panel */}
@@ -145,6 +148,22 @@ export default function ContactPage() {
               <p className="text-sm text-on-surface-variant mt-3">
                 {channels.whatsapp.note}
               </p>
+            </div>
+
+            {/* Consultation Card */}
+            <div className="border border-outline-variant p-8">
+              <span className="text-label-caps text-secondary block mb-2">
+                {channels.consultation.title}
+              </span>
+              <p className="text-body-md text-on-surface-variant mb-6">
+                {channels.consultation.description}
+              </p>
+              <Link
+                href={channels.consultation.cta.href}
+                className="inline-flex items-center justify-center border border-outline-variant px-6 py-3 text-body-md text-on-surface hover:border-secondary transition-colors"
+              >
+                {channels.consultation.cta.text}
+              </Link>
             </div>
 
             {/* Business Address */}
@@ -302,37 +321,6 @@ export default function ContactPage() {
             </div>
           </div>
         </div>
-      </section>
-
-      {/* Specialist Contacts */}
-      <section className="container-atelier mb-block-gap">
-        <span className="text-label-caps text-secondary tracking-widest block mb-6">
-          {departments.title}
-        </span>
-        <details className="border border-outline-variant p-6 bg-surface">
-          <summary className="cursor-pointer text-body-lg text-on-surface font-medium">
-            View specialist email contacts
-          </summary>
-          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-gutter mt-6">
-            {departments.items.map((dept) => (
-              <div key={dept.department} className="border border-outline-variant p-6">
-                <h3 className="text-body-lg font-medium text-on-surface mb-2">
-                  {dept.department}
-                </h3>
-                <p className="text-body-md text-on-surface-variant mb-4">
-                  {dept.description}
-                </p>
-                <a
-                  href={`mailto:${dept.email}`}
-                  className="text-sm text-secondary hover:underline inline-flex items-center gap-2"
-                >
-                  {dept.email}
-                  <ExternalLink className="h-3 w-3" />
-                </a>
-              </div>
-            ))}
-          </div>
-        </details>
       </section>
 
       {/* CTA */}

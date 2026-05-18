@@ -1,8 +1,7 @@
 "use client";
 
 import Link from "next/link";
-import { useState } from "react";
-import { X, ChevronDown } from "lucide-react";
+import { X } from "lucide-react";
 import {
   Sheet,
   SheetContent,
@@ -16,60 +15,6 @@ interface MobileNavProps {
   open: boolean;
   onClose: () => void;
   navigation: NavItem[];
-}
-
-function AccordionItem({
-  item,
-  onClose,
-}: {
-  item: NavItem;
-  onClose: () => void;
-}) {
-  const [expanded, setExpanded] = useState(false);
-
-  if (item.type === "link") {
-    return (
-      <Link
-        href={item.href || "#"}
-        onClick={onClose}
-        className="block py-4 text-headline-md text-on-surface hover:text-primary transition-colors duration-300"
-      >
-        {item.name}
-      </Link>
-    );
-  }
-
-  return (
-    <div>
-      <button
-        type="button"
-        onClick={() => setExpanded(!expanded)}
-        aria-expanded={expanded}
-        className="flex items-center justify-between w-full py-4 text-headline-md text-on-surface hover:text-primary transition-colors duration-300"
-      >
-        {item.name}
-        <ChevronDown
-          className={`h-5 w-5 transition-transform duration-200 ${
-            expanded ? "rotate-180" : ""
-          }`}
-        />
-      </button>
-      {expanded && item.items && (
-        <div className="pl-4 pb-2 space-y-1">
-          {item.items.map((subItem) => (
-            <Link
-              key={subItem.href}
-              href={subItem.href}
-              onClick={onClose}
-              className="block py-2 text-body-lg text-on-surface-variant hover:text-primary transition-colors duration-300"
-            >
-              {subItem.name}
-            </Link>
-          ))}
-        </div>
-      )}
-    </div>
-  );
 }
 
 export function MobileNav({ open, onClose, navigation }: MobileNavProps) {
@@ -99,12 +44,18 @@ export function MobileNav({ open, onClose, navigation }: MobileNavProps) {
             </button>
           </div>
 
-          {/* Primary Navigation - Accordion */}
+          {/* Primary Navigation */}
           <nav className="flex-1 overflow-y-auto py-6 px-6">
             <ul className="space-y-1">
               {navigation.map((item) => (
                 <li key={item.name}>
-                  <AccordionItem item={item} onClose={onClose} />
+                  <Link
+                    href={item.href}
+                    onClick={onClose}
+                    className="block py-4 text-headline-md text-on-surface hover:text-primary transition-colors duration-300"
+                  >
+                    {item.name}
+                  </Link>
                 </li>
               ))}
             </ul>

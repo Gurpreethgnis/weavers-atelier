@@ -4,18 +4,22 @@ import { ArrowRight } from "lucide-react";
 import { deliveryContent } from "@/content/delivery";
 
 export const metadata: Metadata = {
-  title: "Worldwide Delivery | Weaver's Atelier",
+  title: "Delivery | Weaver's Atelier",
   description:
-    "Free shipping on orders over $250. Express and standard options available. Track your order every step of the way.",
+    "Each order is prepared with care and shipped with tracking once complete.",
+  alternates: {
+    canonical: "/delivery",
+  },
   openGraph: {
-    title: "Worldwide Delivery | Weaver's Atelier",
+    title: "Delivery | Weaver's Atelier",
     description:
-      "Free shipping on orders over $250. Express and standard options available.",
+      "Each order is prepared with care and shipped with tracking once complete.",
+    images: [{ url: "/images/hero/home-hero-landscape.jpg" }],
   },
 };
 
 export default function DeliveryPage() {
-  const { hero, shipping, destinations, timelines, packaging, duties, tracking, issues, cta } =
+  const { hero, shipping, destinations, timelines, duties, tracking, issues, cta } =
     deliveryContent;
 
   return (
@@ -32,6 +36,32 @@ export default function DeliveryPage() {
           <p className="text-body-lg text-on-surface-variant max-w-2xl">
             {hero.description}
           </p>
+        </div>
+      </section>
+
+      {/* Production Times */}
+      <section className="container-atelier mb-block-gap">
+        <span className="text-label-caps text-secondary tracking-widest block mb-4">
+          {timelines.title}
+        </span>
+        <p className="text-body-lg text-on-surface-variant mb-8 max-w-2xl">
+          {timelines.description}
+        </p>
+        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-gutter">
+          {timelines.items.map((item) => (
+            <div
+              key={item.title}
+              className="border border-outline-variant p-6"
+            >
+              <h3 className="text-body-lg text-on-surface font-medium mb-2">
+                {item.title}
+              </h3>
+              <span className="text-headline-md text-secondary block mb-2">
+                {item.duration}
+              </span>
+              <p className="text-sm text-on-surface-variant">{item.note}</p>
+            </div>
+          ))}
         </div>
       </section>
 
@@ -74,6 +104,68 @@ export default function DeliveryPage() {
         <p className="text-sm text-on-surface-variant">{shipping.note}</p>
       </section>
 
+      {/* Tracking CTA */}
+      <section className="container-atelier mb-block-gap">
+        <div className="bg-surface-container p-12 md:p-16">
+          <div className="grid grid-cols-1 md:grid-cols-12 gap-gutter items-center">
+            <div className="md:col-span-8">
+              <span className="text-label-caps text-secondary tracking-widest block mb-4">
+                {tracking.title}
+              </span>
+              <p className="text-body-lg text-on-surface-variant">
+                {tracking.description}
+              </p>
+            </div>
+            <div className="md:col-span-4 md:text-right">
+              <Link
+                href={tracking.cta.href}
+                className="bg-inverse-surface text-inverse-on-surface font-ui-button px-10 py-5 hover:bg-surface-tint hover:text-on-surface transition-colors duration-300 inline-flex items-center justify-center gap-3"
+              >
+                {tracking.cta.text}
+                <ArrowRight className="h-4 w-4" />
+              </Link>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      {/* Customs & Duties */}
+      <section className="container-atelier mb-block-gap">
+        <div className="border border-outline-variant p-8 md:p-12">
+          <span className="text-label-caps text-secondary tracking-widest block mb-4">
+            {duties.title}
+          </span>
+          <p className="text-body-lg text-on-surface-variant mb-4">
+            {duties.description}
+          </p>
+          <p className="text-sm text-on-surface-variant italic">{duties.note}</p>
+        </div>
+      </section>
+
+      {/* Delivery Issues FAQ */}
+      <section className="container-atelier mb-block-gap">
+        <span className="text-label-caps text-secondary tracking-widest block mb-6">
+          {issues.title}
+        </span>
+        <details className="border border-outline-variant p-6 bg-surface">
+          <summary className="cursor-pointer text-body-lg text-on-surface font-medium">
+            View delivery support guidance
+          </summary>
+          <div className="space-y-6 mt-6">
+            {issues.items.map((item) => (
+              <div key={item.question} className="border-l-2 border-secondary pl-6">
+                <h3 className="text-body-lg font-medium text-on-surface mb-2">
+                  {item.question}
+                </h3>
+                <p className="text-body-md text-on-surface-variant">
+                  {item.answer}
+                </p>
+              </div>
+            ))}
+          </div>
+        </details>
+      </section>
+
       {/* Destinations */}
       <section className="bg-surface-container-high py-block-gap mb-block-gap">
         <div className="container-atelier">
@@ -108,115 +200,6 @@ export default function DeliveryPage() {
             </div>
           </details>
         </div>
-      </section>
-
-      {/* Production Times */}
-      <section className="container-atelier mb-block-gap">
-        <span className="text-label-caps text-secondary tracking-widest block mb-4">
-          {timelines.title}
-        </span>
-        <p className="text-body-lg text-on-surface-variant mb-8 max-w-2xl">
-          {timelines.description}
-        </p>
-        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-gutter">
-          {timelines.items.map((item) => (
-            <div
-              key={item.title}
-              className="border border-outline-variant p-6"
-            >
-              <h3 className="text-body-lg text-on-surface font-medium mb-2">
-                {item.title}
-              </h3>
-              <span className="text-headline-md text-secondary block mb-2">
-                {item.duration}
-              </span>
-              <p className="text-sm text-on-surface-variant">{item.note}</p>
-            </div>
-          ))}
-        </div>
-      </section>
-
-      {/* Packaging Note */}
-      <section className="container-atelier mb-block-gap">
-        <div className="bronze-border p-12 md:p-16">
-          <div className="grid grid-cols-1 md:grid-cols-12 gap-gutter items-center">
-            <div className="md:col-span-1 flex justify-center md:justify-start">
-              <span className="material-symbols-outlined text-secondary text-[48px]">
-                inventory_2
-              </span>
-            </div>
-            <div className="md:col-span-11">
-              <span className="text-label-caps text-secondary tracking-widest block mb-4">
-                {packaging.title}
-              </span>
-              <p className="text-body-lg text-on-surface-variant">
-                {packaging.description}
-              </p>
-            </div>
-          </div>
-        </div>
-      </section>
-
-      {/* Customs & Duties */}
-      <section className="container-atelier mb-block-gap">
-        <div className="border border-outline-variant p-8 md:p-12">
-          <span className="text-label-caps text-secondary tracking-widest block mb-4">
-            {duties.title}
-          </span>
-          <p className="text-body-lg text-on-surface-variant mb-4">
-            {duties.description}
-          </p>
-          <p className="text-sm text-on-surface-variant italic">{duties.note}</p>
-        </div>
-      </section>
-
-      {/* Tracking CTA */}
-      <section className="container-atelier mb-block-gap">
-        <div className="bg-surface-container p-12 md:p-16">
-          <div className="grid grid-cols-1 md:grid-cols-12 gap-gutter items-center">
-            <div className="md:col-span-8">
-              <span className="text-label-caps text-secondary tracking-widest block mb-4">
-                {tracking.title}
-              </span>
-              <p className="text-body-lg text-on-surface-variant">
-                {tracking.description}
-              </p>
-            </div>
-            <div className="md:col-span-4 md:text-right">
-              <Link
-                href={tracking.cta.href}
-                className="bg-inverse-surface text-inverse-on-surface font-ui-button px-10 py-5 hover:bg-surface-tint hover:text-on-surface transition-colors duration-300 inline-flex items-center justify-center gap-3"
-              >
-                {tracking.cta.text}
-                <ArrowRight className="h-4 w-4" />
-              </Link>
-            </div>
-          </div>
-        </div>
-      </section>
-
-      {/* Delivery Issues FAQ */}
-      <section className="container-atelier mb-block-gap">
-        <span className="text-label-caps text-secondary tracking-widest block mb-6">
-          {issues.title}
-        </span>
-        <details className="border border-outline-variant p-6 bg-surface">
-          <summary className="cursor-pointer text-body-lg text-on-surface font-medium">
-            View delivery support guidance
-          </summary>
-          <div className="space-y-6 mt-6">
-            {issues.items.map((item) => (
-              <div key={item.question} className="border-l-2 border-secondary pl-6">
-                <h3 className="text-body-lg font-medium text-on-surface mb-2">
-                  {item.question}
-                </h3>
-                <p className="text-body-md text-on-surface-variant">
-                  {item.answer}
-                </p>
-              </div>
-            ))}
-          </div>
-        </details>
       </section>
 
       {/* Final CTA */}

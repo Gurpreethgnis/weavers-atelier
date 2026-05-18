@@ -10,10 +10,14 @@ export const metadata: Metadata = {
   title: "Shop the Collection | Weaver's Atelier",
   description:
     "Premium menswear designed for the modern man. Shop shirts, trousers, and statement denim in standard sizes or customize for your perfect fit.",
+  alternates: {
+    canonical: "/shop",
+  },
   openGraph: {
     title: "Shop the Collection | Weaver's Atelier",
     description:
       "Premium menswear designed for the modern man. Standard sizes XS–XL, or customize any piece.",
+    images: [{ url: "/images/hero/home-hero-landscape.jpg" }],
   },
 };
 
@@ -118,89 +122,25 @@ export default async function ShopPage() {
         </div>
       </section>
 
-      {/* Lead Time Info */}
-      <section className="bg-surface-dim py-16 md:py-20">
-        <div className="container-atelier">
-          <div className="max-w-3xl mx-auto text-center">
-            <h2 className="text-2xl md:text-3xl font-heading font-semibold mb-4">
-              {shopContent.leadTime.title}
-            </h2>
-            <p className="text-on-surface-variant text-lg mb-12">
-              {shopContent.leadTime.description}
-            </p>
-
-            <div className="grid grid-cols-1 sm:grid-cols-2 gap-6">
-              <div className="bg-surface p-6 rounded-lg">
-                <h3 className="font-medium text-lg mb-2">
-                  {shopContent.leadTime.standard.label}
-                </h3>
-                <p className="text-2xl font-semibold text-secondary mb-2">
-                  {shopContent.leadTime.standard.days}
-                </p>
-                <p className="text-sm text-on-surface-variant">
-                  {shopContent.leadTime.standard.note}
-                </p>
-              </div>
-
-              <div className="bg-surface p-6 rounded-lg">
-                <h3 className="font-medium text-lg mb-2">
-                  {shopContent.leadTime.custom.label}
-                </h3>
-                <p className="text-2xl font-semibold text-secondary mb-2">
-                  {shopContent.leadTime.custom.days}
-                </p>
-                <p className="text-sm text-on-surface-variant">
-                  {shopContent.leadTime.custom.note}
-                </p>
-              </div>
-            </div>
+      <section className="bg-surface-dim py-14 md:py-16">
+        <div className="container-atelier text-center max-w-3xl">
+          <p className="text-on-surface-variant mb-6">
+            Made-to-order timelines vary by piece and level of customization.
+          </p>
+          <div className="flex flex-col sm:flex-row gap-4 justify-center">
+            <Link
+              href="/weddingwear"
+              className="inline-flex items-center justify-center px-8 py-4 border border-outline text-on-surface hover:border-secondary transition-colors"
+            >
+              Start a Wedding Consultation
+            </Link>
+            <Link
+              href="/contact"
+              className="inline-flex items-center justify-center px-8 py-4 bg-inverse-surface text-inverse-on-surface hover:bg-surface-tint hover:text-on-surface transition-colors"
+            >
+              Speak With the Atelier
+            </Link>
           </div>
-        </div>
-      </section>
-
-      {/* Browse By Occasion */}
-      <section className="container-atelier py-16 md:py-24">
-        <h2 className="text-2xl md:text-3xl font-heading font-semibold text-center mb-4">
-          Atelier Services
-        </h2>
-        <p className="text-on-surface-variant text-center max-w-2xl mx-auto mb-12">
-          For weddingwear and statement projects, we guide the piece from first direction to final fit.
-        </p>
-
-        <div className="grid grid-cols-1 md:grid-cols-2 gap-8 max-w-4xl mx-auto">
-          <Link
-            href="/weddingwear"
-            className="group relative aspect-video overflow-hidden bg-surface-dim rounded-lg"
-          >
-            <div className="absolute inset-0 bg-gradient-to-t from-inverse-surface/70 to-transparent" />
-            <div className="absolute inset-0 flex items-end p-6">
-              <div>
-                <h3 className="text-xl font-heading font-semibold text-surface mb-1">
-                  Weddingwear
-                </h3>
-                <p className="text-surface/80 text-sm">
-                  Start a wedding consultation →
-                </p>
-              </div>
-            </div>
-          </Link>
-
-          <Link
-            href="/statement-pieces"
-            className="group relative aspect-video overflow-hidden bg-surface-dim rounded-lg"
-          >
-            <div className="absolute inset-0 bg-gradient-to-t from-inverse-surface/70 to-transparent" />
-            <div className="absolute inset-0 flex items-end p-6">
-              <div>
-                <h3 className="text-xl font-heading font-semibold text-surface mb-1">
-                  Statement Pieces
-                </h3>
-                <p className="text-surface/80 text-sm">
-                  Send inspiration →
-                </p>
-              </div>
-            </div>
-          </Link>
         </div>
       </section>
     </>

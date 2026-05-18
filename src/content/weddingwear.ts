@@ -2,7 +2,7 @@ export const weddingwearContent = {
   hero: {
     headline: "Weddingwear Made for the Moment",
     subheadline:
-      "For the groom, the wedding party, and the details that deserve more than ordinary tailoring.",
+      "For the groom, the wedding party, and the details that deserve more than ordinary tailoring. We create custom weddingwear with presence, proportion, and personal meaning.",
     cta: {
       text: "Start a Wedding Consultation",
       href: "/contact?subject=wedding",

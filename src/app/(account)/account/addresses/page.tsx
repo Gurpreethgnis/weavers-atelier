@@ -296,7 +296,7 @@ export default function AddressesPage() {
           <div className="flex justify-between items-start">
             <div>
               <h1 className="text-3xl font-heading font-semibold mb-2">
-                My Addresses
+                Saved Addresses
               </h1>
               <p className="text-on-surface-variant">
                 Manage your shipping and billing addresses

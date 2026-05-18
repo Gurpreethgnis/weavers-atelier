@@ -1,15 +1,15 @@
 export const deliveryContent = {
   hero: {
     kicker: "Delivery",
-    headline: "Prepared With Care, Delivered Worldwide",
+    headline: "Delivery",
     description:
-      "Each order is prepared with care and shipped with tracking once complete. Timelines vary by product type, destination, and customization.",
+      "Each order is prepared with care and shipped with tracking once complete. Timelines vary by product type, destination, and level of customization.",
   },
 
   shipping: {
-    title: "Shipping Options",
+    title: "Shipping Time",
     description:
-      "Choose standard or express shipping once production is complete.",
+      "Shipping speed is selected at checkout once production is complete.",
     options: [
       {
         title: "Standard Shipping",
@@ -148,7 +148,7 @@ export const deliveryContent = {
   },
 
   issues: {
-    title: "Delivery Issues?",
+    title: "Delivery Support",
     items: [
       {
         question: "What if my package is delayed?",

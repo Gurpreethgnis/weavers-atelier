@@ -21,6 +21,7 @@ export default function FAQPage() {
         categoryName: cat.name,
         question: q.question,
         answer: q.answer,
+        link: q.link,
       }))
     );
   }, [categories]);
@@ -117,7 +118,7 @@ export default function FAQPage() {
       <section className="container-atelier mb-block-gap">
         <div className="max-w-4xl mx-auto" role="region" aria-label="FAQ accordion">
           <div className="space-y-px">
-            {filteredItems.map((item, index) => {
+            {filteredItems.map((item) => {
               const isOpen = openId === item.id;
 
               return (
@@ -164,6 +165,15 @@ export default function FAQPage() {
                       <p className="text-body-md text-on-surface-variant">
                         {item.answer}
                       </p>
+                      {item.link && (
+                        <Link
+                          href={item.link.href}
+                          className="inline-flex items-center gap-2 text-sm text-secondary hover:underline mt-3"
+                        >
+                          {item.link.label}
+                          <ArrowRight className="h-3 w-3" />
+                        </Link>
+                      )}
                     </div>
                   </div>
                 </div>

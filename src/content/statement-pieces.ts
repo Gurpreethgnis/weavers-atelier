@@ -2,7 +2,7 @@ export const statementPiecesContent = {
   hero: {
     headline: "Statement Pieces",
     subheadline:
-      "For pieces outside the usual categories — custom jackets, expressive denim, embroidered sets, and one-offs built around your vision.",
+      "For pieces that sit outside the usual categories — custom jackets, expressive denim, embroidered sets, and one-off garments designed around a specific vision.",
     cta: {
       text: "Start a Statement Piece",
       href: "/contact?subject=custom",

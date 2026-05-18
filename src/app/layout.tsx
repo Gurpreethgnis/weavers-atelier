@@ -17,6 +17,8 @@ const spaceGrotesk = Space_Grotesk({
   display: "swap",
 });
 
+const defaultOgImage = "/images/hero/home-hero-landscape.jpg";
+
 export const metadata: Metadata = {
   title: {
     default: "Custom Menswear, Made for You | Weaver's Atelier",
@@ -40,6 +42,9 @@ export const metadata: Metadata = {
   metadataBase: new URL(
     process.env.NEXT_PUBLIC_SITE_URL || "https://weavers.studio"
   ),
+  alternates: {
+    canonical: "/",
+  },
   openGraph: {
     type: "website",
     locale: "en_US",
@@ -47,12 +52,14 @@ export const metadata: Metadata = {
     title: "Custom Menswear, Made for You | Weaver's Atelier",
     description:
       "Tailored shirts, trousers, denim, weddingwear, and statement pieces — made around your fit, your style, and your occasion.",
+    images: [{ url: defaultOgImage }],
   },
   twitter: {
     card: "summary_large_image",
     title: "Custom Menswear, Made for You | Weaver's Atelier",
     description:
       "Tailored shirts, trousers, denim, weddingwear, and statement pieces — made around your fit, your style, and your occasion.",
+    images: [defaultOgImage],
   },
   robots: {
     index: true,

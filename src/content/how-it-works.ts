@@ -2,19 +2,19 @@ export const howItWorksContent = {
   hero: {
     headline: "How It Works",
     subheadline:
-      "Choose from the collection or begin a custom piece. Either way, the process is personal and clearly guided.",
+      "Choose from the collection or begin a custom piece. Either way, the process is simple, personal, and guided from start to finish.",
   },
 
   paths: {
     headline: "Two Ways to Shop",
     standard: {
-      title: "Ready-to-Wear",
+      title: "Shop the Collection",
       description:
-        "Select your piece, choose your size, and complete checkout. We prepare the garment and ship with tracking.",
+        "Select a finished piece, choose your size, and complete your order.",
       steps: [
-        "Browse and select your piece",
-        "Choose size and complete checkout",
-        "We prepare and deliver with tracking",
+        "Select your piece",
+        "Choose your size",
+        "Complete checkout",
       ],
       cta: {
         text: "Shop Menswear",
@@ -24,11 +24,11 @@ export const howItWorksContent = {
     custom: {
       title: "Start Custom",
       description:
-        "Share your measurements, preferences, or inspiration. We confirm direction before production begins.",
+        "Share your measurements, preferences, or inspiration. We guide the details before production begins.",
       steps: [
-        "Submit your request and reference details",
-        "Review and approve your quote",
-        "We craft and deliver your piece",
+        "Share your direction",
+        "Confirm the details",
+        "Receive your piece",
       ],
       cta: {
         text: "Start a Custom Order",
@@ -42,23 +42,22 @@ export const howItWorksContent = {
     steps: [
       {
         number: "01",
-        title: "Submit Your Request",
-        description:
-          "Share measurements, fit preferences, and reference imagery if available.",
+        title: "Share the direction",
+        description: "Tell us what you want to make, and how you want it to fit.",
         details: [
-          "No payment required to request a quote",
-          "References from any source are welcome",
-          "Event date and timeline help us plan accurately",
+          "Reference images are welcome",
+          "No payment required to request review",
+          "Event dates help us plan lead time",
         ],
       },
       {
         number: "02",
-        title: "Approve Direction",
+        title: "Confirm the details",
         description:
-          "We send a clear quote with timeline and specification summary for approval.",
+          "We send the quote, timeline, and build details for your approval.",
         details: [
-          "Transparent pricing and lead-time",
-          "Questions resolved before production begins",
+          "Transparent pricing and lead time",
+          "Questions resolved before production",
           "Secure payment via Stripe invoice",
         ],
         cta: {
@@ -68,11 +67,11 @@ export const howItWorksContent = {
       },
       {
         number: "03",
-        title: "Craft & Deliver",
+        title: "Receive your piece",
         description:
-          "Once approved, your piece moves into production, quality review, and tracked delivery.",
+          "After approval, your piece moves into production and tracked delivery.",
         details: [
-          "Quality check before dispatch",
+          "Quality review before dispatch",
           "Tracking shared once shipped",
           "Aftercare support if refinement is needed",
         ],

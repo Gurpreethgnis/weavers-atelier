@@ -7,10 +7,14 @@ export const metadata: Metadata = {
   title: "Returns & Alterations",
   description:
     "Free alterations within 30 days. We stand behind the fit of every garment we create.",
+  alternates: {
+    canonical: "/returns-alterations",
+  },
   openGraph: {
     title: "Returns & Alterations | Weaver's Atelier",
     description:
       "Free alterations within 30 days. We stand behind the fit of every garment we create.",
+    images: [{ url: "/images/hero/home-hero-landscape.jpg" }],
   },
 };
 
@@ -35,20 +39,17 @@ export default function ReturnsAlterationsPage() {
         </div>
       </section>
 
-      {/* Fit Guarantee Section */}
+      {/* Fit Guarantee */}
       <section className="container-atelier mb-block-gap">
         <span className="text-label-caps text-secondary tracking-widest block mb-6">
           {guarantee.title}
         </span>
-        <div className="grid grid-cols-1 md:grid-cols-3 gap-gutter">
-          {guarantee.policies.map((policy, index) => (
+        <div className="grid grid-cols-1 md:grid-cols-2 gap-gutter">
+          {guarantee.policies.map((policy) => (
             <div
               key={policy.title}
               className="border border-outline-variant p-8 hover:border-secondary transition-colors duration-300"
             >
-              <span className="text-headline-lg text-secondary/40 block mb-4">
-                {String(index + 1).padStart(2, "0")}
-              </span>
               <h3 className="text-body-lg text-on-surface font-medium mb-3">
                 {policy.title}
               </h3>
@@ -63,7 +64,7 @@ export default function ReturnsAlterationsPage() {
         </div>
       </section>
 
-      {/* Return Policy Section */}
+      {/* Ready-to-Wear Returns + Custom Order Alterations */}
       <section className="bg-surface-container-high py-block-gap mb-block-gap">
         <div className="container-atelier">
           <span className="text-label-caps text-secondary tracking-widest block mb-6">
@@ -97,6 +98,24 @@ export default function ReturnsAlterationsPage() {
                     </p>
                   </div>
                 )}
+                {section.title === "Custom Order Alterations" && (
+                  <details className="border border-outline-variant p-4 mt-6 bg-surface">
+                    <summary className="cursor-pointer text-body-md text-on-surface font-medium">
+                      View alteration process
+                    </summary>
+                    <div className="grid grid-cols-1 md:grid-cols-2 gap-4 mt-4">
+                      {alterations.steps.map((step) => (
+                        <div key={step.number} className="border border-outline-variant p-4">
+                          <span className="text-label-caps text-secondary">{step.number}</span>
+                          <h4 className="text-body-md text-on-surface font-medium mt-2 mb-1">
+                            {step.title}
+                          </h4>
+                          <p className="text-sm text-on-surface-variant">{step.description}</p>
+                        </div>
+                      ))}
+                    </div>
+                  </details>
+                )}
                 {"cta" in section && section.cta && (
                   <Link
                     href={section.cta.href}
@@ -109,28 +128,6 @@ export default function ReturnsAlterationsPage() {
               </div>
             ))}
           </div>
-        </div>
-      </section>
-
-      {/* Alteration Process */}
-      <section className="container-atelier mb-block-gap">
-        <span className="text-label-caps text-secondary tracking-widest block mb-6">
-          {alterations.title}
-        </span>
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-gutter">
-          {alterations.steps.map((step) => (
-            <div key={step.number} className="border border-outline-variant p-6">
-              <span className="text-headline-lg text-secondary/30 block mb-4">
-                {step.number}
-              </span>
-              <h3 className="text-body-lg text-on-surface font-medium mb-2">
-                {step.title}
-              </h3>
-              <p className="text-body-md text-on-surface-variant">
-                {step.description}
-              </p>
-            </div>
-          ))}
         </div>
       </section>
 
@@ -156,7 +153,7 @@ export default function ReturnsAlterationsPage() {
         </div>
       </section>
 
-      {/* Refund FAQ */}
+      {/* Refund Timing */}
       <section className="container-atelier mb-block-gap">
         <span className="text-label-caps text-secondary tracking-widest block mb-6">
           {refunds.title}
@@ -180,7 +177,7 @@ export default function ReturnsAlterationsPage() {
         </details>
       </section>
 
-      {/* Final CTA */}
+      {/* Need Help */}
       <section className="border-y border-outline-variant py-32 mb-block-gap">
         <div className="container-atelier">
           <div className="grid grid-cols-1 md:grid-cols-12 gap-gutter items-center">

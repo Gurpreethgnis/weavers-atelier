@@ -16,19 +16,19 @@ const CATEGORY_INFO: Record<
   shirt: {
     title: "Custom Shirt",
     description:
-      "Tell us about your ideal shirt — fabric, collar, cuff, fit, and any special details.",
+      "Share the fit, fabric direction, and details you want us to review.",
     pluralSlug: "shirts",
   },
   trouser: {
     title: "Custom Trousers",
     description:
-      "Describe your perfect trousers — fabric, pleats, waistband, and how you want them to fit.",
+      "Tell us the structure, fit, and finish you want us to shape.",
     pluralSlug: "trousers",
   },
   denim: {
     title: "Custom Denim",
     description:
-      "Design your statement denim — embroidery, washes, patchwork, and unique details that make it yours.",
+      "Send your denim direction, references, and finishing preferences.",
     pluralSlug: "denim",
   },
 };
@@ -115,18 +115,16 @@ export default async function CustomizePage({ params, searchParams }: PageProps)
             <p className="text-on-surface-variant">{info.description}</p>
           </div>
 
-          {/* Quote Info Card */}
+          {/* Request Info Card */}
           <div className="bg-surface-container p-6 mb-8">
-            <h2 className="font-medium mb-3">How Custom Quotes Work</h2>
+            <h2 className="font-medium mb-3">How Custom Review Works</h2>
             <ol className="text-sm text-on-surface-variant space-y-2 list-decimal list-inside">
-              <li>Fill out this form with your preferences and details</li>
-              <li>Our team reviews and prepares a personalized quote (within 24 hours)</li>
-              <li>Once you approve, we send an invoice to secure your order</li>
-              <li>After payment, production begins — and your custom piece is on its way</li>
+              <li>Send your request with size direction and references</li>
+              <li>We review and respond with clear next steps</li>
+              <li>If approved, we issue your invoice and begin production</li>
             </ol>
             <p className="text-sm text-on-surface-variant mt-4">
-              <strong>No commitment required.</strong> Requesting a quote is free and
-              doesn&apos;t obligate you to anything.
+              No commitment required to submit a custom request.
             </p>
           </div>
 

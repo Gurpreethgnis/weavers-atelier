@@ -37,7 +37,7 @@ export default async function MeasurementsPage() {
           <div className="flex justify-between items-start">
             <div>
               <h1 className="text-3xl font-heading font-semibold mb-2">
-                My Measurements
+                Measurements
               </h1>
               <p className="text-on-surface-variant">
                 Save your measurements for faster custom orders

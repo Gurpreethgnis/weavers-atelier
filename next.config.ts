@@ -44,12 +44,12 @@ const nextConfig: NextConfig = {
       },
       {
         source: "/book-consultation",
-        destination: "/shop",
+        destination: "/contact",
         permanent: true,
       },
       {
         source: "/book-consultation/:type*",
-        destination: "/shop",
+        destination: "/contact",
         permanent: true,
       },
     ];

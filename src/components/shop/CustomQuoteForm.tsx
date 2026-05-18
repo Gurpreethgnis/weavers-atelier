@@ -84,7 +84,7 @@ export function CustomQuoteForm({ product, category, onSuccess }: CustomQuoteFor
       });
 
       if (result.success) {
-        toast.success("Quote request submitted! We'll be in touch within 24 hours.");
+        toast.success("Custom request submitted. We will review and follow up shortly.");
         onSuccess?.();
       } else {
         toast.error(result.error || "Failed to submit. Please try again.");
@@ -100,7 +100,7 @@ export function CustomQuoteForm({ product, category, onSuccess }: CustomQuoteFor
     <form onSubmit={handleSubmit(onSubmit)} className="space-y-6">
       {/* Contact Information */}
       <div className="space-y-4">
-        <h3 className="font-medium text-lg">Contact Information</h3>
+          <h3 className="font-medium text-lg">Contact Details</h3>
 
         <div>
           <Label htmlFor="customer_name">Full Name *</Label>
@@ -146,9 +146,9 @@ export function CustomQuoteForm({ product, category, onSuccess }: CustomQuoteFor
         <h3 className="font-medium text-lg">Size & Fit</h3>
 
         <div>
-          <Label>Starting Size Preference</Label>
+          <Label>Size Direction</Label>
           <p className="text-sm text-on-surface-variant mb-2">
-            Select a standard size as reference, or choose &quot;Custom&quot; for made-to-measure
+            Choose a reference size or select &quot;Custom&quot; for made-to-measure.
           </p>
           <div className="flex flex-wrap gap-2 mt-1">
             {FIT_OPTIONS.map((size) => (
@@ -355,7 +355,7 @@ export function CustomQuoteForm({ product, category, onSuccess }: CustomQuoteFor
           className="mt-1"
         />
         <p className="text-xs text-on-surface-variant mt-1">
-          Let us know if you have a deadline — we&apos;ll factor it into your quote.
+          Share your target date and we will advise realistic timing.
         </p>
       </div>
 
@@ -363,7 +363,7 @@ export function CustomQuoteForm({ product, category, onSuccess }: CustomQuoteFor
       <div>
         <Label>Reference Images (optional)</Label>
         <p className="text-sm text-on-surface-variant mb-2">
-          Upload inspiration photos or images of garments you&apos;d like us to reference.
+          Upload inspiration photos or reference garments.
         </p>
         <div className="border-2 border-dashed border-outline-variant p-4 text-center">
           <Upload className="w-8 h-8 mx-auto text-on-surface-variant mb-2" />
@@ -399,7 +399,7 @@ export function CustomQuoteForm({ product, category, onSuccess }: CustomQuoteFor
           id="notes"
           {...register("notes")}
           rows={4}
-          placeholder="Any other details, preferences, or questions..."
+          placeholder="Any detail you want us to consider..."
           className="mt-1 w-full px-3 py-2 border border-outline-variant bg-surface focus:border-secondary outline-none resize-none"
         />
       </div>
@@ -421,12 +421,12 @@ export function CustomQuoteForm({ product, category, onSuccess }: CustomQuoteFor
             Submitting...
           </>
         ) : (
-          "Request Free Quote"
+          "Submit Custom Request"
         )}
       </Button>
 
       <p className="text-xs text-center text-on-surface-variant">
-        No commitment required • We&apos;ll respond within 24 hours
+        No commitment required.
       </p>
     </form>
   );

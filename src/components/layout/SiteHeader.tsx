@@ -1,7 +1,7 @@
 "use client";
 
 import Link from "next/link";
-import { useState, useRef, useEffect } from "react";
+import { useState } from "react";
 import { Menu, User } from "lucide-react";
 import { MobileNav } from "./MobileNav";
 import { ThemeToggle } from "./ThemeToggle";
@@ -9,93 +9,16 @@ import { CartIcon } from "@/components/shop/CartIcon";
 
 type NavItem = {
   name: string;
-  type: "link" | "dropdown";
-  href?: string;
-  items?: { name: string; href: string }[];
+  href: string;
 };
 
 const navigation: NavItem[] = [
-  {
-    name: "Shop",
-    type: "dropdown",
-    items: [
-      { name: "All Products", href: "/shop" },
-      { name: "Shirts", href: "/shop/shirts" },
-      { name: "Trousers", href: "/shop/trousers" },
-      { name: "Denim", href: "/shop/denim" },
-    ],
-  },
-  { name: "Lookbook", type: "link", href: "/lookbook" },
-  { name: "Weddingwear", type: "link", href: "/weddingwear" },
-  { name: "Statement Pieces", type: "link", href: "/statement-pieces" },
-  { name: "Contact", type: "link", href: "/contact" },
+  { name: "Shop", href: "/shop" },
+  { name: "Lookbook", href: "/lookbook" },
+  { name: "Weddingwear", href: "/weddingwear" },
+  { name: "Statement Pieces", href: "/statement-pieces" },
+  { name: "Contact", href: "/contact" },
 ];
-
-function NavDropdown({
-  label,
-  items,
-}: {
-  label: string;
-  items: { name: string; href: string }[];
-}) {
-  const [open, setOpen] = useState(false);
-  const containerRef = useRef<HTMLDivElement>(null);
-
-  useEffect(() => {
-    function handleClickOutside(event: MouseEvent) {
-      if (
-        containerRef.current &&
-        !containerRef.current.contains(event.target as Node)
-      ) {
-        setOpen(false);
-      }
-    }
-
-    function handleEscape(event: KeyboardEvent) {
-      if (event.key === "Escape") {
-        setOpen(false);
-      }
-    }
-
-    if (open) {
-      document.addEventListener("mousedown", handleClickOutside);
-      document.addEventListener("keydown", handleEscape);
-    }
-
-    return () => {
-      document.removeEventListener("mousedown", handleClickOutside);
-      document.removeEventListener("keydown", handleEscape);
-    };
-  }, [open]);
-
-  return (
-    <div ref={containerRef} className="relative">
-      <button
-        type="button"
-        onClick={() => setOpen(!open)}
-        aria-haspopup="true"
-        aria-expanded={open}
-        className="text-body-md text-on-surface-variant hover:text-primary transition-colors duration-300"
-      >
-        {label}
-      </button>
-      {open && (
-        <div className="absolute top-full left-0 mt-2 min-w-[200px] bg-surface border border-outline-variant/30 shadow-lg py-2 z-50">
-          {items.map((item) => (
-            <Link
-              key={item.href}
-              href={item.href}
-              onClick={() => setOpen(false)}
-              className="block px-4 py-2 text-body-md text-on-surface-variant hover:text-primary hover:bg-surface-container transition-colors duration-200"
-            >
-              {item.name}
-            </Link>
-          ))}
-        </div>
-      )}
-    </div>
-  );
-}
 
 export function SiteHeader() {
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
@@ -119,23 +42,15 @@ export function SiteHeader() {
 
         {/* Desktop Navigation */}
         <div className="hidden md:flex items-center gap-12">
-          {navigation.map((item) =>
-            item.type === "dropdown" && item.items ? (
-              <NavDropdown
-                key={item.name}
-                label={item.name}
-                items={item.items}
-              />
-            ) : (
-              <Link
-                key={item.name}
-                href={item.href || "#"}
-                className="text-body-md text-on-surface-variant hover:text-primary transition-colors duration-300"
-              >
-                {item.name}
-              </Link>
-            )
-          )}
+          {navigation.map((item) => (
+            <Link
+              key={item.name}
+              href={item.href}
+              className="text-body-md text-on-surface-variant hover:text-primary transition-colors duration-300"
+            >
+              {item.name}
+            </Link>
+          ))}
         </div>
 
         {/* Desktop Right Cluster: Icons */}

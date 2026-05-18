@@ -7,15 +7,19 @@ export const metadata: Metadata = {
   title: "How It Works | Weaver's Atelier",
   description:
     "From selection to your door. Whether you're buying off the rack or going custom, here's what to expect.",
+  alternates: {
+    canonical: "/how-it-works",
+  },
   openGraph: {
     title: "How It Works | Weaver's Atelier",
     description:
       "From selection to your door. Whether you're buying off the rack or going custom, here's what to expect.",
+    images: [{ url: "/images/hero/home-hero-landscape.jpg" }],
   },
 };
 
 export default function HowItWorksPage() {
-  const { hero, paths, customProcess, timeline, cta } = howItWorksContent;
+  const { hero, paths, customProcess, cta } = howItWorksContent;
 
   return (
     <>
@@ -41,9 +45,6 @@ export default function HowItWorksPage() {
         <div className="grid grid-cols-1 md:grid-cols-2 gap-gutter">
           {/* Standard / RTW */}
           <div className="border border-outline-variant p-8 md:p-12 hover:border-secondary transition-colors duration-300">
-            <span className="text-label-caps text-secondary block mb-4">
-              Ready-to-Wear
-            </span>
             <h3 className="text-headline-md text-on-surface mb-4">
               {paths.standard.title}
             </h3>
@@ -73,9 +74,6 @@ export default function HowItWorksPage() {
 
           {/* Custom */}
           <div className="border border-secondary bg-surface-container p-8 md:p-12">
-            <span className="text-label-caps text-secondary block mb-4">
-              Custom
-            </span>
             <h3 className="text-headline-md text-on-surface mb-4">
               {paths.custom.title}
             </h3>
@@ -159,43 +157,6 @@ export default function HowItWorksPage() {
                       </Link>
                     )}
                   </div>
-                </div>
-              ))}
-            </div>
-          </details>
-        </div>
-      </section>
-
-      {/* Timeline Strip */}
-      <section className="border-y border-outline-variant py-16 mb-block-gap">
-        <div className="container-atelier">
-          <div className="text-center mb-12">
-            <span className="text-label-caps text-secondary tracking-widest block mb-4">
-              Planning
-            </span>
-            <h2 className="text-headline-lg text-on-surface mb-4">
-              {timeline.headline}
-            </h2>
-            <p className="text-body-md text-on-surface-variant max-w-xl mx-auto">
-              {timeline.note}
-            </p>
-          </div>
-          <details className="border border-outline-variant bg-surface p-6">
-            <summary className="cursor-pointer text-body-md text-on-surface font-medium">
-              View timeline by garment category
-            </summary>
-            <div className="grid grid-cols-2 md:grid-cols-4 lg:grid-cols-7 gap-4 mt-6">
-              {timeline.items.map((item) => (
-                <div
-                  key={item.garment}
-                  className="border border-outline-variant bg-surface p-4 text-center hover:border-secondary transition-colors duration-300"
-                >
-                  <span className="text-body-md text-on-surface block mb-2">
-                    {item.garment}
-                  </span>
-                  <span className="text-label-caps text-secondary">
-                    {item.time}
-                  </span>
                 </div>
               ))}
             </div>

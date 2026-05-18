@@ -4,7 +4,7 @@ import { ArrowRight } from "lucide-react";
 import { homeContent } from "@/content/home";
 
 export default function HomePage() {
-  const { hero, categories, madeForYou, occasions, trust, cta } = homeContent;
+  const { hero, categories, occasions, cta } = homeContent;
 
   return (
     <main className="flex flex-col">
@@ -89,50 +89,6 @@ export default function HomePage() {
         </div>
       </section>
 
-      {/* Made for You Section */}
-      <section className="bg-surface-container-high py-block-gap">
-        <div className="container-atelier">
-          <div className="text-center mb-16 max-w-2xl mx-auto">
-            <span className="text-label-caps text-secondary tracking-widest block mb-4">
-              Customize
-            </span>
-            <h2 className="text-headline-lg text-on-surface mb-6">
-              {madeForYou.headline}
-            </h2>
-            <p className="text-body-lg text-on-surface-variant">
-              {madeForYou.subheadline}
-            </p>
-          </div>
-          <div className="grid grid-cols-1 md:grid-cols-3 gap-gutter mb-12">
-            {madeForYou.features.map((feature) => (
-              <div
-                key={feature.title}
-                className="border border-outline-variant bg-surface p-8 hover:border-secondary transition-colors duration-300"
-              >
-                <span className="material-symbols-outlined text-secondary text-[32px] mb-4 block">
-                  {feature.icon}
-                </span>
-                <h3 className="text-body-lg text-on-surface font-medium mb-2">
-                  {feature.title}
-                </h3>
-                <p className="text-body-md text-on-surface-variant">
-                  {feature.description}
-                </p>
-              </div>
-            ))}
-          </div>
-          <div className="text-center">
-            <Link
-              href={madeForYou.cta.href}
-              className="text-label-caps text-secondary hover:text-on-surface transition-colors inline-flex items-center gap-2"
-            >
-              {madeForYou.cta.text}
-              <ArrowRight className="h-3 w-3" />
-            </Link>
-          </div>
-        </div>
-      </section>
-
       {/* Occasions Section (Wedding + Statement) */}
       <section className="container-atelier py-block-gap">
         <div className="border-b border-outline-variant pb-8 mb-16">
@@ -171,32 +127,6 @@ export default function HomePage() {
         <p className="text-body-md text-on-surface-variant italic">
           {occasions.note}
         </p>
-      </section>
-
-      {/* Trust Section */}
-      <section className="border-y border-outline-variant py-16">
-        <div className="container-atelier">
-          <div className="mb-12">
-            <h2 className="text-headline-lg text-on-surface">{trust.headline}</h2>
-          </div>
-          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-gutter">
-            {trust.items.map((item) => (
-              <div key={item.title} className="flex gap-4">
-                <span className="material-symbols-outlined text-secondary text-[24px] flex-shrink-0">
-                  {item.icon}
-                </span>
-                <div>
-                  <h3 className="text-body-lg text-on-surface font-medium mb-1">
-                    {item.title}
-                  </h3>
-                  <p className="text-body-md text-on-surface-variant">
-                    {item.description}
-                  </p>
-                </div>
-              </div>
-            ))}
-          </div>
-        </div>
       </section>
 
       {/* Final CTA */}

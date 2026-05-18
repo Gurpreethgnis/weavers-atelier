@@ -2,17 +2,15 @@ export const trackOrderContent = {
   hero: {
     headline: "Track Your Order",
     subheadline:
-      "Enter your order number below to check the status of your order.",
+      "Enter your order details to view the latest status and next step.",
   },
 
   form: {
     orderNumberLabel: "Order Number",
     orderNumberPlaceholder: "e.g., WA-2024-001234",
-    emailLabel: "Email Address",
-    emailPlaceholder: "The email used for your order",
     submitButton: "Track Order",
     helpText:
-      "Check your order confirmation email for your order number. Having trouble? Contact support@weaversatelier.com.",
+      "Use the tracking token from your confirmation email. Need help? Contact support@weaversatelier.com.",
   },
 
   statuses: {

@@ -3,229 +3,102 @@ import type { Metadata } from "next";
 import { ArrowRight } from "lucide-react";
 import { statementPiecesContent } from "@/content/statement-pieces";
 import { WhatsAppButton } from "@/components/layout/WhatsAppButton";
-import { HeroImage } from "@/components/layout/HeroImage";
 
 export const metadata: Metadata = {
   title: "Statement Pieces | Weaver's Atelier",
   description:
     "Custom jackets, embroidered outerwear, bespoke waistcoats, and one-of-a-kind creations. Beyond categories.",
+  alternates: {
+    canonical: "/statement-pieces",
+  },
   openGraph: {
     title: "Statement Pieces | Weaver's Atelier",
     description:
       "Custom jackets, embroidered outerwear, bespoke waistcoats, and one-of-a-kind creations.",
+    images: [{ url: "/images/hero/home-hero-landscape.jpg" }],
   },
 };
 
 export default function StatementPiecesPage() {
-  const {
-    hero,
-    introduction,
-    categories,
-    customizationDepth,
-    timeline,
-    cta,
-  } = statementPiecesContent;
+  const { hero, categories, process, timeline, cta } = statementPiecesContent;
 
   return (
     <>
-      {/* Hero — Cinematic Full-Bleed with cinematic-shadow */}
-      <section className="relative w-full h-screen min-h-[600px] max-h-[900px] mb-block-gap overflow-hidden cinematic-shadow">
-        <HeroImage
-          src="/images/hero/statement-navy-gold.jpg"
-          alt="A navy long jacket with gold embroidered placket photographed in a heritage-styled set — a Weaver's Atelier statement piece"
-          aspect="aspect-auto"
-          priority
-          sizes="100vw"
-          className="absolute inset-0 w-full h-full object-cover"
-        />
-        <div className="absolute inset-0 flex items-end pb-20 md:pb-32 z-10">
-          <div className="container-atelier">
-            <div className="max-w-2xl">
-              <span className="text-label-caps text-white/80 tracking-widest block mb-4">
-                Beyond Categories
-              </span>
-              <h1 className="text-display-lg text-white leading-tight mb-6">
-                {hero.headline}
-              </h1>
-              <p className="text-body-lg text-white/90 mb-10">
-                {hero.subheadline}
-              </p>
-              <Link
-                href={hero.cta.href}
-                className="bg-white text-on-surface font-ui-button px-10 py-5 hover:bg-white/90 transition-colors duration-300 inline-flex items-center gap-3"
-              >
-                {hero.cta.text}
-                <ArrowRight className="h-4 w-4" />
-              </Link>
-            </div>
+      <section className="container-atelier pt-24 md:pt-40 mb-block-gap">
+        <div className="max-w-3xl">
+          <h1 className="text-display-lg text-on-surface leading-tight mb-8">
+            {hero.headline}
+          </h1>
+          <p className="text-body-lg text-on-surface-variant mb-10">
+            {hero.subheadline}
+          </p>
+          <div className="flex flex-col sm:flex-row gap-4">
+            <Link
+              href={hero.cta.href}
+              className="bg-inverse-surface text-inverse-on-surface font-ui-button px-10 py-5 hover:bg-surface-tint hover:text-on-surface transition-colors duration-300 inline-flex items-center justify-center gap-3"
+            >
+              {hero.cta.text}
+              <ArrowRight className="h-4 w-4" />
+            </Link>
+            <Link
+              href="/contact?subject=custom"
+              className="border border-outline-variant text-on-surface font-ui-button px-10 py-5 hover:border-secondary transition-colors duration-300 inline-flex items-center justify-center"
+            >
+              Send Inspiration
+            </Link>
           </div>
         </div>
       </section>
 
-      {/* Introduction — Asymmetric */}
       <section className="container-atelier mb-block-gap">
-        <div className="grid grid-cols-1 md:grid-cols-12 gap-gutter items-center">
-          <div className="md:col-span-5">
-            <h2 className="text-headline-lg text-on-surface mb-6">
-              {introduction.headline}
-            </h2>
-            <p className="text-body-lg text-on-surface-variant">
-              {introduction.description}
-            </p>
-          </div>
-          <div className="md:col-span-6 md:col-start-7">
-            <HeroImage
-              src="/images/statement/embroidery-detail.jpg"
-              alt="Close-up of hand embroidery detail on statement piece"
-              aspect="aspect-[4/3]"
-              sizes="(min-width: 768px) 50vw, 100vw"
-            />
-          </div>
+        <div className="grid grid-cols-1 md:grid-cols-2 gap-gutter">
+          {categories.slice(0, 4).map((category) => (
+            <article key={category.name} className="border border-outline-variant bg-surface p-8">
+              <h2 className="text-headline-md text-on-surface mb-3">{category.name}</h2>
+              <p className="text-body-md text-on-surface-variant">{category.description}</p>
+            </article>
+          ))}
         </div>
       </section>
 
-      {/* Categories — Editorial 12-col Asymmetric Grid with bronze-border */}
-      <section className="container-atelier mb-block-gap">
-        <div className="mb-12">
-          <span className="text-label-caps text-secondary tracking-widest block mb-4">
-            Archive
-          </span>
-          <h2 className="text-headline-lg text-on-surface">What We Create</h2>
-        </div>
-
-        <div className="grid grid-cols-1 md:grid-cols-12 gap-gutter">
-          {/* Row 1: Large + Small */}
-          <div className="md:col-span-7 bronze-border p-8 hover:border-secondary transition-colors duration-300">
-            <span className="text-label-caps text-on-surface-variant/60 block mb-6">
-              {categories[0].examples}
-            </span>
-            <h3 className="text-headline-md text-on-surface mb-4">
-              {categories[0].name}
-            </h3>
-            <p className="text-body-lg text-on-surface-variant">
-              {categories[0].description}
-            </p>
-          </div>
-          <div className="md:col-span-5 bronze-border p-8 hover:border-secondary transition-colors duration-300">
-            <span className="text-label-caps text-on-surface-variant/60 block mb-6">
-              {categories[1].examples}
-            </span>
-            <h3 className="text-headline-md text-on-surface mb-4">
-              {categories[1].name}
-            </h3>
-            <p className="text-body-lg text-on-surface-variant">
-              {categories[1].description}
-            </p>
-          </div>
-
-          {/* Row 2: Small + Large */}
-          <div className="md:col-span-4 bronze-border p-8 hover:border-secondary transition-colors duration-300">
-            <span className="text-label-caps text-on-surface-variant/60 block mb-6">
-              {categories[2].examples}
-            </span>
-            <h3 className="text-headline-md text-on-surface mb-4">
-              {categories[2].name}
-            </h3>
-            <p className="text-body-lg text-on-surface-variant">
-              {categories[2].description}
-            </p>
-          </div>
-          <div className="md:col-span-8 bronze-border p-8 hover:border-secondary transition-colors duration-300">
-            <span className="text-label-caps text-on-surface-variant/60 block mb-6">
-              {categories[3].examples}
-            </span>
-            <h3 className="text-headline-md text-on-surface mb-4">
-              {categories[3].name}
-            </h3>
-            <p className="text-body-lg text-on-surface-variant">
-              {categories[3].description}
-            </p>
-          </div>
-
-          {/* Row 3: Additional categories via disclosure */}
-          <div className="md:col-span-12">
-            <details className="border border-outline-variant bg-surface p-6">
-              <summary className="cursor-pointer text-body-lg text-on-surface font-medium">
-                View additional statement categories
-              </summary>
-              <div className="grid grid-cols-1 md:grid-cols-2 gap-gutter mt-6">
-                {categories.slice(4).map((category) => (
-                  <div
-                    key={category.name}
-                    className="md:col-span-1 bronze-border p-8 hover:border-secondary transition-colors duration-300"
-                  >
-                    <span className="text-label-caps text-on-surface-variant/60 block mb-6">
-                      {category.examples}
-                    </span>
-                    <h3 className="text-headline-md text-on-surface mb-4">
-                      {category.name}
-                    </h3>
-                    <p className="text-body-lg text-on-surface-variant">
-                      {category.description}
-                    </p>
-                  </div>
-                ))}
-              </div>
-            </details>
-          </div>
-        </div>
-      </section>
-
-      {/* Customization Depth */}
       <section className="bg-surface-container-high py-block-gap mb-block-gap">
         <div className="container-atelier">
-          <h2 className="text-headline-lg text-on-surface text-center mb-16">
-            Customization
-          </h2>
-          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-gutter">
-            {customizationDepth.map((item) => (
-              <div key={item.name} className="text-center">
-                <span className="material-symbols-outlined text-secondary text-[48px] mb-6 block">
-                  {item.icon}
-                </span>
-                <h3 className="text-body-lg text-on-surface font-medium mb-3">
-                  {item.name}
-                </h3>
-                <p className="text-body-md text-on-surface-variant">
-                  {item.description}
-                </p>
+          <h2 className="text-headline-lg text-on-surface mb-10">Creation Process</h2>
+          <div className="grid grid-cols-1 md:grid-cols-4 gap-gutter">
+            {process.steps.map((step) => (
+              <div key={step.number} className="border border-outline-variant bg-surface p-6">
+                <span className="text-label-caps text-secondary">{step.number}</span>
+                <h3 className="text-body-lg text-on-surface font-medium mt-2 mb-2">{step.title}</h3>
+                <p className="text-body-md text-on-surface-variant">{step.description}</p>
               </div>
             ))}
           </div>
         </div>
       </section>
 
-      {/* Timeline — Bordered Box */}
       <section className="container-atelier mb-block-gap">
-        <div className="bronze-border p-12 md:p-16 bg-surface-container">
-          <span className="text-label-caps text-secondary tracking-widest block mb-6">
-            Lead Time
-          </span>
-          <h2 className="text-headline-md text-on-surface mb-6">
-            {timeline.headline}
-          </h2>
-          <p className="text-body-lg text-on-surface-variant max-w-2xl">
-            {timeline.description}
-          </p>
-        </div>
+        <details className="border border-outline-variant bg-surface p-6">
+          <summary className="cursor-pointer text-body-lg text-on-surface font-medium">
+            Timeline and additional categories
+          </summary>
+          <p className="text-body-md text-on-surface-variant mt-4 mb-6">{timeline.description}</p>
+          <div className="grid grid-cols-1 md:grid-cols-2 gap-gutter">
+            {categories.slice(4).map((category) => (
+              <div key={category.name} className="border border-outline-variant p-6">
+                <h3 className="text-body-lg text-on-surface font-medium mb-2">{category.name}</h3>
+                <p className="text-body-md text-on-surface-variant">{category.description}</p>
+              </div>
+            ))}
+          </div>
+        </details>
       </section>
 
-      {/* Private Archive CTA Strip */}
-      <section className="border-y border-outline-variant py-20 mb-block-gap">
+      <section className="border-y border-outline-variant py-24 mb-block-gap">
         <div className="container-atelier">
-          <div className="grid grid-cols-1 md:grid-cols-12 gap-gutter items-center">
-            <div className="md:col-span-6">
-              <span className="text-label-caps text-secondary tracking-widest block mb-4">
-                Private Reference
-              </span>
-              <h2 className="text-headline-lg text-on-surface mb-4">
-                {cta.headline}
-              </h2>
-              <p className="text-body-lg text-on-surface-variant">
-                {cta.description}
-              </p>
-            </div>
-            <div className="md:col-span-5 md:col-start-8 flex flex-col sm:flex-row gap-4">
+          <div className="text-center max-w-3xl mx-auto">
+            <h2 className="text-headline-lg text-on-surface mb-4">{cta.headline}</h2>
+            <p className="text-body-lg text-on-surface-variant mb-10">{cta.description}</p>
+            <div className="flex flex-col sm:flex-row gap-4 justify-center">
               <Link
                 href={cta.primaryCta.href}
                 className="bg-inverse-surface text-inverse-on-surface font-ui-button px-8 py-5 hover:bg-surface-tint hover:text-on-surface transition-colors duration-300 inline-flex items-center justify-center gap-3"

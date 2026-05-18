@@ -2,29 +2,23 @@
 
 import { useState } from "react";
 import Link from "next/link";
+import { useRouter } from "next/navigation";
 import { ArrowRight, Search } from "lucide-react";
 import { trackOrderContent } from "@/content/track-order";
 
 export default function TrackOrderPage() {
-  const { hero, form, statuses, noOrderFound, needHelp } = trackOrderContent;
+  const { hero, form, statuses, needHelp } = trackOrderContent;
+  const router = useRouter();
 
   const [orderNumber, setOrderNumber] = useState("");
-  const [email, setEmail] = useState("");
-  const [searchState, setSearchState] = useState<
-    "idle" | "searching" | "found" | "not-found"
-  >("idle");
+  const [searchState, setSearchState] = useState<"idle" | "searching">("idle");
 
   const handleSearch = (e: React.FormEvent) => {
     e.preventDefault();
-    if (!orderNumber.trim() || !email.trim()) return;
+    if (!orderNumber.trim()) return;
 
     setSearchState("searching");
-
-    // In production, this would call an API to look up the order
-    setTimeout(() => {
-      // Simulate not found for now - real implementation would check Supabase
-      setSearchState("not-found");
-    }, 1000);
+    router.push(`/track/${encodeURIComponent(orderNumber.trim())}`);
   };
 
   const statusList = Object.values(statuses);
@@ -61,24 +55,6 @@ export default function TrackOrderPage() {
                   value={orderNumber}
                   onChange={(e) => setOrderNumber(e.target.value)}
                   placeholder={form.orderNumberPlaceholder}
-                  className="w-full bg-surface-container border border-outline-variant px-4 py-4 text-body-md text-on-surface placeholder:text-on-surface-variant/50 focus:outline-none focus:border-secondary"
-                  required
-                />
-              </div>
-
-              <div>
-                <label
-                  htmlFor="email"
-                  className="text-label-caps text-on-surface-variant block mb-2"
-                >
-                  {form.emailLabel}
-                </label>
-                <input
-                  id="email"
-                  type="email"
-                  value={email}
-                  onChange={(e) => setEmail(e.target.value)}
-                  placeholder={form.emailPlaceholder}
                   className="w-full bg-surface-container border border-outline-variant px-4 py-4 text-body-md text-on-surface placeholder:text-on-surface-variant/50 focus:outline-none focus:border-secondary"
                   required
                 />
@@ -137,30 +113,6 @@ export default function TrackOrderPage() {
                 ))}
               </div>
             </details>
-          </div>
-        </section>
-      )}
-
-      {/* Not Found State */}
-      {searchState === "not-found" && (
-        <section className="container-atelier mb-block-gap">
-          <div className="max-w-2xl mx-auto text-center">
-            <span className="material-symbols-outlined text-secondary text-[48px] mb-6 block">
-              search_off
-            </span>
-            <h2 className="text-headline-md text-on-surface mb-4">
-              {noOrderFound.headline}
-            </h2>
-            <p className="text-body-lg text-on-surface-variant mb-8">
-              {noOrderFound.description}
-            </p>
-            <Link
-              href={noOrderFound.cta.href}
-              className="text-label-caps text-secondary hover:text-on-surface transition-colors duration-300 inline-flex items-center gap-2"
-            >
-              {noOrderFound.cta.text}
-              <ArrowRight className="h-4 w-4" />
-            </Link>
           </div>
         </section>
       )}

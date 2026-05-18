@@ -111,11 +111,11 @@ export default async function CheckoutSuccessPage({
         </div>
 
         <h1 className="text-3xl md:text-4xl font-heading font-semibold mb-4">
-          Thank You for Your Order!
+          Order Confirmed
         </h1>
 
         <p className="text-lg text-on-surface-variant mb-8">
-          Your order has been confirmed and we're getting started on it.
+          Thank you. Your order has been received and is now being reviewed. We&apos;ll send updates as your piece moves through preparation and dispatch.
         </p>
 
         {/* Order Details */}

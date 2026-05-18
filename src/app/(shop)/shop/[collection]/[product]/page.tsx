@@ -218,23 +218,14 @@ export default async function ProductPage({ params }: ProductPageProps) {
             {/* Lead Time */}
             <div className="mt-8 pt-8 border-t border-outline-variant">
               <h3 className="text-sm font-medium uppercase tracking-wider mb-3">
-                {shopContent.leadTime.title}
+                Lead Time
               </h3>
               <div className="space-y-2 text-sm text-on-surface-variant">
                 <p>
                   <strong>Production:</strong> {product.lead_time_days} business
                   days
                 </p>
-                <p>
-                  <strong>US Shipping:</strong>{" "}
-                  {shopContent.leadTime.shipping.domestic.days} —{" "}
-                  {shopContent.leadTime.shipping.domestic.price}
-                </p>
-                <p>
-                  <strong>International:</strong>{" "}
-                  {shopContent.leadTime.shipping.international.days} —{" "}
-                  {shopContent.leadTime.shipping.international.price}
-                </p>
+                <p>Shipping speed and cost are confirmed at checkout.</p>
               </div>
             </div>
 

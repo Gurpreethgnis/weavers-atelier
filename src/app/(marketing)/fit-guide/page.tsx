@@ -11,8 +11,6 @@ export default function FitGuidePage() {
     sizeChart,
     whenToCustom,
     measurementGuide,
-    fitPreferences,
-    confidence,
     cta,
   } = fitGuideContent;
 
@@ -213,61 +211,6 @@ export default function FitGuidePage() {
               )}
             </div>
           </details>
-        </div>
-      </section>
-
-      {/* Fit Preferences (Custom Only) */}
-      <section className="container-atelier mb-block-gap">
-        <div className="mb-12">
-          <h2 className="text-headline-lg text-on-surface">
-            {fitPreferences.headline}
-          </h2>
-        </div>
-        <div className="grid grid-cols-1 md:grid-cols-3 gap-gutter">
-          {fitPreferences.options.map((pref) => (
-            <div
-              key={pref.id}
-              className="border border-outline-variant p-8 hover:border-secondary transition-colors duration-300"
-            >
-              <h3 className="text-headline-md text-on-surface mb-4">
-                {pref.name}
-              </h3>
-              <p className="text-body-md text-on-surface-variant">
-                {pref.description}
-              </p>
-            </div>
-          ))}
-        </div>
-      </section>
-
-      {/* Not Sure About Measurements? */}
-      <section className="container-atelier mb-block-gap">
-        <div className="border border-outline-variant p-12">
-          <h2 className="text-headline-lg text-on-surface mb-8">
-            {confidence.headline}
-          </h2>
-          <div className="grid grid-cols-1 md:grid-cols-3 gap-gutter mb-8">
-            {confidence.options.map((option) => (
-              <div
-                key={option.id}
-                className="border-l-2 border-secondary pl-6"
-              >
-                <h3 className="text-body-lg text-on-surface font-medium mb-2">
-                  {option.title}
-                </h3>
-                <p className="text-body-md text-on-surface-variant">
-                  {option.description}
-                </p>
-              </div>
-            ))}
-          </div>
-          <Link
-            href={confidence.cta.href}
-            className="text-label-caps text-secondary hover:text-on-surface transition-colors inline-flex items-center gap-2"
-          >
-            {confidence.cta.text}
-            <ArrowRight className="h-3 w-3" />
-          </Link>
         </div>
       </section>
 
